@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyeongmin Park - Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .header-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 6px solid rgba(255,255,255,0.2);
+            object-fit: cover;
+        }
+        
+        .section-title {
+            color: #667eea;
+            font-weight: 700;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #667eea;
+        }
+        
+        .timeline-item {
+            border-left: 3px solid #667eea;
+            padding-left: 25px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #667eea;
+        }
+        
+        .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            margin-bottom: 20px;
+        }
+        
+        .card:hover {
+            transform: translateY(-2px);
+        }
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .contact-info i {
+            width: 20px;
+            text-align: center;
+            margin-right: 10px;
+        }
+        
+        .skill-badge {
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 5px;
+            display: inline-block;
+        }
+        
+        .award-badge {
+            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.85em;
+            margin: 5px;
+            display: inline-block;
+            font-weight: 500;
+        }
+        
+        .date-badge {
+            background: #e9ecef;
+            color: #495057;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+        
+        .company-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        
+        .section {
+            padding: 60px 0;
+        }
+        
+        .bg-light-custom {
+            background-color: #f8f9fa;
+        }
+        
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            .section {
+                padding: 40px 0;
+            }
+            .card {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                <img src="./images/profile.jpeg" alt="Gyeongmin Park" class="profile-img">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-4 mb-2">Gyeongmin Park</h1>
+                <h3 class="mb-3">경민</h3>
+                <p class="lead mb-4">Master's Course, Department of Statistics<br>Kyungpook National University</p>
+                <p class="mb-0">Researcher specializing in Bayesian Statistical Learning</p>
+            </div>
+            <div class="col-lg-3">
+                <div class="contact-info">
+                    <h5 class="mb-3">Contact Information</h5>
+                    <p><i class="fas fa-envelope"></i> davidpark9830@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +82-10-9920-9830</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Daegu, South Korea</p>
+                    <p><i class="fab fa-linkedin"></i> linkedin.com/in/davidpark0182</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div class="section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row">
+            <div class="col-lg-8">
+                <p class="lead">I am a dedicated researcher currently pursuing a Master's degree in Statistics at Kyungpook National University, specializing in Bayesian Statistical Learning under Prof. Goh's guidance. With a strong background in statistical analysis, data science, and research methodology, I am passionate about applying advanced statistical techniques to solve real-world problems.</p>
+                <p>My research interests focus on scalable Bayesian regression methods for massive and high-dimensional data. I have demonstrated excellence in various data analysis competitions and have received multiple awards for my work in statistical modeling and analysis.</p>
+            </div>
+            <div class="col-lg-4">
+                <h5>Languages</h5>
+                <div class="mb-3">
+                    <span class="skill-badge">Korean (Native)</span>
+                    <span class="skill-badge">English (Professional)</span>
+                </div>
+                <h5>Industry</h5>
+                <p>Information Technology & Services</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Experience Section -->
+<div class="section bg-light-custom">
+    <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="timeline-item">
+            <div class="d-flex align-items-start mb-3">
+                <img src="./images/knu-logo.jpeg" alt="Kyungpook National University" class="company-logo">
+                <div>
+                    <h4 class="mb-1">Researcher</h4>
+                    <h6 class="text-primary mb-2">Kyungpook National University</h6>
+                    <span class="date-badge">Sep 2024 - Present</span>
+                    <p class="text-muted mb-2">Daegu, South Korea</p>
+                    <p>Prof. Goh's Bayesian Statistical Learning Lab, Department of Statistics, Kyungpook Nat'l Univ, Daegu</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="d-flex align-items-start mb-3">
+                <img src="./images/isba-logo.jpeg" alt="International Society for Bayesian Analysis" class="company-logo">
+                <div>
+                    <h4 class="mb-1">2025 EAC-ISBA Organizing Committee</h4>
+                    <h6 class="text-primary mb-2">International Society for Bayesian Analysis</h6>
+                    <span class="date-badge">Feb 2025 - Jul 2025</span>
+                    <p>Organizing Committee at EAC-ISBA(East Asia Chapter of ISBA) Conference 2025 as Webmaster</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="d-flex align-items-start mb-3">
+                <img src="./images/knu-logo.jpeg" alt="Kyungpook National University" class="company-logo">
+                <div>
+                    <h4 class="mb-1">Student Researcher</h4>
+                    <h6 class="text-primary mb-2">Kyungpook National University</h6>
+                    <span class="date-badge">Mar 2024 - Aug 2024</span>
+                    <p class="text-muted mb-2">Daegu, South Korea</p>
+                    <p>Prof. Goh's Bayesian Statistical Learning Lab, Department of Statistics, Kyungpook Nat'l Univ, Daegu</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="d-flex align-items-start mb-3">
+                <img src="./images/cru-logo.jpeg" alt="Cru" class="company-logo">
+                <div>
+                    <h4 class="mb-1">Senior Audio Engineer</h4>
+                    <h6 class="text-primary mb-2">Cru</h6>
+                    <span class="date-badge">Aug 2023 - Jul 2024</span>
+                    <p class="text-muted mb-2">Daegu, South Korea</p>
+                    <p>CCC, Kyungpook Nat'l Univ & Yeongjin Univ, Daegu, Republic of Korea</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="d-flex align-items-start mb-3">
+                <img src="./images/cru-logo.jpeg" alt="Cru" class="company-logo">
+                <div>
+                    <h4 class="mb-1">Audio Engineer</h4>
+                    <h6 class="text-primary mb-2">Cru</h6>
+                    <span class="date-badge">Jan 2023 - Jul 2023</span>
+                    <p class="text-muted mb-2">Daegu, South Korea</p>
+                    <p>CCC, Kyungpook Nat'l Univ & Yeongjin Univ, Daegu, Republic of Korea</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="d-flex align-items-start mb-3">
+                <img src="./images/mss-logo.jpeg" alt="Ministry of SMEs and Startups" class="company-logo">
+                <div>
+                    <h4 class="mb-1">Customer Service Department</h4>
+                    <h6 class="text-primary mb-2">Ministry of SMEs and Startups, Republic of Korea</h6>
+                    <span class="date-badge">Oct 2021 - Jan 2023</span>
+                    <p class="text-muted mb-2">Daegu, South Korea</p>
+                    <p>Daegu Kyungbook Regional SMBA</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="d-flex align-items-start mb-3">
+                <img src="./images/army-logo.jpeg" alt="US 8th Army" class="company-logo">
+                <div>
+                    <h4 class="mb-1">Administrative Assistant</h4>
+                    <h6 class="text-primary mb-2">US 8th Army Korean Augmentation To the United States Army</h6>
+                    <span class="date-badge">Mar 2021 - Aug 2021</span>
+                    <p class="text-muted mb-2">Humphreys, Missouri, United States</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="d-flex align-items-start mb-3">
+                <img src="./images/daegu-uni-logo.jpeg" alt="Daegu University" class="company-logo">
+                <div>
+                    <h4 class="mb-1">Assistant Researcher</h4>
+                    <h6 class="text-primary mb-2">Daegu University</h6>
+                    <span class="date-badge">Dec 2019 - Feb 2020</span>
+                    <p class="text-muted mb-2">Gyeongsan, North Gyeongsang, South Korea</p>
+                    <p>Institute for Multicultural Social Policy, Daegu University, Gyeongsan</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="d-flex align-items-start mb-3">
+                <img src="./images/kcc-logo.jpeg" alt="Korean Cultural Centre" class="company-logo">
+                <div>
+                    <h4 class="mb-1">Assistant Program Coordinator</h4>
+                    <h6 class="text-primary mb-2">Korean Cultural Centre</h6>
+                    <span class="date-badge">Jun 2018 - Mar 2019</span>
+                    <p class="text-muted mb-2">Daegu, South Korea</p>
+                    <p>Korean Cultural Center, Kyungpook Nat'l Univ, Daegu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Education Section -->
+<div class="section">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="./images/knu-logo.jpeg" alt="Kyungpook National University" class="company-logo">
+                            <div>
+                                <h5 class="card-title mb-1">Master's Degree in Statistics</h5>
+                                <h6 class="text-primary">Kyungpook National University</h6>
+                            </div>
+                        </div>
+                        <span class="date-badge">Mar 2025 - Feb 2027</span>
+                        <p class="mt-3 mb-0">Currently pursuing advanced studies in statistical methodology and Bayesian analysis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="./images/knu-logo.jpeg" alt="Kyungpook National University" class="company-logo">
+                            <div>
+                                <h5 class="card-title mb-1">Bachelor's Degree in Statistics</h5>
+                                <h6 class="text-primary">Kyungpook National University</h6>
+                            </div>
+                        </div>
+                        <span class="date-badge">Mar 2020 - Aug 2025</span>
+                        <p class="mt-3 mb-0"><strong>Minor:</strong> Computer Engineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Awards & Honors Section -->
+<div class="section bg-light-custom">
+    <div class="container">
+        <h2 class="section-title">Awards & Honors</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <span class="award-badge">2nd Place</span>
+                        <h5 class="card-title mt-2">Korean Statistical Society Summer Conference 2025</h5>
+                        <h6 class="text-primary">Poster Paper Award</h6>
+                        <p class="card-text">The Korean Statistical Society</p>
+                        <small class="text-muted">Scalable Bayesian regression with massive and high-dimensional data</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <span class="award-badge">1st Place</span>
+                        <h5 class="card-title mt-2">KNU Statistics Concert Data Analysis Contest 2024</h5>
+                        <h6 class="text-primary">Grand Prize</h6>
+                        <p class="card-text">President's Office, Kyungpook Nat'l Univ.</p>
+                        <small class="text-muted">Analysis of Traditional Market Revitalization Factors in Daegu Region</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <span class="award-badge">1st Place</span>
+                        <h5 class="card-title mt-2">Hongcheon-gun Public Data Analysis Competition 2024</h5>
+                        <h6 class="text-primary">Grand Prize</h6>
+                        <p class="card-text">Hongcheon County Office, Gangwon State</p>
+                        <small class="text-muted">Selection of the optimal location for dispatching medical personnel to vulnerable areas with access to medical care in Hongcheon-gun</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <span class="award-badge">Special Award</span>
+                        <h5 class="card-title mt-2">Intellectual Property Idea Competition</h5>
+                        <h6 class="text-primary">Commissioner's Award of the KIPO</h6>
+                        <p class="card-text">Korea Intellectual Property Office</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <span class="award-badge">4th Place</span>
+                        <h5 class="card-title mt-2">KNU Statistics Concert Data Analysis Contest 2023</h5>
+                        <h6 class="text-primary">Encouragement Prize</h6>
+                        <p class="card-text">Department of Statistics, Kyungpook Nat'l Univ.</p>
+                        <small class="text-muted">A Study on the Change of Traffic Flow in the City according to Rainfall</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <span class="award-badge">Excellence</span>
+                        <h5 class="card-title mt-2">Academic Excellence Award</h5>
+                        <h6 class="text-primary">R Programming and Experiment</h6>
+                        <p class="card-text">Department of Statistics, Kyungpook Nat'l Univ.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <span class="award-badge">Special</span>
+                        <h5 class="card-title mt-2">PVC ECO I·D Award 2022</h5>
+                        <h6 class="text-primary">Special Selection</h6>
+                        <p class="card-text">Korea Vinyl Environmental Council</p>
+                        <small class="text-muted">Modeling and Designing Graphic of Multipurpose Stand Using Waste PVC Paper</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <span class="award-badge">2nd Place</span>
+                        <h5 class="card-title mt-2">Daegu Culture Big Data Competition for Youth</h5>
+                        <h6 class="text-primary">Excellence Prize</h6>
+                        <p class="card-text">Korean Cultural Centre, Kyungpook Nat'l Univ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <span class="award-badge">1st Place</span>
+                        <h5 class="card-title mt-2">Big Data Analysis Presentation</h5>
+                        <h6 class="text-primary">Best Prize</h6>
+                        <p class="card-text">Korean Cultural Centre, Kyungpook Nat'l Univ.</p>
+                        <small class="text-muted">Data Analysis of Autonomous Vehicle News Articles Using Morpho-Based Natural Language Processing</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <span class="award-badge">Commendation</span>
+                        <h5 class="card-title mt-2">Distinguished Service Personnel</h5>
+                        <h6 class="text-primary">Commendation</h6>
+                        <p class="card-text">Daegu Metropolitan City Hall</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Certifications Section -->
+<div class="section">
+    <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Advanced Data Analytics Semi-Professional (ADsP)</h5>
+                        <h6 class="text-primary">Korea Data Agency</h6>
+                        <span class="date-badge">March 2024</span>
+                        <p class="mt-3 mb-2"><strong>License Number:</strong> ADsP-040016659</p>
+                        <p class="text-muted mb-0">Professional certification in advanced data analytics and statistical methods.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Computer Specialist in Spreadsheet & Database Level I</h5>
+                        <h6 class="text-primary">Korea Chamber of Commerce and Industry</h6>
+                        <span class="date-badge">April 2023</span>
+                        <p class="mt-3 mb-2"><strong>License Number:</strong> 23-K9-026464</p>
+                        <p class="text-muted mb-0">Professional certification in spreadsheet and database management systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects Section -->
+<div class="section bg-light-custom">
+    <div class="container">
+        <h2 class="section-title">Recent Projects</h2>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Scalable Bayesian regression with massive and high-dimensional data</h5>
+                        <span class="date-badge">January 2025</span>
+                        <p class="mt-3 mb-0">Research project focused on developing scalable Bayesian regression methods for handling massive datasets with high-dimensional features. This project addresses computational challenges in modern statistical learning and proposes efficient algorithms for real-world applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p>&copy; 2025 Gyeongmin Park. All rights reserved.</p>
+                <p class="small">This resume was generated from LinkedIn profile data for GitHub Pages deployment.</p>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <p class="small">Last updated: January 2025</p>
+                <div>
+                    <a href="mailto:your.email@example.com" class="text-white me-3"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/davidpark0182" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
