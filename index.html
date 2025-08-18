@@ -1,549 +1,601 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gyeongmin Park - Resume</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Gyeongmin Park - Data Scientist & Researcher</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: #333;
+        * {
+            font-family: 'Inter', sans-serif;
         }
         
-        .header-section {
+        .mono-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .gradient-bg {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 0;
         }
         
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 6px solid rgba(255,255,255,0.2);
-            object-fit: cover;
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
-        .section-title {
-            color: #667eea;
-            font-weight: 700;
-            margin-bottom: 30px;
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .skill-progress {
             position: relative;
-            padding-bottom: 10px;
+            overflow: hidden;
         }
         
-        .section-title:after {
+        .skill-progress::after {
             content: '';
             position: absolute;
-            bottom: 0;
+            top: 0;
             left: 0;
-            width: 50px;
-            height: 3px;
-            background: #667eea;
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: width 2s ease-in-out;
+        }
+        
+        .animate-fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(255,255,255,0.1)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></radialGradient></defs><circle cx="100" cy="100" r="50" fill="url(%23a)"/><circle cx="900" cy="200" r="70" fill="url(%23a)"/><circle cx="300" cy="700" r="40" fill="url(%23a)"/><circle cx="800" cy="800" r="60" fill="url(%23a)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+            margin: 2rem 0;
         }
         
         .timeline-item {
-            border-left: 3px solid #667eea;
-            padding-left: 25px;
-            margin-bottom: 30px;
             position: relative;
+            padding-left: 2rem;
         }
         
-        .timeline-item:before {
+        .timeline-item::before {
             content: '';
             position: absolute;
-            left: -8px;
-            top: 0;
-            width: 13px;
-            height: 13px;
+            left: 0;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
             border-radius: 50%;
-            background: #667eea;
         }
         
-        .card {
-            border: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease-in-out;
-            margin-bottom: 20px;
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 1.2rem;
+            width: 2px;
+            height: calc(100% - 0.5rem);
+            background: #e5e7eb;
         }
         
-        .card:hover {
-            transform: translateY(-2px);
-        }
-        
-        .contact-info {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-        }
-        
-        .contact-info i {
-            width: 20px;
-            text-align: center;
-            margin-right: 10px;
-        }
-        
-        .skill-badge {
-            background: #667eea;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            margin: 5px;
-            display: inline-block;
+        .timeline-item:last-child::after {
+            display: none;
         }
         
         .award-badge {
-            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 25px;
-            font-size: 0.85em;
-            margin: 5px;
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: #1a202c;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
             display: inline-block;
-            font-weight: 500;
-        }
-        
-        .date-badge {
-            background: #e9ecef;
-            color: #495057;
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 0.8em;
-            font-weight: 500;
-        }
-        
-        .company-logo {
-            width: 50px;
-            height: 50px;
-            border-radius: 8px;
-            object-fit: cover;
-            margin-right: 15px;
-        }
-        
-        .section {
-            padding: 60px 0;
-        }
-        
-        .bg-light-custom {
-            background-color: #f8f9fa;
+            margin-bottom: 0.5rem;
         }
         
         @media print {
-            body {
-                -webkit-print-color-adjust: exact;
-                color-adjust: exact;
-            }
-            .section {
-                padding: 40px 0;
-            }
-            .card {
-                break-inside: avoid;
+            .hero-bg {
+                height: auto !important;
+                min-height: auto !important;
             }
         }
     </style>
 </head>
-<body>
-
-<!-- Header Section -->
-<div class="header-section">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-3 text-center mb-4 mb-lg-0">
-                <img src="./images/profile.jpeg" alt="Gyeongmin Park" class="profile-img">
-            </div>
-            <div class="col-lg-6">
-                <h1 class="display-4 mb-2">Gyeongmin Park</h1>
-                <h3 class="mb-3">경민</h3>
-                <p class="lead mb-4">Master's Course, Department of Statistics<br>Kyungpook National University</p>
-                <p class="mb-0">Researcher specializing in Bayesian Statistical Learning</p>
-            </div>
-            <div class="col-lg-3">
-                <div class="contact-info">
-                    <h5 class="mb-3">Contact Information</h5>
-                    <p><i class="fas fa-envelope"></i> davidpark9830@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> +82-10-9920-9830</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Daegu, South Korea</p>
-                    <p><i class="fab fa-linkedin"></i> linkedin.com/in/davidpark0182</p>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <section class="hero-bg text-white min-h-screen flex items-center relative">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 animate-fade-in">
+                    <div class="mono-font text-sm text-blue-300 mb-4">
+                        <i class="fas fa-code mr-2"></i>Data Scientist & Researcher
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                        <span class="block">Gyeongmin</span>
+                        <span class="block gradient-text">Park</span>
+                    </h1>
+                    <div class="text-xl lg:text-2xl text-blue-100 mb-8 leading-relaxed">
+                        Master's Course in Statistics<br>
+                        <span class="text-blue-300">Bayesian Statistical Learning Lab</span><br>
+                        Kyungpook National University
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="mailto:davidpark0182@gmail.com" class="glass-effect px-8 py-3 rounded-full text-white hover:bg-white hover:text-gray-900 transition-all duration-300">
+                            <i class="fas fa-envelope mr-2"></i>Contact Me
+                        </a>
+                        <a href="#experience" class="border-2 border-white px-8 py-3 rounded-full text-white hover:bg-white hover:text-gray-900 transition-all duration-300">
+                            <i class="fas fa-user mr-2"></i>View Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center">
+                    <div class="relative">
+                        <div class="w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 absolute -top-10 -left-10 blur-3xl"></div>
+                        <div class="w-64 h-64 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full opacity-20 absolute -bottom-10 -right-10 blur-3xl"></div>
+                        <img src="https://cdn1.genspark.ai/user-upload-image/crawler_linkedin_profile_thumbnails/c4fc67af-2f7f-3428-81ba-850c676f790e" alt="Profile Picture" class="w-72 h-72 rounded-full object-cover border-4 border-white/20 relative z-10 shadow-2xl">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<!-- About Section -->
-<div class="section">
-    <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="row">
-            <div class="col-lg-8">
-                <p class="lead">I am a dedicated researcher currently pursuing a Master's degree in Statistics at Kyungpook National University, specializing in Bayesian Statistical Learning under Prof. Goh's guidance. With a strong background in statistical analysis, data science, and research methodology, I am passionate about applying advanced statistical techniques to solve real-world problems.</p>
-                <p>My research interests focus on scalable Bayesian regression methods for massive and high-dimensional data. I have demonstrated excellence in various data analysis competitions and have received multiple awards for my work in statistical modeling and analysis.</p>
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
             </div>
-            <div class="col-lg-4">
-                <h5>Languages</h5>
-                <div class="mb-3">
-                    <span class="skill-badge">Korean (Native)</span>
-                    <span class="skill-badge">English (Professional)</span>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Research Focus</h3>
+                    <p class="text-gray-600">Specializing in Bayesian Statistical Learning with focus on scalable regression methods for massive and high-dimensional data.</p>
                 </div>
-                <h5>Industry</h5>
-                <p>Information Technology & Services</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Experience Section -->
-<div class="section bg-light-custom">
-    <div class="container">
-        <h2 class="section-title">Professional Experience</h2>
-        
-        <div class="timeline-item">
-            <div class="d-flex align-items-start mb-3">
-                <img src="./images/knu-logo.jpeg" alt="Kyungpook National University" class="company-logo">
-                <div>
-                    <h4 class="mb-1">Researcher</h4>
-                    <h6 class="text-primary mb-2">Kyungpook National University</h6>
-                    <span class="date-badge">Sep 2024 - Present</span>
-                    <p class="text-muted mb-2">Daegu, South Korea</p>
-                    <p>Prof. Goh's Bayesian Statistical Learning Lab, Department of Statistics, Kyungpook Nat'l Univ, Daegu</p>
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="text-purple-500 text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Academic Journey</h3>
+                    <p class="text-gray-600">Currently pursuing Master's in Statistics at KNU while conducting research in Prof. Goh's Bayesian Statistical Learning Lab.</p>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="text-green-500 text-4xl mb-4">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Achievements</h3>
+                    <p class="text-gray-600">Multiple awards in data analysis competitions and research presentations, with expertise in statistical modeling and data science.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="timeline-item">
-            <div class="d-flex align-items-start mb-3">
-                <img src="./images/isba-logo.jpeg" alt="International Society for Bayesian Analysis" class="company-logo">
-                <div>
-                    <h4 class="mb-1">2025 EAC-ISBA Organizing Committee</h4>
-                    <h6 class="text-primary mb-2">International Society for Bayesian Analysis</h6>
-                    <span class="date-badge">Feb 2025 - Jul 2025</span>
-                    <p>Organizing Committee at EAC-ISBA(East Asia Chapter of ISBA) Conference 2025 as Webmaster</p>
-                </div>
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Professional Experience</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
             </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="d-flex align-items-start mb-3">
-                <img src="./images/knu-logo.jpeg" alt="Kyungpook National University" class="company-logo">
-                <div>
-                    <h4 class="mb-1">Student Researcher</h4>
-                    <h6 class="text-primary mb-2">Kyungpook National University</h6>
-                    <span class="date-badge">Mar 2024 - Aug 2024</span>
-                    <p class="text-muted mb-2">Daegu, South Korea</p>
-                    <p>Prof. Goh's Bayesian Statistical Learning Lab, Department of Statistics, Kyungpook Nat'l Univ, Daegu</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="d-flex align-items-start mb-3">
-                <img src="./images/cru-logo.jpeg" alt="Cru" class="company-logo">
-                <div>
-                    <h4 class="mb-1">Senior Audio Engineer</h4>
-                    <h6 class="text-primary mb-2">Cru</h6>
-                    <span class="date-badge">Aug 2023 - Jul 2024</span>
-                    <p class="text-muted mb-2">Daegu, South Korea</p>
-                    <p>CCC, Kyungpook Nat'l Univ & Yeongjin Univ, Daegu, Republic of Korea</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="d-flex align-items-start mb-3">
-                <img src="./images/cru-logo.jpeg" alt="Cru" class="company-logo">
-                <div>
-                    <h4 class="mb-1">Audio Engineer</h4>
-                    <h6 class="text-primary mb-2">Cru</h6>
-                    <span class="date-badge">Jan 2023 - Jul 2023</span>
-                    <p class="text-muted mb-2">Daegu, South Korea</p>
-                    <p>CCC, Kyungpook Nat'l Univ & Yeongjin Univ, Daegu, Republic of Korea</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="d-flex align-items-start mb-3">
-                <img src="./images/mss-logo.jpeg" alt="Ministry of SMEs and Startups" class="company-logo">
-                <div>
-                    <h4 class="mb-1">Customer Service Department</h4>
-                    <h6 class="text-primary mb-2">Ministry of SMEs and Startups, Republic of Korea</h6>
-                    <span class="date-badge">Oct 2021 - Jan 2023</span>
-                    <p class="text-muted mb-2">Daegu, South Korea</p>
-                    <p>Daegu Kyungbook Regional SMBA</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="d-flex align-items-start mb-3">
-                <img src="./images/army-logo.jpeg" alt="US 8th Army" class="company-logo">
-                <div>
-                    <h4 class="mb-1">Administrative Assistant</h4>
-                    <h6 class="text-primary mb-2">US 8th Army Korean Augmentation To the United States Army</h6>
-                    <span class="date-badge">Mar 2021 - Aug 2021</span>
-                    <p class="text-muted mb-2">Humphreys, Missouri, United States</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="d-flex align-items-start mb-3">
-                <img src="./images/daegu-uni-logo.jpeg" alt="Daegu University" class="company-logo">
-                <div>
-                    <h4 class="mb-1">Assistant Researcher</h4>
-                    <h6 class="text-primary mb-2">Daegu University</h6>
-                    <span class="date-badge">Dec 2019 - Feb 2020</span>
-                    <p class="text-muted mb-2">Gyeongsan, North Gyeongsang, South Korea</p>
-                    <p>Institute for Multicultural Social Policy, Daegu University, Gyeongsan</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="d-flex align-items-start mb-3">
-                <img src="./images/kcc-logo.jpeg" alt="Korean Cultural Centre" class="company-logo">
-                <div>
-                    <h4 class="mb-1">Assistant Program Coordinator</h4>
-                    <h6 class="text-primary mb-2">Korean Cultural Centre</h6>
-                    <span class="date-badge">Jun 2018 - Mar 2019</span>
-                    <p class="text-muted mb-2">Daegu, South Korea</p>
-                    <p>Korean Cultural Center, Kyungpook Nat'l Univ, Daegu</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Education Section -->
-<div class="section">
-    <div class="container">
-        <h2 class="section-title">Education</h2>
-        <div class="row">
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="./images/knu-logo.jpeg" alt="Kyungpook National University" class="company-logo">
+            <div class="max-w-4xl mx-auto">
+                <div class="timeline-item mb-12">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                             <div>
-                                <h5 class="card-title mb-1">Master's Degree in Statistics</h5>
-                                <h6 class="text-primary">Kyungpook National University</h6>
+                                <h3 class="text-xl font-semibold text-gray-900">Researcher</h3>
+                                <p class="text-blue-600 font-medium">Kyungpook National University</p>
+                            </div>
+                            <div class="mono-font text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+                                Sep 2024 - Present
                             </div>
                         </div>
-                        <span class="date-badge">Mar 2025 - Feb 2027</span>
-                        <p class="mt-3 mb-0">Currently pursuing advanced studies in statistical methodology and Bayesian analysis.</p>
+                        <p class="text-gray-600">Prof. Goh's Bayesian Statistical Learning Lab, Department of Statistics, Kyungpook Nat'l Univ, Daegu</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="./images/knu-logo.jpeg" alt="Kyungpook National University" class="company-logo">
+
+                <div class="timeline-item mb-12">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                             <div>
-                                <h5 class="card-title mb-1">Bachelor's Degree in Statistics</h5>
-                                <h6 class="text-primary">Kyungpook National University</h6>
+                                <h3 class="text-xl font-semibold text-gray-900">2025 EAC-ISBA Organizing Committee</h3>
+                                <p class="text-blue-600 font-medium">International Society for Bayesian Analysis</p>
+                            </div>
+                            <div class="mono-font text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+                                Feb 2025 - Jul 2025
                             </div>
                         </div>
-                        <span class="date-badge">Mar 2020 - Aug 2025</span>
-                        <p class="mt-3 mb-0"><strong>Minor:</strong> Computer Engineering</p>
+                        <p class="text-gray-600">Organizing Committee at EAC-ISBA(East Asia Chapter of ISBA) Conference 2025 as Webmaster</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item mb-12">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900">Student Researcher</h3>
+                                <p class="text-blue-600 font-medium">Kyungpook National University</p>
+                            </div>
+                            <div class="mono-font text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+                                Mar 2024 - Aug 2024
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Prof. Goh's Bayesian Statistical Learning Lab, Department of Statistics</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item mb-12">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900">Senior Audio Engineer</h3>
+                                <p class="text-blue-600 font-medium">Cru (CCC)</p>
+                            </div>
+                            <div class="mono-font text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+                                Aug 2023 - Jul 2024
+                            </div>
+                        </div>
+                        <p class="text-gray-600">CCC, Kyungpook Nat'l Univ & Yeongjin Univ, Daegu</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item mb-12">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900">Customer Service Department</h3>
+                                <p class="text-blue-600 font-medium">Ministry of SMEs and Startups</p>
+                            </div>
+                            <div class="mono-font text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+                                Oct 2021 - Jan 2023
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Daegu Kyungbook Regional SMBA</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<!-- Awards & Honors Section -->
-<div class="section bg-light-custom">
-    <div class="container">
-        <h2 class="section-title">Awards & Honors</h2>
-        <div class="row">
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <span class="award-badge">2nd Place</span>
-                        <h5 class="card-title mt-2">Korean Statistical Society Summer Conference 2025</h5>
-                        <h6 class="text-primary">Poster Paper Award</h6>
-                        <p class="card-text">The Korean Statistical Society</p>
-                        <small class="text-muted">Scalable Bayesian regression with massive and high-dimensional data</small>
-                    </div>
-                </div>
+    <!-- Education Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Education</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
             </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <span class="award-badge">1st Place</span>
-                        <h5 class="card-title mt-2">KNU Statistics Concert Data Analysis Contest 2024</h5>
-                        <h6 class="text-primary">Grand Prize</h6>
-                        <p class="card-text">President's Office, Kyungpook Nat'l Univ.</p>
-                        <small class="text-muted">Analysis of Traditional Market Revitalization Factors in Daegu Region</small>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg border border-blue-100">
+                    <div class="text-blue-500 text-3xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Master's Degree in Statistics</h3>
+                    <p class="text-blue-600 font-medium mb-2">Kyungpook National University</p>
+                    <div class="mono-font text-sm text-gray-500 mb-4">Mar 2025 - Feb 2027</div>
+                    <p class="text-gray-600">Advanced statistical research with focus on Bayesian methods and data analysis.</p>
                 </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <span class="award-badge">1st Place</span>
-                        <h5 class="card-title mt-2">Hongcheon-gun Public Data Analysis Competition 2024</h5>
-                        <h6 class="text-primary">Grand Prize</h6>
-                        <p class="card-text">Hongcheon County Office, Gangwon State</p>
-                        <small class="text-muted">Selection of the optimal location for dispatching medical personnel to vulnerable areas with access to medical care in Hongcheon-gun</small>
+                <div class="card-hover bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-2xl shadow-lg border border-green-100">
+                    <div class="text-green-500 text-3xl mb-4">
+                        <i class="fas fa-university"></i>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <span class="award-badge">Special Award</span>
-                        <h5 class="card-title mt-2">Intellectual Property Idea Competition</h5>
-                        <h6 class="text-primary">Commissioner's Award of the KIPO</h6>
-                        <p class="card-text">Korea Intellectual Property Office</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <span class="award-badge">4th Place</span>
-                        <h5 class="card-title mt-2">KNU Statistics Concert Data Analysis Contest 2023</h5>
-                        <h6 class="text-primary">Encouragement Prize</h6>
-                        <p class="card-text">Department of Statistics, Kyungpook Nat'l Univ.</p>
-                        <small class="text-muted">A Study on the Change of Traffic Flow in the City according to Rainfall</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <span class="award-badge">Excellence</span>
-                        <h5 class="card-title mt-2">Academic Excellence Award</h5>
-                        <h6 class="text-primary">R Programming and Experiment</h6>
-                        <p class="card-text">Department of Statistics, Kyungpook Nat'l Univ.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <span class="award-badge">Special</span>
-                        <h5 class="card-title mt-2">PVC ECO I·D Award 2022</h5>
-                        <h6 class="text-primary">Special Selection</h6>
-                        <p class="card-text">Korea Vinyl Environmental Council</p>
-                        <small class="text-muted">Modeling and Designing Graphic of Multipurpose Stand Using Waste PVC Paper</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <span class="award-badge">2nd Place</span>
-                        <h5 class="card-title mt-2">Daegu Culture Big Data Competition for Youth</h5>
-                        <h6 class="text-primary">Excellence Prize</h6>
-                        <p class="card-text">Korean Cultural Centre, Kyungpook Nat'l Univ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <span class="award-badge">1st Place</span>
-                        <h5 class="card-title mt-2">Big Data Analysis Presentation</h5>
-                        <h6 class="text-primary">Best Prize</h6>
-                        <p class="card-text">Korean Cultural Centre, Kyungpook Nat'l Univ.</p>
-                        <small class="text-muted">Data Analysis of Autonomous Vehicle News Articles Using Morpho-Based Natural Language Processing</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <span class="award-badge">Commendation</span>
-                        <h5 class="card-title mt-2">Distinguished Service Personnel</h5>
-                        <h6 class="text-primary">Commendation</h6>
-                        <p class="card-text">Daegu Metropolitan City Hall</p>
-                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Bachelor's Degree in Statistics</h3>
+                    <p class="text-green-600 font-medium mb-2">Kyungpook National University</p>
+                    <div class="mono-font text-sm text-gray-500 mb-4">Mar 2020 - Aug 2025</div>
+                    <p class="text-gray-600">Major in Statistics with Minor in Computer Engineering.</p>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<!-- Certifications Section -->
-<div class="section">
-    <div class="container">
-        <h2 class="section-title">Certifications</h2>
-        <div class="row">
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Advanced Data Analytics Semi-Professional (ADsP)</h5>
-                        <h6 class="text-primary">Korea Data Agency</h6>
-                        <span class="date-badge">March 2024</span>
-                        <p class="mt-3 mb-2"><strong>License Number:</strong> ADsP-040016659</p>
-                        <p class="text-muted mb-0">Professional certification in advanced data analytics and statistical methods.</p>
-                    </div>
-                </div>
+    <!-- Awards Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Awards & Recognition</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
             </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Computer Specialist in Spreadsheet & Database Level I</h5>
-                        <h6 class="text-primary">Korea Chamber of Commerce and Industry</h6>
-                        <span class="date-badge">April 2023</span>
-                        <p class="mt-3 mb-2"><strong>License Number:</strong> 23-K9-026464</p>
-                        <p class="text-muted mb-0">Professional certification in spreadsheet and database management systems.</p>
-                    </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="award-badge">2nd Place</div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Korean Statistical Society Summer Conference 2025</h3>
+                    <p class="text-gray-600 text-sm mb-3">Poster Paper Award - Scalable Bayesian regression with massive and high-dimensional data</p>
+                    <p class="text-blue-600 text-sm font-medium">The Korean Statistical Society</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="award-badge">1st Place</div>
+                    <h3 class="font-semibold text-gray-900 mb-2">KNU Statistics Concert Data Analysis Contest 2024</h3>
+                    <p class="text-gray-600 text-sm mb-3">Analysis of Traditional Market Revitalization Factors in Daegu Region</p>
+                    <p class="text-blue-600 text-sm font-medium">Kyungpook National University</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="award-badge">1st Place</div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Hongcheon-gun Public Data Analysis Competition 2024</h3>
+                    <p class="text-gray-600 text-sm mb-3">Optimal location selection for medical personnel dispatch</p>
+                    <p class="text-blue-600 text-sm font-medium">Hongcheon County Office</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="award-badge">Commissioner's Award</div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Intellectual Property Idea Competition</h3>
+                    <p class="text-gray-600 text-sm mb-3">Innovation in intellectual property development</p>
+                    <p class="text-blue-600 text-sm font-medium">Korea Intellectual Property Office</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="award-badge">2nd Place</div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Daegu Culture Big Data Competition for Youth</h3>
+                    <p class="text-gray-600 text-sm mb-3">Excellence Prize in cultural data analysis</p>
+                    <p class="text-blue-600 text-sm font-medium">Korean Cultural Centre, KNU</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="award-badge">1st Place</div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Big Data Analysis Presentation</h3>
+                    <p class="text-gray-600 text-sm mb-3">Data Analysis of Autonomous Vehicle News Articles</p>
+                    <p class="text-blue-600 text-sm font-medium">Korean Cultural Centre, KNU</p>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<!-- Projects Section -->
-<div class="section bg-light-custom">
-    <div class="container">
-        <h2 class="section-title">Recent Projects</h2>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Scalable Bayesian regression with massive and high-dimensional data</h5>
-                        <span class="date-badge">January 2025</span>
-                        <p class="mt-3 mb-0">Research project focused on developing scalable Bayesian regression methods for handling massive datasets with high-dimensional features. This project addresses computational challenges in modern statistical learning and proposes efficient algorithms for real-world applications.</p>
-                    </div>
-                </div>
+    <!-- Skills Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Skills & Expertise</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
             </div>
-        </div>
-    </div>
-</div>
-
-<!-- Footer -->
-<footer class="bg-dark text-white py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <p>&copy; 2025 Gyeongmin Park. All rights reserved.</p>
-                <p class="small">This resume was generated from LinkedIn profile data for GitHub Pages deployment.</p>
-            </div>
-            <div class="col-md-4 text-md-end">
-                <p class="small">Last updated: January 2025</p>
+            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
                 <div>
-                    <a href="mailto:your.email@example.com" class="text-white me-3"><i class="fas fa-envelope"></i></a>
-                    <a href="https://linkedin.com/in/davidpark0182" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-github"></i></a>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-8">Technical Skills</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Bayesian Statistics</span>
+                                <span class="text-gray-500">95%</span>
+                            </div>
+                            <div class="skill-progress bg-gray-200 h-2 rounded-full">
+                                <div class="h-2 rounded-full gradient-bg" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">R Programming</span>
+                                <span class="text-gray-500">90%</span>
+                            </div>
+                            <div class="skill-progress bg-gray-200 h-2 rounded-full">
+                                <div class="h-2 rounded-full gradient-bg" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Data Analysis</span>
+                                <span class="text-gray-500">88%</span>
+                            </div>
+                            <div class="skill-progress bg-gray-200 h-2 rounded-full">
+                                <div class="h-2 rounded-full gradient-bg" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Machine Learning</span>
+                                <span class="text-gray-500">85%</span>
+                            </div>
+                            <div class="skill-progress bg-gray-200 h-2 rounded-full">
+                                <div class="h-2 rounded-full gradient-bg" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-8">Languages</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Korean</span>
+                                <span class="text-gray-500">Native</span>
+                            </div>
+                            <div class="skill-progress bg-gray-200 h-2 rounded-full">
+                                <div class="h-2 rounded-full gradient-bg" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">English</span>
+                                <span class="text-gray-500">Professional</span>
+                            </div>
+                            <div class="skill-progress bg-gray-200 h-2 rounded-full">
+                                <div class="h-2 rounded-full gradient-bg" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-8 mt-12">Certifications</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-xl">
+                            <h4 class="font-semibold text-gray-900">Advanced Data Analytics Semi-Professional (ADsP)</h4>
+                            <p class="text-gray-600 text-sm">Korea Data Agency • Mar 2024</p>
+                            <p class="mono-font text-xs text-gray-500">License: ADsP-040016659</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl">
+                            <h4 class="font-semibold text-gray-900">Computer Specialist in Spreadsheet & Database Level I</h4>
+                            <p class="text-gray-600 text-sm">KCCI • Apr 2023</p>
+                            <p class="mono-font text-xs text-gray-500">License: 23-K9-026464</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Research Projects -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Research Projects</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Scalable Bayesian regression with massive and high-dimensional data</h3>
+                            <p class="text-blue-600 font-medium">Current Research Project</p>
+                        </div>
+                        <div class="mono-font text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+                            Jan 2025
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Developing advanced Bayesian statistical methods for handling massive and high-dimensional datasets. 
+                        This research focuses on creating scalable algorithms that maintain statistical rigor while being 
+                        computationally efficient for modern big data applications.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-6">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Bayesian Methods</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Big Data</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Statistical Learning</span>
+                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">High-Dimensional Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Let's Connect</h2>
+                <div class="w-20 h-1 gradient-bg mx-auto rounded-full mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Interested in collaboration, research opportunities, or just want to connect? 
+                    I'd love to hear from you.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Email</h3>
+                    <a href="mailto:davidpark0182@gmail.com" class="text-blue-600 hover:text-blue-800 transition-colors">
+                        davidpark0182@gmail.com
+                    </a>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-linkedin text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/davidpark0182/" target="_blank" class="text-blue-600 hover:text-blue-800 transition-colors">
+                        linkedin.com/in/davidpark0182
+                    </a>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Location</h3>
+                    <p class="text-gray-600">Daegu, South Korea</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-blue-100">© 2025 Gyeongmin Park. All rights reserved.</p>
+            <p class="text-blue-200 text-sm mt-2">Crafted with passion for data science and statistical research.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Initialize hero section as visible
+        document.querySelector('.hero-bg').style.opacity = '1';
+        document.querySelector('.hero-bg').style.transform = 'translateY(0)';
+    </script>
 </body>
 </html>
