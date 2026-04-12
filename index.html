@@ -118,6 +118,11 @@
         background: #fff;
       }
 
+      .mobile-menu-backdrop,
+      .mobile-nav {
+        display: none;
+      }
+
       .menu-toggle {
         display: none;
         width: 38px;
@@ -554,6 +559,10 @@
       }
 
       @media (max-width: 760px) {
+        .topbar {
+          z-index: 3100;
+        }
+
         .page {
           width: min(1160px, 100% - 40px);
         }
@@ -563,6 +572,8 @@
         }
 
         .topbar-inner {
+          position: relative;
+          z-index: 3150;
           min-height: 62px;
           align-items: center;
           justify-content: space-between;
@@ -571,23 +582,48 @@
           padding: 8px 0;
         }
 
-        .menu-toggle {
-          display: inline-flex;
+        .topbar .nav {
+          display: none;
         }
 
-        .nav {
+        .menu-toggle {
+          display: inline-flex;
+          position: fixed;
+          top: 12px;
+          right: 20px;
+          z-index: 3300;
+        }
+
+        .mobile-menu-backdrop {
+          display: block;
           position: fixed;
           inset: 0;
-          z-index: 2000;
+          z-index: 3000;
+          background: rgba(246, 250, 255, 0.62);
+          backdrop-filter: blur(24px) saturate(160%);
+          -webkit-backdrop-filter: blur(24px) saturate(160%);
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: none;
+          transition: opacity 0.24s ease, visibility 0.24s ease;
+        }
+
+        .mobile-menu-backdrop.is-open {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+        }
+
+        .mobile-nav {
           display: flex;
+          position: fixed;
+          inset: 0;
+          z-index: 3050;
           flex-direction: column;
           align-items: flex-start;
-          gap: 14px;
-          padding: 86px 20px 24px;
+          gap: 16px;
+          padding: 86px 24px 24px;
           min-height: 100dvh;
-          background: rgba(255, 255, 255, 0.74);
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
           opacity: 0;
           visibility: hidden;
           pointer-events: none;
@@ -595,25 +631,26 @@
           transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
         }
 
-        .nav.is-open {
+        .mobile-nav.is-open {
           opacity: 1;
           visibility: visible;
           pointer-events: auto;
           transform: translateY(0);
         }
 
-        .nav a {
+        .mobile-nav a {
           width: auto;
           border: 0;
           border-radius: 0;
           padding: 0;
           background: transparent;
-          font-size: 0.93rem;
+          font-size: 1rem;
           font-weight: 600;
           color: #2d3446;
+          text-decoration: none;
         }
 
-        .nav a:hover {
+        .mobile-nav a:hover {
           border-color: transparent;
           background: transparent;
           color: #1a2234;
@@ -682,7 +719,7 @@
     <header class="topbar">
       <div class="page topbar-inner">
         <div class="brand">Gyeongmin Park</div>
-        <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
           <span class="menu-toggle-line"></span>
           <span class="menu-toggle-line"></span>
           <span class="menu-toggle-line"></span>
@@ -700,6 +737,19 @@
         </nav>
       </div>
     </header>
+
+    <div class="mobile-menu-backdrop" id="mobile-menu-backdrop" aria-hidden="true"></div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile section navigation">
+      <a href="#education">Education</a>
+      <a href="#research">Research</a>
+      <a href="#funding">Funding</a>
+      <a href="#talks">Talks</a>
+      <a href="#service">Service</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#awards">Awards</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+    </nav>
 
     <main class="page">
       <section class="hero reveal" id="top">
@@ -1252,8 +1302,9 @@
       document.getElementById("year").textContent = new Date().getFullYear();
 
       const topbar = document.querySelector(".topbar");
-      const nav = document.getElementById("site-nav");
       const menuToggle = document.querySelector(".menu-toggle");
+      const mobileNav = document.getElementById("mobile-nav");
+      const mobileBackdrop = document.getElementById("mobile-menu-backdrop");
       const mobileMedia = window.matchMedia("(max-width: 760px)");
 
       const syncTopbar = () => {
@@ -1264,38 +1315,37 @@
         }
       };
 
-      const closeMobileMenu = () => {
-        if (!mobileMedia.matches) return;
+      const forceCloseMobileMenu = () => {
         menuToggle.classList.remove("is-open");
         menuToggle.setAttribute("aria-expanded", "false");
-        nav.classList.remove("is-open");
+        mobileNav.classList.remove("is-open");
+        mobileBackdrop.classList.remove("is-open");
         document.body.classList.remove("menu-open");
       };
 
+      const closeMobileMenu = () => {
+        if (!mobileMedia.matches) return;
+        forceCloseMobileMenu();
+      };
+
       menuToggle.addEventListener("click", () => {
+        if (!mobileMedia.matches) return;
         const isOpen = menuToggle.classList.toggle("is-open");
-        nav.classList.toggle("is-open", isOpen);
+        mobileNav.classList.toggle("is-open", isOpen);
+        mobileBackdrop.classList.toggle("is-open", isOpen);
         menuToggle.setAttribute("aria-expanded", String(isOpen));
         document.body.classList.toggle("menu-open", isOpen);
       });
 
-      nav.querySelectorAll("a").forEach((link) => {
+      mobileNav.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", closeMobileMenu);
       });
 
-      nav.addEventListener("click", (event) => {
-        if (!mobileMedia.matches) return;
-        if (event.target === nav) {
-          closeMobileMenu();
-        }
-      });
+      mobileBackdrop.addEventListener("click", closeMobileMenu);
 
       mobileMedia.addEventListener("change", () => {
         if (!mobileMedia.matches) {
-          menuToggle.classList.remove("is-open");
-          menuToggle.setAttribute("aria-expanded", "false");
-          nav.classList.remove("is-open");
-          document.body.classList.remove("menu-open");
+          forceCloseMobileMenu();
         }
       });
 
