@@ -37,6 +37,10 @@
         scroll-behavior: smooth;
       }
 
+      main section[id] {
+        scroll-margin-top: 86px;
+      }
+
       body {
         margin: 0;
         color: var(--text);
@@ -56,6 +60,7 @@
         top: 0;
         z-index: 30;
         backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
         background: rgba(255, 255, 255, 0.82);
         border-bottom: 1px solid var(--line);
         transition: background 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
@@ -549,14 +554,12 @@
       }
 
       @media (max-width: 760px) {
-        .topbar,
-        .topbar.scrolled {
-          backdrop-filter: none;
-          -webkit-backdrop-filter: none;
-        }
-
         .page {
           width: min(1160px, 100% - 40px);
+        }
+
+        main section[id] {
+          scroll-margin-top: 78px;
         }
 
         .topbar-inner {
@@ -584,6 +587,7 @@
           min-height: 100dvh;
           background: rgba(255, 255, 255, 0.74);
           backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
           opacity: 0;
           visibility: hidden;
           pointer-events: none;
