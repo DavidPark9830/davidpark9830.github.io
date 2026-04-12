@@ -58,6 +58,13 @@
         backdrop-filter: blur(14px);
         background: rgba(255, 255, 255, 0.9);
         border-bottom: 1px solid var(--line);
+        transition: background 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+      }
+
+      .topbar.scrolled {
+        background: rgba(255, 255, 255, 0.78);
+        border-bottom-color: rgba(215, 220, 232, 0.85);
+        box-shadow: 0 10px 24px rgba(16, 22, 32, 0.06);
       }
 
       .topbar-inner {
@@ -104,6 +111,44 @@
         color: #273149;
         border-color: var(--line-strong);
         background: #fff;
+      }
+
+      .menu-toggle {
+        display: none;
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        border: 1px solid var(--line-strong);
+        background: rgba(255, 255, 255, 0.92);
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 0;
+      }
+
+      .menu-toggle-line {
+        display: block;
+        width: 16px;
+        height: 1.8px;
+        border-radius: 2px;
+        background: #2b3242;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+
+      .menu-toggle-line + .menu-toggle-line {
+        margin-top: 4px;
+      }
+
+      .menu-toggle.is-open .menu-toggle-line:nth-child(1) {
+        transform: translateY(5.8px) rotate(45deg);
+      }
+
+      .menu-toggle.is-open .menu-toggle-line:nth-child(2) {
+        opacity: 0;
+      }
+
+      .menu-toggle.is-open .menu-toggle-line:nth-child(3) {
+        transform: translateY(-5.8px) rotate(-45deg);
       }
 
       main {
@@ -510,11 +555,35 @@
 
         .topbar-inner {
           min-height: 62px;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;
-          gap: 8px;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 10px;
           padding: 8px 0;
+        }
+
+        .menu-toggle {
+          display: inline-flex;
+        }
+
+        .nav {
+          display: none;
+          width: 100%;
+          flex-direction: column;
+          gap: 7px;
+          padding-top: 2px;
+        }
+
+        .nav.is-open {
+          display: flex;
+        }
+
+        .nav a {
+          width: 100%;
+          border: 1px solid var(--line);
+          border-radius: 10px;
+          padding: 9px 11px;
+          background: rgba(255, 255, 255, 0.92);
         }
 
         .hero {
@@ -576,7 +645,12 @@
     <header class="topbar">
       <div class="page topbar-inner">
         <div class="brand">Gyeongmin Park</div>
-        <nav class="nav" aria-label="Section navigation">
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle-line"></span>
+          <span class="menu-toggle-line"></span>
+          <span class="menu-toggle-line"></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Section navigation">
           <a href="#education">Education</a>
           <a href="#research">Research</a>
           <a href="#funding">Funding</a>
@@ -1139,6 +1213,48 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      const topbar = document.querySelector(".topbar");
+      const nav = document.getElementById("site-nav");
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mobileMedia = window.matchMedia("(max-width: 760px)");
+
+      const syncTopbar = () => {
+        if (window.scrollY > 8) {
+          topbar.classList.add("scrolled");
+        } else {
+          topbar.classList.remove("scrolled");
+        }
+      };
+
+      const closeMobileMenu = () => {
+        if (!mobileMedia.matches) return;
+        menuToggle.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        nav.classList.remove("is-open");
+      };
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.classList.toggle("is-open");
+        nav.classList.toggle("is-open", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", closeMobileMenu);
+      });
+
+      mobileMedia.addEventListener("change", () => {
+        if (!mobileMedia.matches) {
+          menuToggle.classList.remove("is-open");
+          menuToggle.setAttribute("aria-expanded", "false");
+          nav.classList.remove("is-open");
+          nav.style.display = "";
+        }
+      });
+
+      window.addEventListener("scroll", syncTopbar, { passive: true });
+      syncTopbar();
 
       const observer = new IntersectionObserver(
         (entries) => {
