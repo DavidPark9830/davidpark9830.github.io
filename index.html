@@ -232,7 +232,7 @@
       }
 
       h1 {
-        font-size: clamp(2rem, 4.8vw, 3.25rem);
+        font-size: clamp(1.82rem, 4.2vw, 2.9rem);
         line-height: 1.03;
       }
 
@@ -404,6 +404,28 @@
         margin: 2px 0 0;
         color: var(--muted);
         font-size: 0.88rem;
+      }
+
+      .section-link-btn {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 8px;
+        padding: 5px 10px;
+        border: 1px solid #c9d6f4;
+        border-radius: 999px;
+        background: #f6f9ff;
+        color: #2f539b;
+        text-decoration: none;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+      }
+
+      .section-link-btn:hover {
+        background: #edf3ff;
+        border-color: #b9c9ef;
+        color: #23478e;
       }
 
       .card-date {
@@ -752,7 +774,7 @@
         <nav class="nav" id="site-nav" aria-label="Section navigation">
           <a href="#education">Education</a>
           <a href="#research">Research</a>
-          <a href="#funding">Funding</a>
+          <a href="#funding">Grants &amp; Fellowships</a>
           <a href="#talks">Talks</a>
           <a href="#service">Service</a>
           <a href="#teaching">Teaching</a>
@@ -767,7 +789,7 @@
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile section navigation">
       <a href="#education">Education</a>
       <a href="#research">Research</a>
-      <a href="#funding">Funding</a>
+      <a href="#funding">Grants &amp; Fellowships</a>
       <a href="#talks">Talks</a>
       <a href="#service">Service</a>
       <a href="#teaching">Teaching</a>
@@ -781,7 +803,7 @@
         <div class="hero-grid">
           <div class="hero-main">
             <span class="eyebrow">Portfolio CV</span>
-            <h1>Gyeongmin Park (David Park)</h1>
+            <h1>Gyeongmin Park (David)</h1>
             <p class="subtitle">Department of Statistics, Kyungpook National University</p>
 
             <p class="summary">
@@ -984,12 +1006,12 @@
             <div>
               <div class="card-head">
                 <div>
-                  <p class="card-title">Research Visit Talk, University of Connecticut</p>
+                  <p class="card-title">Research Presentation, University of Connecticut</p>
                   <p class="card-org">Storrs, CT, USA</p>
                 </div>
                 <p class="card-date">Feb 2026</p>
               </div>
-              <p class="card-desc">Scalable Gibbs Sampler Using Randomized Sketching for massive and high-dimensional Bayesian regression.</p>
+              <p class="card-desc">Presented ongoing collaborative work in a joint lab meeting on Scalable Gibbs Sampler Using Randomized Sketching for Massive and High-Dimensional Bayesian Regression.</p>
             </div>
           </article>
 
@@ -1050,6 +1072,7 @@
                 <div>
                   <p class="card-title">Webmaster, 4th Bayesian Nonparametrics Networking Workshop</p>
                   <p class="card-org">Bayesian Nonparametric Section of ISBA, Seoul</p>
+                  <a class="section-link-btn" href="https://bnpnetworking2026.github.io/" target="_blank" rel="noreferrer">Workshop Website</a>
                 </div>
                 <p class="card-date">Sep 2025 - Jul 2026</p>
               </div>
@@ -1063,6 +1086,7 @@
                 <div>
                   <p class="card-title">Organizing Committee Member, EAC-ISBA Conference 2025</p>
                   <p class="card-org">Eastern Asia Chapter of ISBA, Daegu</p>
+                  <a class="section-link-btn" href="https://eacisba2025.knu.ac.kr/" target="_blank" rel="noreferrer">Conference Website</a>
                 </div>
                 <p class="card-date">Feb 2025 - Jul 2025</p>
               </div>
