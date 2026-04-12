@@ -1,745 +1,1161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gyeongmin Park (박경민) - Data Scientist & Bayesian Researcher</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>Gyeongmin Park | Portfolio CV</title>
+    <meta
+      name="description"
+      content="Portfolio CV of Gyeongmin Park with education, research, talks, teaching, awards, and professional experience."
+    />
+
     <style>
-        * {
-            font-family: 'Inter', sans-serif;
-        }
-        
-        .mono-font {
-            font-family: 'JetBrains Mono', monospace;
-        }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        
-        .gradient-text {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .card-hover {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-        
-        .hero-bg {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero-bg::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(255,255,255,0.1)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></radialGradient></defs><circle cx="100" cy="100" r="50" fill="url(%23a)"/><circle cx="900" cy="200" r="70" fill="url(%23a)"/><circle cx="300" cy="700" r="40" fill="url(%23a)"/><circle cx="800" cy="800" r="60" fill="url(%23a)"/></svg>');
-            opacity: 0.3;
-        }
-        
-        .timeline-item {
-            position: relative;
-            padding-left: 2rem;
-        }
-        
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0.5rem;
-            width: 12px;
-            height: 12px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-radius: 50%;
-        }
-        
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            left: 5px;
-            top: 1.2rem;
-            width: 2px;
-            height: calc(100% - 0.5rem);
-            background: #e5e7eb;
-        }
-        
-        .timeline-item:last-child::after {
-            display: none;
-        }
-        
-        .award-badge {
-            background: linear-gradient(135deg, #ffd700, #ffed4e);
-            color: #1a202c;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 0.5rem;
+      :root {
+        color-scheme: light;
+        --bg: #ffffff;
+        --bg-soft: #ffffff;
+        --surface: #ffffff;
+        --text: #16181d;
+        --muted: #6a7080;
+        --line: #e6e8ee;
+        --line-strong: #d7dce8;
+        --brand: #2e6df6;
+        --brand-soft: #edf3ff;
+        --shadow-lg: 0 14px 34px rgba(20, 24, 32, 0.06);
+        --shadow-md: 0 8px 18px rgba(20, 24, 32, 0.04);
+        --radius-xl: 24px;
+        --radius-lg: 18px;
+        --radius-md: 14px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+          "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.58;
+        background: #ffffff;
+      }
+
+      .page {
+        width: min(1160px, 100% - 32px);
+        margin: 0 auto;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        backdrop-filter: blur(14px);
+        background: rgba(255, 255, 255, 0.9);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .topbar-inner {
+        min-height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+      }
+
+      .brand {
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #2b3242;
+      }
+
+      .nav {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+
+      .nav::-webkit-scrollbar {
+        display: none;
+      }
+
+      .nav a {
+        flex: 0 0 auto;
+        text-decoration: none;
+        color: var(--muted);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        border-radius: 999px;
+        padding: 7px 11px;
+        border: 1px solid transparent;
+        transition: all 0.2s ease;
+      }
+
+      .nav a:hover {
+        color: #273149;
+        border-color: var(--line-strong);
+        background: #fff;
+      }
+
+      main {
+        padding: 40px 0 58px;
+      }
+
+      .hero {
+        background: #ffffff;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-lg);
+        padding: 28px;
+      }
+
+      .hero-grid {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: minmax(0, 1.45fr) minmax(270px, 0.85fr);
+      }
+
+      .hero-main {
+        min-width: 0;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border: 1px solid var(--line-strong);
+        background: #fff;
+        color: var(--muted);
+        border-radius: 999px;
+        padding: 6px 10px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        letter-spacing: -0.025em;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4.8vw, 3.25rem);
+        line-height: 1.03;
+      }
+
+      .subtitle {
+        margin: 6px 0 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .summary {
+        margin: 16px 0 0;
+        color: #3f4658;
+        max-width: 64ch;
+      }
+
+      .hero-actions {
+        margin-top: 18px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 0.86rem;
+        font-weight: 700;
+        border-radius: 10px;
+        padding: 10px 14px;
+        border: 1px solid transparent;
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+
+      .btn-primary {
+        color: #fff;
+        background: linear-gradient(135deg, #3f7bff, #2e6df6);
+        box-shadow: 0 10px 20px rgba(46, 109, 246, 0.28);
+      }
+
+      .btn-secondary {
+        color: #1c2436;
+        border-color: var(--line-strong);
+        background: #fff;
+      }
+
+      .hero-side {
+        background: transparent;
+        border: 0;
+        border-left: 1px solid var(--line);
+        border-radius: 0;
+        padding: 4px 0 4px 18px;
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .profile img {
+        width: 104px;
+        height: 104px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center top;
+        border: 3px solid #fff;
+        box-shadow: 0 14px 26px rgba(19, 26, 38, 0.14);
+      }
+
+      .profile-name {
+        font-weight: 700;
+        font-size: 0.96rem;
+      }
+
+      .profile-meta {
+        margin-top: 2px;
+        color: var(--muted);
+        font-size: 0.84rem;
+      }
+
+      .meta-list {
+        margin-top: 13px;
+        display: grid;
+        gap: 7px;
+      }
+
+      .meta-item {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 7px;
+        font-size: 0.84rem;
+        color: var(--muted);
+      }
+
+      .meta-item strong {
+        color: #2a3144;
+      }
+
+      .section {
+        margin-top: 26px;
+        padding: 0;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .section + .section {
+        border-top: 1px solid var(--line);
+        padding-top: 24px;
+      }
+
+      .section-head {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        margin-bottom: 14px;
+      }
+
+      .section-title {
+        font-size: clamp(1.35rem, 3vw, 2.1rem);
+      }
+
+      .section-note {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.83rem;
+        letter-spacing: 0.02em;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 11px;
+      }
+
+      .card {
+        background: #ffffff;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        padding: 14px;
+        box-shadow: 0 1px 0 rgba(22, 24, 29, 0.02);
+      }
+
+      .card-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 8px;
+      }
+
+      .card-title {
+        margin: 0;
+        font-size: 0.99rem;
+        font-weight: 700;
+        color: #1b202d;
+      }
+
+      .card-org {
+        margin: 2px 0 0;
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      .card-date {
+        margin: 0;
+        color: #51679a;
+        font-size: 0.73rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        white-space: nowrap;
+      }
+
+      .card-desc {
+        margin: 0;
+        color: #4b5468;
+        font-size: 0.89rem;
+      }
+
+      .bullets {
+        margin: 0;
+        padding-left: 18px;
+        color: #4b5468;
+        font-size: 0.88rem;
+      }
+
+      .bullets li + li {
+        margin-top: 6px;
+      }
+
+      .logo-card {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        gap: 12px;
+        align-items: start;
+      }
+
+      .logo-box {
+        width: 60px;
+        height: 60px;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px;
+        overflow: hidden;
+      }
+
+      .logo-box img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        background: #ffffff;
+        border-radius: 0;
+      }
+
+      .chips {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .chip {
+        font-size: 0.8rem;
+        font-weight: 700;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 6px 10px;
+        background: #ffffff;
+        color: #32446f;
+      }
+
+      .award-card.second-place {
+        border-color: #d8dde9;
+        background: linear-gradient(180deg, #fcfdff, #f6f8fc);
+        box-shadow: 0 10px 20px rgba(116, 129, 156, 0.1);
+      }
+
+      .award-card.first-place {
+        border-color: #ead290;
+        background: linear-gradient(180deg, #fffcf2, #fff9e6);
+        box-shadow: 0 10px 20px rgba(179, 134, 44, 0.11);
+      }
+
+      .award-top {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 7px;
+      }
+
+      .medal {
+        position: relative;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 32% 28%, #f4dfbe 0, #d8af73 55%, #a77a47 100%);
+        border: 1px solid #b58a55;
+        flex: 0 0 auto;
+      }
+
+      .medal::before,
+      .medal::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        width: 6px;
+        height: 9px;
+        background: linear-gradient(180deg, #4668b7, #2f4f9b);
+      }
+
+      .medal::before {
+        left: 2px;
+        clip-path: polygon(0 0, 100% 0, 72% 100%, 0 100%);
+      }
+
+      .medal::after {
+        right: 2px;
+        clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      .award-card.first-place .medal {
+        background: radial-gradient(circle at 32% 28%, #fff2b7 0, #f2cd67 54%, #ca9a2f 100%);
+        border-color: #d0a545;
+      }
+
+      .award-card.second-place .medal {
+        background: radial-gradient(circle at 32% 28%, #f4f7fc 0, #d6dde8 56%, #a2afc2 100%);
+        border-color: #adb9cb;
+      }
+
+      footer {
+        margin-top: 18px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.81rem;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(14px);
+        transition: opacity 0.55s ease, transform 0.55s ease;
+      }
+
+      .reveal.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (min-width: 760px) {
+        .cards.cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
-        .award-badge.second {
-            background: linear-gradient(135deg, #c0c0c0, #e8e8e8);
+        .cards.cols-3 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (min-width: 1080px) {
+        .cards.cols-3 {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 880px) {
+        .hero-grid {
+          grid-template-columns: 1fr;
         }
 
-        .award-badge.special {
-            background: linear-gradient(135deg, #cd7f32, #deb887);
+        .hero-side {
+          border-left: 0;
+          border-top: 1px solid var(--line);
+          padding: 14px 0 0;
+          margin-top: 4px;
         }
-        
-        .pdf-optimized {
-            max-width: none;
-            overflow: visible;
+      }
+
+      @media (max-width: 760px) {
+        .page {
+          width: min(1160px, 100% - 24px);
         }
-        
-        @media print {
-            .hero-bg {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-            
-            .gradient-bg {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
+
+        .topbar-inner {
+          min-height: 62px;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 8px;
+          padding: 8px 0;
         }
+
+        .hero {
+          padding: 15px;
+        }
+
+        .section {
+          padding: 0;
+        }
+
+        .section + .section {
+          padding-top: 20px;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+        }
+
+        .hero-actions .btn {
+          width: 100%;
+        }
+
+        .meta-item {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1px;
+        }
+
+        .card-head {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 4px;
+        }
+
+        .card-date {
+          white-space: normal;
+        }
+
+        .logo-card {
+          grid-template-columns: 1fr;
+          gap: 8px;
+        }
+
+        .logo-box {
+          width: 52px;
+          height: 52px;
+          border-radius: 10px;
+        }
+
+        .profile img {
+          width: 84px;
+          height: 84px;
+        }
+      }
     </style>
-</head>
-<body class="bg-gray-50 pdf-optimized">
-    <!-- Hero Section -->
-    <section class="hero-bg text-white py-20">
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="flex flex-col lg:flex-row items-center justify-between">
-                <div class="lg:w-1/2">
-                    <div class="mono-font text-sm text-blue-300 mb-4">
-                        <i class="fas fa-chart-line mr-2"></i>Data Scientist & Bayesian Researcher
-                    </div>
-                    <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                        <span class="block">Gyeongmin</span>
-                        <span class="block gradient-text">Park</span>
-                    </h1>
-                    <div class="text-xl lg:text-2xl text-blue-100 mb-8 leading-relaxed">
-                        Master's Course in Statistics<br>
-                        <span class="text-blue-300">Bayesian Statistical Learning Lab</span><br>
-                        Kyungpook National University
-                    </div>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="mailto:davidpark9830@gmail.com" class="glass-effect px-6 py-3 rounded-full text-white hover:bg-white hover:text-gray-900 transition-all duration-300">
-                            <i class="fas fa-envelope mr-2"></i>davidpark9830@gmail.com
-                        </a>
-                        <a href="https://www.linkedin.com/in/davidpark0182/" target="_blank" class="glass-effect px-6 py-3 rounded-full text-white hover:bg-white hover:text-gray-900 transition-all duration-300">
-                            <i class="fab fa-linkedin mr-2"></i>LinkedIn Profile
-                        </a>
-                    </div>
-                </div>
-                <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center">
-                    <div class="relative">
-                        <div class="w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 absolute -top-10 -left-10 blur-3xl"></div>
-                        <div class="w-64 h-64 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full opacity-20 absolute -bottom-10 -right-10 blur-3xl"></div>
-                        <img src="/images/profile.jpeg" alt="Profile Picture" class="w-72 h-72 rounded-full object-cover border-4 border-white/20 relative z-10 shadow-2xl">
-                    </div>
-                </div>
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="page topbar-inner">
+        <div class="brand">Gyeongmin Park</div>
+        <nav class="nav" aria-label="Section navigation">
+          <a href="#education">Education</a>
+          <a href="#research">Research</a>
+          <a href="#funding">Funding</a>
+          <a href="#talks">Talks</a>
+          <a href="#service">Service</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#awards">Awards</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero reveal" id="top">
+        <div class="hero-grid">
+          <div class="hero-main">
+            <span class="eyebrow">Portfolio CV</span>
+            <h1>Gyeongmin Park (David Park)</h1>
+            <p class="subtitle">Department of Statistics, Kyungpook National University</p>
+
+            <p class="summary">
+              I focus on Bayesian learning and scalable statistical inference for massive,
+              high-dimensional data, with ongoing work on extended synthetic control methods.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="mailto:davidpark9830@gmail.com">davidpark9830@gmail.com</a>
+              <a class="btn btn-secondary" href="https://www.linkedin.com/in/davidpark0182/" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
+          </div>
+
+          <aside class="hero-side">
+            <div class="profile">
+              <img src="images/profile.jpg" alt="Gyeongmin Park profile photo" />
+              <div>
+                <div class="profile-name">M.S. in Statistics</div>
+                <div class="profile-meta">Kyungpook National University, Daegu</div>
+              </div>
+            </div>
+
+            <div class="meta-list">
+              <div class="meta-item"><span>Expected Graduation</span><strong>February 2027</strong></div>
+              <div class="meta-item"><span>Research Focus</span><strong>Bayesian Inference</strong></div>
+              <div class="meta-item"><span>Current Role</span><strong>Graduate Research Assistant</strong></div>
+              <div class="meta-item"><span>Languages</span><strong>Korean / English</strong></div>
+            </div>
+          </aside>
         </div>
-    </section>
+      </section>
 
-    <!-- About Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <div class="text-blue-500 text-3xl mb-4">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Research Focus</h3>
-                    <p class="text-gray-600">Specializing in Bayesian Statistical Learning with focus on scalable regression methods for massive and high-dimensional data.</p>
-                </div>
-                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <div class="text-purple-500 text-3xl mb-4">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Academic Journey</h3>
-                    <p class="text-gray-600">Currently pursuing Master's in Statistics (ABB Convergence Major: AI, Big Data, Blockchain) at KNU while conducting research in Prof. Goh's Bayesian Statistical Learning Lab.</p>
-                </div>
-                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <div class="text-green-500 text-3xl mb-4">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Achievements</h3>
-                    <p class="text-gray-600">Multiple awards in data analysis competitions and research presentations, with expertise in statistical modeling and data science.</p>
-                </div>
-            </div>
+      <section class="section reveal" id="education">
+        <div class="section-head">
+          <h2 class="section-title">Education</h2>
+          <p class="section-note">Academic degrees and training</p>
         </div>
-    </section>
 
-    <!-- Education Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Education</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                <div class="card-hover bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg border border-blue-100">
-                    <div class="text-blue-500 text-3xl mb-4">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">M.S. in Statistics (Current)</h3>
-                    <p class="text-blue-600 font-medium mb-2">Kyungpook National University, Graduate School</p>
-                    <div class="mono-font text-sm text-gray-500 mb-4">Sep 2025 - Feb 2027 (Expected)</div>
-                    <p class="text-gray-600">Master of Science in Statistics | Integrated Bachelor-Master Program</p>
-                </div>
-                <div class="card-hover bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl shadow-lg border border-purple-100">
-                    <div class="text-purple-500 text-3xl mb-4">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">M.S. in ABB Convergence Major (Current)</h3>
-                    <p class="text-purple-600 font-medium mb-2">Kyungpook National University, Graduate School</p>
-                    <div class="mono-font text-sm text-gray-500 mb-4">Sep 2025 - Feb 2027 (Expected)</div>
-                    <p class="text-gray-600">Master of Engineering in ABB (AI, Big Data, Blockchain) Convergence Major</p>
-                </div>
-                <div class="card-hover bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-2xl shadow-lg border border-green-100">
-                    <div class="text-green-500 text-3xl mb-4">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">B.S. in Statistics (Graduated)</h3>
-                    <p class="text-green-600 font-medium mb-2">Kyungpook National University</p>
-                    <div class="mono-font text-sm text-gray-500 mb-4">Mar 2020 - Aug 2025</div>
-                    <p class="text-gray-600">Bachelor of Science in Statistics | Early Graduation</p>
-                </div>
-                <div class="card-hover bg-gradient-to-br from-yellow-50 to-green-50 p-8 rounded-2xl shadow-lg border border-yellow-100">
-                    <div class="text-yellow-600 text-3xl mb-4">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Minor in Computer Science (Completed)</h3>
-                    <p class="text-yellow-600 font-medium mb-2">Kyungpook National University</p>
-                    <div class="mono-font text-sm text-gray-500 mb-4">Mar 2020 - Aug 2025</div>
-                    <p class="text-gray-600">Minor in Computer Science and Engineering</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Professional Experience</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
-            </div>
-            <div class="max-w-6xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="timeline-item">
-                        <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Graduate Student Representative</h3>
-                            <p class="text-blue-600 font-medium mb-2">Kyungpook National University, Department of Statistics</p>
-                            <div class="mono-font text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded inline-block mb-2">Sep 2025 - Aug 2026</div>
-                            <p class="text-gray-500 text-xs"><i class="fas fa-map-marker-alt mr-1"></i>Daegu, South Korea</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Webmaster</h3>
-                            <p class="text-blue-600 font-medium mb-2">4th Bayesian Nonparametrics Networking, BNP-ISBA</p>
-                            <div class="mono-font text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded inline-block mb-2">Sep 2025 - Jul 2026</div>
-                            <p class="text-gray-600 text-sm">International Society for Bayesian Analysis Conference Organizing Committee</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Software Education Assistant</h3>
-                            <p class="text-blue-600 font-medium mb-2">Kyungpook National University, Department of Statistics</p>
-                            <div class="mono-font text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded inline-block mb-2">Sep 2025 - Dec 2025</div>
-                            <p class="text-gray-500 text-xs"><i class="fas fa-map-marker-alt mr-1"></i>Daegu, South Korea</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-2">BK21 FOUR Participant</h3>
-                            <p class="text-blue-600 font-medium mb-2">BK21 FOUR Data Analysis Education & Research Team</p>
-                            <div class="mono-font text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded inline-block mb-2">Mar 2025 - Feb 2026</div>
-                            <p class="text-gray-600 text-sm">Brain Korea 21 Program - Statistical Learning-based Data Analysis Talent Cultivation</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Organizing Committee Member</h3>
-                            <p class="text-blue-600 font-medium mb-2">EAC-ISBA Conference 2025</p>
-                            <div class="mono-font text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded inline-block mb-2">Feb 2025 - Jul 2025</div>
-                            <p class="text-gray-600 text-sm">East Asia Chapter - International Society for Bayesian Analysis</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Research Assistant</h3>
-                            <p class="text-blue-600 font-medium mb-2">Bayesian Statistical Learning Lab, Kyungpook National University</p>
-                            <div class="mono-font text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded inline-block mb-2">Sep 2024 - Present</div>
-                            <p class="text-gray-600 text-sm mb-1">Prof. Goh's Laboratory</p>
-                            <p class="text-gray-500 text-xs"><i class="fas fa-map-marker-alt mr-1"></i>Daegu, South Korea</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Student Researcher</h3>
-                            <p class="text-blue-600 font-medium mb-2">Bayesian Statistical Learning Lab, Kyungpook National University</p>
-                            <div class="mono-font text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded inline-block mb-2">May 2024 - Aug 2024</div>
-                            <p class="text-gray-600 text-sm mb-1">Prof. Goh's Laboratory</p>
-                            <p class="text-gray-500 text-xs"><i class="fas fa-map-marker-alt mr-1"></i>Daegu, South Korea</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Senior Audio Engineer</h3>
-                            <p class="text-blue-600 font-medium mb-2">Cru (Campus Crusade for Christ)</p>
-                            <div class="mono-font text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded inline-block mb-2">Aug 2023 - Jul 2024</div>
-                            <p class="text-gray-600 text-sm mb-1">Kyungpook National University & Yeungjin University, Daegu</p>
-                            <p class="text-gray-500 text-xs"><i class="fas fa-map-marker-alt mr-1"></i>Daegu, South Korea</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Administrative Support</h3>
-                            <p class="text-blue-600 font-medium mb-2">Ministry of SMEs and Startups</p>
-                            <div class="mono-font text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded inline-block mb-2">Oct 2021 - Jan 2023</div>
-                            <p class="text-gray-600 text-sm mb-1">Daegu-Gyeongbuk Regional Office for SMEs, Regional Policy Division</p>
-                            <p class="text-gray-500 text-xs"><i class="fas fa-map-marker-alt mr-1"></i>Daegu, South Korea</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Administrative Assistant (KATUSA)</h3>
-                            <p class="text-blue-600 font-medium mb-2">US 8th Army, KATUSA</p>
-                            <div class="mono-font text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded inline-block mb-2">Mar 2021 - Aug 2021</div>
-                            <p class="text-gray-600 text-sm mb-1">NCOA-KTA, Korean Augmentation to the United States Army</p>
-                            <p class="text-gray-500 text-xs"><i class="fas fa-map-marker-alt mr-1"></i>USAG Humphreys, Pyeongtaek, South Korea</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Research Assistant</h3>
-                            <p class="text-blue-600 font-medium mb-2">Daegu University</p>
-                            <div class="mono-font text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded inline-block mb-2">Dec 2019 - Feb 2020</div>
-                            <p class="text-gray-600 text-sm mb-1">Institute for Multicultural Social Policy | Presidential Committee on Jobs 2nd Private Jobs Subcommittee TFT Project</p>
-                            <p class="text-gray-500 text-xs"><i class="fas fa-map-marker-alt mr-1"></i>Gyeongsan, Gyeongbuk, South Korea</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="bg-white p-6 rounded-2xl shadow-lg card-hover">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Program Coordinator & Designer</h3>
-                            <p class="text-blue-600 font-medium mb-2">Korean Cultural Centre, Kyungpook National University</p>
-                            <div class="mono-font text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded inline-block mb-2">Jun 2018 - Mar 2019</div>
-                            <p class="text-gray-500 text-xs"><i class="fas fa-map-marker-alt mr-1"></i>Daegu, South Korea</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Awards Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Awards & Recognition</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <div class="award-badge second">2nd Place</div>
-                    <h3 class="font-semibold text-gray-900 mb-2">Korean Statistical Society Summer Conference 2025</h3>
-                    <p class="text-gray-600 text-sm mb-3">Poster Paper Award - Scalable Bayesian regression with massive and high-dimensional data</p>
-                    <p class="text-blue-600 text-sm font-medium">The Korean Statistical Society</p>
-                    <p class="mono-font text-xs text-gray-400 mt-2">July 16, 2025</p>
-                </div>
-
-                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <div class="award-badge special">Commissioner's Award</div>
-                    <h3 class="font-semibold text-gray-900 mb-2">Intellectual Property Idea Competition</h3>
-                    <p class="text-gray-600 text-sm mb-3">Commissioner's Award of Korean Intellectual Property Office (KIPO) for innovation in intellectual property development</p>
-                    <p class="text-blue-600 text-sm font-medium">Intellectual Property Professional HR Development Program</p>
-                    <p class="mono-font text-xs text-gray-400 mt-2">May 14, 2025</p>
-                </div>
-
-                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <div class="award-badge">Grand Prize</div>
-                    <h3 class="font-semibold text-gray-900 mb-2">KNU Statistics Concert Data Analysis Contest 2024</h3>
-                    <p class="text-gray-600 text-sm mb-3">Analysis of Traditional Market Revitalization Factors in Daegu Region</p>
-                    <p class="text-blue-600 text-sm font-medium">President's Office, Kyungpook National University</p>
-                    <p class="mono-font text-xs text-gray-400 mt-2">November 29, 2024</p>
-                </div>
-
-                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <div class="award-badge">Best Prize</div>
-                    <h3 class="font-semibold text-gray-900 mb-2">Hongcheon-gun Public Data Analysis Competition 2024</h3>
-                    <p class="text-gray-600 text-sm mb-3">Selection of the optimal location for dispatching medical personnel to vulnerable areas in Hongcheon-gun</p>
-                    <p class="text-blue-600 text-sm font-medium">Hongcheon County Office, Gangwon State</p>
-                    <p class="mono-font text-xs text-gray-400 mt-2">November 13, 2024</p>
-                </div>
-
-                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <div class="award-badge special">Encouragement Prize</div>
-                    <h3 class="font-semibold text-gray-900 mb-2">KNU Statistics Concert Data Analysis Contest 2023</h3>
-                    <p class="text-gray-600 text-sm mb-3">A Study on the Change of Traffic Flow in the City according to Rainfall</p>
-                    <p class="text-blue-600 text-sm font-medium">Department of Statistics, Kyungpook National University</p>
-                    <p class="mono-font text-xs text-gray-400 mt-2">November 24, 2023</p>
-                </div>
-
-                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <div class="award-badge special">Academic Excellence</div>
-                    <h3 class="font-semibold text-gray-900 mb-2">Academic Excellence Award</h3>
-                    <p class="text-gray-600 text-sm mb-3">Subject: R Programming and Experiment</p>
-                    <p class="text-blue-600 text-sm font-medium">Department of Statistics, Kyungpook National University</p>
-                    <p class="mono-font text-xs text-gray-400 mt-2">July 3, 2023</p>
-                </div>
-
-                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <div class="award-badge">Commendation</div>
-                    <h3 class="font-semibold text-gray-900 mb-2">Distinguished Public Service Worker</h3>
-                    <p class="text-gray-600 text-sm mb-3">Recognition for outstanding service performance</p>
-                    <p class="text-blue-600 text-sm font-medium">Military Manpower Administration & Daegu Metropolitan City Hall</p>
-                    <p class="mono-font text-xs text-gray-400 mt-2">December 14, 2022</p>
-                </div>
-
-                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <div class="award-badge special">Special Selection</div>
-                    <h3 class="font-semibold text-gray-900 mb-2">PVC ECO I·D Award 2022</h3>
-                    <p class="text-gray-600 text-sm mb-3">Modeling and Designing Graphic of Multipurpose Stand Using Waste PVC Paper</p>
-                    <p class="text-blue-600 text-sm font-medium">Korea Vinyl Environmental Council</p>
-                    <p class="mono-font text-xs text-gray-400 mt-2">November 21, 2022</p>
-                </div>
-
-                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <div class="award-badge second">Excellence Prize</div>
-                    <h3 class="font-semibold text-gray-900 mb-2">Daegu Culture Big Data Competition for Youth</h3>
-                    <p class="text-gray-600 text-sm mb-3">Excellence Prize in cultural data analysis</p>
-                    <p class="text-blue-600 text-sm font-medium">National Institute of Korean Language & Korean Cultural Centre, KNU</p>
-                    <p class="mono-font text-xs text-gray-400 mt-2">November 16, 2018</p>
-                </div>
-
-                <div class="card-hover bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <div class="award-badge">Best Prize</div>
-                    <h3 class="font-semibold text-gray-900 mb-2">Big Data Analysis Presentation</h3>
-                    <p class="text-gray-600 text-sm mb-3">Data Analysis of Autonomous Vehicle News Articles Using Morpheme-Based Natural Language Processing</p>
-                    <p class="text-blue-600 text-sm font-medium">National Institute of Korean Language & Korean Cultural Centre, KNU</p>
-                    <p class="mono-font text-xs text-gray-400 mt-2">May 25, 2018</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills & Certifications Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Skills & Certifications</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div class="cards cols-2">
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/knu-logo.jpeg" alt="KNU logo" /></div>
+            <div>
+              <div class="card-head">
                 <div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-8">Technical Skills</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-700 font-medium">Bayesian Statistics</span>
-                                <span class="text-gray-500">95%</span>
-                            </div>
-                            <div class="bg-gray-200 h-3 rounded-full">
-                                <div class="h-3 rounded-full gradient-bg" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-700 font-medium">R Programming</span>
-                                <span class="text-gray-500">90%</span>
-                            </div>
-                            <div class="bg-gray-200 h-3 rounded-full">
-                                <div class="h-3 rounded-full gradient-bg" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-700 font-medium">Data Analysis</span>
-                                <span class="text-gray-500">88%</span>
-                            </div>
-                            <div class="bg-gray-200 h-3 rounded-full">
-                                <div class="h-3 rounded-full gradient-bg" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-700 font-medium">Machine Learning</span>
-                                <span class="text-gray-500">85%</span>
-                            </div>
-                            <div class="bg-gray-200 h-3 rounded-full">
-                                <div class="h-3 rounded-full gradient-bg" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-700 font-medium">Statistical Modeling</span>
-                                <span class="text-gray-500">92%</span>
-                            </div>
-                            <div class="bg-gray-200 h-3 rounded-full">
-                                <div class="h-3 rounded-full gradient-bg" style="width: 92%"></div>
-                            </div>
-                        </div>
-                    </div>
+                  <p class="card-title">M.S. in Statistics</p>
+                  <p class="card-org">Kyungpook National University</p>
                 </div>
+                <p class="card-date">Sep 2025 - Feb 2027 (Expected)</p>
+              </div>
+              <ul class="bullets">
+                <li>Additional Major in ABB (AI, Big Data, and Blockchain)</li>
+                <li>GPA: 4.00/4.00</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/knu-logo.jpeg" alt="KNU logo" /></div>
+            <div>
+              <div class="card-head">
                 <div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-8">Languages & Certifications</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-700 font-medium">Korean</span>
-                                <span class="text-gray-500">Native</span>
-                            </div>
-                            <div class="bg-gray-200 h-3 rounded-full">
-                                <div class="h-3 rounded-full gradient-bg" style="width: 100%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-700 font-medium">English</span>
-                                <span class="text-gray-500">Professional Working</span>
-                            </div>
-                            <div class="bg-gray-200 h-3 rounded-full">
-                                <div class="h-3 rounded-full gradient-bg" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h4 class="text-xl font-semibold text-gray-900 mb-6 mt-10">Professional Certifications</h4>
-                    <div class="space-y-4">
-                        <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl border border-blue-100">
-                            <h4 class="font-semibold text-gray-900 mb-1">TOEIC</h4>
-                            <p class="text-blue-600 text-sm font-medium mb-2">YBM TOEIC Committee • April 2025</p>
-                            <p class="mono-font text-xs text-gray-500">Score: 925 / 990</p>
-                        </div>
-                        <div class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-xl border border-green-100">
-                            <h4 class="font-semibold text-gray-900 mb-1">Advanced Data Analytics Semi-Professional (ADsP)</h4>
-                            <p class="text-green-600 text-sm font-medium mb-2">Korea Data Agency • March 2024</p>
-                            <p class="mono-font text-xs text-gray-500">License Number: ADsP-040016659</p>
-                        </div>
-                        <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-xl border border-purple-100">
-                            <h4 class="font-semibold text-gray-900 mb-1">Information Processing Technician (Written)</h4>
-                            <p class="text-purple-600 text-sm font-medium mb-2">Human Resources Development Service of Korea • January 2024</p>
-                        </div>
-                        <div class="bg-gradient-to-r from-yellow-50 to-orange-50 p-6 rounded-xl border border-yellow-100">
-                            <h4 class="font-semibold text-gray-900 mb-1">Computer Specialist in Spreadsheet & Database Level I</h4>
-                            <p class="text-yellow-600 text-sm font-medium mb-2">Korea Chamber of Commerce and Industry • April 2023</p>
-                            <p class="mono-font text-xs text-gray-500">License Number: 23-K9-026464</p>
-                        </div>
-                        <div class="bg-gradient-to-r from-red-50 to-pink-50 p-6 rounded-xl border border-red-100">
-                            <h4 class="font-semibold text-gray-900 mb-1">Driver's License Class 1 (Ordinary)</h4>
-                            <p class="text-red-600 text-sm font-medium mb-2">Daegu Metropolitan Police Agency • December 2019</p>
-                        </div>
-                    </div>
+                  <p class="card-title">B.S. in Statistics</p>
+                  <p class="card-org">Kyungpook National University</p>
                 </div>
+                <p class="card-date">Mar 2020 - Aug 2025</p>
+              </div>
+              <ul class="bullets">
+                <li>Minor in Computer Science and Engineering</li>
+                <li>GPA: 3.81/4.00, Ranked 2nd of 21</li>
+                <li>Completed degree early after mandatory military service</li>
+              </ul>
             </div>
+          </article>
         </div>
-    </section>
+      </section>
 
-    <!-- Research Projects -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Research Projects</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
-            </div>
-            <div class="max-w-4xl mx-auto">
-                <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-                    <div class="flex items-start justify-between mb-6">
-                        <div class="flex-1">
-                            <h3 class="text-2xl font-semibold text-gray-900 mb-3">Scalable Bayesian regression with massive and high-dimensional data</h3>
-                            <p class="text-blue-600 font-medium mb-4">Current Research Project • January 2025 - Present</p>
-                        </div>
-                        <div class="text-4xl text-blue-500 ml-6">
-                            <i class="fas fa-microscope"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 leading-relaxed text-lg">
-                        Developing advanced Bayesian statistical methods for handling massive and high-dimensional datasets. 
-                        This research focuses on creating scalable algorithms that maintain statistical rigor while being 
-                        computationally efficient for modern big data applications. The work addresses fundamental challenges 
-                        in statistical inference when dealing with datasets that exceed traditional computational limits.
-                    </p>
-                    <div class="flex flex-wrap gap-3 mt-8">
-                        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">Bayesian Methods</span>
-                        <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">Big Data</span>
-                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Statistical Learning</span>
-                        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">High-Dimensional Analysis</span>
-                        <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium">Computational Statistics</span>
-                    </div>
-                </div>
-            </div>
+      <section class="section reveal" id="research">
+        <div class="section-head">
+          <h2 class="section-title">Research Experience</h2>
+          <p class="section-note">Assistantships and projects</p>
         </div>
-    </section>
 
-    <!-- International Experience Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">International Experience</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
-            </div>
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-                <div class="card-hover bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg border border-blue-100">
-                    <div class="text-blue-500 text-3xl mb-4">
-                        <i class="fas fa-globe-americas"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">JSM 2025 SPAAC Session Presenter</h3>
-                    <p class="text-blue-600 font-medium mb-2">Nashville, Tennessee, USA</p>
-                    <div class="mono-font text-sm text-gray-500 mb-4">August 2025</div>
-                    <p class="text-gray-600">Joint Statistical Meetings - International Conference Presentation</p>
+        <div class="cards cols-2">
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/knu-logo.jpeg" alt="KNU logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">Graduate Research Assistant</p>
+                  <p class="card-org">Bayesian Statistical Learning Lab, KNU</p>
                 </div>
-                <div class="card-hover bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-2xl shadow-lg border border-green-100">
-                    <div class="text-green-500 text-3xl mb-4">
-                        <i class="fas fa-flag-usa"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">KATUSA Service</h3>
-                    <p class="text-green-600 font-medium mb-2">USAG Humphreys, South Korea</p>
-                    <div class="mono-font text-sm text-gray-500 mb-4">April 2021 - August 2021</div>
-                    <p class="text-gray-600">Korean Augmentation to the United States Army - US 8th Army</p>
-                </div>
+                <p class="card-date">Sep 2025 - Present</p>
+              </div>
+              <ul class="bullets">
+                <li>Advisor: Prof. Gyuhyeong Goh</li>
+                <li>Bayesian inference and learning for extended synthetic control methods</li>
+                <li>Supported by the National Research Foundation (NRF) of Korea</li>
+              </ul>
             </div>
+          </article>
+
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/knu-logo.jpeg" alt="KNU logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">Undergraduate Researcher</p>
+                  <p class="card-org">Bayesian Statistical Learning Lab, KNU</p>
+                </div>
+                <p class="card-date">Sep 2024 - Aug 2025</p>
+              </div>
+              <p class="card-desc">Worked on scalable Bayesian learning for massive and high-dimensional data.</p>
+            </div>
+          </article>
+
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/daegu-uni-logo.jpeg" alt="Daegu University logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">Research Assistant</p>
+                  <p class="card-org">Institute for Multicultural Social Policy, Daegu University</p>
+                </div>
+                <p class="card-date">Dec 2019 - Feb 2020</p>
+              </div>
+              <p class="card-desc">
+                Contributed to big data policy research for youth employment creation; findings were presented
+                to the 6th meeting of the 2nd Private Jobs Committee under the Presidential Committee on Jobs.
+              </p>
+            </div>
+          </article>
         </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Let's Connect</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded-full mb-8"></div>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Interested in collaboration, research opportunities, or just want to connect? 
-                    I'd love to hear from you.
-                </p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                <div class="text-center">
-                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-envelope text-white text-xl"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Email</h3>
-                    <a href="mailto:davidpark9830@gmail.com" class="text-blue-600 hover:text-blue-800 transition-colors">
-                        davidpark9830@gmail.com
-                    </a>
-                </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fab fa-linkedin text-white text-xl"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/davidpark0182/" target="_blank" class="text-blue-600 hover:text-blue-800 transition-colors">
-                        linkedin.com/in/davidpark0182
-                    </a>
-                </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-map-marker-alt text-white text-xl"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Location</h3>
-                    <p class="text-gray-600">Daegu, South Korea</p>
-                </div>
-            </div>
+      <section class="section reveal" id="funding">
+        <div class="section-head">
+          <h2 class="section-title">Grants and Fellowships</h2>
+          <p class="section-note">Scholarships and funded programs</p>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="gradient-bg text-white py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-blue-100">© 2025 Gyeongmin Park. All rights reserved.</p>
+        <div class="cards cols-3">
+          <article class="card">
+            <div class="card-head">
+              <div>
+                <p class="card-title">Brain Korea 21 (BK21) FOUR Graduate Fellowship</p>
+                <p class="card-org">Education Research Team for Statistical Learning, KNU</p>
+              </div>
+              <p class="card-date">Spring 2026</p>
+            </div>
+            <p class="card-desc">National graduate research fellowship funded by the Ministry of Education of Korea.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <div>
+                <p class="card-title">Scholarship for Academic Excellence</p>
+                <p class="card-org">Graduate School of Statistics, KNU</p>
+              </div>
+              <p class="card-date">Spring 2026</p>
+            </div>
+            <p class="card-desc">Merit-based scholarship for graduate academic performance.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <div>
+                <p class="card-title">Daegu RISE-ABB Track Scholarship</p>
+                <p class="card-org">Daegu RISE Center and Kyungpook National University</p>
+              </div>
+              <p class="card-date">Fall 2025</p>
+            </div>
+            <p class="card-desc">Regional innovation scholarship for excellence in ABB track (AI, Big Data, Blockchain).</p>
+          </article>
         </div>
-    </footer>
+      </section>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+      <section class="section reveal" id="talks">
+        <div class="section-head">
+          <h2 class="section-title">Talks</h2>
+          <p class="section-note">Conference and invited presentations</p>
+        </div>
 
-        // Progressive skill bar animation
-        const skillBars = document.querySelectorAll('.gradient-bg[style*="width"]');
-        const observerOptions = {
-            threshold: 0.5,
-            rootMargin: '0px 0px -100px 0px'
-        };
+        <div class="cards cols-2">
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/isba-logo.jpeg" alt="ISBA logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">ISBA 2026 World Meeting (Poster, Accepted)</p>
+                  <p class="card-org">Nagoya, Japan</p>
+                </div>
+                <p class="card-date">Jul 2026</p>
+              </div>
+              <p class="card-desc">Scalable Gibbs Sampler Using Randomized Sketching for Massive and High-Dimensional Bayesian Regression.</p>
+            </div>
+          </article>
 
-        const skillObserver = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const skillBar = entry.target;
-                    const width = skillBar.style.width;
-                    skillBar.style.width = '0%';
-                    setTimeout(() => {
-                        skillBar.style.transition = 'width 2s ease-in-out';
-                        skillBar.style.width = width;
-                    }, 200);
-                    skillObserver.unobserve(skillBar);
-                }
-            });
-        }, observerOptions);
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/uconn-logo.png" alt="University of Connecticut logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">Research Visit Talk, University of Connecticut</p>
+                  <p class="card-org">Storrs, CT, USA</p>
+                </div>
+                <p class="card-date">Feb 2026</p>
+              </div>
+              <p class="card-desc">Scalable Gibbs Sampler Using Randomized Sketching for massive and high-dimensional Bayesian regression.</p>
+            </div>
+          </article>
 
-        skillBars.forEach(bar => {
-            skillObserver.observe(bar);
-        });
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/jsm2025-logo.jpg" alt="JSM 2025 logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">Joint Statistical Meetings 2025 (Poster)</p>
+                  <p class="card-org">Nashville, TN, USA</p>
+                </div>
+                <p class="card-date">Aug 2025</p>
+              </div>
+              <p class="card-desc">Scalable Bayesian Regression with Massive and High-Dimensional Data.</p>
+            </div>
+          </article>
 
-        // Card hover effects
-        document.querySelectorAll('.card-hover').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-4px)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-            });
-        });
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/kss-logo.png" alt="Korean Statistical Society logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">Korean Statistical Society 2025 (Poster)</p>
+                  <p class="card-org">Gyeongju, Republic of Korea</p>
+                </div>
+                <p class="card-date">Jul 2025</p>
+              </div>
+              <p class="card-desc">Scalable Bayesian Regression with Massive and High-Dimensional Data.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="service">
+        <div class="section-head">
+          <h2 class="section-title">Academic Service</h2>
+          <p class="section-note">Leadership and committee roles</p>
+        </div>
+
+        <div class="cards cols-2">
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/knu-logo.jpeg" alt="KNU logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">Graduate Student Representative</p>
+                  <p class="card-org">Department of Statistics, KNU</p>
+                </div>
+                <p class="card-date">Sep 2025 - Aug 2026</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/isba-logo.jpeg" alt="ISBA logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">Webmaster, 4th Bayesian Nonparametrics Networking Workshop</p>
+                  <p class="card-org">Bayesian Nonparametric Section of ISBA, Seoul</p>
+                </div>
+                <p class="card-date">Sep 2025 - Jul 2026</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/isba-logo.jpeg" alt="ISBA logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">Organizing Committee Member, EAC-ISBA Conference 2025</p>
+                  <p class="card-org">Eastern Asia Chapter of ISBA, Daegu</p>
+                </div>
+                <p class="card-date">Feb 2025 - Jul 2025</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="teaching">
+        <div class="section-head">
+          <h2 class="section-title">Teaching</h2>
+          <p class="section-note">Section prepared for additional future entries</p>
+        </div>
+
+        <div class="cards cols-2">
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/knu-logo.jpeg" alt="KNU logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">Teaching Assistant (Grader)</p>
+                  <p class="card-org">Multivariate Data Analysis and Laboratory, KNU</p>
+                </div>
+                <p class="card-date">Fall 2025</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <div>
+                <p class="card-title">Upcoming Teaching Entry</p>
+                <p class="card-org">Reserved for future updates</p>
+              </div>
+              <p class="card-date">TBD</p>
+            </div>
+            <p class="card-desc">You can duplicate this card when new teaching activities are added.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="awards">
+        <div class="section-head">
+          <h2 class="section-title">Honors and Awards</h2>
+          <p class="section-note">Each award listed separately</p>
+        </div>
+
+        <div class="cards cols-3">
+          <article class="card award-card second-place">
+            <div class="award-top">
+              <span class="medal" aria-hidden="true"></span>
+            </div>
+            <div class="card-head">
+              <div>
+                <p class="card-title">Second Prize, Poster Award</p>
+                <p class="card-org">Korean Statistical Society (KSS)</p>
+              </div>
+              <p class="card-date">Jul 2025</p>
+            </div>
+          </article>
+
+          <article class="card award-card">
+            <div class="award-top">
+              <span class="medal" aria-hidden="true"></span>
+            </div>
+            <div class="card-head">
+              <div>
+                <p class="card-title">Commissioner's Award</p>
+                <p class="card-org">Intellectual Property Idea Competition (KIPO)</p>
+              </div>
+              <p class="card-date">May 2025</p>
+            </div>
+          </article>
+
+          <article class="card award-card first-place">
+            <div class="award-top">
+              <span class="medal" aria-hidden="true"></span>
+            </div>
+            <div class="card-head">
+              <div>
+                <p class="card-title">First Prize</p>
+                <p class="card-org">KNU Statistics Concert: Data Analysis Competition</p>
+              </div>
+              <p class="card-date">Dec 2024</p>
+            </div>
+          </article>
+
+          <article class="card award-card first-place">
+            <div class="award-top">
+              <span class="medal" aria-hidden="true"></span>
+            </div>
+            <div class="card-head">
+              <div>
+                <p class="card-title">First Prize</p>
+                <p class="card-org">Hongcheon-gun Public Data Analysis Competition</p>
+              </div>
+              <p class="card-date">Nov 2024</p>
+            </div>
+          </article>
+
+          <article class="card award-card">
+            <div class="award-top">
+              <span class="medal" aria-hidden="true"></span>
+            </div>
+            <div class="card-head">
+              <div>
+                <p class="card-title">Fourth Prize</p>
+                <p class="card-org">KNU Statistics Concert: Data Analysis Competition</p>
+              </div>
+              <p class="card-date">Nov 2023</p>
+            </div>
+          </article>
+
+          <article class="card award-card">
+            <div class="award-top">
+              <span class="medal" aria-hidden="true"></span>
+            </div>
+            <div class="card-head">
+              <div>
+                <p class="card-title">Academic Excellence Award</p>
+                <p class="card-org">Department of Statistics, KNU</p>
+              </div>
+              <p class="card-date">Jul 2023</p>
+            </div>
+          </article>
+
+          <article class="card award-card">
+            <div class="award-top">
+              <span class="medal" aria-hidden="true"></span>
+            </div>
+            <div class="card-head">
+              <div>
+                <p class="card-title">Distinguished Service Commendation</p>
+                <p class="card-org">Daegu Metropolitan City, Republic of Korea</p>
+              </div>
+              <p class="card-date">Dec 2022</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="experience">
+        <div class="section-head">
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-note">Industry and field experience</p>
+        </div>
+
+        <div class="cards cols-2">
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/cru-logo.jpeg" alt="CRU logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">Lead Audiovisual Technician</p>
+                  <p class="card-org">CCC (CRU), Daegu</p>
+                </div>
+                <p class="card-date">Aug 2023 - Jul 2024</p>
+              </div>
+              <p class="card-desc">Led setup and live operation of audio and visual systems for events and ministry programs.</p>
+            </div>
+          </article>
+
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/mss-logo.png" alt="MSS logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">Administrative Assistant</p>
+                  <p class="card-org">Daegu-Gyeongbuk Regional Office, Ministry of SMEs and Startups (MSS)</p>
+                </div>
+                <p class="card-date">Oct 2021 - Jan 2023</p>
+              </div>
+              <p class="card-desc">Supported administrative workflows and documentation for regional public-sector operations.</p>
+            </div>
+          </article>
+
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/army-logo.jpeg" alt="U.S. 8th Army logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">KATUSA</p>
+                  <p class="card-org">HQ, NCOA, U.S. 8th Army (USAG Humphreys)</p>
+                </div>
+                <p class="card-date">Mar 2021 - Aug 2021</p>
+              </div>
+              <p class="card-desc">Served in a multinational military environment as Korean Augmentation to the United States Army.</p>
+            </div>
+          </article>
+
+          <article class="card logo-card">
+            <div class="logo-box"><img src="images/kcc-logo.jpeg" alt="KCC logo" /></div>
+            <div>
+              <div class="card-head">
+                <div>
+                  <p class="card-title">Graphic Designer</p>
+                  <p class="card-org">Korean Cultural Center (KCC), Daegu</p>
+                </div>
+                <p class="card-date">Jun 2018 - Mar 2019</p>
+              </div>
+              <p class="card-desc">Produced visual assets and promotional materials for cultural programs and communication campaigns.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="skills">
+        <div class="section-head">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-note">Technical and language capabilities</p>
+        </div>
+
+        <div class="cards cols-3">
+          <article class="card">
+            <div class="card-head">
+              <div>
+                <p class="card-title">Programming</p>
+              </div>
+            </div>
+            <div class="chips">
+              <span class="chip">R (Advanced)</span>
+              <span class="chip">Python (Intermediate)</span>
+              <span class="chip">Java (Intermediate)</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <div>
+                <p class="card-title">Web and Tools</p>
+              </div>
+            </div>
+            <div class="chips">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">LaTeX</span>
+              <span class="chip">SAS</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <div>
+                <p class="card-title">Languages</p>
+              </div>
+            </div>
+            <div class="chips">
+              <span class="chip">Korean (Native)</span>
+              <span class="chip">English (Professional Working Proficiency)</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer>
+        <p>© <span id="year"></span> Gyeongmin Park (David Park) · Last updated: April 2026</p>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      document.querySelectorAll(".reveal").forEach((el, idx) => {
+        el.style.transitionDelay = `${idx * 45}ms`;
+        observer.observe(el);
+      });
     </script>
-</body>
+  </body>
 </html>
