@@ -120,6 +120,8 @@
         border-radius: 0;
         border: 0;
         background: transparent;
+        position: relative;
+        z-index: 2100;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -547,6 +549,12 @@
       }
 
       @media (max-width: 760px) {
+        .topbar,
+        .topbar.scrolled {
+          backdrop-filter: none;
+          -webkit-backdrop-filter: none;
+        }
+
         .page {
           width: min(1160px, 100% - 40px);
         }
@@ -567,12 +575,13 @@
         .nav {
           position: fixed;
           inset: 0;
-          z-index: 24;
+          z-index: 2000;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           gap: 14px;
           padding: 86px 20px 24px;
+          min-height: 100dvh;
           background: rgba(255, 255, 255, 0.74);
           backdrop-filter: blur(10px);
           opacity: 0;
