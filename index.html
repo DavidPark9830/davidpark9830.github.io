@@ -130,37 +130,60 @@
         border-radius: 0;
         border: 0;
         background: transparent;
+        -webkit-appearance: none;
+        appearance: none;
         position: relative;
         z-index: 2100;
+        overflow: hidden;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        gap: 4px;
         cursor: pointer;
         padding: 0;
       }
 
       .menu-toggle-line {
+        position: absolute;
+        left: 50%;
         display: block;
         width: 18px;
         height: 2px;
+        margin: 0;
         border-radius: 1px;
         background: #2b3242;
-        transition: transform 0.2s ease, opacity 0.2s ease, width 0.2s ease, background-color 0.2s ease;
+        transform: translateX(-50%) translateZ(0);
+        transform-origin: center;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        transition: top 0.2s ease, transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+      }
+
+      .menu-toggle-line:nth-child(1) {
+        top: 12px;
+      }
+
+      .menu-toggle-line:nth-child(2) {
+        top: 18px;
+      }
+
+      .menu-toggle-line:nth-child(3) {
+        top: 24px;
       }
 
       .menu-toggle.is-open .menu-toggle-line:nth-child(1) {
-        transform: translateY(6px) rotate(45deg);
+        top: 18px;
+        transform: translateX(-50%) rotate(45deg);
       }
 
       .menu-toggle.is-open .menu-toggle-line:nth-child(2) {
         opacity: 0;
-        width: 0;
+        transform: translateX(-50%) scaleX(0);
         background: transparent;
+        visibility: hidden;
       }
 
       .menu-toggle.is-open .menu-toggle-line:nth-child(3) {
-        transform: translateY(-6px) rotate(-45deg);
+        top: 18px;
+        transform: translateX(-50%) rotate(-45deg);
       }
 
       main {
@@ -1217,7 +1240,7 @@
           </article>
 
           <article class="card logo-card">
-            <div class="logo-box"><img src="images/army-logo.jpeg" alt="U.S. 8th Army logo" /></div>
+            <div class="logo-box"><img src="images/army-logo.png" alt="U.S. 8th Army logo" /></div>
             <div>
               <div class="card-head">
                 <div>
