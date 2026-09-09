@@ -492,6 +492,20 @@ h1 {
   margin-top: 10px;
 }
 
+.web-project-links {
+  line-height: 1.55;
+}
+
+.web-project-links a {
+  color: #2f539b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.web-project-links a:hover {
+  color: #23478e;
+}
+
 .talk-actions .section-link-btn {
   margin-top: 0;
 }
