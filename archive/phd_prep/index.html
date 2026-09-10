@@ -25,9 +25,9 @@ header p{margin:0;color:#d9e5ee}
 .checks{height:178px;overflow-y:auto;overflow-x:hidden;padding:2px 5px 2px 0;scrollbar-gutter:stable}
 .checks label{display:flex;align-items:center;gap:8px;padding:5px 2px;font-size:14px}
 .checks input{width:17px;height:17px;margin:0;flex:0 0 auto}
-.scoregroup{grid-column:span 2}
-.scoreinputs{display:grid;grid-template-columns:repeat(5,minmax(82px,1fr));gap:8px}
-.scoreinputs label{display:grid;gap:4px;color:var(--muted);font-size:12px}
+.scoregroup{grid-column:auto}
+.scoreinputs{display:grid;grid-template-columns:1fr;gap:7px}
+.scoreinputs label{display:grid;grid-template-columns:68px minmax(0,1fr);align-items:center;gap:8px;color:var(--muted);font-size:12px}
 .scoreinputs input{width:100%;min-width:0;border:1px solid #b8c4ce;border-radius:6px;background:#fff;color:var(--ink);padding:8px;font:inherit;font-size:14px;line-height:1.2;font-variant-numeric:tabular-nums}
 .scoreinputs input:focus{border-color:var(--blue);outline:2px solid #2f6b9a26;outline-offset:1px}
 .scorehint{display:block;margin-top:7px;min-height:18px}
@@ -63,7 +63,7 @@ a{color:#185f90}.tag{display:inline-block;border-radius:999px;padding:2px 7px;fo
 .lockerror{min-height:20px;margin:8px 0 0!important;color:#a62525!important;font-size:13px!important}
 [hidden]{display:none!important}
 footer{padding:20px 0;color:var(--muted)}
-@media(max-width:1000px){.wrap{padding:10px}.toolbar input{min-width:100%}.scoregroup{grid-column:1/-1}.scoreinputs{grid-template-columns:repeat(2,minmax(92px,1fr))}}
+@media(max-width:1000px){.wrap{padding:10px}.toolbar input{min-width:100%}}
 </style>
 </head>
 <body class="locked">
@@ -108,7 +108,7 @@ const filters=document.getElementById("filters"),q=document.getElementById("q"),
 function esc(s){return String(s??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;")}
 function cls(s){return String(s).replaceAll("·","").replaceAll(" ","")}
 function link(u,label){return u?'<a href="'+esc(u)+'" target="_blank" rel="noreferrer">'+label+'</a>':""}
-function addScoreFilter(){const section=document.createElement("section");section.className="filtergroup scoregroup";section.innerHTML='<h2>내 TOEFL 신척도 점수 <span class="small">(1–6)</span></h2><div class="scoreinputs">'+[["total","총점"],["reading","Reading"],["listening","Listening"],["speaking","Speaking"],["writing","Writing"]].map(([key,label])=>'<label><span>'+label+'</span><input id="score-'+key+'" class="scoreinput" data-score="'+key+'" type="number" min="1" max="6" step="0.5" inputmode="decimal" placeholder="예: 4.5" aria-label="TOEFL 신척도 '+label+' 점수"></label>').join("")+'</div><span id="toeflSummary" class="small scorehint">입력한 항목의 공식 입학 최소에 명백히 미달하는 학교만 제외합니다. 권장점수와 TA 기준은 제외 조건이 아닙니다.</span>';filters.appendChild(section)}
+function addScoreFilter(){const section=document.createElement("section");section.className="filtergroup scoregroup";section.innerHTML='<h2>내 TOEFL 신척도 점수 <span class="small">(1–6)</span></h2><div class="scoreinputs">'+[["total","총점"],["reading","Reading"],["listening","Listening"],["writing","Writing"],["speaking","Speaking"]].map(([key,label])=>'<label><span>'+label+'</span><input id="score-'+key+'" class="scoreinput" data-score="'+key+'" type="number" min="1" max="6" step="0.5" inputmode="decimal" placeholder="예: 4.5" aria-label="TOEFL 신척도 '+label+' 점수"></label>').join("")+'</div><span id="toeflSummary" class="small scorehint">입력한 항목의 공식 입학 최소에 명백히 미달하는 학교만 제외합니다. 권장점수와 TA 기준은 제외 조건이 아닙니다.</span>';filters.appendChild(section)}
 for(const [key,label] of groups){const values=[...new Set(data.map(x=>String(x[key])))].sort((a,b)=>{const order=filterOrders[key];if(!order)return a.localeCompare(b,"ko");const ai=order.indexOf(a),bi=order.indexOf(b);return (ai<0?999:ai)-(bi<0?999:bi)||a.localeCompare(b,"ko")});const section=document.createElement("section");section.className="filtergroup";section.innerHTML='<h2>'+label+' <span class="small">(복수선택)</span></h2><div class="checks">'+values.map(v=>{const count=data.filter(r=>String(r[key])===v).length;return '<label><input type="checkbox" data-key="'+key+'" value="'+esc(v)+'"><span class="optiontext">'+esc(v)+'</span><span class="count">('+count+')</span></label>'}).join("")+'</div>';filters.appendChild(section);if(key==="gre")addScoreFilter()}
 function selected(key){return new Set([...document.querySelectorAll('input[type="checkbox"][data-key="'+key+'"]:checked')].map(x=>x.value))}
 function enteredScores(){return Object.fromEntries([...document.querySelectorAll(".scoreinput")].map(input=>{const value=input.value.trim()===""?null:Number(input.value);return [input.dataset.score,Number.isFinite(value)?value:null]}))}
