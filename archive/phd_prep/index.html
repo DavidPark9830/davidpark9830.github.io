@@ -11,9 +11,11 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 system-ui,-apple-system,"Noto Sans KR",sans-serif}
 body.locked{overflow:hidden}
-header{background:var(--navy);color:#fff;padding:24px max(18px,2vw)}
-h1{margin:0 0 5px;font-size:clamp(24px,3vw,36px)}
-header p{margin:0;color:#d9e5ee}
+header{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:28px;background:var(--navy);color:#fff;padding:14px max(18px,2vw)}
+header h1{margin:0;font-size:clamp(21px,2vw,29px);line-height:1.2;white-space:nowrap}
+.headermeta{min-width:0;text-align:right}
+.headermeta p{margin:0;color:#d9e5ee;font-size:12px;line-height:1.45}
+.headermeta p+p{margin-top:2px;color:#bfcfda}
 .wrap{width:100%;max-width:none;margin:0;padding:16px max(12px,1.5vw)}
 .card{background:#fff;border:1px solid var(--line);border-radius:9px;padding:15px;margin-bottom:14px}
 .toolbar{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
@@ -26,11 +28,11 @@ header p{margin:0;color:#d9e5ee}
 .checks label{display:flex;align-items:center;gap:8px;padding:5px 2px;font-size:14px}
 .checks input{width:17px;height:17px;margin:0;flex:0 0 auto}
 .scoregroup{grid-column:auto}
-.scoreinputs{display:grid;grid-template-columns:1fr;gap:7px}
+.scoreinputs{display:grid;grid-template-columns:1fr;gap:4px}
 .scoreinputs label{display:grid;grid-template-columns:68px minmax(0,1fr);align-items:center;gap:8px;color:var(--muted);font-size:12px}
-.scoreinputs input{width:100%;min-width:0;border:1px solid #b8c4ce;border-radius:6px;background:#fff;color:var(--ink);padding:8px;font:inherit;font-size:14px;line-height:1.2;font-variant-numeric:tabular-nums}
+.scoreinputs input{width:100%;min-width:0;border:1px solid #b8c4ce;border-radius:6px;background:#fff;color:var(--ink);padding:5px 8px;font:inherit;font-size:14px;line-height:1.2;font-variant-numeric:tabular-nums}
 .scoreinputs input:focus{border-color:var(--blue);outline:2px solid #2f6b9a26;outline-offset:1px}
-.scorehint{display:block;margin-top:7px;min-height:18px}
+.scorehint{display:block;margin-top:5px;min-height:18px;line-height:1.35}
 .optiontext{min-width:0;overflow-wrap:anywhere}.count{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
 .tablebox{overflow:auto;max-height:77vh;border:1px solid var(--line);border-radius:8px;background:#fff}
 table{border-collapse:separate;border-spacing:0;width:100%;min-width:2400px}
@@ -38,9 +40,10 @@ th{position:sticky;top:0;z-index:2;background:var(--navy);color:#fff;text-align:
 td{padding:9px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}
 tr:nth-child(even) td{background:#f9fbfc}
 th:nth-child(-n+3),td:nth-child(-n+3){position:sticky}
-th:nth-child(1),td:nth-child(1){left:0;width:126px;min-width:126px;max-width:126px}
-th:nth-child(2),td:nth-child(2){left:126px;width:104px;min-width:104px;max-width:104px}
-th:nth-child(3),td:nth-child(3){left:230px;width:230px;min-width:230px;max-width:230px}
+th:nth-child(1),td:nth-child(1){left:0;width:160px;min-width:160px;max-width:160px}
+th:nth-child(1){white-space:nowrap}
+th:nth-child(2),td:nth-child(2){left:160px;width:104px;min-width:104px;max-width:104px}
+th:nth-child(3),td:nth-child(3){left:264px;width:230px;min-width:230px;max-width:230px}
 th:nth-child(-n+3){z-index:5;background:var(--navy)}
 td:nth-child(-n+3){z-index:1;background:#fff}
 tr:nth-child(even) td:nth-child(-n+3){background:#f9fbfc}
@@ -62,8 +65,8 @@ a{color:#185f90}.tag{display:inline-block;border-radius:999px;padding:2px 7px;fo
 .lockcard button:disabled{cursor:wait;opacity:.7}
 .lockerror{min-height:20px;margin:8px 0 0!important;color:#a62525!important;font-size:13px!important}
 [hidden]{display:none!important}
-footer{padding:20px 0;color:var(--muted)}
 @media(max-width:1000px){.wrap{padding:10px}.toolbar input{min-width:100%}}
+@media(max-width:760px){header{grid-template-columns:1fr;gap:5px}.headermeta{text-align:right}header h1{white-space:normal}}
 </style>
 </head>
 <body class="locked">
@@ -79,7 +82,7 @@ footer{padding:20px 0;color:var(--muted)}
   </form>
 </section>
 <div id="protectedContent" hidden>
-<header><h1>2027 U.S. Statistics PhD Top 70</h1><p>2026 U.S. News Statistics 70위 이내 · 공동 66위 포함 71개교 · GRE · 영어/TA · 연구 · 펀딩 · 접수상태</p></header>
+<header><h1>2027 U.S. Statistics PhD Top 70</h1><div class="headermeta"><p>2026 U.S. News Statistics 70위 이내 · 공동 66위 포함 71개교 · GRE · 영어/TA · 연구 · 펀딩 · 접수상태</p><p>순위는 오름차순이며 동점은 원표 표기를 유지 · 공식 페이지 확인 2026-09-10</p></div></header>
 <main class="wrap">
 <section class="card"><div class="toolbar"><input id="q" aria-label="대학과 연구분야 검색" placeholder="대학·과정·연구분야 검색"><button id="reset" type="button">조건 초기화</button><span id="shown" class="small" aria-live="polite"></span></div><div class="filtergrid" id="filters"></div></section>
 <div class="tablebox"><table><thead><tr>
@@ -94,7 +97,6 @@ footer{padding:20px 0;color:var(--muted)}
 <th>펀딩<span class="help" tabindex="0" data-tip="보장연수, 9개월·12개월 여부, 여름지원, 등록금·수수료·보험은 실제 오퍼에서 확인해야 합니다.">?</span></th>
 <th>공식 출처<span class="help" tabindex="0" data-tip="대상 프로그램 GRE, Graduate School 공통 GRE, 입학, 펀딩, 연구 페이지를 분리해 연결했습니다.">?</span></th>
 </tr></thead><tbody id="body"></tbody></table></div>
-<footer>순위는 오름차순이며 동점은 원표 표기를 유지했습니다. 71개 프로그램의 공식 페이지를 다시 확인한 날짜: 2026-09-10.</footer>
 </main>
 </div>
 <script>
@@ -102,19 +104,19 @@ const data=[{"n":1,"rank":"2026 U.S. News Statistics 공동순위 포함 #1","u"
 const schoolPublishedRanks={"University of California, Berkeley":"학교 발표 2026 #2","Carnegie Mellon University":"학교 발표 2026 공동 #6","University of Washington":"학교 발표 2026 공동 #6","University of Arizona":"학교 발표 2025 #54"};
 function recentRankAverage(row,current){const values=[];if(Number.isFinite(current))values.push(current);for(const year of ["2022","2025"]){const match=String(row.rankHistory??"").match(new RegExp(year+"[^#]*#(\\d+)"));if(match)values.push(Number(match[1]))}if(!values.length)return "5년 평균 미확인";const average=values.reduce((sum,value)=>sum+value,0)/values.length;return "5년 공개판 평균 #"+(Number.isInteger(average)?average:average.toFixed(1))}
 for(const r of data){const current=Number.isFinite(r.usn2026)?r.usn2026:null;r.n=current??"–";r.usn2026=(schoolPublishedRanks[r.u]??"학교 발표 미확인")+" ("+recentRankAverage(r,current)+")"}
-const groups=[["programFit","과정 적합성"],["gre","Statistics 프로그램 GRE"],["flevel","펀딩"],["dstatus","마감상태"]];
+const groups=[["programFit","과정 적합성"],["gre","Statistics 프로그램 GRE"],["flevel","펀딩"]];
 const filterOrders={programFit:["정규 Statistics 계열 PhD","통계전문 박사 경로","인접 박사·비교용","Statistics PhD 없음"],gre:["필수","강력 권장","선택","선택·동등심사","불필·미평가","불필요·미평가","미확정","해당없음"]};
 const filters=document.getElementById("filters"),q=document.getElementById("q"),shown=document.getElementById("shown"),body=document.getElementById("body"),reset=document.getElementById("reset");
 function esc(s){return String(s??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;")}
 function cls(s){return String(s).replaceAll("·","").replaceAll(" ","")}
 function link(u,label){return u?'<a href="'+esc(u)+'" target="_blank" rel="noreferrer">'+label+'</a>':""}
-function addScoreFilter(){const section=document.createElement("section");section.className="filtergroup scoregroup";section.innerHTML='<h2>내 TOEFL 신척도 점수 <span class="small">(1–6)</span></h2><div class="scoreinputs">'+[["total","총점"],["reading","Reading"],["listening","Listening"],["writing","Writing"],["speaking","Speaking"]].map(([key,label])=>'<label><span>'+label+'</span><input id="score-'+key+'" class="scoreinput" data-score="'+key+'" type="number" min="1" max="6" step="0.5" inputmode="decimal" placeholder="예: 4.5" aria-label="TOEFL 신척도 '+label+' 점수"></label>').join("")+'</div><span id="toeflSummary" class="small scorehint">입력한 항목의 공식 입학 최소에 명백히 미달하는 학교만 제외합니다. 권장점수와 TA 기준은 제외 조건이 아닙니다.</span>';filters.appendChild(section)}
+function addScoreFilter(){const section=document.createElement("section");section.className="filtergroup scoregroup";section.innerHTML='<h2>내 TOEFL 신척도 점수 <span class="small">(1–6)</span></h2><div class="scoreinputs">'+[["total","총점"],["reading","Reading"],["listening","Listening"],["writing","Writing"],["speaking","Speaking"]].map(([key,label])=>'<label><span>'+label+'</span><input id="score-'+key+'" class="scoreinput" data-score="'+key+'" type="number" min="1" max="6" step="0.5" inputmode="decimal" placeholder="예: 4.5" aria-label="TOEFL 신척도 '+label+' 점수"></label>').join("")+'</div><span id="toeflSummary" class="small scorehint">입학 최소 미달만 제외 · 기준 미공개·권장·TA 기준은 유지</span>';filters.appendChild(section)}
 for(const [key,label] of groups){const values=[...new Set(data.map(x=>String(x[key])))].sort((a,b)=>{const order=filterOrders[key];if(!order)return a.localeCompare(b,"ko");const ai=order.indexOf(a),bi=order.indexOf(b);return (ai<0?999:ai)-(bi<0?999:bi)||a.localeCompare(b,"ko")});const section=document.createElement("section");section.className="filtergroup";section.innerHTML='<h2>'+label+' <span class="small">(복수선택)</span></h2><div class="checks">'+values.map(v=>{const count=data.filter(r=>String(r[key])===v).length;return '<label><input type="checkbox" data-key="'+key+'" value="'+esc(v)+'"><span class="optiontext">'+esc(v)+'</span><span class="count">('+count+')</span></label>'}).join("")+'</div>';filters.appendChild(section);if(key==="gre")addScoreFilter()}
 function selected(key){return new Set([...document.querySelectorAll('input[type="checkbox"][data-key="'+key+'"]:checked')].map(x=>x.value))}
 function enteredScores(){return Object.fromEntries([...document.querySelectorAll(".scoreinput")].map(input=>{const value=input.value.trim()===""?null:Number(input.value);return [input.dataset.score,Number.isFinite(value)?value:null]}))}
 function meetsRequirement(requirement,scores){return Object.entries(requirement).every(([key,minimum])=>scores[key]===null||scores[key]>=minimum)}
 function passesToefl(row,scores){if(!Object.values(scores).some(value=>value!==null)||!row.toeflReq.length)return true;return row.toeflReq.some(requirement=>meetsRequirement(requirement,scores))}
-function render(){const query=q.value.toLowerCase(),scores=enteredScores();const sets=Object.fromEntries(groups.map(([k])=>[k,selected(k)]));const toeflEligible=data.filter(r=>passesToefl(r,scores));const result=toeflEligible.filter(r=>(!query||JSON.stringify(r).toLowerCase().includes(query))&&groups.every(([k])=>sets[k].size===0||sets[k].has(String(r[k]))));const hasScores=Object.values(scores).some(value=>value!==null),excluded=data.length-toeflEligible.length;shown.textContent=(hasScores?'TOEFL 미달 '+excluded+'개 제외 · ':'')+'표시 '+result.length+' / '+data.length+'개';document.getElementById("toeflSummary").textContent=hasScores?'공개된 신척도 입학 최소에 미달한 '+excluded+'개교를 제외했습니다. 기준 미공개·권장점수·TA 기준만 있는 학교는 유지합니다.':'입력한 항목의 공식 입학 최소에 명백히 미달하는 학교만 제외합니다. 권장점수와 TA 기준은 제외 조건이 아닙니다.';body.innerHTML=result.map(r=>'<tr><td><span class="tag">'+esc(r.portalStatus)+'</span><br>'+link(r.portalLink,"지원 링크")+'<br><span class="small">'+esc(r.portalNote)+'</span></td><td><b>#'+r.n+'</b><br>'+esc(r.usn2026??"미확인")+'</td><td><b>'+esc(r.u)+'</b><br><span class="tag">'+esc(r.programFit)+'</span><br>'+esc(r.p)+'<br><span class="small">'+esc(r.programFitNote)+' · '+esc(r.structure)+'</span></td><td><b>'+esc(r.deadline)+'</b><br><span class="small">'+esc(r.dstatus)+'</span></td><td><span class="tag '+cls(r.gre)+'">'+esc(r.gre)+'</span> <span class="small">'+esc(r.greGrade)+'</span><br><b>'+esc(r.greCycle)+'</b><br>'+esc(r.greEvidence)+'<br><span class="small">미제출: '+esc(r.impact)+'</span><br>'+link(r.greUrl,"학과 GRE")+'</td><td><b>신척도 '+esc(r.toeflNew)+'</b><br>구척도 '+esc(r.toeflOld)+'<br><span class="small">'+esc(r.englishNote)+'</span><br>'+link(r.englishUrl,"TOEFL 기준")+'</td><td>'+esc(r.focus)+'<br><span class="small">'+esc(r.orient)+'</span></td><td>'+esc(r.taEnglish)+'<br><span class="small">'+esc(r.ta)+'</span></td><td>'+esc(r.funding)+'<br><span class="tag">'+esc(r.flevel)+'</span></td><td>'+link(r.greUrl,"학과 GRE")+' · '+link(r.gradGreUrl,"대학원 GRE")+' · '+link(r.englishUrl,"TOEFL")+' · '+link(r.admissions,"입학")+' · '+link(r.finance,"펀딩")+' · '+link(r.research,"연구")+'</td></tr>').join("")}
+function render(){const query=q.value.toLowerCase(),scores=enteredScores();const sets=Object.fromEntries(groups.map(([k])=>[k,selected(k)]));const toeflEligible=data.filter(r=>passesToefl(r,scores));const result=toeflEligible.filter(r=>(!query||JSON.stringify(r).toLowerCase().includes(query))&&groups.every(([k])=>sets[k].size===0||sets[k].has(String(r[k]))));const hasScores=Object.values(scores).some(value=>value!==null),excluded=data.length-toeflEligible.length;shown.textContent=(hasScores?'TOEFL 미달 '+excluded+'개 제외 · ':'')+'표시 '+result.length+' / '+data.length+'개';document.getElementById("toeflSummary").textContent=hasScores?'신척도 입학 최소 미달 '+excluded+'개교 제외 · 미공개·권장·TA 기준은 유지':'입학 최소 미달만 제외 · 기준 미공개·권장·TA 기준은 유지';body.innerHTML=result.map(r=>'<tr><td><span class="tag">'+esc(r.portalStatus)+'</span><br>'+link(r.portalLink,"지원 링크")+'<br><span class="small">'+esc(r.portalNote)+'</span></td><td><b>#'+r.n+'</b><br>'+esc(r.usn2026??"미확인")+'</td><td><b>'+esc(r.u)+'</b><br><span class="tag">'+esc(r.programFit)+'</span><br>'+esc(r.p)+'<br><span class="small">'+esc(r.programFitNote)+' · '+esc(r.structure)+'</span></td><td><b>'+esc(r.deadline)+'</b><br><span class="small">'+esc(r.dstatus)+'</span></td><td><span class="tag '+cls(r.gre)+'">'+esc(r.gre)+'</span> <span class="small">'+esc(r.greGrade)+'</span><br><b>'+esc(r.greCycle)+'</b><br>'+esc(r.greEvidence)+'<br><span class="small">미제출: '+esc(r.impact)+'</span><br>'+link(r.greUrl,"학과 GRE")+'</td><td><b>신척도 '+esc(r.toeflNew)+'</b><br>구척도 '+esc(r.toeflOld)+'<br><span class="small">'+esc(r.englishNote)+'</span><br>'+link(r.englishUrl,"TOEFL 기준")+'</td><td>'+esc(r.focus)+'<br><span class="small">'+esc(r.orient)+'</span></td><td>'+esc(r.taEnglish)+'<br><span class="small">'+esc(r.ta)+'</span></td><td>'+esc(r.funding)+'<br><span class="tag">'+esc(r.flevel)+'</span></td><td>'+link(r.greUrl,"학과 GRE")+' · '+link(r.gradGreUrl,"대학원 GRE")+' · '+link(r.englishUrl,"TOEFL")+' · '+link(r.admissions,"입학")+' · '+link(r.finance,"펀딩")+' · '+link(r.research,"연구")+'</td></tr>').join("")}
 for(const e of document.querySelectorAll('#q,input[type="checkbox"],.scoreinput'))e.addEventListener("input",render);reset.addEventListener("click",()=>{q.value="";for(const c of document.querySelectorAll('input[type="checkbox"]'))c.checked=false;for(const input of document.querySelectorAll(".scoreinput"))input.value="";render()});render();
 const accessHash="bbd6d06c26e915c4d4fc9b550a93f2dafbd557fff0441e9ec320ff46c05ddef8",accessKey="phd-prep-access-v1";
 const lockScreen=document.getElementById("lockScreen"),protectedContent=document.getElementById("protectedContent"),lockForm=document.getElementById("lockForm"),accessPassword=document.getElementById("accessPassword"),unlockButton=document.getElementById("unlockButton"),lockError=document.getElementById("lockError");
