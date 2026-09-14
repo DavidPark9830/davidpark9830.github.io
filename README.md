@@ -8,8 +8,10 @@ This repository contains a static portfolio/CV website for GitHub Pages.
 - `assets/css/main.css`: Site styles
 - `assets/js/main.js`: Navigation, reveal animation, and PDF preview behavior
 - `assets/img/`: Profile photo and organization/conference logos
-- `assets/docs/talks/`: Presentation PDF files
-- `assets/demos/`: Interactive conference demo pages
+- `archive/`: Browsable archive for study resources and project materials
+- `archive/phd_prep/`: U.S. PhD preparation resources
+- `archive/presentations/`: Presentation PDF files
+- `archive/research-demos/`: Interactive research demonstrations
 
 ## Notes
 
