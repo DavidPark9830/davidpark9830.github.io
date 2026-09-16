@@ -2,13 +2,16 @@
   const STORAGE_KEY = "gre-vocabulary-progress-v1";
   const words = Array.isArray(window.GRE_WORDS) ? window.GRE_WORDS : [];
   const byId = new Map(words.map((word) => [String(word.id), word]));
+  const speechSupported = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
 
   const els = {
     card: document.getElementById("card"),
+    cardWrap: document.getElementById("cardWrap"),
     word: document.getElementById("wordText"),
     meaning: document.getElementById("meaningText"),
     meaningNote: document.getElementById("meaningNote"),
     note: document.getElementById("noteText"),
+    pronounce: document.getElementById("pronounceButton"),
     day: document.getElementById("dayText"),
     known: document.getElementById("knownCount"),
     unknown: document.getElementById("unknownCount"),
@@ -28,6 +31,7 @@
   let pointerDelta = 0;
   let suppressClick = false;
   let animating = false;
+  let activeUtterance = null;
 
   function shuffle(items) {
     const result = [...items];
@@ -71,7 +75,15 @@
     return byId.get(String(state.queue[0]));
   }
 
+  function stopPronunciation() {
+    if (!speechSupported) return;
+    window.speechSynthesis.cancel();
+    activeUtterance = null;
+    els.pronounce.classList.remove("is-speaking");
+  }
+
   function render() {
+    stopPronunciation();
     const knownSet = new Set(state.known.map(String));
     const missedIds = Object.keys(state.missed).filter((id) => !knownSet.has(id));
     const done = state.known.length;
@@ -87,7 +99,7 @@
     els.progressLabel.textContent = total ? "전체 단어 믹스 학습" : "단어 데이터가 없습니다";
 
     const complete = total > 0 && !word;
-    els.card.hidden = complete;
+    els.cardWrap.hidden = complete;
     els.complete.hidden = !complete;
     els.controls.hidden = complete || total === 0;
 
@@ -122,6 +134,7 @@
 
   function classify(result) {
     if (animating || !currentWord()) return;
+    stopPronunciation();
     animating = true;
     const id = String(state.queue.shift());
     const direction = result === "known" ? 1 : -1;
@@ -161,6 +174,32 @@
     els.card.classList.toggle("is-flipped");
     const flipped = els.card.classList.contains("is-flipped");
     els.card.setAttribute("aria-label", flipped ? "뜻 카드. 눌러서 단어 보기" : `${currentWord().word}. 눌러서 뜻 보기`);
+  }
+
+  function pronounce() {
+    const word = currentWord();
+    if (!word || !speechSupported) return;
+
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(word.word);
+    activeUtterance = utterance;
+    utterance.lang = "en-US";
+    utterance.rate = 0.82;
+
+    const voices = window.speechSynthesis.getVoices();
+    utterance.voice = voices.find((voice) => voice.lang === "en-US")
+      || voices.find((voice) => voice.lang.startsWith("en"))
+      || null;
+
+    els.pronounce.classList.add("is-speaking");
+    const finish = () => {
+      if (activeUtterance !== utterance) return;
+      activeUtterance = null;
+      els.pronounce.classList.remove("is-speaking");
+    };
+    utterance.addEventListener("end", finish, { once: true });
+    utterance.addEventListener("error", finish, { once: true });
+    window.speechSynthesis.speak(utterance);
   }
 
   function resetDrag() {
@@ -205,6 +244,7 @@
   });
 
   els.card.addEventListener("click", flip);
+  els.pronounce.addEventListener("click", pronounce);
   document.getElementById("unknownButton").addEventListener("click", () => classify("unknown"));
   document.getElementById("knownButton").addEventListener("click", () => classify("known"));
   document.getElementById("shuffleButton").addEventListener("click", () => {
@@ -239,6 +279,10 @@
       event.preventDefault();
       flip();
     }
+    if (event.key.toLowerCase() === "s" && !event.metaKey && !event.ctrlKey && !event.altKey) {
+      event.preventDefault();
+      pronounce();
+    }
   });
 
   window.startVocabularySession = () => {
@@ -266,6 +310,11 @@
         }
       }, { signal: lifecycle.signal })).catch(() => {});
     } catch {}
+  }
+
+  if (!speechSupported) {
+    els.pronounce.disabled = true;
+    els.pronounce.title = "이 브라우저에서는 음성 재생을 지원하지 않습니다.";
   }
 
   render();

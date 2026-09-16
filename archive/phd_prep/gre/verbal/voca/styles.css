@@ -129,12 +129,18 @@ h1 {
   padding: 36px 0 26px;
 }
 
-.card {
+.card-wrap {
   position: relative;
   width: min(100%, 610px);
   height: min(50vh, 440px);
   min-height: 330px;
-  border-radius: 48px;
+  border-radius: 58px;
+}
+
+.card {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
   cursor: grab;
   perspective: 1200px;
   touch-action: pan-y;
@@ -149,6 +155,7 @@ h1 {
 .card-inner {
   position: absolute;
   inset: 0;
+  border-radius: inherit;
   transform-style: preserve-3d;
   transition: transform .45s cubic-bezier(.2,.72,.2,1);
 }
@@ -172,6 +179,34 @@ h1 {
 }
 
 .card-back { transform: rotateY(180deg); }
+
+.pronounce-button {
+  position: absolute;
+  z-index: 5;
+  top: 20px;
+  right: 20px;
+  min-height: 42px;
+  padding: 8px 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid rgba(44, 87, 214, .14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .86);
+  color: #515867;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 5px 18px rgba(28, 34, 52, .08);
+  backdrop-filter: blur(12px);
+  transition: transform .16s ease, background .16s ease, color .16s ease;
+}
+
+.pronounce-button:hover { transform: translateY(-1px); background: #fff; color: var(--accent); }
+.pronounce-button.is-speaking { color: var(--accent); background: #f4f7ff; }
+.pronounce-button:disabled { cursor: not-allowed; opacity: .45; }
+.pronounce-button svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
+.pronounce-button kbd { min-width: 25px; min-height: 22px; padding: 3px 6px; font-size: 10px; }
 
 .card-kicker {
   margin-bottom: 20px;
@@ -376,9 +411,9 @@ kbd {
   .header-actions { flex-direction: column; align-items: flex-end; }
   .stats div { padding: 11px 8px; display: grid; gap: 2px; text-align: center; }
   .stats strong { font-size: 17px; }
-  .card { height: 47vh; min-height: 315px; }
-  .card { border-radius: 36px; }
+  .card-wrap { height: 47vh; min-height: 315px; border-radius: 44px; }
   .card-face { padding: 28px 22px; }
+  .pronounce-button { top: 15px; right: 15px; }
   .controls { gap: 8px; }
   .choice-button { padding: 11px; }
   .choice-button small { display: none; }
