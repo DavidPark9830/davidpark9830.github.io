@@ -1,6 +1,6 @@
 (() => {
   const STORAGE_KEY = "gre-vocabulary-progress-v1";
-  const PIPER_BUNDLE_URL = "./vendor/piper-tts.js?v=1";
+  const PIPER_BUNDLE_URL = "./vendor/piper-tts.js?v=2";
   const words = Array.isArray(window.GRE_WORDS) ? window.GRE_WORDS : [];
   const byId = new Map(words.map((word) => [String(word.id), word]));
   const speechSupported = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
@@ -150,7 +150,7 @@
       const cached = await piper.isVoiceCached();
       updateVoiceLoader({
         title: cached ? "저장된 음성 모델 불러오는 중" : "음성 모델 다운로드 중",
-        detail: cached ? "기기에 저장된 고품질 영어 음성을 준비하고 있어요." : "첫 실행에만 약 63MB를 내려받아요.",
+        detail: cached ? "기기에 저장된 High 품질 영어 음성을 준비하고 있어요." : "첫 실행에만 약 114MB를 내려받아요.",
         label: cached ? "준비 중" : "0%"
       });
 
@@ -175,7 +175,7 @@
 
       piperStatus = "ready";
       els.pronounce.disabled = false;
-      els.pronounce.title = "Piper 고품질 영어 음성";
+      els.pronounce.title = "Piper High 품질 영어 음성";
       updateVoiceLoader({
         title: "음성 모델 준비 완료",
         detail: "이제 단어 발음을 기기에서 바로 만들 수 있어요.",
