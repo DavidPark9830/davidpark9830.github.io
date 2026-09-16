@@ -1,5 +1,6 @@
 (() => {
   const STORAGE_KEY = "gre-vocabulary-progress-v1";
+  const PIPER_BUNDLE_URL = "./vendor/piper-tts.js?v=1";
   const words = Array.isArray(window.GRE_WORDS) ? window.GRE_WORDS : [];
   const byId = new Map(words.map((word) => [String(word.id), word]));
   const speechSupported = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
@@ -12,6 +13,12 @@
     meaningNote: document.getElementById("meaningNote"),
     note: document.getElementById("noteText"),
     pronounce: document.getElementById("pronounceButton"),
+    pronounceText: document.getElementById("pronounceText"),
+    voiceLoader: document.getElementById("voiceLoader"),
+    voiceStatusTitle: document.getElementById("voiceStatusTitle"),
+    voiceStatusDetail: document.getElementById("voiceStatusDetail"),
+    voiceProgressText: document.getElementById("voiceProgressText"),
+    voiceProgressFill: document.getElementById("voiceProgressFill"),
     day: document.getElementById("dayText"),
     known: document.getElementById("knownCount"),
     unknown: document.getElementById("unknownCount"),
@@ -33,6 +40,13 @@
   let animating = false;
   let activeUtterance = null;
   let availableVoices = [];
+  let piperSession = null;
+  let piperStatus = "loading";
+  let audioContext = null;
+  let activeAudioSource = null;
+  let pronunciationBusy = false;
+  let pronunciationRequest = 0;
+  let voiceLoaderTimer = null;
 
   function shuffle(items) {
     const result = [...items];
@@ -83,17 +97,106 @@
   }
 
   function stopPronunciation() {
-    if (!speechSupported) return;
-    const synthesis = window.speechSynthesis;
-    if (activeUtterance || synthesis.speaking || synthesis.pending) synthesis.cancel();
+    pronunciationRequest += 1;
+    pronunciationBusy = false;
+    if (activeAudioSource) {
+      try { activeAudioSource.stop(); } catch {}
+      activeAudioSource.disconnect();
+      activeAudioSource = null;
+    }
+    if (speechSupported) {
+      const synthesis = window.speechSynthesis;
+      if (activeUtterance || synthesis.speaking || synthesis.pending) synthesis.cancel();
+    }
     activeUtterance = null;
     els.pronounce.classList.remove("is-speaking");
     els.pronounce.setAttribute("aria-pressed", "false");
+    els.pronounceText.textContent = "발음";
   }
 
   function setPronunciationActive(active) {
     els.pronounce.classList.toggle("is-speaking", active);
     els.pronounce.setAttribute("aria-pressed", String(active));
+  }
+
+  function updateVoiceLoader({ title, detail, label, progress, state = "loading" }) {
+    window.clearTimeout(voiceLoaderTimer);
+    els.voiceLoader.hidden = false;
+    els.voiceLoader.classList.remove("is-leaving", "is-ready", "is-fallback", "has-progress");
+    if (state === "ready") els.voiceLoader.classList.add("is-ready");
+    if (state === "fallback") els.voiceLoader.classList.add("is-fallback");
+    if (Number.isFinite(progress)) {
+      els.voiceLoader.classList.add("has-progress");
+      els.voiceProgressFill.style.width = `${Math.max(0, Math.min(100, progress))}%`;
+    } else {
+      els.voiceProgressFill.style.removeProperty("width");
+    }
+    els.voiceStatusTitle.textContent = title;
+    els.voiceStatusDetail.textContent = detail;
+    els.voiceProgressText.textContent = label;
+  }
+
+  function dismissVoiceLoader(delay) {
+    window.clearTimeout(voiceLoaderTimer);
+    voiceLoaderTimer = window.setTimeout(() => {
+      els.voiceLoader.classList.add("is-leaving");
+      window.setTimeout(() => { els.voiceLoader.hidden = true; }, 260);
+    }, delay);
+  }
+
+  async function initializePiper() {
+    try {
+      const piper = await import(PIPER_BUNDLE_URL);
+      const cached = await piper.isVoiceCached();
+      updateVoiceLoader({
+        title: cached ? "저장된 음성 모델 불러오는 중" : "음성 모델 다운로드 중",
+        detail: cached ? "기기에 저장된 고품질 영어 음성을 준비하고 있어요." : "첫 실행에만 약 63MB를 내려받아요.",
+        label: cached ? "준비 중" : "0%"
+      });
+
+      piperSession = await piper.createVoiceSession(({ loaded, total }) => {
+        const megabytes = (loaded / 1024 / 1024).toFixed(1);
+        if (total > 0) {
+          const progress = Math.min(100, Math.round((loaded / total) * 100));
+          updateVoiceLoader({
+            title: progress >= 100 ? "음성 엔진 시작 중" : "음성 모델 다운로드 중",
+            detail: progress >= 100 ? "다운로드를 마치고 음성을 준비하고 있어요." : `${megabytes}MB를 받았어요. 다음부터는 기기에 저장된 모델을 사용해요.`,
+            label: `${progress}%`,
+            progress
+          });
+        } else {
+          updateVoiceLoader({
+            title: "음성 모델 다운로드 중",
+            detail: `${megabytes}MB를 받았어요. 다음부터는 기기에 저장된 모델을 사용해요.`,
+            label: `${megabytes}MB`
+          });
+        }
+      });
+
+      piperStatus = "ready";
+      els.pronounce.disabled = false;
+      els.pronounce.title = "Piper 고품질 영어 음성";
+      updateVoiceLoader({
+        title: "음성 모델 준비 완료",
+        detail: "이제 단어 발음을 기기에서 바로 만들 수 있어요.",
+        label: "완료",
+        progress: 100,
+        state: "ready"
+      });
+      dismissVoiceLoader(1800);
+    } catch (error) {
+      console.error("Piper voice initialization failed", error);
+      piperStatus = "fallback";
+      els.pronounce.disabled = !speechSupported;
+      els.pronounce.title = speechSupported ? "브라우저 기본 영어 음성" : "음성을 준비할 수 없습니다.";
+      updateVoiceLoader({
+        title: speechSupported ? "기본 음성으로 전환했어요" : "음성 모델을 준비하지 못했어요",
+        detail: speechSupported ? "Piper를 불러오지 못해 브라우저 음성을 사용합니다." : "네트워크 연결을 확인한 뒤 페이지를 다시 열어주세요.",
+        label: speechSupported ? "기본 음성" : "오류",
+        state: "fallback"
+      });
+      dismissVoiceLoader(5000);
+    }
   }
 
   function render() {
@@ -190,16 +293,50 @@
     els.card.setAttribute("aria-label", flipped ? "뜻 카드. 눌러서 단어 보기" : `${currentWord().word}. 눌러서 뜻 보기`);
   }
 
-  function pronounce() {
-    const word = currentWord();
-    if (!word || !speechSupported) return;
+  function finishPronunciation(requestId) {
+    if (requestId !== pronunciationRequest) return;
+    pronunciationBusy = false;
+    activeAudioSource = null;
+    activeUtterance = null;
+    setPronunciationActive(false);
+    els.pronounceText.textContent = "발음";
+  }
 
-    const synthesis = window.speechSynthesis;
-    if (activeUtterance || synthesis.speaking || synthesis.pending) {
-      stopPronunciation();
+  function ensureAudioContext() {
+    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContextClass) return null;
+    if (!audioContext || audioContext.state === "closed") audioContext = new AudioContextClass();
+    if (audioContext.state === "suspended") void audioContext.resume();
+    return audioContext;
+  }
+
+  async function pronounceWithPiper(word, requestId, context) {
+    const wav = await piperSession.predict(word.word);
+    if (requestId !== pronunciationRequest) return;
+    if (!context) throw new Error("Web Audio is not supported.");
+    if (context.state === "suspended") await context.resume();
+    const audioBuffer = await context.decodeAudioData(await wav.arrayBuffer());
+    if (requestId !== pronunciationRequest) return;
+
+    const source = context.createBufferSource();
+    source.buffer = audioBuffer;
+    source.connect(context.destination);
+    source.onended = () => {
+      source.disconnect();
+      if (activeAudioSource === source) finishPronunciation(requestId);
+    };
+    activeAudioSource = source;
+    els.pronounceText.textContent = "재생 중";
+    source.start();
+  }
+
+  function pronounceWithBrowser(word, requestId) {
+    if (!speechSupported) {
+      finishPronunciation(requestId);
       return;
     }
 
+    const synthesis = window.speechSynthesis;
     const utterance = new window.SpeechSynthesisUtterance(word.word);
     activeUtterance = utterance;
     utterance.lang = "en-US";
@@ -209,15 +346,13 @@
 
     const voices = availableVoices.length ? availableVoices : refreshVoices();
     const voice = voices.find((item) => item.lang === "en-US")
-      || voices.find((voice) => voice.lang.startsWith("en"))
+      || voices.find((item) => item.lang.startsWith("en"))
       || null;
     if (voice) utterance.voice = voice;
 
-    setPronunciationActive(true);
+    els.pronounceText.textContent = "재생 중";
     const finish = () => {
-      if (activeUtterance !== utterance) return;
-      activeUtterance = null;
-      setPronunciationActive(false);
+      if (activeUtterance === utterance) finishPronunciation(requestId);
     };
     utterance.onend = finish;
     utterance.onerror = finish;
@@ -226,6 +361,43 @@
       if (synthesis.paused) synthesis.resume();
     } catch {
       finish();
+    }
+  }
+
+  async function pronounce() {
+    const word = currentWord();
+    if (!word || piperStatus === "loading") return;
+    if (pronunciationBusy || activeAudioSource || activeUtterance) {
+      stopPronunciation();
+      return;
+    }
+
+    pronunciationBusy = true;
+    const requestId = ++pronunciationRequest;
+    const context = piperStatus === "ready" ? ensureAudioContext() : null;
+    setPronunciationActive(true);
+    els.pronounceText.textContent = piperStatus === "ready" ? "생성 중" : "재생 중";
+
+    if (piperStatus !== "ready") {
+      pronounceWithBrowser(word, requestId);
+      return;
+    }
+
+    try {
+      await pronounceWithPiper(word, requestId, context);
+    } catch (error) {
+      if (requestId !== pronunciationRequest) return;
+      console.error("Piper pronunciation failed", error);
+      piperStatus = "fallback";
+      els.pronounce.title = speechSupported ? "브라우저 기본 영어 음성" : "음성을 재생할 수 없습니다.";
+      updateVoiceLoader({
+        title: speechSupported ? "기본 음성으로 전환했어요" : "음성을 재생하지 못했어요",
+        detail: speechSupported ? "Piper 재생에 실패해 브라우저 음성을 사용합니다." : "페이지를 다시 열어 음성 모델을 준비해주세요.",
+        label: speechSupported ? "기본 음성" : "오류",
+        state: "fallback"
+      });
+      dismissVoiceLoader(5000);
+      pronounceWithBrowser(word, requestId);
     }
   }
 
@@ -339,13 +511,11 @@
     } catch {}
   }
 
-  if (!speechSupported) {
-    els.pronounce.disabled = true;
-    els.pronounce.title = "이 브라우저에서는 음성 재생을 지원하지 않습니다.";
-  } else {
+  if (speechSupported) {
     refreshVoices();
     window.speechSynthesis.addEventListener("voiceschanged", refreshVoices);
   }
 
   render();
+  void initializePiper();
 })();

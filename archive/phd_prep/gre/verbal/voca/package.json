@@ -1,0 +1,14 @@
+{
+  "name": "gre-vocabulary-piper-tts",
+  "private": true,
+  "scripts": {
+    "build:tts": "esbuild tts-source.js --bundle --format=esm --platform=browser --target=safari15 --minify --external:fs --external:path --outfile=vendor/piper-tts.js"
+  },
+  "dependencies": {
+    "@mintplex-labs/piper-tts-web": "1.0.5",
+    "onnxruntime-web": "1.18.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10"
+  }
+}

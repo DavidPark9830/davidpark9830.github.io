@@ -21,6 +21,22 @@
       </div>
     </header>
 
+    <section class="voice-loader" id="voiceLoader" role="status" aria-live="polite">
+      <div class="voice-loader-copy">
+        <span class="voice-loader-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12"></path></svg>
+        </span>
+        <span class="voice-loader-text">
+          <strong id="voiceStatusTitle">음성 모델 준비 중</strong>
+          <small id="voiceStatusDetail">고품질 영어 음성을 연결하고 있어요.</small>
+        </span>
+        <span class="voice-loader-percent" id="voiceProgressText">연결 중</span>
+      </div>
+      <div class="voice-loader-track" aria-hidden="true">
+        <div class="voice-loader-fill" id="voiceProgressFill"></div>
+      </div>
+    </section>
+
     <section class="progress-panel" aria-label="학습 진행 상황">
       <div class="progress-copy">
         <span id="progressLabel">단어를 준비하고 있어요</span>
@@ -59,9 +75,9 @@
             </div>
           </div>
         </article>
-        <button class="pronounce-button" id="pronounceButton" type="button" aria-keyshortcuts="S" aria-label="현재 단어 발음 듣기" aria-pressed="false">
+        <button class="pronounce-button" id="pronounceButton" type="button" aria-keyshortcuts="S" aria-label="현재 단어 발음 듣기" aria-pressed="false" disabled>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12"></path></svg>
-          <span>발음</span><kbd>S</kbd>
+          <span id="pronounceText">발음</span><kbd>S</kbd>
         </button>
       </div>
 
@@ -90,6 +106,6 @@
   </main>
 
   <script src="words.js"></script>
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>

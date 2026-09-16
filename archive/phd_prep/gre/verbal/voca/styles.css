@@ -73,6 +73,108 @@ h1 {
 .text-button:hover { background: rgba(44, 87, 214, .07); }
 .text-button.muted { color: var(--muted); }
 
+.voice-loader {
+  margin-top: 22px;
+  padding: 13px 15px 12px;
+  overflow: hidden;
+  border: 1px solid rgba(44, 87, 214, .14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .76);
+  transition: opacity .24s ease, transform .24s ease, margin .24s ease, padding .24s ease, max-height .24s ease;
+  max-height: 96px;
+}
+
+.voice-loader[hidden] { display: none; }
+
+.voice-loader.is-leaving {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  max-height: 0;
+  border-color: transparent;
+  opacity: 0;
+  transform: translateY(-6px);
+}
+
+.voice-loader-copy {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.voice-loader-icon {
+  flex: 0 0 auto;
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 9px;
+  background: rgba(44, 87, 214, .09);
+  color: var(--accent);
+}
+
+.voice-loader-icon svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.voice-loader-text {
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+
+.voice-loader-text strong { font-size: 13px; }
+.voice-loader-text small { color: var(--muted); font-size: 11px; }
+
+.voice-loader-percent {
+  margin-left: auto;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.voice-loader-track {
+  height: 3px;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #e2e6f1;
+}
+
+.voice-loader-fill {
+  width: 8%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+  transition: width .18s ease;
+}
+
+.voice-loader:not(.has-progress) .voice-loader-fill {
+  width: 34%;
+  animation: voice-loading 1.25s ease-in-out infinite;
+}
+
+.voice-loader.is-ready { border-color: rgba(21, 150, 109, .2); }
+.voice-loader.is-ready .voice-loader-icon { background: rgba(21, 150, 109, .1); color: var(--known); }
+.voice-loader.is-ready .voice-loader-percent { color: var(--known); }
+.voice-loader.is-ready .voice-loader-fill { width: 100%; background: var(--known); animation: none; }
+
+.voice-loader.is-fallback { border-color: var(--line); }
+.voice-loader.is-fallback .voice-loader-icon { background: var(--bg); color: var(--muted); }
+.voice-loader.is-fallback .voice-loader-percent { color: var(--muted); }
+
+@keyframes voice-loading {
+  from { transform: translateX(-115%); }
+  to { transform: translateX(310%); }
+}
+
 .progress-panel { margin-top: 28px; }
 
 .progress-copy {
