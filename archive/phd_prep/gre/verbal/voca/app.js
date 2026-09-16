@@ -77,9 +77,11 @@
 
   function stopPronunciation() {
     if (!speechSupported) return;
-    window.speechSynthesis.cancel();
+    const synthesis = window.speechSynthesis;
+    if (activeUtterance || synthesis.speaking || synthesis.pending) synthesis.cancel();
     activeUtterance = null;
     els.pronounce.classList.remove("is-speaking");
+    els.pronounce.setAttribute("aria-pressed", "false");
   }
 
   function render() {
@@ -180,26 +182,43 @@
     const word = currentWord();
     if (!word || !speechSupported) return;
 
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(word.word);
+    const synthesis = window.speechSynthesis;
+    if (activeUtterance || synthesis.speaking || synthesis.pending) {
+      stopPronunciation();
+      return;
+    }
+
+    try {
+      if (navigator.audioSession && "type" in navigator.audioSession) {
+        navigator.audioSession.type = "playback";
+      }
+    } catch {}
+
+    const utterance = new window.SpeechSynthesisUtterance(word.word);
     activeUtterance = utterance;
     utterance.lang = "en-US";
     utterance.rate = 0.82;
+    utterance.pitch = 1;
+    utterance.volume = 1;
 
-    const voices = window.speechSynthesis.getVoices();
-    utterance.voice = voices.find((voice) => voice.lang === "en-US")
+    const voices = synthesis.getVoices();
+    const voice = voices.find((item) => item.lang === "en-US")
       || voices.find((voice) => voice.lang.startsWith("en"))
       || null;
+    if (voice) utterance.voice = voice;
 
     els.pronounce.classList.add("is-speaking");
+    els.pronounce.setAttribute("aria-pressed", "true");
     const finish = () => {
       if (activeUtterance !== utterance) return;
       activeUtterance = null;
       els.pronounce.classList.remove("is-speaking");
+      els.pronounce.setAttribute("aria-pressed", "false");
     };
-    utterance.addEventListener("end", finish, { once: true });
-    utterance.addEventListener("error", finish, { once: true });
-    window.speechSynthesis.speak(utterance);
+    utterance.onend = finish;
+    utterance.onerror = finish;
+    synthesis.speak(utterance);
+    if (synthesis.paused) synthesis.resume();
   }
 
   function resetDrag() {
