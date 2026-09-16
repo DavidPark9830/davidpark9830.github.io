@@ -1,6 +1,6 @@
 import { TtsSession, stored } from "@mintplex-labs/piper-tts-web";
 
-export const VOICE_ID = "en_US-lessac-medium";
+export const VOICE_ID = "en_US-hfc_female-medium";
 
 export async function isVoiceCached() {
   try {
