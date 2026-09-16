@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#f5f6f8">
+  <title>GRE Vocabulary</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">GRE · VERBAL REASONING</p>
+        <h1>Vocabulary</h1>
+      </div>
+      <div class="header-actions">
+        <button class="text-button" id="shuffleButton" type="button" aria-label="남은 단어 섞기">섞기</button>
+        <button class="text-button muted" id="resetButton" type="button" aria-label="학습 기록 초기화">처음부터</button>
+      </div>
+    </header>
+
+    <section class="progress-panel" aria-label="학습 진행 상황">
+      <div class="progress-copy">
+        <span id="progressLabel">단어를 준비하고 있어요</span>
+        <span id="progressCount">0 / 0</span>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="stats">
+        <div><strong id="knownCount">0</strong><span>아는 단어</span></div>
+        <div><strong id="unknownCount">0</strong><span>다시 볼 단어</span></div>
+        <div><strong id="remainingCount">0</strong><span>남은 단어</span></div>
+      </div>
+    </section>
+
+    <section class="study-area" aria-live="polite">
+      <div class="swipe-label unknown-label" aria-hidden="true">모름</div>
+      <div class="swipe-label known-label" aria-hidden="true">알아요</div>
+
+      <article class="card" id="card" tabindex="0" role="button" aria-keyshortcuts="Space" aria-label="단어 카드. 눌러서 뜻 보기">
+        <div class="card-inner">
+          <div class="card-face card-front">
+            <span class="card-kicker">WORD</span>
+            <h2 id="wordText">Loading…</h2>
+            <p class="tap-hint">눌러서 뜻 보기</p>
+          </div>
+          <div class="card-face card-back">
+            <span class="card-kicker" id="dayText">MEANING</span>
+            <p class="meaning" id="meaningText">단어 데이터를 불러오고 있습니다.</p>
+            <div class="meaning-note" id="meaningNote" hidden>
+              <span>어원 · 어근 · 연상</span>
+              <p id="noteText"></p>
+            </div>
+            <p class="tap-hint">눌러서 단어 보기</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="complete-panel" id="completePanel" hidden>
+        <span class="complete-icon">✓</span>
+        <h2>이번 학습을 마쳤어요</h2>
+        <p>모든 단어를 한 번 이상 “알아요”로 분류했습니다.</p>
+        <button class="primary-button" id="restartButton" type="button">다시 섞어서 시작</button>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="단어 분류">
+      <button class="choice-button unknown" id="unknownButton" type="button" aria-keyshortcuts="ArrowLeft">
+        <span class="key">←</span>
+        <span><strong>모름</strong><small>조금 뒤 다시 나와요</small></span>
+      </button>
+      <button class="choice-button known" id="knownButton" type="button" aria-keyshortcuts="ArrowRight">
+        <span><strong>알아요</strong><small>이번 학습에서 제외</small></span>
+        <span class="key">→</span>
+      </button>
+    </section>
+
+    <section class="shortcut-guide" aria-label="키보드 단축키">
+      <p class="shortcut-line"><strong>키보드</strong><span><kbd>Space</kbd> 뜻 보기</span><span><kbd>←</kbd> 모름</span><span><kbd>→</kbd> 알아요</span></p>
+    </section>
+  </main>
+
+  <script src="words.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
