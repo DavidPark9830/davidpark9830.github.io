@@ -3,6 +3,8 @@
   const words = Array.isArray(window.GRE_WORDS) ? window.GRE_WORDS : [];
   const byId = new Map(words.map((word) => [String(word.id), word]));
   const speechSupported = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent)
+    || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 
   const els = {
     card: document.getElementById("card"),
@@ -12,6 +14,7 @@
     meaningNote: document.getElementById("meaningNote"),
     note: document.getElementById("noteText"),
     pronounce: document.getElementById("pronounceButton"),
+    pronunciationAudio: document.getElementById("pronunciationAudio"),
     day: document.getElementById("dayText"),
     known: document.getElementById("knownCount"),
     unknown: document.getElementById("unknownCount"),
@@ -32,6 +35,7 @@
   let suppressClick = false;
   let animating = false;
   let activeUtterance = null;
+  let audioPlaying = false;
 
   function shuffle(items) {
     const result = [...items];
@@ -76,12 +80,23 @@
   }
 
   function stopPronunciation() {
-    if (!speechSupported) return;
-    const synthesis = window.speechSynthesis;
-    if (activeUtterance || synthesis.speaking || synthesis.pending) synthesis.cancel();
+    audioPlaying = false;
+    els.pronunciationAudio.pause();
+    els.pronunciationAudio.removeAttribute("src");
+    els.pronunciationAudio.load();
+
+    if (speechSupported) {
+      const synthesis = window.speechSynthesis;
+      if (activeUtterance || synthesis.speaking || synthesis.pending) synthesis.cancel();
+    }
     activeUtterance = null;
     els.pronounce.classList.remove("is-speaking");
     els.pronounce.setAttribute("aria-pressed", "false");
+  }
+
+  function setPronunciationActive(active) {
+    els.pronounce.classList.toggle("is-speaking", active);
+    els.pronounce.setAttribute("aria-pressed", String(active));
   }
 
   function render() {
@@ -178,23 +193,13 @@
     els.card.setAttribute("aria-label", flipped ? "뜻 카드. 눌러서 단어 보기" : `${currentWord().word}. 눌러서 뜻 보기`);
   }
 
-  function pronounce() {
-    const word = currentWord();
-    if (!word || !speechSupported) return;
-
-    const synthesis = window.speechSynthesis;
-    if (activeUtterance || synthesis.speaking || synthesis.pending) {
-      stopPronunciation();
+  function speakWithBrowser(text) {
+    if (!speechSupported) {
+      setPronunciationActive(false);
       return;
     }
-
-    try {
-      if (navigator.audioSession && "type" in navigator.audioSession) {
-        navigator.audioSession.type = "playback";
-      }
-    } catch {}
-
-    const utterance = new window.SpeechSynthesisUtterance(word.word);
+    const synthesis = window.speechSynthesis;
+    const utterance = new window.SpeechSynthesisUtterance(text);
     activeUtterance = utterance;
     utterance.lang = "en-US";
     utterance.rate = 0.82;
@@ -207,18 +212,63 @@
       || null;
     if (voice) utterance.voice = voice;
 
-    els.pronounce.classList.add("is-speaking");
-    els.pronounce.setAttribute("aria-pressed", "true");
+    setPronunciationActive(true);
     const finish = () => {
       if (activeUtterance !== utterance) return;
       activeUtterance = null;
-      els.pronounce.classList.remove("is-speaking");
-      els.pronounce.setAttribute("aria-pressed", "false");
+      setPronunciationActive(false);
     };
     utterance.onend = finish;
     utterance.onerror = finish;
-    synthesis.speak(utterance);
-    if (synthesis.paused) synthesis.resume();
+    try {
+      synthesis.speak(utterance);
+      if (synthesis.paused) synthesis.resume();
+    } catch {
+      finish();
+    }
+  }
+
+  function playRemotePronunciation(text) {
+    const audio = els.pronunciationAudio;
+    const fallback = () => {
+      if (!audioPlaying) return;
+      audioPlaying = false;
+      audio.removeAttribute("src");
+      speakWithBrowser(text);
+    };
+
+    audioPlaying = true;
+    activeUtterance = null;
+    setPronunciationActive(true);
+    audio.src = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(text)}`;
+    audio.onended = () => {
+      if (!audioPlaying) return;
+      audioPlaying = false;
+      setPronunciationActive(false);
+    };
+    audio.onerror = fallback;
+
+    try {
+      const playback = audio.play();
+      if (playback?.catch) playback.catch(fallback);
+    } catch {
+      fallback();
+    }
+  }
+
+  function pronounce() {
+    const word = currentWord();
+    if (!word) return;
+
+    const synthesisActive = speechSupported
+      && (activeUtterance || window.speechSynthesis.speaking || window.speechSynthesis.pending);
+    if (audioPlaying || synthesisActive) {
+      stopPronunciation();
+      return;
+    }
+
+    if (isIOS || !speechSupported) playRemotePronunciation(word.word);
+    else speakWithBrowser(word.word);
   }
 
   function resetDrag() {
@@ -331,7 +381,7 @@
     } catch {}
   }
 
-  if (!speechSupported) {
+  if (!speechSupported && !els.pronunciationAudio?.play) {
     els.pronounce.disabled = true;
     els.pronounce.title = "이 브라우저에서는 음성 재생을 지원하지 않습니다.";
   }
