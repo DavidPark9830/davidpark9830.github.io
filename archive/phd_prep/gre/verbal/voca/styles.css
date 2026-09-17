@@ -349,13 +349,31 @@ h1 {
   text-align: left;
 }
 
-.meaning-note > span {
-  display: block;
+.meaning-note-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
   margin-bottom: 7px;
+}
+
+.meaning-note-heading span {
   color: var(--accent);
   font-size: 11px;
   font-weight: 780;
   letter-spacing: .08em;
+}
+
+.meaning-note-heading a {
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 680;
+  text-decoration: none;
+}
+
+.meaning-note-heading a:hover,
+.meaning-note-heading a:focus-visible {
+  text-decoration: underline;
 }
 
 .meaning-note p {

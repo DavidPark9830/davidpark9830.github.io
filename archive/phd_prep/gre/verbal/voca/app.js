@@ -14,6 +14,7 @@
     meaning: document.getElementById("meaningText"),
     meaningNote: document.getElementById("meaningNote"),
     note: document.getElementById("noteText"),
+    etymologySource: document.getElementById("etymologySource"),
     pronounce: document.getElementById("pronounceButton"),
     pronounceText: document.getElementById("pronounceText"),
     pronunciationAudio: document.getElementById("pronunciationAudio"),
@@ -376,6 +377,7 @@
     const note = meaningParts.join("\n\n").trim();
     els.meaning.textContent = meaning;
     els.note.textContent = note;
+    els.etymologySource.href = `https://en.wiktionary.org/wiki/${encodeURIComponent(word.word)}#English`;
     els.meaningNote.hidden = !note;
     els.day.textContent = word.day ? `DAY ${String(word.day).padStart(2, "0")} · MEANING` : "MEANING";
     els.card.setAttribute("aria-label", `${word.word}. 눌러서 뜻 보기`);

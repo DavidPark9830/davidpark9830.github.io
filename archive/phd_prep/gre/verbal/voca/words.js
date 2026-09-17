@@ -4,210 +4,210 @@ window.GRE_WORDS = [
     "id": "d01-001",
     "day": 1,
     "word": "abandon",
-    "meaning": "방종, 자유방임; 버리다\n\nad(~에게)+bandon(통제)",
+    "meaning": "방종, 자유방임; 버리다\n\n유래: 고대 프랑스어 abandoner('포기하다') < a-('~에') + bandon('권한, 지배').",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-002",
     "day": 1,
     "word": "abase",
-    "meaning": "(품위, 지위) 강등시키다\n\nad(~까지) + baissier(낮추다)",
+    "meaning": "(품위, 지위) 강등시키다\n\n유래: 중세 영어 abaishen; 중세 프랑스어 abaisser; 고대 프랑스어 abaissier; 라틴어 ad (“toward, to”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-003",
     "day": 1,
     "word": "abash",
-    "meaning": "당황하게 하다, 무안하게 하다\n\nes(완전히) + bair(놀라게하다)",
+    "meaning": "당황하게 하다, 무안하게 하다\n\n유래: 고대 프랑스어 esbaïr('당황시키다, 놀라게 하다') < es-('완전히') + baïr('입을 벌리다, 놀라다').",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-004",
     "day": 1,
     "word": "abate",
-    "meaning": "(불쾌한 것, 심한 것) 약해지다, ; (정도, 세기, 수량) 감소시키다\n\nad(~까지) + batter(때리다)",
+    "meaning": "(불쾌한 것, 심한 것) 약해지다; (정도, 세기, 수량) 감소시키다\n\n유래: 고대 프랑스어 abatre('쓰러뜨리다') < a- + batre('치다').",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-005",
     "day": 1,
     "word": "abbreviate",
-    "meaning": "(단어, 문장, 글) 줄이다\n\nbrevis(짧은)",
+    "meaning": "(단어, 문장, 글) 줄이다\n\n유래: 중세 영어 abbreviaten; 라틴어 abbreviātus.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-006",
     "day": 1,
     "word": "abdicate",
-    "meaning": "(왕권, 권리, 의무) 버리다, 포기하다\n\nab(~로부터 멀리) + dicare(발표하다)",
+    "meaning": "(왕권, 권리, 의무) 버리다, 포기하다\n\n유래: 라틴어 abdicātus (“renounced”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-007",
     "day": 1,
     "word": "aberrant",
-    "meaning": "정도를 벗어난, 일탈적인\n\nab(~로부터 멀리) + errare(헤매다)",
+    "meaning": "정도를 벗어난, 일탈적인\n\n유래: 라틴어 aberrans('벗어나 헤매는') < ab-('~에서 벗어나') + errare('헤매다').",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-008",
     "day": 1,
     "word": "abet",
-    "meaning": "(범죄, 나쁜 짓) 부추기다, 자극하다\n\nad(~에게) + beter(강요하다)",
+    "meaning": "(범죄, 나쁜 짓) 부추기다, 자극하다\n\n유래: 중세 영어 abetten; 고대 프랑스어 abeter (“to entice”); 중세 네덜란드어 bētan (“incite”); 고대 노르드어 beita (“to cause to bite, bait, incite”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-009",
     "day": 1,
     "word": "abeyance",
-    "meaning": "(일시적) 중단, 중지, 소강상태\n\na(~를 향해) + beer(벌리다)",
+    "meaning": "(일시적) 중단, 중지, 소강상태\n\n유래: 앵글로노르만어 abeiance('법적 기대') < 고대 프랑스어 abeance('욕망') < abeër('갈망하다, 입을 벌리다').",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-010",
     "day": 1,
     "word": "abhor",
-    "meaning": "혐오하다, 몹시 싫어하다\n\nab(~로부터 멀리) + horrere(부들부들 떨다)",
+    "meaning": "혐오하다, 몹시 싫어하다\n\n유래: 중세 영어 abhorren; 중세 프랑스어 abhorrer; 라틴어 abhorreō (“shrink away from in horror”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-011",
     "day": 1,
     "word": "abject",
-    "meaning": "비굴한, 비참한, 절망적인\n\nab(멀리) + jacere(던지다)",
+    "meaning": "비굴한, 비참한, 절망적인\n\n유래: 라틴어 abiectus('내던져진, 버림받은') < ab-('떨어져') + iacere('던지다').",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-012",
     "day": 1,
     "word": "abjure",
-    "meaning": "(신념, 주장) 버리다, 포기하다\n\nab(멀리) + jurare(맹세하다)",
+    "meaning": "(신념, 주장) 버리다, 포기하다\n\n유래: 중세 영어 abjuren (“to give up (something); to recant or renounce (something) under oath”); 앵글로노르만어 abjurer; 중세 프랑스어 abiurer; 고대 프랑스어 abjurer (“to reject or renounce (something) on oath”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-013",
     "day": 1,
     "word": "abnegate",
-    "meaning": "(권리 등) 포기하다; (쾌락 등) 자제하다\n\nab(멀리) + negare(부인하다)",
+    "meaning": "(권리 등) 포기하다; (쾌락 등) 자제하다\n\n유래: 라틴어 abnegare('거부하다') < ab-('떨어져') + negare('부정하다'). abnegation에서 역성된 말일 가능성도 있음.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-014",
     "day": 1,
     "word": "abominate",
-    "meaning": "증오하다, 혐오하다\n\nab(~로부터 멀리) + omen(불길한 징조)",
+    "meaning": "증오하다, 혐오하다\n\n유래: abomination에서 역성된 말로 보거나, 후기 라틴어 abominatus('불길한 징조로 여기다')에서 온 것으로 봄.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-015",
     "day": 1,
     "word": "abrade",
-    "meaning": "마모시키다\n\nab(~로부터 멀리) + radere(문지르다)",
+    "meaning": "마모시키다\n\n유래: 라틴어 abrādō (“scrape off”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-016",
     "day": 1,
     "word": "abreast of",
-    "meaning": "~와 나란히 하는, 뒤떨어지지 않는, (최신 정보 등) 알고 있는\n\na(~를 향해) + breast(가슴)",
+    "meaning": "~와 나란히 하는, 뒤떨어지지 않는, (최신 정보 등) 알고 있는\n\n유래: 중세 영어 abreast. a-('~에, ~으로') + breast('가슴'); 원래 '가슴을 나란히 하고'라는 뜻.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-017",
     "day": 1,
     "word": "abridge",
-    "meaning": "요약하다, 축약하다; 감소하다, 제한하다\n\nbrevis(짧은)",
+    "meaning": "요약하다, 축약하다; 감소하다, 제한하다\n\n유래: 중세 영어 abreggen; 고대 프랑스어 abregier; 후기 라틴어 abbreviō, abbreviāre (“make brief”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-018",
     "day": 1,
     "word": "abrogate",
-    "meaning": "(법령, 관습) 공식적으로 폐지하다, 철폐하다\n\nab(~로부터 멀리) + rogare(입법제안)",
+    "meaning": "(법령, 관습) 공식적으로 폐지하다, 철폐하다\n\n유래: 중세 영어 abrogat (“abolished”); 라틴어 abrogātus.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-019",
     "day": 1,
     "word": "absolve",
-    "meaning": "면죄하다, (책임, 의무) 면제하다\n\nab(~로부터 멀리) + solvere(풀어주다)",
+    "meaning": "면죄하다, (책임, 의무) 면제하다\n\n유래: 중세 영어 absolven; 라틴어 absolvere (“set free, acquit”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-020",
     "day": 1,
     "word": "abstain",
-    "meaning": "삼가다, 절제하다; 기권하다\n\nab(~로부터 멀리) + tenere(붙들다)",
+    "meaning": "삼가다, 절제하다; 기권하다\n\n유래: 라틴어 abstinere('자제하다') < abs-('~로부터') + tenere('붙들다').",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-021",
     "day": 1,
     "word": "abstemious",
-    "meaning": "(음식, 음주) 절제하는\n\nab(~로부터 멀리) + tementum(술)",
+    "meaning": "(음식, 음주) 절제하는\n\n유래: 라틴어 abstēmius (“abstaining from wine”); 원시 인도유럽어 *temH- (“dark (referring to the colour of wine)”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-022",
     "day": 1,
     "word": "abstract",
-    "meaning": "분리시켜 생각하다, 괴리시키다\n\nab(~로부터 멀리) + trahere(당기다)",
+    "meaning": "분리시켜 생각하다, 괴리시키다\n\n유래: 라틴어 abstractus('끌어낸') < abs-('떨어져') + trahere('끌다').",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-023",
     "day": 1,
     "word": "abstruse",
-    "meaning": "난해한, 심오한\n\nab(~로부터 멀리) + turdere(밀다)",
+    "meaning": "난해한, 심오한\n\n유래: 라틴어 abstrusus('숨겨진') < abs-('떨어져') + trudere('밀다').",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-024",
     "day": 1,
     "word": "abysmal",
-    "meaning": "심연의, 매우 깊은; 끔찍한, 매우 나쁜\n\nabyssus(끝없는 심연)",
+    "meaning": "심연의, 매우 깊은; 끔찍한, 매우 나쁜\n\n유래: abysm + -al.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-025",
     "day": 1,
     "word": "accessible",
-    "meaning": "(서비스, 장소 등) 접근성 있는, 이용하기 쉬운; 이해하기 쉬운\n\nad(~까지) + cedere(양보하다, 가다)",
+    "meaning": "(서비스, 장소 등) 접근성 있는, 이용하기 쉬운; 이해하기 쉬운\n\n유래: 프랑스어; 후기 라틴어 accessibilis.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-026",
     "day": 1,
     "word": "accession",
-    "meaning": "동의, 합의; (지위, 권력의) 획득\n\nad(~까지) + cedere(양보하다, 가다)",
+    "meaning": "동의, 합의; (지위, 권력의) 획득\n\n유래: 라틴어 accessiō(n).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-027",
     "day": 1,
     "word": "acclaim",
-    "meaning": "칭송하다, 갈채/환호를 보내다; 칭송, 환호, 갈채\n\nad(~에게) + clamere(고함지르다)",
+    "meaning": "칭송하다, 갈채/환호를 보내다; 칭송, 환호, 갈채\n\n유래: 라틴어 acclamare('소리쳐 환호하다') < ad-('~을 향해') + clamare('외치다').",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-028",
     "day": 1,
     "word": "acclimate",
-    "meaning": "적응하다\n\nad(~에게) + climat(기후)",
+    "meaning": "적응하다\n\n유래: 프랑스어 acclimater.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-029",
     "day": 1,
     "word": "accolade",
-    "meaning": "영광, 영예, 찬양, 포상\n\nad(~에) + collum(목) = 기사작위 주면서 목 을 끌어 안아 주는 행위",
+    "meaning": "영광, 영예, 찬양, 포상\n\n유래: 프랑스어 accolade; 옥시탄어 acolada (“an embrace”); 이탈리아어 accollato; 민중 라틴어 *accollō (“to hug around the neck”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-030",
     "day": 1,
     "word": "accord",
-    "meaning": "주다, 부여하다; 조화를 이루다; 동의, 조화, 합의\n\nad(~에게) + cord(심장)",
+    "meaning": "주다, 부여하다; 조화를 이루다; 동의, 조화, 합의\n\n유래: 중세 영어 accord; 고대 프랑스어 acort.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
@@ -221,14 +221,14 @@ window.GRE_WORDS = [
     "id": "d01-032",
     "day": 1,
     "word": "accrete",
-    "meaning": "점진적으로 증가하다\n\nad(~까지) + crescere(커지다)",
+    "meaning": "점진적으로 증가하다\n\n유래: accretion('증가, 부착')에서 역성된 동사.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-033",
     "day": 1,
     "word": "accrue",
-    "meaning": "(이자, 이익, 혜택 등) 쌓이다\n\nad(~까지) + crescere(커지다)",
+    "meaning": "(이자, 이익, 혜택 등) 쌓이다\n\n유래: 중세 영어 acrewen; 고대 프랑스어 acreüe; 라틴어 accrēsco (“increase”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
@@ -263,49 +263,49 @@ window.GRE_WORDS = [
     "id": "d01-038",
     "day": 1,
     "word": "acquiesce",
-    "meaning": "(마지못해) 순응하다, 따르다\n\nad(~에게) + quiescere(쉬다, 침묵하다)",
+    "meaning": "(마지못해) 순응하다, 따르다\n\n유래: 중세 프랑스어 acquiescer; 라틴어 acquiescō.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-039",
     "day": 1,
     "word": "acquisitive",
-    "meaning": "탐욕스런, 소유욕이 강한\n\nad(~까지) + quaerere(찾아 다니다)",
+    "meaning": "탐욕스런, 소유욕이 강한\n\n유래: 라틴어 acquisītus (“acquired, gained”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-040",
     "day": 1,
     "word": "acquit",
-    "meaning": "무죄를 선고하다\n\nad(~로) + quitare(풀어주다)",
+    "meaning": "무죄를 선고하다\n\n유래: 고대 프랑스어 aquiter (“to act, do”); 중세 라틴어 acquitāre (“to settle a debt”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-041",
     "day": 1,
     "word": "acrid",
-    "meaning": "(냄새) 콕 쏘는 듯한, (맛) 매운; (말/어조) 신랄한\n\nacer, acri(예리한, 신랄한)",
+    "meaning": "(냄새) 콕 쏘는 듯한, (맛) 매운; (말/어조) 신랄한\n\n유래: 라틴어 ācris.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-042",
     "day": 1,
     "word": "acrimonious",
-    "meaning": "(말, 논쟁, 싸움) 험악한, 신랄한\n\nacer, acri(예리한, 신랄한)",
+    "meaning": "(말, 논쟁, 싸움) 험악한, 신랄한\n\n유래: 라틴어 acrimonia('날카로움, 신랄함') < acer('날카로운, 쓴')에서 나온 acrimony + -ous.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-043",
     "day": 1,
     "word": "acumen",
-    "meaning": "명민함, 통찰력, 혜안\n\nacuere(날카롭게 만들다)",
+    "meaning": "명민함, 통찰력, 혜안\n\n유래: 라틴어 acūmen (“sharp point”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-044",
     "day": 1,
     "word": "acute",
-    "meaning": "(상태) 심각한; (사람) 예리한, 예민한; (병) 극성인\n\nacuere(날카롭게 만들다)",
+    "meaning": "(상태) 심각한; (사람) 예리한, 예민한; (병) 극성인\n\n유래: 중세 영어 acute (“of a disease or fever: starting suddenly and lasting for a short time; of a humour: irritating, sharp”); 라틴어 acūta.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
@@ -326,56 +326,56 @@ window.GRE_WORDS = [
     "id": "d01-047",
     "day": 1,
     "word": "adamant",
-    "meaning": "확고한, 단호한\n\na(부정어) + daman(길들이다)",
+    "meaning": "확고한, 단호한\n\n유래: 고대 그리스어 adamas('정복할 수 없는 것') < a-('아닌') + daman('정복하다').",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-048",
     "day": 1,
     "word": "adapt",
-    "meaning": "적응시키다; (새로운 용도/목적에) 맞추다, 조정하다\n\nad(~에) + aptare(알맞다)",
+    "meaning": "적응시키다; (새로운 용도/목적에) 맞추다, 조정하다\n\n유래: 중세 영어 *adapten; 라틴어 adaptāre (“to fit to”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-049",
     "day": 1,
     "word": "adaptable",
-    "meaning": "적응성 있는; 융통성 있는\n\nad(~에) + aptare(알맞다)",
+    "meaning": "적응성 있는; 융통성 있는\n\n유래: adapt + -able.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-050",
     "day": 1,
     "word": "address",
-    "meaning": "(문제 등에 대해) 고심하여 다루다\n\nad(향해서) + directus(똑바로 둔)",
+    "meaning": "(문제 등에 대해) 고심하여 다루다\n\n유래: 중세 영어 adressen (“to raise erect, adorn”); 고대 프랑스어 adrecier (“to straighten, address”); Proto-Romance *addīrēctiāre; 라틴어 dīrēctus (“straight; right”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-051",
     "day": 1,
     "word": "adduce",
-    "meaning": "(증거, 이유 등을) 제시하다, 인용하다\n\nad(~를 향해) + ducere(이끌다)",
+    "meaning": "(증거, 이유 등을) 제시하다, 인용하다\n\n유래: 중세 영어 adducen; 라틴어 addūcere.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-052",
     "day": 1,
     "word": "adept",
-    "meaning": "능숙한\n\nad(~에) + aptare(알맞다)",
+    "meaning": "능숙한\n\n유래: 프랑스어 adepte; 라틴어 adeptus (“who has achieved”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-053",
     "day": 1,
     "word": "adequate",
-    "meaning": "충분한, 적절한\n\nad(~에) + aequus(동등한)",
+    "meaning": "충분한, 적절한\n\n유래: 학술 차용: 라틴어 adaequātus.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-054",
     "day": 1,
     "word": "adherent",
-    "meaning": "지지자, 추종자\n\nad(~에) + haerere(붙어있다)",
+    "meaning": "지지자, 추종자\n\n유래: 중세 영어 adherent; 고대 프랑스어 adherent; 라틴어 adhaerēns.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
@@ -389,7 +389,7 @@ window.GRE_WORDS = [
     "id": "d01-056",
     "day": 1,
     "word": "adorn",
-    "meaning": "장식하다\n\nad(~에) + ornare(장식하다)",
+    "meaning": "장식하다\n\n유래: 중세 영어 adornen; 라틴어 adōrnāre.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
@@ -417,35 +417,35 @@ window.GRE_WORDS = [
     "id": "d01-060",
     "day": 1,
     "word": "adumbrate",
-    "meaning": "어렴풋이, 대략적으로 보여주다; 전조하다, 예시하다\n\nad(~에) + umbrare(그림자 드리우다)",
+    "meaning": "어렴풋이, 대략적으로 보여주다; 전조하다, 예시하다\n\n유래: 라틴어 adumbrātus (“represented in outline”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-061",
     "day": 1,
     "word": "advent",
-    "meaning": "출현, 도래\n\nad(~에) + venire(오다)",
+    "meaning": "출현, 도래\n\n유래: 라틴어 adventus (“arrival, approach”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-062",
     "day": 1,
     "word": "adversary",
-    "meaning": "적, 원수\n\nad(~향해) + vertere(돌리다)",
+    "meaning": "적, 원수\n\n유래: 라틴어 adversarius('맞서는 사람') < ad-('~을 향해') + vertere('돌다').",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-063",
     "day": 1,
     "word": "adversity",
-    "meaning": "역경, 고난\n\nad(~향해) + vertere(돌리다)",
+    "meaning": "역경, 고난\n\n유래: 고대 프랑스어 adversité; 라틴어 adversitātem.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-064",
     "day": 1,
     "word": "advocate",
-    "meaning": "지지하다, 옹호하다; 옹호자\n\nad(~에) + vocare(부르다)",
+    "meaning": "지지하다, 옹호하다; 옹호자\n\n유래: 중세 영어 advocat; 고대 프랑스어 advocat; 라틴어 advocātus (“an advocate”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
@@ -459,105 +459,105 @@ window.GRE_WORDS = [
     "id": "d01-066",
     "day": 1,
     "word": "affable",
-    "meaning": "사귀기 쉬운, 붙임성이 있는, 상냥한\n\nad(~에게) + fari(말하다)",
+    "meaning": "사귀기 쉬운, 붙임성이 있는, 상냥한\n\n유래: 라틴어 affabilis('말을 걸기 쉬운') < ad-('~에게') + fari('말하다').",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-067",
     "day": 1,
     "word": "affect",
-    "meaning": "영향을 미치다; 가장하다, 꾸미다\n\nad(~에게) + facere(하다, 만들다)",
+    "meaning": "영향을 미치다; 가장하다, 꾸미다\n\n유래: 중세 영어 affecten; 라틴어 affectāre; 라틴어 affectus; 라틴어 afficere (“to act upon, influence, affect, attack with disease”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-068",
     "day": 1,
     "word": "affiliate",
-    "meaning": "가입하다, 제휴하다, 가맹하다; 친분관계를 맺다, 교제하다\n\nad(향해서) + filius(아들) 입양하다",
+    "meaning": "가입하다, 제휴하다, 가맹하다; 친분관계를 맺다, 교제하다\n\n유래: 중세 라틴어 affīliātus; 후기 라틴어 adfīliō.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-069",
     "day": 1,
     "word": "affinity",
-    "meaning": "좋아함; 유사성, 관련성\n\nad(~에) + finis(경계)",
+    "meaning": "좋아함; 유사성, 관련성\n\n유래: 중세 영어 affinite; 고대 프랑스어 affinité.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-070",
     "day": 1,
     "word": "affirm",
-    "meaning": "단언하다, 확언하다\n\nad(~에) + firmus(강한)",
+    "meaning": "단언하다, 확언하다\n\n유래: 중세 영어 affermen; 고대 프랑스어 afermer; 라틴어 affirmare.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-071",
     "day": 1,
     "word": "afflict",
-    "meaning": "괴롭히다, 고통스럽게 하다\n\nad(~에) + fligere(때리다, 치다)",
+    "meaning": "괴롭히다, 고통스럽게 하다\n\n유래: 중세 영어 afflicten; 라틴어 afflīctō (“to damage, harass, torment”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-072",
     "day": 1,
     "word": "affluent",
-    "meaning": "부유한, 풍성한\n\nad(~로) + fluere(흐르다)",
+    "meaning": "부유한, 풍성한\n\n유래: 중세 프랑스어 affluent; 라틴어 affluentem.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-073",
     "day": 1,
     "word": "affront",
-    "meaning": "모욕; 모욕하다\n\n(to the face 면전에)",
+    "meaning": "모욕; 모욕하다\n\n유래: 중세 영어 afrounten; 고대 프랑스어 afronter (“to hit in the face; to defy”); 민중 라틴어 *affrontare (“to hit in the face”); 라틴어 ad (“to”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-074",
     "day": 1,
     "word": "aggrandize",
-    "meaning": "(권력, 힘, 지위, 명성 등) 증대시키다; 강화하다, 증대하다, 과장하다\n\ngrandis(큰, 거대한)",
+    "meaning": "(권력, 힘, 지위, 명성 등) 증대시키다; 강화하다, 증대하다, 과장하다\n\n유래: 프랑스어 agrandir.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-075",
     "day": 1,
     "word": "aggravate",
-    "meaning": "악화시키다; 화나게 하다, 짜증나게 하다\n\nad(증가) + gravis(무거운)",
+    "meaning": "악화시키다; 화나게 하다, 짜증나게 하다\n\n유래: 라틴어 aggravātus.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-076",
     "day": 1,
     "word": "aggregate",
-    "meaning": "모으다, 종합하다; 총계의; 합계, 총합\n\nad(향하여) + greg, grex(무리)",
+    "meaning": "모으다, 종합하다; 총계의; 합계, 총합\n\n유래: 중세 영어 aggregat(e) (“a sum, unit, complex, aggregate”); 신라틴어 aggregātum (“an aggregate”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-077",
     "day": 1,
     "word": "aggrieved",
-    "meaning": "(부당한 대우에) 분개한, 억울해 하는\n\nad(증가) + gravis(무거운)",
+    "meaning": "(부당한 대우에) 분개한, 억울해 하는\n\n유래: aggrieve + -ed. aggrieve는 고대 프랑스어 agrever, 라틴어 aggravare('무겁게 하다')에서 유래.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-078",
     "day": 1,
     "word": "agile",
-    "meaning": "민첩한, 빠른; 영리한\n\nagere(하다)",
+    "meaning": "민첩한, 빠른; 영리한\n\n유래: 라틴어 agilis (“agile, nimble”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-079",
     "day": 1,
     "word": "agitate",
-    "meaning": "어지럽히다, 괴롭히다; 선동하다\n\nagere(하다)",
+    "meaning": "어지럽히다, 괴롭히다; 선동하다\n\n유래: 중세 영어 agitat(e) (“set in motion”); 라틴어 agitātus.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-080",
     "day": 1,
     "word": "agog",
-    "meaning": "몹시 흥분한, 들떠있는\n\nen(안에) + gogue(재미)",
+    "meaning": "몹시 흥분한, 들떠있는\n\n어원 불확실. 중세 영어 agogge에서 왔으며, 중세 프랑스어 en gogues('즐거운 상태에')와 관련된 것으로 추정.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
@@ -592,7 +592,7 @@ window.GRE_WORDS = [
     "id": "d01-085",
     "day": 1,
     "word": "albeit",
-    "meaning": "~이긴 하지만\n\n(although it be ~)",
+    "meaning": "~이긴 하지만\n\n유래: 중세 영어.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
@@ -606,35 +606,35 @@ window.GRE_WORDS = [
     "id": "d01-087",
     "day": 1,
     "word": "align",
-    "meaning": "제휴하다, 연합하다; 정렬하다\n\n(into line 대열에 맞춰서)",
+    "meaning": "제휴하다, 연합하다; 정렬하다\n\n유래: 중세 영어 alynen; 중세 프랑스어 aligner; 고대 프랑스어 alignier; 라틴어 lineare (“make straight or perpendicular”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-088",
     "day": 1,
     "word": "allay",
-    "meaning": "(두려움, 의심, 염려) 가라앉히다; (고통) 완화시키다\n\n(아래 내려 놓다)",
+    "meaning": "(두려움, 의심, 염려) 가라앉히다; (고통) 완화시키다\n\n유래: 중세 영어 alayen; 고대 영어 āleċġan (“to put, place, lay down, lay aside, throw down, give up, cease from, abandon; put down, allay, suppress, abolish, conquer, destroy, overcome, refute; lay upon, inflict, impose upon; diminish, take away, refuse, lessen, withhold”); 원시 게르만어 *uzlagjaną (“to lay down”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-089",
     "day": 1,
     "word": "allegorical",
-    "meaning": "우화적인, 상징적인\n\nallos(다른) + agoria(말하는)",
+    "meaning": "우화적인, 상징적인\n\n유래: allegory + -ical. allegory는 고대 그리스어 allos('다른') + agoreuein('공적으로 말하다')에서 유래.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-090",
     "day": 1,
     "word": "alleviate",
-    "meaning": "경감하다, 완화하다\n\nad(~까지) + levare(들어올리다)",
+    "meaning": "경감하다, 완화하다\n\n유래: 후기 라틴어 alleviatus.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-091",
     "day": 1,
     "word": "allocate",
-    "meaning": "할당하다, 분배하다\n\nad(~에) + locare(두다)",
+    "meaning": "할당하다, 분배하다\n\n유래: 라틴어 allocātus; 라틴어 allocō.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
@@ -648,21 +648,21 @@ window.GRE_WORDS = [
     "id": "d01-093",
     "day": 1,
     "word": "allude",
-    "meaning": "넌지시 말하다, 암시하다\n\nad(향해서) + ludere(놀다)",
+    "meaning": "넌지시 말하다, 암시하다\n\n유래: 중세 프랑스어 alluder; 라틴어 alludere (“to play with or allude”).",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-094",
     "day": 1,
     "word": "allusive",
-    "meaning": "암시적인, 비유적인\n\nad(향해서) + ludere(놀다)",
+    "meaning": "암시적인, 비유적인\n\n유래: 라틴어 allūs-.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
     "id": "d01-095",
     "day": 1,
     "word": "aloof",
-    "meaning": "쌀쌀맞은, 무관심한, 냉담한\n\na(~를 향해) + luff(뱃머리를 바람쪽으로)",
+    "meaning": "쌀쌀맞은, 무관심한, 냉담한\n\n유래: 중세 영어 loof (“weather gage, windward direction”); 중세 네덜란드어.",
     "source": "https://quizlet.com/kr/1206326833/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-01-flash-cards"
   },
   {
@@ -704,7 +704,7 @@ window.GRE_WORDS = [
     "id": "d02-001",
     "day": 2,
     "word": "ambivalent",
-    "meaning": "상반된 감정이 있는, 양면적인\n\n[ambi(both) + val(vigor, 정력, 힘) + ent : \"두 가지 힘이 함께 있는\" → 양면가치의, 애증을 함께 느끼는",
+    "meaning": "상반된 감정이 있는, 양면적인\n\n유래: 독일어 Ambivalenz; 라틴어 ambi- (“in two ways”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -718,14 +718,14 @@ window.GRE_WORDS = [
     "id": "d02-003",
     "day": 2,
     "word": "amenable",
-    "meaning": "잘따르는, 순종적인; (특정한 방식으로) ~하기 쉬운\n\n[a < ad(to) + men(lead) + able : \"~쪽으로 이끌 수 있는\" → 순종하는, 따르는 → 다루기 쉬운",
+    "meaning": "잘따르는, 순종적인; (특정한 방식으로) ~하기 쉬운\n\n유래: 앵글로노르만어 amenable; 후기 라틴어 mināre (“to drive”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-004",
     "day": 2,
     "word": "amend",
-    "meaning": "(법 등을) 개정하다, 수정하다.\n\n[a < ab(away) + mend < mendum(fault) : \"잘못을\n없애다\" → 잘못을 정정하다 ]",
+    "meaning": "(법 등을) 개정하다, 수정하다.\n\n유래: 중세 영어 amenden; 고대 프랑스어 amender; 라틴어 ēmendō (“free from faults”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -739,42 +739,42 @@ window.GRE_WORDS = [
     "id": "d02-006",
     "day": 2,
     "word": "amiable",
-    "meaning": "친근한\n\n[ami(friend) + able : \"친구 할 수 있는\" → 상냥한, 붙임성 있는, 호감 주는, 친절한]",
+    "meaning": "친근한\n\n유래: 중세 영어 amyable; 고대 프랑스어 amiable; 후기 라틴어 amīcābilis (“friendly”); 라틴어 amīcus (“friend”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-007",
     "day": 2,
     "word": "amicable",
-    "meaning": "우호적인, 원만한\n\n(amicus 친구)",
+    "meaning": "우호적인, 원만한\n\n유래: 중세 영어 amicable (“agreeable; pleasant”); 후기 라틴어 amīcābilis (“friendly”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-008",
     "day": 2,
     "word": "amity",
-    "meaning": "우정, 친목\n\n(amicus 친구)",
+    "meaning": "우정, 친목\n\n유래: 중세 영어 amite; 고대 프랑스어 amisté; 민중 라틴어 *amīcitātem; 라틴어 amīcus (“friend”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-009",
     "day": 2,
     "word": "amorphous",
-    "meaning": "(형태, 정의가) 불명확한\n\n[a(not) + morph(form) + ous : \"형태가 없는\" → 무정형의, 불규칙한 모양의 → 특색[개성]이 뚜렷하지 않은",
+    "meaning": "(형태, 정의가) 불명확한\n\n유래: 고대 그리스어 ἄμορφος (ámorphos, “without form, shapeless, deformed”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-010",
     "day": 2,
     "word": "anachronistic",
-    "meaning": "시대착오적인; 구시대적인 \n\n(an 없는 + arch 원시)",
+    "meaning": "시대착오적인; 구시대적인\n\n유래: anachronism + -ic.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-011",
     "day": 2,
     "word": "analogous",
-    "meaning": "유사한\n\n[ana(to) + log(word) + ous : \"단어에 따라 → 단어와 단어가 대응하는\" → 유사한, 닮은]",
+    "meaning": "유사한\n\n유래: 라틴어 analogus; 고대 그리스어 ᾰ̓νᾰ́λογος (ănắlogos).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -795,7 +795,7 @@ window.GRE_WORDS = [
     "id": "d02-014",
     "day": 2,
     "word": "anecdotal",
-    "meaning": "일화성의, 입증되지 않은\n\nan(not) + ec < ex(out) + dote(give) : \"밖으로 주어지지 않은 것\" → 출판되지 않은 일 → 세상에 알려지지 않은 이야기, 일화 → 숨은 사실, 비화, 비사]",
+    "meaning": "일화성의, 입증되지 않은\n\n유래: anecdote + -al.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -816,7 +816,7 @@ window.GRE_WORDS = [
     "id": "d02-017",
     "day": 2,
     "word": "animosity",
-    "meaning": "적대감, 혐오감\n\n(an 없는 + mosity)",
+    "meaning": "적대감, 혐오감\n\n유래: 프랑스어 animosité; 라틴어 animositas (“courage, spirit, vehemence”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -830,7 +830,7 @@ window.GRE_WORDS = [
     "id": "d02-019",
     "day": 2,
     "word": "annihilate",
-    "meaning": "완전히 파괴하다, 전멸시키다.\n\n[an<ad(to) + nihil(nothing) + ate : \"없는 것으로 하다\" →전멸시키다 → 무효로 하다]",
+    "meaning": "완전히 파괴하다, 전멸시키다.\n\n유래: 라틴어 annihilātus.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -844,14 +844,14 @@ window.GRE_WORDS = [
     "id": "d02-021",
     "day": 2,
     "word": "annul",
-    "meaning": "무효로 하다, 취소하다, 폐지하다\n\n(an 없는 nul)",
+    "meaning": "무효로 하다, 취소하다, 폐지하다\n\n유래: 중세 영어 annullen; 고대 프랑스어 anuller; 라틴어 annullō (“annihilate, annul”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-022",
     "day": 2,
     "word": "anodyne",
-    "meaning": "(태도, 입장) 온건한, 자극적이지 않은, 평범한; 진통제\n\n anodyne ~ a + no + dyne (dying);",
+    "meaning": "(태도, 입장) 온건한, 자극적이지 않은, 평범한; 진통제\n\n유래: 고대 그리스어 anodynos('고통 없는') < an-('없는') + odyne('고통').",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -865,7 +865,7 @@ window.GRE_WORDS = [
     "id": "d02-024",
     "day": 2,
     "word": "anonymous",
-    "meaning": "무명의, 익명의\n\n[an(not) + onym(name) + ous : \"이름 없는\" → 익명의, 작자 불명의]",
+    "meaning": "무명의, 익명의\n\n유래: 후기 라틴어 anonymus; 고대 그리스어 ᾰ̓νώνῠμος (ănṓnŭmos, “without name”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -886,14 +886,14 @@ window.GRE_WORDS = [
     "id": "d02-027",
     "day": 2,
     "word": "antediluvian",
-    "meaning": "태고적인, 노아의 홍수 이전의; 구식의, 너무 오래된\n\n((ante(before) +\ndiluvian : 노아의 대홍수 이전의, 태고의),",
+    "meaning": "태고적인, 노아의 홍수 이전의; 구식의, 너무 오래된\n\n유래: 원시 인도유럽어 *lewh₃- (“to wash”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-028",
     "day": 2,
     "word": "anthropogenic",
-    "meaning": "(특히 환경오염과 오염물질) 인류의 활동에 의해서 발생한\n\n[anthrop(mankind, 인류) +",
+    "meaning": "(특히 환경오염과 오염물질) 인류의 활동에 의해서 발생한\n\n유래: anthropo- + -genic.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -914,28 +914,28 @@ window.GRE_WORDS = [
     "id": "d02-031",
     "day": 2,
     "word": "antidote",
-    "meaning": "해독제; 해결책\n\n안티 + 독",
+    "meaning": "해독제; 해결책\n\n유래: 라틴어 antidotum; 고대 그리스어 ἀντίδοτον (antídoton, “antidote, remedy”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-032",
     "day": 2,
     "word": "antipathy",
-    "meaning": "반감, 혐오감\n\n[anti(against) + pathy(feeling) : \"반대의 감정\" → 반감]",
+    "meaning": "반감, 혐오감\n\n유래: 고대 그리스어 antipatheia('반대 감정, 반감') < anti-('반대') + pathos('감정, 느낌').",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-033",
     "day": 2,
     "word": "antiquated",
-    "meaning": "오래된, 고풍스런\n\n(ante 이전에 + quated)",
+    "meaning": "오래된, 고풍스런\n\n유래: antiquate + -ed.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-034",
     "day": 2,
     "word": "antithesis",
-    "meaning": "대조, 정반대, 대조법\nanti + thesis\n\n[anti(against) + thesis(set) : \"반대로 둠\" → 대조, 정반대]",
+    "meaning": "대조, 정반대, 대조법\nanti + thesis\n\n유래: 라틴어 antithesis; 고대 그리스어 ἀντίθεσις (antíthesis).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -949,7 +949,7 @@ window.GRE_WORDS = [
     "id": "d02-036",
     "day": 2,
     "word": "apathetic",
-    "meaning": "무감각한, 무정한, 무관심한\n\n[a(not) + path(feeling) + ethic : \"감정이 없는\" ]",
+    "meaning": "무감각한, 무정한, 무관심한\n\n유래: apathy + -etic.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -970,7 +970,7 @@ window.GRE_WORDS = [
     "id": "d02-039",
     "day": 2,
     "word": "aphorism",
-    "meaning": "금언, 격언\n aphorism---> a + phrase..\n\n[ap(떨어져) + hori < horizon(한계, 범위) ]",
+    "meaning": "금언, 격언\n\n유래: 고대 그리스어 apo-('떨어져, 구분하여') + horizein('경계를 정하다, 정의하다')에서 나온 aphorismos.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -984,7 +984,7 @@ window.GRE_WORDS = [
     "id": "d02-041",
     "day": 2,
     "word": "apocryphal",
-    "meaning": "출처가 의심스러운, 가짜의\n\n[apo 멀리 + cryph < crypt(숨겨진, 비밀의)]",
+    "meaning": "출처가 의심스러운, 가짜의\n\n유래: apocrypha + -al.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -998,49 +998,49 @@ window.GRE_WORDS = [
     "id": "d02-043",
     "day": 2,
     "word": "apostate",
-    "meaning": "변절자 ,배교자\n\n(apo 멀리, 분리)",
+    "meaning": "변절자 ,배교자\n\n유래: 후기 라틴어 apostata; 고대 그리스어 ἀποστάτης (apostátēs, “rebel”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-044",
     "day": 2,
     "word": "appall",
-    "meaning": "오싹하게, 질겁하게 하다\n\n[ap(to) + pall < pale(창백한)]",
+    "meaning": "오싹하게, 질겁하게 하다\n\n유래: 중세 영어 apallen; 고대 프랑스어 apalir (“to grow pale, make pale”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-045",
     "day": 2,
     "word": "apparition",
-    "meaning": "유령, 갑작스런 유령의 출현\n\n[appar < appear(나타나다) + ition : \"나타난 것\" → 나타내기, 출현 → 갑자기 나타나는 것, 허깨비, 유령]",
+    "meaning": "유령, 갑작스런 유령의 출현\n\n유래: 중세 프랑스어 apparition; 라틴어 apparitio.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-046",
     "day": 2,
     "word": "appease",
-    "meaning": "(적대감 등을) 달래다, 진정시키다.\n\n(ap(to) + pease < peace(평화))",
+    "meaning": "(적대감 등을) 달래다, 진정시키다.\n\n유래: 중세 영어 apesen; 고대 프랑스어 apeser (“to pacify, bring to peace”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-047",
     "day": 2,
     "word": "apposite",
-    "meaning": "아주 적절한\n\n[ap < ad(to) + posit(put) + e : \"~쪽으로 놓인\" → 가까이 놓인 → 적합한, 적절한, 딱 맞는]",
+    "meaning": "아주 적절한\n\n유래: 라틴어 appositus.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-048",
     "day": 2,
     "word": "appraise",
-    "meaning": "감정하다, 가치를 평가하다.\n\n[ap < ad(to) + praise(가치를 두다) : \"~쪽에 가치를 두다\" → 가치를 평가하다, 가격을 매기다 → <사람, 능력을> 평가하다, 감정하다]",
+    "meaning": "감정하다, 가치를 평가하다.\n\n유래: 중세 영어 apreisen; 고대 프랑스어 aprisier (“apraise, set a price on”); 후기 라틴어 appretiare; 라틴어 pretium (“price, value”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-049",
     "day": 2,
     "word": "appreciable",
-    "meaning": "상당한, 쉽게 알아볼 수 있는\n\n[ap < ad(to) + prec(value) + iable : \"-에 가치를 매길 수 있는\" → 평가할 수 있는 → 감지할 수 있는 → 쉽게 알아볼 수 있는, 분명한 → 상당한]",
+    "meaning": "상당한, 쉽게 알아볼 수 있는\n\n유래: 프랑스어 appréciable.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -1061,28 +1061,28 @@ window.GRE_WORDS = [
     "id": "d02-052",
     "day": 2,
     "word": "apprehensive",
-    "meaning": "걱정되는, 불안한, 겁내는\n\n(ap 향해 prehndere 잡다)",
+    "meaning": "걱정되는, 불안한, 겁내는\n\n유래: 라틴어 apprehensīvus.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-053",
     "day": 2,
     "word": "apprise",
-    "meaning": "알려주다, 알리다\n\n[ap < ad(to) + prise(take) : \"~쪽으로 잡다\" → 알리다, 통지하다]",
+    "meaning": "알려주다, 알리다\n\n유래: 프랑스어 appris; 중세 프랑스어 apprendre; 고대 프랑스어 aprendre; 라틴어 apprēndere.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-054",
     "day": 2,
     "word": "approbation",
-    "meaning": "공식적인 승인, 찬양\n\n Ap+PROBATION\n[ap < ad(to) + prob < prove(증명하다) + ation : \"~쪽으로 증명함\" → 시인, 승인 → 인가, 재가 → 찬성 → 칭찬, 찬양]",
+    "meaning": "공식적인 승인, 찬양\n\n유래: 중세 영어 approbacioun; 고대 프랑스어 approbacion; 라틴어 approbatio.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-055",
     "day": 2,
     "word": "appropriate",
-    "meaning": "전용하다, 도용하다 ; (비용) 책정하다;\n\n[ap < ad(to) + propri<proper(own) + ate : \"-으로 자기 것으로 만드는\"]",
+    "meaning": "전용하다, 도용하다 ; (비용) 책정하다;\n\n유래: 중세 영어 appropriaten; 라틴어 appropriātus.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -1096,14 +1096,14 @@ window.GRE_WORDS = [
     "id": "d02-057",
     "day": 2,
     "word": "approximate",
-    "meaning": "대략의\n\nad-(~에) + proximus (매우 가까운)",
+    "meaning": "대략의\n\n유래: 중세 영어 approximat(e) (“close, near (to); similar; intimate”, also used as the past participle of approximaten); 라틴어 approximātus.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-058",
     "day": 2,
     "word": "apropos",
-    "meaning": "~와 관련있는; 시기 적절한;\n\n(ap 멀리 ro + pos 위치)",
+    "meaning": "~와 관련있는; 시기 적절한;\n\n유래: 프랑스어 à propos (“on that subject”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -1138,21 +1138,21 @@ window.GRE_WORDS = [
     "id": "d02-063",
     "day": 2,
     "word": "archaic",
-    "meaning": "고대의, 고풍스러운, 구식의 \nArchealogy - study of old things.. Archaic - The old things on which we study..",
+    "meaning": "고대의, 고풍스러운, 구식의\nArchealogy - study of old things.. Archaic - The old things on which we study..",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-064",
     "day": 2,
     "word": "archetype",
-    "meaning": "원형; 전형\n arch + type - so a model for architecture\n\n[그리스어 arche 는 \"아르케, 원형, 본질\". arche (original) + type : \"원래의 형태\" → 원형적인 상태, 본질적인 형태 → 원형, 기초 → 전형, 모법]",
+    "meaning": "원형; 전형\n\n유래: 고대 그리스어 arkhetypon('원형, 본보기') < arkhe-('처음, 근원') + typos('형태, 본보기').",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-065",
     "day": 2,
     "word": "ardent",
-    "meaning": "열렬한\n\n[ard(burn) + ent : \"불태우는\" → 열렬한, 열심인(eager)]",
+    "meaning": "열렬한\n\n유래: 중세 영어 ardaunt; 앵글로노르만어 ardent; 고대 프랑스어 ardant; 라틴어 ardentem.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -1173,21 +1173,21 @@ window.GRE_WORDS = [
     "id": "d02-068",
     "day": 2,
     "word": "arraign",
-    "meaning": "죄를 묻다. 소환하다 ; 비난하다.\n\n arraign= err+ again.",
+    "meaning": "죄를 묻다. 소환하다 ; 비난하다.\n\n유래: 중세 영어 areynen (“to interrogate, arraign, reprimand”); 앵글로노르만어 areiner; 고대 프랑스어 araisnier; 민중 라틴어 *arratiōnāre.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-069",
     "day": 2,
     "word": "arrest",
-    "meaning": "(진행, 성장 등) 막다, 저지하다; 이목을 끌다.\n\n[ar < ad(to) + rog(ask) + ant : \"~쪽으로 요구하는\" → 당치않은, 터무니 없는, 무례한 → 거만한, 오만한 → 거드름 피우는]",
+    "meaning": "(진행, 성장 등을) 막다, 저지하다; 이목을 끌다\n\n유래: 라틴어 arrestare('멈추게 하다') < ad-('~에') + restare('멈춰 서다') < re- + stare('서다').",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-070",
     "day": 2,
     "word": "articulate",
-    "meaning": "말이 유창한 ; 유창하고 조리있게 말하다\n\n[arti(joint) + cul(small) + ate : \"작은 마디로 나누다\" → 음절로 나누다 → (각 음절을) 또렷하게 발음하다 → 명확하게 말하다]",
+    "meaning": "말이 유창한 ; 유창하고 조리있게 말하다\n\n유래: 라틴어 articulātus (“distinct, articulated, jointed”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -1201,21 +1201,21 @@ window.GRE_WORDS = [
     "id": "d02-072",
     "day": 2,
     "word": "ascendancy",
-    "meaning": "영향력, 우세함\n\n\n(ascend + ancy)",
+    "meaning": "영향력, 우세함\n\n유래: ascend + -ancy or ascendant + -cy.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-073",
     "day": 2,
     "word": "ascertain",
-    "meaning": "확인하다, 규명하다, 명백히 알다.\n\nascertain(-쪽으로 확실하게 하다→ 확인하다),",
+    "meaning": "확인하다, 규명하다, 명백히 알다.\n\n유래: 중세 영어 acerteynen; 고대 프랑스어 acertener; 라틴어 certus (“certain, fixed”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-074",
     "day": 2,
     "word": "ascetic",
-    "meaning": "금욕적인; 금욕주의자\n\n(a(not) + sce < sense(느낌, 감각) + tic)",
+    "meaning": "금욕적인; 금욕주의자\n\n유래: 중세 라틴어 asceticus; 고대 그리스어 ἀσκητικός (askētikós).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -1243,7 +1243,7 @@ window.GRE_WORDS = [
     "id": "d02-078",
     "day": 2,
     "word": "aspersion",
-    "meaning": "비방, 비난, 증상\n\n[a < ad(to) + spers(scatter, 흩뿌리다) + ion :비난 흩뿌림]",
+    "meaning": "비방, 비난, 증상\n\n유래: 라틴어 aspersiōnem.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -1257,14 +1257,14 @@ window.GRE_WORDS = [
     "id": "d02-080",
     "day": 2,
     "word": "assail",
-    "meaning": "맹렬히 공격하다.; 강하게 비난하다.\n\n(as < ad(~으로) + salire(jump))",
+    "meaning": "맹렬히 공격하다.; 강하게 비난하다.\n\n유래: 중세 영어 assailen; 고대 프랑스어 assaillir, assalir; 후기 라틴어 assalīre; 라틴어 ad (“at, towards”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-081",
     "day": 2,
     "word": "assent",
-    "meaning": "찬성하다, 동의하다.\n\n{assent(-로 느끼다→가까이 느끼다→찬성하다),",
+    "meaning": "찬성하다, 동의하다.\n\n유래: 중세 영어 assent (noun); 고대 프랑스어 assent (noun); 라틴어 assentiō.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -1285,49 +1285,49 @@ window.GRE_WORDS = [
     "id": "d02-084",
     "day": 2,
     "word": "assiduous",
-    "meaning": "근면 성실한, 면밀한, 철저한\n\nassiduous(-로 앉아 있는→근면한, 끈기있는)",
+    "meaning": "근면 성실한, 면밀한, 철저한\n\n유래: learned borrowing from 라틴어 assiduus.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-085",
     "day": 2,
     "word": "assimilate",
-    "meaning": "(지식, 정보) 완전히 이해하다, 흡수하다; 동화되다.\n\n[as < ad(to) + simil(like, ~같은) + ate(make) : \"~쪽으로 같게 만들다\" → 같게 하다, 닮게 하다, 맞게 하다 → 일치시키다, 동화시키다 → 자기 것으로 흡수하다 → <다른 나라를> 병합하다]",
+    "meaning": "(지식, 정보) 완전히 이해하다, 흡수하다; 동화되다.\n\n유래: 중세 영어 assimilaten (“to become similar; to make like”); 후기 라틴어 assimilātus; 라틴어 assimulātus (“made similar, imitated”); 원시 인도유럽어 *sem- (“together, one”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-086",
     "day": 2,
     "word": "assorted",
-    "meaning": "다양한, 여러가지의\n\n[as < ad(to) + sort(kind, 종류) + ed : \"같은 종류 쪽으로 맞춘\" → (같은 종류 끼리) 짜맞춘 → 분류된, 구분된 → 어울리는, 조화된 → 여러 물품을 고루 갖춘, 갖가지의, 잡다한]",
+    "meaning": "다양한, 여러가지의\n\n유래: assort + -ed. assort는 고대 프랑스어 assortir('분류하다, 짝짓다')에서 유래.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-087",
     "day": 2,
     "word": "assuage",
-    "meaning": "달래다, 완화시키다.\n\n[as < ad(to) + suage < sugar(sweet, 달콤한, 기분 좋은) : \"~쪽으로 달콤하게 하다\"]",
+    "meaning": "달래다, 완화시키다.\n\n유래: 중세 영어 aswagen; 고대 프랑스어 asuagier (“to appease, to calm”); 민중 라틴어 *assuāviō (“to sweeten, to butter up, to calm”); 라틴어 ad-.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-088",
     "day": 2,
     "word": "assume",
-    "meaning": "가정하다; 가장하다; (임무, 자리 등) 맡다.\n\n[as < ad(to) + sume(take) : \"-쪽으로 (태도를) 취하다\" → (증거는 없으나) 사실이라고 생각하다, 가정하다, 추정하다(presume) → (역할, 임무를) 맡다, (책임을) 지다 → 꾸미다, 가장하다]",
+    "meaning": "가정하다; 가장하다; (임무, 자리 등) 맡다.\n\n유래: 라틴어 assūmō (“accept, take”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-089",
     "day": 2,
     "word": "astringent",
-    "meaning": "신랄한, (맛, 냄새) 신, 떫은\n\n[a < ad(to) + string(draw tight, 팽팽하게 당기다) + ent ]",
+    "meaning": "신랄한, (맛, 냄새) 신, 떫은\n\n유래: 라틴어 adstringere (“to bind fast”).",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
     "id": "d02-090",
     "day": 2,
     "word": "astute",
-    "meaning": "명민한, 기민한, 영리한\n\n[astu < astus(cunning, 교활한, 빈틈없는) + te : \"교활한\" → 교묘한(ingenious) → 약삭 빠른, 기민한 → 통찰력 있는. 참고 : shrewd 는 이 모든 의미들을 갖고 있으므로 astute 와 shrewd 는 완벽한 동의어]",
+    "meaning": "명민한, 기민한, 영리한\n\n유래: 라틴어 astūtus.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -1341,7 +1341,7 @@ window.GRE_WORDS = [
     "id": "d02-092",
     "day": 2,
     "word": "atone",
-    "meaning": "속죄하다\n\n[at + one : \"하나로 하다\" → 온전하게 하다 → 완전하게 해서 원상태로 복구하다 → 벌충하다,\n보상하다 → 죄의 보상을 하다 = 속죄하다]",
+    "meaning": "속죄하다\n\n유래: 중세 영어 atone.",
     "source": "https://quizlet.com/kr/1206326950/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-02-flash-cards"
   },
   {
@@ -1404,21 +1404,21 @@ window.GRE_WORDS = [
     "id": "d03-001",
     "day": 3,
     "word": "attenuate",
-    "meaning": "가늘게 하다; 약화시키다.\n\n(ad(~로) + tenurare(가늘고 묽게 만들다))",
+    "meaning": "가늘게 하다; 약화시키다.\n\n유래: 라틴어 attenuātus.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-002",
     "day": 3,
     "word": "attest (to)",
-    "meaning": "증명하다, 입증하다.\n\n(ad(~에) + testari(목격하다))",
+    "meaning": "증명하다, 입증하다.\n\n유래: 중세 프랑스어 attester; 라틴어 attestor (“to witness to, bear witness”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-003",
     "day": 3,
     "word": "attribute",
-    "meaning": "탓이나, 덕으로 돌리다\n\n(ad(~에) + tribuere(지정하다))",
+    "meaning": "탓이나, 덕으로 돌리다\n\n차용: 라틴어 attributus.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1432,14 +1432,14 @@ window.GRE_WORDS = [
     "id": "d03-005",
     "day": 3,
     "word": "attune",
-    "meaning": "조화를 이루다, (악기, 관계 등을) 조율하다.\n\n(ad(~에) + tonos 긴장, 뻗음)",
+    "meaning": "조화를 이루다, (악기, 관계 등을) 조율하다.\n\n유래: ad- + tune.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-006",
     "day": 3,
     "word": "audacious",
-    "meaning": "겁 없는, 대단한\n\n(audere(감히 ~해보다, 엄두를 내다))",
+    "meaning": "겁 없는, 대단한\n\n유래: 라틴어 audacia (“boldness”) + -ious, from audax (“bold”), from audeō (“to be bold, to dare”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1453,7 +1453,7 @@ window.GRE_WORDS = [
     "id": "d03-008",
     "day": 3,
     "word": "augur",
-    "meaning": "전조가 되다.\n\n(augur(점쟁이, 예언자))",
+    "meaning": "전조가 되다.\n\n유래: 라틴어 augur.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1467,7 +1467,7 @@ window.GRE_WORDS = [
     "id": "d03-010",
     "day": 3,
     "word": "auspicious",
-    "meaning": "길조의, 상서로운, 행운의\n\n(avis(새) + specere(보다))",
+    "meaning": "길조의, 상서로운, 행운의\n\n유래: 라틴어 auspicium (“augury”); 프랑스어.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1488,35 +1488,35 @@ window.GRE_WORDS = [
     "id": "d03-013",
     "day": 3,
     "word": "authoritarian",
-    "meaning": "독재적인\n\n(augere(증가하다, 장려하다, 생겨나다))",
+    "meaning": "독재적인\n\n유래: authority + -arian, circa 1880.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-014",
     "day": 3,
     "word": "authoritative",
-    "meaning": "권위있는, 믿을만한; 권위적인\n\n(augere(증가하다, 장려하다, 생겨나다))",
+    "meaning": "권위있는, 믿을만한; 권위적인\n\n유래: authorit(y) + -ative.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-015",
     "day": 3,
     "word": "autocratic",
-    "meaning": "독재의, 전재적인\n \n(autos(자신의) + kratos(권력))",
+    "meaning": "독재의, 전재적인\n\n구성: autocrat + -ic.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-016",
     "day": 3,
     "word": "autonomy",
-    "meaning": "자율, 자치, 자립, 독립\n\n(autos(자신의) + nomos(법))",
+    "meaning": "자율, 자치, 자립, 독립\n\n유래: 고대 그리스어 αὐτονομῐ́ᾱ (autonomĭ́ā, “freedom to use its own laws, independence”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-017",
     "day": 3,
     "word": "avant-garde",
-    "meaning": "아방가르드, 전위예술\n\n(avant(미리, 앞서) + garde(지키다))",
+    "meaning": "아방가르드, 전위예술\n\n유래: 중세 영어 advaunte-garde, avauntgard; 고대 프랑스어 avangarde, avant-garde, avantgarde.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1530,35 +1530,35 @@ window.GRE_WORDS = [
     "id": "d03-019",
     "day": 3,
     "word": "aver",
-    "meaning": "단언하다, 주장하다, 우기다.\n\n(ad(~에게) + verus(진짜의, 진실한))",
+    "meaning": "단언하다, 주장하다, 우기다.\n\n유래: 중세 영어 averren; 고대 프랑스어 averer; Early 중세 라틴어 advērō; 라틴어 vērus (“true”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-020",
     "day": 3,
     "word": "aversion",
-    "meaning": "혐오감\n\n(ab(~로부터) + vertere(돌리다))",
+    "meaning": "혐오감\n\n유래: 학술 차용: 라틴어 āversiō, āversiōnem.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-021",
     "day": 3,
     "word": "avert",
-    "meaning": "방지하다, 막다, 피하다; (시선을) 돌리다\n\n(ab(~로부터) + vertere(돌리다))",
+    "meaning": "방지하다, 막다, 피하다; (시선을) 돌리다\n\n유래: 중세 영어 averten; 고대 프랑스어 avertir (“turn, direct, avert; turn the attention, make aware”); 라틴어 āvertere.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-022",
     "day": 3,
     "word": "avid",
-    "meaning": "열심인, 열정적인, 욕심을 내는\n\n(avere(갈망하다))",
+    "meaning": "열심인, 열정적인, 욕심을 내는\n\n유래: 프랑스어 avide, from 라틴어 avidus (“eager, desirous; greedy”), from aveō (“wish, desire, long for, crave”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-023",
     "day": 3,
     "word": "avow",
-    "meaning": "공개적으로 주장하다, 고백하다\n\n(ad(~에) + vocre(부르다))",
+    "meaning": "공개적으로 주장하다, 고백하다\n\n유래: 중세 영어 avowen; 고대 프랑스어 avouer; 라틴어 advocare (“to call to, call upon, hence to call as a witness, defender, patron, or advocate”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1579,7 +1579,7 @@ window.GRE_WORDS = [
     "id": "d03-026",
     "day": 3,
     "word": "awry",
-    "meaning": "(계획 등) 빗나간, 잘못된; 구부러진, 비뚤어진, 헝클어진\n\n (a + wrongly)",
+    "meaning": "(계획 등) 빗나간, 잘못된; 구부러진, 비뚤어진, 헝클어진\n\n유래: 중세 영어 awry.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1593,7 +1593,7 @@ window.GRE_WORDS = [
     "id": "d03-028",
     "day": 3,
     "word": "backfire",
-    "meaning": "역효과를 낳다.\n\n(뒤로 불이 붙다.)",
+    "meaning": "역효과를 낳다.\n\n구성: back + fire.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1614,7 +1614,7 @@ window.GRE_WORDS = [
     "id": "d03-031",
     "day": 3,
     "word": "badinage",
-    "meaning": "가벼운 농담, 가벼운 놀림\n\n\n(Bad-in-age.)",
+    "meaning": "가벼운 농담, 가벼운 놀림\n\n유래: 프랑스어 badinage; 옥시탄어 badar (“gape”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1642,7 +1642,7 @@ window.GRE_WORDS = [
     "id": "d03-035",
     "day": 3,
     "word": "balkanize",
-    "meaning": "(서로 적대적인 작은 지역으로) 분열시키다\n\n(발칸. 세계 2차대전의 원흉.)",
+    "meaning": "(서로 적대적인 작은 지역으로) 분열시키다\n\n유래: Balkan + -ize. 발칸반도처럼 여러 적대적 집단이나 국가로 분열시킨다는 뜻에서 형성.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1712,14 +1712,14 @@ window.GRE_WORDS = [
     "id": "d03-045",
     "day": 3,
     "word": "barring",
-    "meaning": "~을 제외하면, ~만 아니라면\n\n(bar(막다, 금지하다, 배제하다) + ing)",
+    "meaning": "~을 제외하면, ~만 아니라면\n\n유래: bar + -ing. 여기서 bar는 '막다, 제외하다'라는 뜻.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-046",
     "day": 3,
     "word": "base",
-    "meaning": "(도덕적으로) 상스러운, 천한, 비열한\n\n\n(밑바닥 인생)",
+    "meaning": "(도덕적으로) 상스러운, 천한, 비열한\n\n유래: 중세 영어 base; 고대 프랑스어 base; 라틴어 basis; 고대 그리스어 βάσις (básis).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1733,28 +1733,28 @@ window.GRE_WORDS = [
     "id": "d03-048",
     "day": 3,
     "word": "bawdy",
-    "meaning": "(노래, 연극 등) 야한, 외설적인\n\n(bawd(포주) + y)",
+    "meaning": "(노래, 연극 등) 야한, 외설적인\n\n유래: bawd + -y.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-049",
     "day": 3,
     "word": "beatific",
-    "meaning": "기쁨이 넘치는, 더없이 행복해 하는\n\n(beatus(축복받은) + facere(만들다, 하다))",
+    "meaning": "기쁨이 넘치는, 더없이 행복해 하는\n\n유래: 라틴어 beātificus (“making happy or blessed”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-050",
     "day": 3,
     "word": "bedeck",
-    "meaning": "장식하다, 꾸미다\n\n(be 강조 deck 갑판)",
+    "meaning": "장식하다, 꾸미다\n\n구성: be- + deck.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-051",
     "day": 3,
     "word": "bedizen",
-    "meaning": "야하게 치장하다\n\n(be(강조) + dizen(장식하다))",
+    "meaning": "야하게 치장하다\n\n유래: 중세 영어 *disen; 고대 영어 *disan; 원시 게르만어 *disanō (“distaff”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1789,28 +1789,28 @@ window.GRE_WORDS = [
     "id": "d03-056",
     "day": 3,
     "word": "begrudge",
-    "meaning": "시기하다; (돈, 시간 등을) 아까워하다\n\n(be 강조 grouchier(불평하다))",
+    "meaning": "시기하다; (돈, 시간 등을) 아까워하다\n\n유래: 중세 영어 bigrucchen (“to grumble at”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-057",
     "day": 3,
     "word": "beguile",
-    "meaning": "속이다; 매료시키다.\n\n(be(완전히, 철저히) + guile(속임수))",
+    "meaning": "속이다; 매료시키다.\n\n유래: 중세 영어 begilen.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-058",
     "day": 3,
     "word": "beholden",
-    "meaning": "(격식) ~에게 신세를 지고 있는\n\n(be(완전히, 철저히) + hold(붙들다) 보다)",
+    "meaning": "(격식) ~에게 신세를 지고 있는\n\n유래: 중세 영어 biholden (“beholden, obligated”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-059",
     "day": 3,
     "word": "beleaguer",
-    "meaning": "포위공격하다.; 괴롭히다.\n\n(be(사방에, 온통) + leger(적의 캠프))",
+    "meaning": "포위 공격하다; 괴롭히다\n\n유래: 네덜란드어 belegeren; 중세 저지 독일어 belēgeren.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1824,21 +1824,21 @@ window.GRE_WORDS = [
     "id": "d03-061",
     "day": 3,
     "word": "belittle",
-    "meaning": "하찮게 만들다, 경시하다.\n\n(be(되어라) + little)",
+    "meaning": "하찮게 만들다, 경시하다.\n\n구성: be- + little.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-062",
     "day": 3,
     "word": "bellicose",
-    "meaning": "호전적인, 싸우기 좋아하는\n\n(bellum(전쟁) + cosus(비슷한)",
+    "meaning": "호전적인, 싸우기 좋아하는\n\n유래: 중세 영어 bellicose; 라틴어 bellicosus.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-063",
     "day": 3,
     "word": "belligerent",
-    "meaning": "호전적인; 전쟁중인\n\n(bellum(전쟁) + gerare(일으키다))",
+    "meaning": "호전적인; 전쟁중인\n\n유래: 라틴어 belligerans (“waging war”), present active participle of belligerō (“to wage war”), from belliger (“waging war, warlike”), from bellum (“war”) + -ger (from gerō (“to lead, wage, carry on”)).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1859,42 +1859,42 @@ window.GRE_WORDS = [
     "id": "d03-066",
     "day": 3,
     "word": "benediction",
-    "meaning": "축복, 축도\n\n(bene(좋은, 잘) + dicere(말하다))",
+    "meaning": "축복, 축도\n\n유래: 중세 영어 benediccion; 교회 라틴어 benedictio, benedictionis.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-067",
     "day": 3,
     "word": "beneficent",
-    "meaning": "자비로운, 자선을 베푸는, 인정많은, 이익이 되는\n\n(bene(좋은, 잘) + facere(만들다, 하다))",
+    "meaning": "자비로운, 자선을 베푸는, 인정많은, 이익이 되는\n\n유래: 라틴어 *beneficens, *beneficent-.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-068",
     "day": 3,
     "word": "benevolent",
-    "meaning": "(권위 있는 사람이) 자비심 많은,자애로운, 자선을 행하는\n\n(bene(좋은, 잘) + velle(바라다))",
+    "meaning": "(권위 있는 사람이) 자비심 많은,자애로운, 자선을 행하는\n\n유래: 라틴어 benevolēns.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-069",
     "day": 3,
     "word": "benighted",
-    "meaning": "무지몽매한\n\n\n(be(완전히) + night(라틴어 nox))",
+    "meaning": "무지몽매한\n\n유래: benight + -ed.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-070",
     "day": 3,
     "word": "benign",
-    "meaning": "친절한, 상냥한; 좋은; 무해한\n\n(bene(좋은, 잘) + genus(태어난))",
+    "meaning": "친절한, 상냥한; 좋은; 무해한\n\n유래: 중세 영어 benigne; 고대 프랑스어 benigne; 라틴어 benignus (“kind, good”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-071",
     "day": 3,
     "word": "benignant",
-    "meaning": "친절한, 다정한, 유익한\n\n(bene(좋은, 잘) + genus(태어난))",
+    "meaning": "친절한, 다정한, 유익한\n\n유래: benign + -ant, on the model of malignant.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1908,7 +1908,7 @@ window.GRE_WORDS = [
     "id": "d03-073",
     "day": 3,
     "word": "bequeath",
-    "meaning": "물려주다\n\n\n(be-(대하여, 관하여) + cwethan(말 하다))",
+    "meaning": "물려주다\n\n유래: 중세 영어 biquethen; 고대 영어 becweþan (“to say, to speak, to address, exhort, admonish, blame, bequeath, leave by will”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1922,28 +1922,28 @@ window.GRE_WORDS = [
     "id": "d03-075",
     "day": 3,
     "word": "bereave",
-    "meaning": "(가족을) 잃다, 여의다, 사별하다\n\n(be(강조) + reave(약탈하다, 독일어 rauben))",
+    "meaning": "(가족을) 잃다, 여의다, 사별하다\n\n유래: 중세 영어 bireven; 고대 영어 berēafian (“to bereave, deprive of, take away, seize, rob, despoil”); 원시 게르만어 *biraubōną; 고대 영어 berēofan (“to bereave, deprive, rob of”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-076",
     "day": 3,
     "word": "bereft of",
-    "meaning": "~가 없는, 빼앗긴;\n\n(be(강조) + reave(약탈하다, 독일어 rauben))",
+    "meaning": "~가 없는, 빼앗긴;\n\n유래: bereave의 과거분사 bereft + of. bereave는 고대 영어 bereafian('빼앗다')에서 유래.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-077",
     "day": 3,
     "word": "beset",
-    "meaning": "에워싸다, 둘러싸다; 괴롭히다.\n\n\n(be-(강조) + settan(두다))",
+    "meaning": "에워싸다, 둘러싸다; 괴롭히다.\n\n유래: 중세 영어 besetten; 고대 영어 besettan; 원시 서게르만어 *bisattjan; 원시 게르만어 *bisatjaną (“to fill, occupy”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-078",
     "day": 3,
     "word": "besmirch",
-    "meaning": "더럽히다, (명성) 훼손하다\n\n(be(온통) + smirch(의태어))",
+    "meaning": "더럽히다, (명성) 훼손하다\n\n유래: 중세 영어 besmorchen.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -1964,35 +1964,35 @@ window.GRE_WORDS = [
     "id": "d03-081",
     "day": 3,
     "word": "betoken",
-    "meaning": "전조가 되다, 징조가 되다\n\n(be(강조) + tācnian(표시하다))",
+    "meaning": "전조가 되다, 징조가 되다\n\n유래: 중세 영어 bitoknen; 고대 영어 betācnian (“to betoken, signify, designate”); 원시 서게르만어 *bitaiknijan.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-082",
     "day": 3,
     "word": "betray",
-    "meaning": "배신, 배반하다; (원칙, 신뢰 등을) 저버리다; 은연중에 드러내다.\n\n(e(완전) + tray(배신하다))",
+    "meaning": "배신, 배반하다; (원칙, 신뢰 등을) 저버리다; 은연중에 드러내다.\n\n유래: 중세 영어 betrayen; 고대 영어 be- (“be-”); 원시 게르만어 *bi- (“be-”); 원시 게르만어 *bi (“near, by”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-083",
     "day": 3,
     "word": "bewail",
-    "meaning": "슬퍼하다, 한탄하다; 유감으로 생각하다, 개탄하다.\n\n(be(강조) + wail)",
+    "meaning": "슬퍼하다, 한탄하다; 유감으로 생각하다, 개탄하다.\n\n유래: 중세 영어 bewailen.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-084",
     "day": 3,
     "word": "bewilder",
-    "meaning": "당황하게 하다, 어리둥절하게 하다;\n\n(be(완전히) + wilder(헤매다))",
+    "meaning": "당황하게 하다, 어리둥절하게 하다;\n\n구성: be- (prefix used as an intensifier) + wilder (“to lead astray; to go astray, wander”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-085",
     "day": 3,
     "word": "bifurcate",
-    "meaning": "두 갈래로 나뉘다.\n\n(bi(두 개의) + furca(포크))",
+    "meaning": "두 갈래로 나뉘다.\n\n유래: 학술 차용: 중세 라틴어 bifurcātus.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -2006,14 +2006,14 @@ window.GRE_WORDS = [
     "id": "d03-087",
     "day": 3,
     "word": "bilious",
-    "meaning": "성질 나쁜, 화 잘 내는\n\n(bile 분노, 증오, 담즙)",
+    "meaning": "성질 나쁜, 화 잘 내는\n\n유래: 프랑스어 bilieux, from 라틴어 bīliōsus (“full of bile”), from bīlis (“bile”) + -ōsus (“full of”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-088",
     "day": 3,
     "word": "bilk",
-    "meaning": "(돈) 사취하다, 속이다.\n\n(balk 파생)",
+    "meaning": "(돈) 사취하다, 속이다.\n\n어원 불확실. balk('가로막다, 방해하다')의 변형일 가능성이 있음.",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -2034,14 +2034,14 @@ window.GRE_WORDS = [
     "id": "d03-091",
     "day": 3,
     "word": "bland",
-    "meaning": "특징 없는, 단조로운\n\n(blandus(부드러운))",
+    "meaning": "특징 없는, 단조로운\n\n차용: 라틴어 blandus (“pleasant”).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
     "id": "d03-092",
     "day": 3,
     "word": "blandish",
-    "meaning": "감언으로 설득하다\n\n(blandus(부드러운))",
+    "meaning": "감언으로 설득하다\n\n유래: 중세 영어 blaundishen (“to flatter; to fawn; to be enticing or persuasive; to be favourable; of the sea: to become calm”); 앵글로노르만어 blaundishen; 중세 프랑스어 blandir; 중세 영어 -ishen (suffix forming verbs).",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
   {
@@ -2096,7 +2096,7 @@ window.GRE_WORDS = [
   {
     "id": "d03-100",
     "day": 3,
-    "word": "ballon",
+    "word": "balloon",
     "meaning": "급증하다",
     "source": "https://quizlet.com/kr/1206327010/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-03-flash-cards"
   },
@@ -2104,7 +2104,7 @@ window.GRE_WORDS = [
     "id": "d04-001",
     "day": 4,
     "word": "blithe",
-    "meaning": "명랑한, 쾌활한; 무관심한, 태평스러운;\n\n(blīths 축복)",
+    "meaning": "명랑한, 쾌활한; 무관심한, 태평스러운;\n\n유래: 중세 영어 blithe (“glad, happy, joyful; causing joy, joyous; gentle, mild; gracious, merciful; bright, shining; beautiful, fair”); 고대 영어 blīþe (“happy, gentle”); 원시 서게르만어 *blīþī; 원시 게르만어 *blīþiz (“friendly; gentle, mild; pleasing”).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
@@ -2237,7 +2237,7 @@ window.GRE_WORDS = [
     "id": "d04-020",
     "day": 4,
     "word": "brash",
-    "meaning": "뻔뻔한, 무례한, 건방진 \n무모한, 성급한",
+    "meaning": "뻔뻔한, 무례한, 건방진\n무모한, 성급한",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
@@ -2307,42 +2307,42 @@ window.GRE_WORDS = [
     "id": "d04-030",
     "day": 4,
     "word": "brook",
-    "meaning": "참다\n\n(brūcan사용하다, 소유하다)",
+    "meaning": "참다\n\n유래: 중세 영어 brouken (“to use, enjoy”); 고대 영어 brūcan (“to enjoy, brook, use, possess, partake of, spend”); 원시 서게르만어 *brūkan; 원시 게르만어 *brūkaną (“to enjoy, use”).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-031",
     "day": 4,
     "word": "buccaneer",
-    "meaning": "해적\n\n(boucan (고기를 요리하고 저장하는 틀) -> 프 랑스어 boucanier 사냥꾼)",
+    "meaning": "해적\n\n유래: 프랑스어 boucanier; Old Tupi moka'ẽ, mboka'ẽ (“wooden grill”).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-032",
     "day": 4,
     "word": "bucolic",
-    "meaning": "전원적인\n\n(*bu=cow)",
+    "meaning": "전원적인\n\n유래: 라틴어 būcolicus; 고대 그리스어 βουκολικός (boukolikós, “rustic, pastoral; meter used by pastoral poets”, literally “pertaining to cowherds”).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-033",
     "day": 4,
     "word": "buffoonery",
-    "meaning": "익살꾼, 익살 짓\n\n(buffo(광대))",
+    "meaning": "익살꾼, 익살 짓\n\n유래: buffoon + -ery.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-034",
     "day": 4,
     "word": "bumbling",
-    "meaning": "실수를 잘하는, 무능력한\n\n(boom('험, 부움' 의성어) + le(반복동작 동사))",
+    "meaning": "실수를 잘하는, 무능력한\n\n유래: bumble('서투르게 행동하다') + -ing.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-035",
     "day": 4,
     "word": "bumptious",
-    "meaning": "자기주장이 (지나치게)강한, \n건방진, 잘난 체하는\n\n(bump + fractious)",
+    "meaning": "자기주장이 (지나치게)강한,\n건방진, 잘난 체하는\n\nProbably from bump, on the pattern of words like fractious or presumptious.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
@@ -2356,42 +2356,42 @@ window.GRE_WORDS = [
     "id": "d04-037",
     "day": 4,
     "word": "buoy",
-    "meaning": "기분을 들뜨게 하다 \n\n(스페인어 boyar 떠 있다)",
+    "meaning": "기분을 들뜨게 하다\n\n유래: 중세 영어 boy; 중세 네덜란드어 boeye (“float, buoy”); 고대 프랑스어 boue (“piece of wood or cork that floats above an anchor to indicate where it is anchored”); 프랑크어 *baukn (“beacon”).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-038",
     "day": 4,
     "word": "buoyant",
-    "meaning": "부력이 있는, 명랑한\n\n(스페인어 boyar 떠 있다)",
+    "meaning": "부력이 있는, 명랑한\n\n유래: buoy + -ant.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-039",
     "day": 4,
     "word": "burgeon",
-    "meaning": "급성장하다, 번영하다, 발전하다\n\n(burra(털실))",
+    "meaning": "급성장하다, 번영하다, 발전하다\n\n유래: 중세 영어 burjon, burjoun (“shoot, bud”); 앵글로노르만어 burjun; 프랑크어 *burjō (“sprout, offshoot, descendant”); 원시 게르만어 *burjô (“sprout, descendant, offshoot”).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-040",
     "day": 4,
     "word": "burnish",
-    "meaning": "(닦아서) 광내다, (기술 등을) 연마하다\n\n(brun 갈색 brown)",
+    "meaning": "(닦아서) 광내다, (기술 등을) 연마하다\n\n유래: 중세 영어 burnishen; 고대 프랑스어 burnir; 프랑크어 *brūnijan (“to polish, make resplendent”); 원시 게르만어 *brūnijaną (“to decorate; tan”).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-041",
     "day": 4,
     "word": "bustle",
-    "meaning": "부산하게 움직이다, 활기찬\n\n(busk 준비하다)",
+    "meaning": "부산하게 움직이다, 활기찬\n\n유래: 중세 영어 bustlen; 중세 영어 busken (“to prepare; make ready”); 고대 노르드어 búask (“to prepare oneself”); 중세 영어 busten.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-042",
     "day": 4,
     "word": "buttress",
-    "meaning": "(벽의) 지지대 (=부벽), 지지하다\n\n(boter 때리다, 찌르다)",
+    "meaning": "(벽의) 지지대 (=부벽), 지지하다\n\n유래: 고대 프랑스어 ars bouterez (noun, literally “supporting arcs”); 프랑크어 *bôtan; 원시 게르만어 *bautaną (“to push”).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
@@ -2412,14 +2412,14 @@ window.GRE_WORDS = [
     "id": "d04-045",
     "day": 4,
     "word": "cache",
-    "meaning": "(귀중품, 무기 등) 은닉처\n\n(cacher숨기다)",
+    "meaning": "(귀중품, 무기 등) 은닉처\n\n유래: 프랑스어 cache.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-046",
     "day": 4,
     "word": "cacophony",
-    "meaning": "불협화음\n\n(kakos(나쁜) + phōnē(소리))",
+    "meaning": "불협화음\n\n유래: 프랑스어 cacophonie; 고대 그리스어 κακοφωνία (kakophōnía).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
@@ -2454,14 +2454,14 @@ window.GRE_WORDS = [
     "id": "d04-051",
     "day": 4,
     "word": "caliber",
-    "meaning": "능력, 역량, 우수성\n(총, 포의) 구경\n\n(qālib틀)",
+    "meaning": "능력, 역량, 우수성\n(총, 포의) 구경\n\n유래: 프랑스어 calibre (“bore of a gun, size, capacity (literally, and figuratively), also weight”); 이탈리아어 calibro.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-052",
     "day": 4,
     "word": "calibrate",
-    "meaning": "(총의)구경을 재다\n(온도계, 자 등) 눈금을 정하다; 조정하다\n\n(qālib틀)",
+    "meaning": "(총의)구경을 재다\n(온도계, 자 등) 눈금을 정하다; 조정하다\n\n유래: calibre + -ate.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
@@ -2489,7 +2489,7 @@ window.GRE_WORDS = [
     "id": "d04-056",
     "day": 4,
     "word": "camaraderie",
-    "meaning": "동지애, 우정 \ncomradeship",
+    "meaning": "동지애, 우정\ncomradeship",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
@@ -2510,7 +2510,7 @@ window.GRE_WORDS = [
     "id": "d04-059",
     "day": 4,
     "word": "candid",
-    "meaning": "솔직한, 공정한\n\n(candor 흰색)",
+    "meaning": "솔직한, 공정한\n\n차용: 라틴어 candidus (“white”).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
@@ -2531,21 +2531,21 @@ window.GRE_WORDS = [
     "id": "d04-062",
     "day": 4,
     "word": "canon",
-    "meaning": "규범, 기준; 일반적인 규칙, 근본원리;\n(작품 질에대한) 권위를 인정받은 문헌 목록, 주요 문헌 문록;\n성서의 정경; 진짜 작품(목록), 정본목록;\n\n(*canonize 칭송하다)",
+    "meaning": "규범, 기준; 일반적인 규칙, 근본원리;\n(작품 질에대한) 권위를 인정받은 문헌 목록, 주요 문헌 문록;\n성서의 정경; 진짜 작품(목록), 정본목록;\n\n유래: 중세 영어 canoun; 고대 프랑스어 canon; 고대 영어 canon; 라틴어 canōn.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-063",
     "day": 4,
     "word": "cant",
-    "meaning": "위선적인 말, 은어, 전문어\n\n(cantare 노래하다)",
+    "meaning": "위선적인 말, 은어, 전문어\n\n유래: 라틴어 cantō; Old Northern 프랑스어.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-064",
     "day": 4,
     "word": "canvass",
-    "meaning": "(선거구) 유세하다, 여론조사하다, (면밀히 살피다)\n\n(멍석(canvas)에 던져 넣고(멍석말이) 벌주다 - > 의견을 묻다 -> 지지를 호소하다)",
+    "meaning": "(선거구) 유세하다, 여론조사하다, (면밀히 살피다)\n\n유래: canvas('질긴 천')에서 파생. 원래 천으로 거칠게 다루거나 흔든다는 뜻에서 발전.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
@@ -2566,56 +2566,56 @@ window.GRE_WORDS = [
     "id": "d04-067",
     "day": 4,
     "word": "capricious",
-    "meaning": "변덕스러운, 갑작스러운\n\n(cap(머리, 대가리) + riccio(고슴도치))",
+    "meaning": "변덕스러운, 갑작스러운\n\n유래: 중세 프랑스어 capricieux; 이탈리아어 capriccioso.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-068",
     "day": 4,
     "word": "captious",
-    "meaning": "트집잡는\n\n(capere(잡다 붙들다))",
+    "meaning": "트집잡는\n\n유래: 중세 영어 capcious; 중세 프랑스어 captieux; 라틴어 captiōsus.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-069",
     "day": 4,
     "word": "captivate",
-    "meaning": "매료시키다\n\n(capere(잡다 붙들다))",
+    "meaning": "매료시키다\n\n유래: 학술 차용: 후기 라틴어 captīvātus; 라틴어 captīvus (“captive, prisoner”); 원시 인도유럽어 *kap- (“to hold; to seize”).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-070",
     "day": 4,
     "word": "caricature",
-    "meaning": "희화하다 \n\n(caricare 과장하다)",
+    "meaning": "희화하다\n\n유래: 프랑스어 caricature; 이탈리아어 caricatùra; 라틴어 carrus.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-071",
     "day": 4,
     "word": "carnal",
-    "meaning": "육체의, 세속적인\n\n(carn 살)",
+    "meaning": "육체의, 세속적인\n\n유래: 중세 영어 carnal; 고대 프랑스어 charnel; 후기 라틴어 carnālis (“fleshy”).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-072",
     "day": 4,
     "word": "carping",
-    "meaning": "트집잡는 \n\ncarpere 중상모략하다)",
+    "meaning": "트집잡는\n\n유래: carp('트집 잡다, 불평하다') + -ing. carp는 고대 노르드어 karpa('떠벌리다, 자랑하다') 계열.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-073",
     "day": 4,
     "word": "castigate",
-    "meaning": "책망하다, 혹평하다\n\n(castigare 꾸짖다)",
+    "meaning": "책망하다, 혹평하다\n\n유래: 라틴어 castīgātus; 원시 인도유럽어 *ḱes- (“to cut”).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-074",
     "day": 4,
     "word": "casual",
-    "meaning": "대충하는, 건성의; 우연한; 비형식적인\n\n(casus 떨어지다)",
+    "meaning": "대충하는, 건성의; 우연한; 비형식적인\n\n유래: 중세 프랑스어 casuel; 후기 라틴어 cāsuālis (“happening by chance”).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
@@ -2629,35 +2629,35 @@ window.GRE_WORDS = [
     "id": "d04-076",
     "day": 4,
     "word": "catalyze",
-    "meaning": "촉진시키다, 촉매작용하다\n\n(kata(아래로) + luein(느슨하게 만들다))",
+    "meaning": "촉진시키다, 촉매작용하다\n\n유래: catalyst를 바탕으로 만든 catalyze. catalyst는 그리스어 katalysis('용해, 해체')에서 유래.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-077",
     "day": 4,
     "word": "categorical",
-    "meaning": "절대적인\n\n(katēgoria 선언문)",
+    "meaning": "절대적인\n\n유래: 후기 라틴어 catēgoricus + -al. 형태 분석: category + -ical.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-078",
     "day": 4,
     "word": "cater (to)",
-    "meaning": "(요구, 필요를)만족시키려 애쓰다 , \n(음식, 서비스를) 공급하다",
+    "meaning": "(요구, 필요를)만족시키려 애쓰다 ,\n(음식, 서비스를) 공급하다",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-079",
     "day": 4,
     "word": "caterwauling",
-    "meaning": "(싸우는 고양이처럼) 불쾌하게꽥꽥 소리치는\nshrieking\n\n(cat + waul(의성어))",
+    "meaning": "(싸우는 고양이처럼) 불쾌하게 꽥꽥 소리치는; 날카롭게 울부짖는\n\n유래: caterwaul + -ing.",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
     "id": "d04-080",
     "day": 4,
     "word": "catholic",
-    "meaning": "(취향이) 폭넓은, 보편적인\n\n(kata(존경하여) + holos(전체))",
+    "meaning": "(취향이) 폭넓은, 보편적인\n\n유래: 고대 프랑스어 catholique, from 라틴어 catholicus, from 고대 그리스어 καθολικός (katholikós, “universal”), from κατά (katá, “according to”) + ὅλος (hólos, “whole”).",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
@@ -2671,7 +2671,7 @@ window.GRE_WORDS = [
     "id": "d04-082",
     "day": 4,
     "word": "cavalier",
-    "meaning": "무신경한, 거만한\n\n(caballus 말)",
+    "meaning": "무신경한, 거만한\n\n유래: 중세 프랑스어 cavalier('기병, 기사') < 이탈리아어 cavaliere < 라틴어 caballus('말').",
     "source": "https://quizlet.com/kr/1206327053/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-04-flash-cards"
   },
   {
@@ -2818,7 +2818,7 @@ window.GRE_WORDS = [
     "id": "d05-003",
     "day": 5,
     "word": "champion",
-    "meaning": "옹호하다, 지지하다\n\n(campus(평지) -> campio(싸움꾼, 선수))",
+    "meaning": "옹호하다, 지지하다\n\n유래: 중세 영어 champioun; 고대 프랑스어 champion; 중세 라틴어 campio (“combatant in a duel, champion”); 프랑크어 *kampijō (“fighter”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
@@ -2832,21 +2832,21 @@ window.GRE_WORDS = [
     "id": "d05-005",
     "day": 5,
     "word": "chary",
-    "meaning": "조심하는, 신중한; 절약하는;\n\nchara(슬픔, 한탄)",
+    "meaning": "조심하는, 신중한; 절약하는;\n\n유래: 중세 영어 chari; 중세 영어 cearig; 고대 영어 ċeariġ (“careful; pensive; chary, wary; anxious, sad, sorrowful; dire, grievous”); 원시 서게르만어 *karag (“anxious; sad”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-006",
     "day": 5,
     "word": "chasten",
-    "meaning": "잘못을 깨닫게 하다, 훈계하다.\n\n(castus(도덕적으로 깨끗한, 순결한))",
+    "meaning": "잘못을 깨닫게 하다, 훈계하다.\n\n유래: 중세 영어 chastien; 고대 프랑스어 chastier (“punish”); 라틴어 castīgō.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-007",
     "day": 5,
     "word": "chastise",
-    "meaning": "체벌하다, 몹시 비난하다.\n\n(castus(도덕적으로 깨끗한, 순결한))",
+    "meaning": "체벌하다, 몹시 비난하다.\n\n유래: 중세 영어 chastisen; 고대 프랑스어 chastier; 라틴어 castīgō.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
@@ -2881,7 +2881,7 @@ window.GRE_WORDS = [
     "id": "d05-012",
     "day": 5,
     "word": "chide",
-    "meaning": "꾸짖다\n\n(cīdan(꾸짖다))",
+    "meaning": "꾸짖다\n\n유래: 중세 영어 chiden (“to chide, rebuke, disapprove, criticize; complain, grumble, dispute; argue, debate, dispute, quarrel”); 고대 영어 ċīdan (“to chide, reprove, rebuke; blame, contend, strive, quarrel, complain”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
@@ -2895,14 +2895,14 @@ window.GRE_WORDS = [
     "id": "d05-014",
     "day": 5,
     "word": "chivalrous",
-    "meaning": "기사도적인, 용감한, 예의바른\n\n(caballarius(마부))",
+    "meaning": "기사도적인, 용감한, 예의바른\n\n유래: 중세 영어 chivalerous; 고대 프랑스어 chevalerous.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-015",
     "day": 5,
     "word": "choleric",
-    "meaning": "담즙질의, 화를 잘 내는\n\n\n(kholē(담즙), cholera(설사))",
+    "meaning": "담즙질의, 화를 잘 내는\n\n유래: 후기 라틴어 cholericus('화를 잘 내는') < 그리스어 khole('담즙').",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
@@ -2923,35 +2923,35 @@ window.GRE_WORDS = [
     "id": "d05-018",
     "day": 5,
     "word": "circuitous",
-    "meaning": "빙돌아가는, 우회하는\n\n(circum(주변) + ire(가다))",
+    "meaning": "빙돌아가는, 우회하는\n\n유래: 라틴어 circuitōsus.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-019",
     "day": 5,
     "word": "circumlocution",
-    "meaning": "에둘러 말하기, 장황\n\n(circum(주변) + loqui(말하다)",
+    "meaning": "에둘러 말하기, 장황\n\n유래: 라틴어 circumlocūtiō (“the act of speaking around; circumlocution, periphrasis”). 형태 분석: circum- (“around”) + locution (“talk”), thus \"getting around (a problem) in speaking or writing\".",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-020",
     "day": 5,
     "word": "circumscribe",
-    "meaning": "제한하다\n\n\n(circum(주변) + scribere(쓰다))",
+    "meaning": "제한하다\n\n유래: 라틴어 circumscrībō.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-021",
     "day": 5,
     "word": "circumspect",
-    "meaning": "신중한, 주의깊은, 조심하는\n\n(circum(주변) + specere(보다))",
+    "meaning": "신중한, 주의깊은, 조심하는\n\n유래: 라틴어 circumspectō (“look around”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-022",
     "day": 5,
     "word": "circumvent",
-    "meaning": "(법, 제한 등을) 피하다.\n\n(circum(주변) + venire(오다))",
+    "meaning": "(법, 제한 등을) 피하다.\n\n학술 차용: 라틴어 circumveniō.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
@@ -2965,28 +2965,28 @@ window.GRE_WORDS = [
     "id": "d05-024",
     "day": 5,
     "word": "clairvoyant",
-    "meaning": "천리안이 있는, 통찰력이 있는; 심령술사, 영매\n\n(clair(명확한) + voyant(보는))",
+    "meaning": "천리안이 있는, 통찰력이 있는; 심령술사, 영매\n\n유래: 프랑스어 clairvoyant, from clair (“clear”) + voyant (“seeing”), present participle of voir (“see”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-025",
     "day": 5,
     "word": "clamor",
-    "meaning": "아우성, 소란; \n(~할 것을) 강력히 요구(반대)하다.\n\n* 클레모아 폭발할때 소리는 엄청 큰",
+    "meaning": "아우성, 소란;\n(~할 것을) 강력히 요구(반대)하다.\n\n유래: 중세 영어 clamour; 고대 프랑스어 clamor; 라틴어 clāmor (“a shout, cry”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-026",
     "day": 5,
     "word": "clandestine",
-    "meaning": "비밀의, 은밀한\n\n(clam(비밀스럽게))",
+    "meaning": "비밀의, 은밀한\n\n유래: 라틴어 clandestīnus (“secret, concealed”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-027",
     "day": 5,
     "word": "clannish",
-    "meaning": "씨족의, 당파적인\n\n[clan(씨족, 한 패, 도당) + nish : \"씨족의\" → 당파적인, 배타적인]",
+    "meaning": "씨족의, 당파적인\n\n유래: clan + -ish.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
@@ -3000,42 +3000,42 @@ window.GRE_WORDS = [
     "id": "d05-029",
     "day": 5,
     "word": "clemency",
-    "meaning": "자비, 관대함\n\n(clementia(자비로운))",
+    "meaning": "자비, 관대함\n\n유래: 중세 영어 clemency; 라틴어 clēmentia.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-030",
     "day": 5,
     "word": "cliché",
-    "meaning": "진부한 표현\n\n(clicher(정형화하다))",
+    "meaning": "진부한 표현\n\n원형 그대로 차용: 프랑스어 cliché.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-031",
     "day": 5,
     "word": "clinch",
-    "meaning": "(논쟁) 결론을 내다, (거래) 성사키다.\n\n(klingen(붙어 있다, 고수하 다))",
+    "meaning": "(논쟁) 결론을 내다, (거래) 성사키다.\n\n유래: clench('단단히 붙잡다')의 16세기 변형.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-032",
     "day": 5,
     "word": "clout",
-    "meaning": "영향력, 힘\n\n[원래 의미 : \"(손바닥, 주먹으로) 때림\" → <야구> 장타 → (특히 정치적인) 권력, 영향력]",
+    "meaning": "영향력, 힘\n\n유래: 중세 영어 clout (“piece of cloth”); 고대 영어 clūt (“piece of cloth, patch; metal plate”); 원시 서게르만어 *klūt; 원시 게르만어 *klūtaz.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-033",
     "day": 5,
     "word": "coagulate",
-    "meaning": "(혈액 등) 응고하다\n\n(coagulum(치즈 제조용 응고제) -> coagulare 응고시키다)",
+    "meaning": "(혈액 등) 응고하다\n\n유래: 중세 영어 coagulaten (“(of blood) to clot or, make blood coagulate; (of tissue) to consolidate”); 라틴어 coāgulātus.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-034",
     "day": 5,
     "word": "coalesce",
-    "meaning": "합쳐지다, 하나가 되다\n\n(co(함께) + alescere(성장하다))",
+    "meaning": "합쳐지다, 하나가 되다\n\n유래: 라틴어 coalēscō.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
@@ -3063,56 +3063,56 @@ window.GRE_WORDS = [
     "id": "d05-038",
     "day": 5,
     "word": "codify",
-    "meaning": "성문화하다, 체계화하다.\n\n(codex(나무 블록) -> 글씨를 쓸 수 있는 나무 판)",
+    "meaning": "성문화하다, 체계화하다.\n\n유래: code + -ify.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-039",
     "day": 5,
     "word": "coerce",
-    "meaning": "강요하다, 강제하다.\n\n(co(함께) + arcere(억제하다))",
+    "meaning": "강요하다, 강제하다.\n\n유래: 라틴어 coërceō (“to surround, encompass, restrain, control, curb”), from co- (“together”) + arceō (“to inclose, confine, keep off”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-040",
     "day": 5,
     "word": "cogent",
-    "meaning": "설득력있는\n\n(co(함께) + agere(몰고가다))",
+    "meaning": "설득력있는\n\n유래: 프랑스어 cogent; 라틴어 cōgēns.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-041",
     "day": 5,
     "word": "cognizant",
-    "meaning": "알고 있는, 지각하고 있는\n\n(cognoscere(알다))",
+    "meaning": "알고 있는, 지각하고 있는\n\nA new formation from cognizance + -ant; first attested in the 19th century.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-042",
     "day": 5,
     "word": "coherent",
-    "meaning": "(글) 일관성 있는; (사람) 조리 있는\n\n(co(함께) + haerere(붙이다))",
+    "meaning": "(글) 일관성 있는; (사람) 조리 있는\n\n유래: 중세 프랑스어 coherent; 라틴어 cohaērēns.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-043",
     "day": 5,
     "word": "coincide",
-    "meaning": "동시에 발생하다; 일치하다.\n\n(co(함께) + incidere(떨어지다, 해당하다))",
+    "meaning": "동시에 발생하다; 일치하다.\n\n유래: 프랑스어 coïncider; 중세 라틴어 coincidere.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-044",
     "day": 5,
     "word": "collegiality",
-    "meaning": "(동료간의) 협조, 협력\n\n(col(함께) + legare(임명하다))",
+    "meaning": "(동료간의) 협조, 협력\n\n유래: collegial + -ity.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-045",
     "day": 5,
     "word": "collude",
-    "meaning": "결탁, 공모하다.\n\n\n(col(함께) + ludere(놀다))",
+    "meaning": "결탁, 공모하다.\n\n유래: 라틴어 collūdere, from con- and lūdere (“to play”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
@@ -3126,42 +3126,42 @@ window.GRE_WORDS = [
     "id": "d05-047",
     "day": 5,
     "word": "comity",
-    "meaning": "우호적인 관계; 상호간의 예절\n\n(comis(예의 바른))",
+    "meaning": "우호적인 관계; 상호간의 예절\n\n유래: 중세 영어 comite (“association”); 라틴어 cōmitās.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-048",
     "day": 5,
     "word": "commend",
-    "meaning": "칭찬하다; 추천하다; 위탁하다\n\n(com(강조) + mandare(맡기다, 명령하다))",
+    "meaning": "칭찬하다; 추천하다; 위탁하다\n\n유래: 중세 영어 commenden; 고대 프랑스어 comender; 라틴어 commendō (“commend, entrust to, commit, recommend”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-049",
     "day": 5,
     "word": "commensurate",
-    "meaning": "동등한; 비례하는\n\n(com(함께) + mensurare(측정하다))",
+    "meaning": "동등한; 비례하는\n\n유래: 후기 라틴어 commēnsūrātus; 라틴어 mēnsūra (“measure”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-050",
     "day": 5,
     "word": "commiserate",
-    "meaning": "위로, 동정을 표하다.\n\n(com(함께) + miserari(슬퍼하다))",
+    "meaning": "위로, 동정을 표하다.\n\n유래: commiserātus, the perfect passive participle of commiseror.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-051",
     "day": 5,
     "word": "commitment",
-    "meaning": "약속; 책임; 헌신\n\n(com(함께) + mittere(보내다))",
+    "meaning": "약속; 책임; 헌신\n\n유래: commit + -ment.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-052",
     "day": 5,
     "word": "commodious",
-    "meaning": "넓은, 널찍한\n\n(commodus(넓고 편리한))",
+    "meaning": "넓은, 널찍한\n\n유래: 중세 영어 commodious (“convenient, advantageous”); 앵글로노르만어 commodious; 고대 프랑스어 commodieux; 중세 라틴어 commodiosus (“convenient, useful”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
@@ -3175,105 +3175,105 @@ window.GRE_WORDS = [
     "id": "d05-054",
     "day": 5,
     "word": "compatible",
-    "meaning": "양립하는, 조화를 이루는\n\n(compati(함께 고통을 겪다))",
+    "meaning": "양립하는, 조화를 이루는\n\n유래: 중세 영어 compatible; 앵글로노르만어 compatible; 중세 라틴어 compatibilis (“in compatibile beneficium, a benefice which could be held together with another one”); 후기 라틴어 compator (“to suffer with”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-055",
     "day": 5,
     "word": "compelling",
-    "meaning": "주목하지 않을 수 없는; 설득력 있는\n\n(com(함께) + pellere(몰고가다))",
+    "meaning": "주목하지 않을 수 없는; 설득력 있는\n\n형태 분석: compel + -ing.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-056",
     "day": 5,
     "word": "compendious",
-    "meaning": "포괄적이면서도 간결한\n\n\n(com(함께) + pendere(무게달다)",
+    "meaning": "포괄적이면서도 간결한\n\n유래: 고대 프랑스어 compendieux, from 라틴어 compendiosus (“advantageous, abridged, brief”), from compendium.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-057",
     "day": 5,
     "word": "compensate",
-    "meaning": "보상하다; 상쇄하다.\n\n(com(함께) + pendere(무게달다))",
+    "meaning": "보상하다; 상쇄하다.\n\n유래: 라틴어 compēnsātus.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-058",
     "day": 5,
     "word": "complacent",
-    "meaning": "자기만족에 빠진, 자기도취에 빠진\n\n(com(강조) + placere(달래다, 즐거움을 주다)",
+    "meaning": "자기만족에 빠진, 자기도취에 빠진\n\n유래: 라틴어 complacēns (“very pleasing”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-059",
     "day": 5,
     "word": "complaisant",
-    "meaning": "공손한, 정중한, 유순한\n\n(com(강조) + placere(달래다, 즐거움을 주다)",
+    "meaning": "공손한, 정중한, 유순한\n\n유래: 프랑스어 complaisant (“willing to please”), from complaire, from 라틴어 complacēre (“please well”), from com- (“with”) + placeō (“please”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-060",
     "day": 5,
     "word": "complement",
-    "meaning": "보완하다, 보충하다, 완전하게 하다.\n\n(com(강조) + plere(채우다))",
+    "meaning": "보완하다, 보충하다, 완전하게 하다.\n\n유래: 중세 영어 complement; 라틴어 complēmentum (“that which fills up or completes”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-061",
     "day": 5,
     "word": "complexion",
-    "meaning": "특징, 양상; 안색\n\n(complectere(껴안다, 구성하다))",
+    "meaning": "특징, 양상; 안색\n\n유래: 중세 영어 complexion (“temperament”); 고대 프랑스어 complexion; 중세 라틴어 complexiō (“complexion, constitution”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-062",
     "day": 5,
     "word": "compliant",
-    "meaning": "순응하는\n\n(com(강조) + plere(채우다))",
+    "meaning": "순응하는\n\n유래: comply + -ant.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-063",
     "day": 5,
     "word": "composure",
-    "meaning": "평상심\n\n(com(함께) + ponere(두다))",
+    "meaning": "평상심\n\n유래: compose + -ure.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-064",
     "day": 5,
     "word": "compound",
-    "meaning": "악화시키다; 구성하다.\n\n*섞으니까 더 악화되는 느낌.\n(com(함께) + ponere(두다))",
+    "meaning": "악화시키다; 구성하다, 합성하다\n\n유래: 중세 프랑스어 componre('함께 놓다') < 라틴어 componere < com-('함께') + ponere('놓다').",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-065",
     "day": 5,
     "word": "compromise",
-    "meaning": "(명예, 원칙) 약화시키다, 훼손하다.\n타협하다. 굴복하다.\n\n(com(함께) + pro(앞으로) + mittere(보내다))",
+    "meaning": "(명예, 원칙) 약화시키다, 훼손하다.\n타협하다. 굴복하다.\n\n유래: 중세 프랑스어 compromis; 중세 라틴어; 후기 라틴어 compromissum (“a compromise, originally a mutual promise to refer to arbitration”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-066",
     "day": 5,
     "word": "compunction",
-    "meaning": "양심의 가책, 뉘우침, 죄책감, 거리낌\n\n(com(강조) + pungere(찌르다))",
+    "meaning": "양심의 가책, 뉘우침, 죄책감, 거리낌\n\n유래: 중세 영어 compunccion; 고대 프랑스어 compunction; 후기 라틴어 compunctionem (“a pricking”); 라틴어 compunctus.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-067",
     "day": 5,
     "word": "comradeship",
-    "meaning": "동료애, 우정\n\n(camera(방) -> camarada(룸메이트))",
+    "meaning": "동료애, 우정\n\n유래: comrade + -ship.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-068",
     "day": 5,
     "word": "concede",
-    "meaning": "(옳음을, 맞음을) 인정하다; 양보하다.\n\n(con(완전) + cedere(양보하다))",
+    "meaning": "(옳음을, 맞음을) 인정하다; 양보하다.\n\n유래: 고대 프랑스어 conceder; 라틴어 concēdō (“give way, yield”); 원시 인도유럽어 *ked- (“to go, yield”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
@@ -3287,7 +3287,7 @@ window.GRE_WORDS = [
     "id": "d05-070",
     "day": 5,
     "word": "conciliatory",
-    "meaning": "달래는, 회유적인\n\n[con(together) + ciliate(bring) : \"함께 불러 모으다\" → <남을> 달래다, ~을 회유하다 → 조정하다, 화해시키다]",
+    "meaning": "달래는, 회유적인\n\n유래: conciliate + -ory. conciliate는 라틴어 conciliare('결합하다, 화해시키다')에서 유래.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
@@ -3301,133 +3301,133 @@ window.GRE_WORDS = [
     "id": "d05-072",
     "day": 5,
     "word": "concomitant",
-    "meaning": "동시에 일어나는, 수반되는\n\ncon(함께) + comitari(오다)",
+    "meaning": "동시에 일어나는, 수반되는\n\n유래: 중세 프랑스어 concomitant; 라틴어 concomitāns.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-073",
     "day": 5,
     "word": "concord",
-    "meaning": "일치, 조화, 화합\n\n[con(together) + cord(hear) : \"함께 하는 마음\"]",
+    "meaning": "일치, 조화, 화합\n\n유래: 프랑스어 concorde; 라틴어 concordia.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-074",
     "day": 5,
     "word": "concur",
-    "meaning": "동의하다; 동시에 발생하다 \n\n(con(함께) + currere(달리다))",
+    "meaning": "동의하다; 동시에 발생하다\n\n차용: 라틴어 concurro (“to run together, agree”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-075",
     "day": 5,
     "word": "condensed",
-    "meaning": "약된, 간결한\n\n(con(함께) + densus(밀도 높은))",
+    "meaning": "요약된, 압축된; 간결한\n\n유래: condense + -ed. condense는 라틴어 condensare('빽빽하게 만들다')에서 유래.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-076",
     "day": 5,
     "word": "condescend",
-    "meaning": "(우월함을 드러내며) 생색내다, 거들먹 거리다; 자신을 낮추다\n\n(con(함께) + de(아래로) + scandere(오르다))",
+    "meaning": "(우월함을 드러내며) 생색내다, 거들먹 거리다; 자신을 낮추다\n\n유래: 중세 영어 condescenden; 고대 프랑스어 condescendre (“to descend, go down; to agree or assent to”); 교회 라틴어 condēscendere; 라틴어 con- (prefix denoting a bringing together of several objects).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-077",
     "day": 5,
     "word": "condole",
-    "meaning": "위로, 조의를 표하다.\n\n(con(함께) + dolere(슬퍼하다, 고통을 겪다))",
+    "meaning": "위로, 조의를 표하다.\n\n유래: 학술 차용: 교회 라틴어 condolēre; 라틴어 con- (prefix denoting a being or bringing together of several things); 원시 인도유럽어 *delh₁- (“to divide, split”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-078",
     "day": 5,
     "word": "condone",
-    "meaning": "묵과하다, 용서하다\n\n(con(함께) + donare(주다))",
+    "meaning": "묵과하다, 용서하다\n\n유래: 학술 차용: 라틴어 condōnāre (“to forgive”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-079",
     "day": 5,
     "word": "conducive",
-    "meaning": "도움이되는\n\n(con(함께) + ducere(데려오다, 이끌다))",
+    "meaning": "도움이되는\n\n유래: 라틴어 condūcere.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-080",
     "day": 5,
     "word": "confer",
-    "meaning": "부여하다, 수여하다.\n\n(con(함께) + ferre(데려오다))",
+    "meaning": "부여하다, 수여하다.\n\n유래: Early Modern English conferre, from 중세 프랑스어 conférer, from 고대 프랑스어 conferer, from 라틴어 cōnferō.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-081",
     "day": 5,
     "word": "confidential",
-    "meaning": "기밀의\n\n(con(강조) + fidere(신뢰하다))",
+    "meaning": "기밀의\n\n유래: 라틴어 cōnfīdentia + English -al.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-082",
     "day": 5,
     "word": "configuration",
-    "meaning": "형상, 외형, 배열\n\n(con(함께) + figurare(모양을 만들다))",
+    "meaning": "형상, 외형, 배열\n\n유래: 중세 프랑스어 configuration; 라틴어 cōnfigūrātiō.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-083",
     "day": 5,
     "word": "conflate",
-    "meaning": "융합하다, 합체하다\n\n(con(함께) + flare(불다 blow))",
+    "meaning": "융합하다, 합체하다\n\n유래: 라틴어 cōnflātus.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-084",
     "day": 5,
     "word": "confluence",
-    "meaning": "두 강의 합류 지점; 합일, 융합\n\n(con(함께) + fluere(흐르다))",
+    "meaning": "두 강의 합류 지점; 합일, 융합\n\n유래: 중세 영어 confluence; 후기 라틴어 cōnfluentia (“a flowing together, conflux”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-085",
     "day": 5,
     "word": "conform",
-    "meaning": "순응하다, 따르다\n\n(con(함께) + formare(형성하다))",
+    "meaning": "순응하다, 따르다\n\n유래: 중세 영어 conformen; 중세 프랑스어; 앵글로노르만어 conformer; 라틴어 conformāre (“to mould, to shape after”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-086",
     "day": 5,
     "word": "confound",
-    "meaning": "혼돈시키다, 당황하게 하다\n\n(con(함께) + fundere(섞다, 붓다))",
+    "meaning": "혼돈시키다, 당황하게 하다\n\n유래: 중세 영어 confounden (“destroy, ruin, perplex”); 앵글로노르만어 cunfundre; 고대 프랑스어 confondre; 라틴어 cōnfundō (“to mingle, mix together”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-087",
     "day": 5,
     "word": "congeal",
-    "meaning": "응결시키다\n\n(con(함께) + gelare(얼다))",
+    "meaning": "응결시키다\n\n유래: 중세 영어 congelen; 중세 프랑스어 congeler; 라틴어 congelare.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-088",
     "day": 5,
     "word": "congenial",
-    "meaning": "마음에 드는, 친근한\n\n(con(함께) + gignere(낳다))",
+    "meaning": "마음에 드는, 친근한\n\n유래: con- + genial.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-089",
     "day": 5,
     "word": "congenital",
-    "meaning": "타고난, 선천적인\n\n(con(함께) + gignere(낳다))",
+    "meaning": "타고난, 선천적인\n\n구성: con- + genital.",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
     "id": "d05-090",
     "day": 5,
     "word": "congregate",
-    "meaning": "모이다, 집합하다\n\n(con(함께) + gregare(모으다))",
+    "meaning": "모이다, 집합하다\n\n유래: 중세 영어 congregat(e) (“(of people) banded together; (of liquids) accumulated; (of muscles) contracted; (of wounds) closed up”).",
     "source": "https://quizlet.com/kr/1206327118/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-05-flash-cards"
   },
   {
@@ -3504,28 +3504,28 @@ window.GRE_WORDS = [
     "id": "d06-001",
     "day": 6,
     "word": "congruous",
-    "meaning": "일치하는, 합동의\n\n(con(함께) + ruere(떨어지다, 몰려가다))",
+    "meaning": "일치하는, 합동의\n\n유래: 라틴어 congruus('일치하는, 알맞은') < congruere('서로 일치하다').",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-002",
     "day": 6,
     "word": "conjecture",
-    "meaning": "추정, 추측\n\ncon(함께) + jacere(던지다)",
+    "meaning": "추정, 추측\n\n유래: 고대 프랑스어, from 라틴어 coniectūra (“a guess”), from coniectus, perfect passive participle of cōniciō (“throw or cast together; guess”), from con- (“together”) + iaciō (“throw, hurl”); see jet.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-003",
     "day": 6,
     "word": "conjure",
-    "meaning": "마법을 걸다; 상기시키다, 불러내다\n\ncon(함께) + jurare(맹세하다)",
+    "meaning": "마법을 걸다; 상기시키다, 불러내다\n\n유래: 중세 영어 conjuren; 고대 프랑스어 conjurer; 라틴어 coniūrō (“to swear together; conspire”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-004",
     "day": 6,
     "word": "connive",
-    "meaning": "공모하다\n\ncon(함께) + nictare(윙크하다)",
+    "meaning": "공모하다\n\n유래: 프랑스어 conniver (“to ignore and thus become complicit in wrongdoing”); 라틴어 con(n)īvēre (“close or screw up the eyes, blink, wink; overlook, turn a blind eye, connive”); 원시 인도유럽어 *kneygʷʰ- (“to bend, droop”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
@@ -3546,182 +3546,182 @@ window.GRE_WORDS = [
     "id": "d06-007",
     "day": 6,
     "word": "connote",
-    "meaning": "암시하다\n\n(con(함께) + notare(표시하다))",
+    "meaning": "암시하다\n\n유래: 중세 라틴어 connotō (“signify beyond literal meaning”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-008",
     "day": 6,
     "word": "conscientious",
-    "meaning": "양심적인; 근면 성실한\n\n(con(함께) + scire(알다))",
+    "meaning": "양심적인; 근면 성실한\n\n유래: 중세 프랑스어 conscientieux; 중세 라틴어 cōnscientiōsus.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-009",
     "day": 6,
     "word": "consensus",
-    "meaning": "의견 일치, 합의\n\n(con(함께) + sentire(느끼다))",
+    "meaning": "의견 일치, 합의\n\n유래: 라틴어 cōnsēnsus (“agreement, accordance, unanimity”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-010",
     "day": 6,
     "word": "consign",
-    "meaning": "위임하다, 위탁하다\n\n(con(함께) + signare(서명하다) )",
+    "meaning": "위임하다, 위탁하다\n\n유래: 중세 프랑스어 consigner; 라틴어 cōnsignō (“furnish with a seal”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-011",
     "day": 6,
     "word": "console",
-    "meaning": "위로하다\n\ncon(함께) + solari(위로하다)",
+    "meaning": "위로하다\n\n유래: 프랑스어 console (“bracket”, noun).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-012",
     "day": 6,
     "word": "consolidate",
-    "meaning": "통합하다; 굳히다\n\ncon(함께) + solidare(강하게 만들다)",
+    "meaning": "통합하다; 굳히다\n\n유래: 라틴어 consolidātus.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-013",
     "day": 6,
     "word": "consonance",
-    "meaning": "일치, 조화, 화음\n\n(con(함께) + sonare(소리나다, 울리다))",
+    "meaning": "일치, 조화, 화음\n\n유래: 중세 영어 consonance; 중세 프랑스어 consonance; 라틴어 cōnsonantia.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-014",
     "day": 6,
     "word": "conspicuous",
-    "meaning": "명확히 보이는; 눈길을 끈, 대단한\n\n(con(강화) + spicere(보다))",
+    "meaning": "명확히 보이는; 눈길을 끈, 대단한\n\n유래: 라틴어 conspicuus (“visible, striking”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-015",
     "day": 6,
     "word": "conspire",
-    "meaning": "공모하다\n\ncon(함께) + spirare(호흡하다)",
+    "meaning": "공모하다\n\n유래: 중세 영어 conspiren; 고대 프랑스어 conspirer; 라틴어 conspirare.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-016",
     "day": 6,
     "word": "constrain",
-    "meaning": "강제하다; 억제하다\n\ncon(함께) + stringere(묶다)",
+    "meaning": "강제하다; 억제하다\n\n유래: 중세 영어 constreinen; 고대 프랑스어 constreindre; 라틴어 cōnstringō; 원시 인도유럽어 *streyg- (“to stroke, to shear, stiff”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-017",
     "day": 6,
     "word": "construe",
-    "meaning": "해석하다\n\n(con(함께) + struere(쌓다, 짓다) -> 문장의 구조를 분석하다)",
+    "meaning": "해석하다\n\n유래: 중세 영어 construen; 후기 라틴어 construo, construere (“to relate grammatically”); 라틴어 construo (“pile together”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-018",
     "day": 6,
     "word": "consummate",
-    "meaning": "완전한, 완전히 하다\n\n(con(다합쳐서) + summa(총합))",
+    "meaning": "완전한, 완전히 하다\n\n유래: 중세 영어 consummat(e) (“(past participle) fulfilled, completed; (adjective) perfect, consummate”); 라틴어 cōnsummātus.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-019",
     "day": 6,
     "word": "contemplate",
-    "meaning": "심사숙고하다 \n\ncon(완전) + templum(관찰해야할 장소)",
+    "meaning": "심사숙고하다\n\n유래: 라틴어 contemplātus.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-020",
     "day": 6,
     "word": "contend",
-    "meaning": "싸우다, 다투다; 주장하다\n\ncon(함께) + tendere(뻗다, 애쓰다)",
+    "meaning": "싸우다, 다투다; 주장하다\n\n유래: 중세 영어 contenden; 고대 프랑스어 contendre; 라틴어 contendere (“to stretch out, extend, strive after, contend”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-021",
     "day": 6,
     "word": "contention",
-    "meaning": "논쟁, 주장\n\ncon(함께) + tendere(뻗다, 애쓰다)",
+    "meaning": "논쟁, 주장\n\n유래: 중세 영어 contencion; 고대 프랑스어 contencion; 라틴어 contentio, contentionem.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-022",
     "day": 6,
     "word": "contentious",
-    "meaning": "논쟁적인\n\ncon(함께) + tendere(뻗다, 애쓰다)",
+    "meaning": "논쟁적인\n\n유래: 중세 프랑스어 contentieux, from 라틴어 contentiōsus (“quarrelsome, perverse”), from contentiō (“contention”), from contendere, past participle contentus (“to contend”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-023",
     "day": 6,
     "word": "contest",
-    "meaning": "다투다; 이의를 제기하다*\n\ncon(함께) + testare(목격하다)",
+    "meaning": "다투다; 이의를 제기하다*\n\n유래: 프랑스어 contester; 고대 프랑스어; 라틴어 contestor (“to call to witness”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-024",
     "day": 6,
     "word": "contiguous",
-    "meaning": "인접하는\n\ncon(함께) + tangere(만지다) -> contiguus(붙어 있는)",
+    "meaning": "인접하는\n\n유래: 라틴어 contiguus (“touching”) + -ous, from contingere (“to touch”); see contingent, contact, contagion.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-025",
     "day": 6,
     "word": "contingent",
-    "meaning": "우발적인; 부수적인,\n\ncon(함께) + tangere(만지다)",
+    "meaning": "우발적인; 부수적인,\n\n유래: 중세 영어; 고대 프랑스어 contingent; 중세 라틴어 contingens (“possible, contingent”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-026",
     "day": 6,
     "word": "contort",
-    "meaning": "뒤틀다, 일그러지다\n\n(con(함께) + torquere(비틀다))",
+    "meaning": "뒤틀다, 일그러지다\n\n유래: 중세 영어; 라틴어 contortus.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-027",
     "day": 6,
     "word": "contradict",
-    "meaning": "모순되다, 상반되다, 부인하다\n\n(con(함께) + torquere(비틀다))",
+    "meaning": "모순되다, 상반되다, 부인하다\n\n유래: 라틴어 contrādictus (“contradicted”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-028",
     "day": 6,
     "word": "contravene",
-    "meaning": "위반하다; 부인(부정)하다\n\n(contra(반대하여) + venire(오다))",
+    "meaning": "위반하다; 부인(부정)하다\n\n유래: 중세 프랑스어 contravenir (프랑스어 contrevenir), from 라틴어 contraveniō.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-029",
     "day": 6,
     "word": "contrite",
-    "meaning": "뉘우치는\n\ncon(함께) + terere(문지르다)",
+    "meaning": "뉘우치는\n\n유래: 중세 영어 contrit; 고대 프랑스어 contrit; 라틴어 contrītus (literally “ground to pieces”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-030",
     "day": 6,
     "word": "contrive",
-    "meaning": "고안하다; 꾀하다 \n\n(contropare(준비하다) -> 고안하다, 발명하다)",
+    "meaning": "고안하다; 꾀하다\n\n유래: 중세 영어 contreve (“to invent”); 고대 프랑스어 controver.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-031",
     "day": 6,
     "word": "controvert",
-    "meaning": "반박하다, 부인하다\n\n(contro(반대하여) + vertere(돌리다))",
+    "meaning": "반박하다, 부인하다\n\n유래: 중세 라틴어 contrōvertere; 라틴어 contrō- (“against”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-032",
     "day": 6,
     "word": "contumacious",
-    "meaning": "고집 센\n\ncon(함께) + tumere(부풀어 오르다)",
+    "meaning": "고집 센\n\n유래: 라틴어 contumāx (“stubborn, obstinate”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
@@ -3735,77 +3735,77 @@ window.GRE_WORDS = [
     "id": "d06-034",
     "day": 6,
     "word": "convene",
-    "meaning": "소집하다\n\ncon(함께) + venire(오다)",
+    "meaning": "소집하다\n\n유래: 중세 프랑스어 convenir; 라틴어 convenio, convenire (“come together”); 원시 인도유럽어 *gʷm̥yéti.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-035",
     "day": 6,
     "word": "conventional",
-    "meaning": "진부한, 전통적인\n\ncon(함께) + venire(오다)",
+    "meaning": "진부한, 전통적인\n\n유래: convention + -al.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-036",
     "day": 6,
     "word": "convergence",
-    "meaning": "집합, 집중\n\ncon(함께) + vergere(기울다)",
+    "meaning": "집합, 집중\n\n유래: 라틴어 convergentia.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-037",
     "day": 6,
     "word": "conversant",
-    "meaning": "친숙한, 정통한;\n \ncon(함께) + vertere(돌다)",
+    "meaning": "친숙한, 정통한;\n\n유래: 고대 프랑스어 conversant, present participle of converser.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-038",
     "day": 6,
     "word": "conversely",
-    "meaning": "반대로, 역으로\n\n(con(함께) + vertere(돌다))",
+    "meaning": "반대로, 역으로\n\n유래: converse + -ly.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-039",
     "day": 6,
     "word": "convict",
-    "meaning": "유죄를 선고하다, 기결수\n\ncon(함께) + vincere(정복하다)",
+    "meaning": "유죄를 선고하다, 기결수\n\n유래: 중세 영어 convicten; 앵글로노르만어 convicter; 라틴어 convictus.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-040",
     "day": 6,
     "word": "conviction",
-    "meaning": "유죄판결; 강한 신념, 확신\n\n(con(함께) + vincere(정복하다))",
+    "meaning": "유죄판결; 강한 신념, 확신\n\n유래: 중세 영어 conviction; 앵글로노르만어 conviction; 라틴어 convictiō.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-041",
     "day": 6,
     "word": "convivial",
-    "meaning": "(분위기, 성격) 명랑한, 유쾌한, 술마시기 좋은\n\n(con(함께) + viviere(살다))",
+    "meaning": "(분위기, 성격) 명랑한, 유쾌한, 술마시기 좋은\n\n유래: 프랑스어 convivial.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-042",
     "day": 6,
     "word": "convoke",
-    "meaning": "소집하다\n\n(con(함께) + vocare(부르다))",
+    "meaning": "소집하다\n\n유래: 중세 프랑스어 convoquer; 라틴어 convocare.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-043",
     "day": 6,
     "word": "convoluted",
-    "meaning": "난해한\n\n(con(함께) + volvere(돌리다))",
+    "meaning": "난해한\n\n유래: convolute + -ed.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-044",
     "day": 6,
     "word": "convulsion",
-    "meaning": "경련; 격변\n\ncon(함께) + vellere(당기다)",
+    "meaning": "경련; 격변\n\n유래: 라틴어 convulsiō.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
@@ -3819,49 +3819,49 @@ window.GRE_WORDS = [
     "id": "d06-046",
     "day": 6,
     "word": "cordial",
-    "meaning": "다정한, 상냥한\n\ncord(심장)",
+    "meaning": "다정한, 상냥한\n\n유래: 중세 영어 cordial; 고대 프랑스어 cordial; 중세 라틴어 cordiālis (“of the heart”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-047",
     "day": 6,
     "word": "cornucopia",
-    "meaning": "풍요의 뿔; 풍요의 상징\n\ncornu(뿔) + copia(풍요)",
+    "meaning": "풍요의 뿔; 풍요의 상징\n\n차용: 라틴어 cornūcōpia.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-048",
     "day": 6,
     "word": "corporeal",
-    "meaning": "육신의, 물질적인; 유형의* tangible\n\n(corpus(육체, 몸))",
+    "meaning": "육신의, 물질적인; 유형의* tangible\n\n유래: 중세 영어 corporealle.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-049",
     "day": 6,
     "word": "corpulent",
-    "meaning": "살찐, 뚱뚱한\n\n(corpus(육체, 몸))",
+    "meaning": "살찐, 뚱뚱한\n\n유래: 중세 영어 corpulent; 고대 프랑스어 corpulent; 라틴어 corpulentus.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-050",
     "day": 6,
     "word": "correlate",
-    "meaning": "상관관계에 있다\n\ncor(함께) + reletivus(관련 있는)",
+    "meaning": "상관관계에 있다\n\n유래: cor- + relate.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-051",
     "day": 6,
     "word": "correspond",
-    "meaning": "부합하다, 상응하다; 서신을 교환하다\n\ncor(함께) + re(다시) + spondere(약속하다)",
+    "meaning": "부합하다, 상응하다; 서신을 교환하다\n\n유래: 중세 프랑스어 correspondre < 라틴어 com-('함께') + respondere('대답하다, 부합하다').",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-052",
     "day": 6,
     "word": "corroborate",
-    "meaning": "확증하다 \n\ncor(함께) + roborare(힘을 내다)",
+    "meaning": "확증하다\n\n유래: 라틴어 corrōborātus (“strengthened”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
@@ -3889,63 +3889,63 @@ window.GRE_WORDS = [
     "id": "d06-056",
     "day": 6,
     "word": "counter",
-    "meaning": "반박하다; 무효로하다.\n\n(contra(반대하여))",
+    "meaning": "반박하다; 무효로하다.\n\n유래: 중세 영어 countour; 고대 프랑스어 conteor; 중세 라틴어 computātōrium; 라틴어 computō.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-057",
     "day": 6,
     "word": "counterpart",
-    "meaning": "대응물 (동일한 것)\n\ncounter(반대의) + part",
+    "meaning": "대응물 (동일한 것)\n\n유래: 중세 영어 conterpart.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-058",
     "day": 6,
     "word": "counterpoint",
-    "meaning": "대조\n\ncontra(반대하여) + pungere(찌르다)",
+    "meaning": "대조\n\n유래: 중세 프랑스어 contrepoint; 중세 라틴어 contrāpūnctum.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-059",
     "day": 6,
     "word": "counterproductive",
-    "meaning": "비생산적인, 역효과의\n\ncontra(반대하여) + productive",
+    "meaning": "비생산적인, 역효과의\n\n유래: counter- + productive.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-060",
     "day": 6,
     "word": "court",
-    "meaning": "(애정, 환심, 명성 등) 얻으려 하다; (재난 등) 초래하다\n\n(cohort, cohors 마당, 수행원단)",
+    "meaning": "(애정, 환심, 명성 등) 얻으려 하다; (재난 등) 초래하다\n\n유래: 중세 영어 court; 고대 프랑스어 cort, curt; 후기 라틴어 cōrs; 라틴어 cohors.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-061",
     "day": 6,
     "word": "courteous",
-    "meaning": "공손한, 예의바른\n\n(cohort, cohors 마당, 수행원단)",
+    "meaning": "공손한, 예의바른\n\n유래: 중세 영어 curteis; 고대 프랑스어 curteis.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-062",
     "day": 6,
     "word": "covert",
-    "meaning": "숨겨진, 비밀의\n\nco(강조) + operate(닫다, 덮다)",
+    "meaning": "숨겨진, 비밀의\n\n유래: 중세 영어 covert; 고대 프랑스어 covert; 라틴어 coopertus.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-063",
     "day": 6,
     "word": "covet",
-    "meaning": "탐내다, 갈망하다\n\n*coveted = enviable",
+    "meaning": "탐내다, 갈망하다\n\n유래: 중세 영어 coveten; 고대 프랑스어 covoitier; 라틴어 cupiditas.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-064",
     "day": 6,
     "word": "cowed",
-    "meaning": "위협하다",
+    "meaning": "겁먹은, 위축된",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
@@ -4008,14 +4008,14 @@ window.GRE_WORDS = [
     "id": "d06-073",
     "day": 6,
     "word": "crest",
-    "meaning": "정점, 정상; (조류) 볏; (가문의) 문장, 상징\n\n(crista(깃털))",
+    "meaning": "정점, 정상; (조류) 볏; (가문의) 문장, 상징\n\n유래: 중세 영어 creste; 고대 프랑스어 creste; 고대 영어 cræsta (“crest, tuft, plume”); 민중 라틴어 *cresta.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-074",
     "day": 6,
     "word": "crestfallen",
-    "meaning": "풀 죽은\n\ncrista(깃털) + fallen",
+    "meaning": "풀 죽은\n\n구성: crest + fallen.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
@@ -4042,15 +4042,15 @@ window.GRE_WORDS = [
   {
     "id": "d06-078",
     "day": 6,
-    "word": "crochety",
-    "meaning": "화잘내는, 까다로운\n\ncrok(고리, 걸이)",
+    "word": "crotchety",
+    "meaning": "화를 잘 내는, 까다로운\n\n유래: crotchet('기벽, 변덕') + -y.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-079",
     "day": 6,
     "word": "crumble",
-    "meaning": "바스러지다, 무너지다\n \n(cruma(빵가루))",
+    "meaning": "바스러지다, 무너지다\n\n유래: 중세 영어 *crymblen; 고대 영어 *crymlan (“to crumble”); 고대 영어 cruma (“crumb”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
@@ -4078,28 +4078,28 @@ window.GRE_WORDS = [
     "id": "d06-083",
     "day": 6,
     "word": "culpable",
-    "meaning": "비난받을만한\n\n(culpa(잘못, 죄))",
+    "meaning": "비난받을만한\n\n유래: 중세 영어 culpable; 고대 프랑스어 culpable; 라틴어 culpābilis (“blameworthy”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-084",
     "day": 6,
     "word": "culprit",
-    "meaning": "범인, 장본인;\n\nculpa(잘못, 죄)",
+    "meaning": "범인, 장본인;\n\n유래: 앵글로노르만어.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-085",
     "day": 6,
     "word": "cultivate",
-    "meaning": "(~와의 관계, 친분을) 구축하다, 쌓다\n\n(colere(경작하다, 거주하다))",
+    "meaning": "(~와의 관계, 친분을) 구축하다, 쌓다\n\n유래: 중세 라틴어 cultivātus; 라틴어 cultus; 원시 인도유럽어 *kʷel- (“to move; to turn (around)”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-086",
     "day": 6,
     "word": "cumbersome",
-    "meaning": "(크고 무거워서) 다루기 힘든\n\n(combre(강, 사격) -> 방해물)",
+    "meaning": "(크고 무거워서) 다루기 힘든\n\n유래: 중세 영어 cumbyrsum.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
@@ -4113,28 +4113,28 @@ window.GRE_WORDS = [
     "id": "d06-088",
     "day": 6,
     "word": "curb",
-    "meaning": "억제, 구속, 억제하다,구속하다\n\ncurvare(굽다) -> curb bit 말 재갈",
+    "meaning": "억제, 구속, 억제하다,구속하다\n\n유래: 중세 프랑스어 courbe (“curve, curved object”); 라틴어 curvus (“bent, crooked, curved”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-089",
     "day": 6,
     "word": "cursory",
-    "meaning": "대충하는, 설렁설렁하는\n\n(currere(달리다)",
+    "meaning": "대충하는, 설렁설렁하는\n\n유래: 중세 프랑스어 cursoire (“rapid”); 라틴어 cursorius (“hasty, of a race or running”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-090",
     "day": 6,
     "word": "curt",
-    "meaning": "(말) 퉁명스런; 간결한, 짧은\n\n(curtus(짧게 자른))",
+    "meaning": "(말) 퉁명스런; 간결한, 짧은\n\n유래: 라틴어 curtus (“shortened”).",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
     "id": "d06-091",
     "day": 6,
     "word": "curtail",
-    "meaning": "축소하다, 줄이다, 삭감하다* \n\n(curtus(짧게 자른) + tailler(자르다))",
+    "meaning": "축소하다, 줄이다, 삭감하다*\n\n유래: 고대 프랑스어 courtault (“which has been shortened”); 라틴어 curtus.",
     "source": "https://quizlet.com/kr/1206327199/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-06-flash-cards"
   },
   {
@@ -4218,7 +4218,7 @@ window.GRE_WORDS = [
     "id": "d07-003",
     "day": 7,
     "word": "dabble",
-    "meaning": "(물) 튀기다; 재미 삼아 ~하다\n\n(dab(촉촉하게 토다걱리다))",
+    "meaning": "(물) 튀기다; 재미 삼아 ~하다\n\n유래: 중세 네덜란드어 dabbelen (“to pinch; knead; to fumble; to dabble”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4260,70 +4260,70 @@ window.GRE_WORDS = [
     "id": "d07-009",
     "day": 7,
     "word": "daunt",
-    "meaning": "겁나게 하다, 기 죽이다, 위협하다\n\ndomare(길들이다) -> domitare(자주 계속 기들이다)",
+    "meaning": "겁나게 하다, 기 죽이다, 위협하다\n\n유래: 중세 영어 daunten; 고대 프랑스어 danter; 라틴어 domitō (“tame”, verb); 라틴어 domō (“tame, conquer”, verb).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-010",
     "day": 7,
     "word": "daunting",
-    "meaning": "힘든, 어려운\n((domare 길들이다))\n\nFORMIDABLE",
+    "meaning": "힘든, 어려운\n((domare 길들이다))\n\n유래: daunt + -ing.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-011",
     "day": 7,
     "word": "dauntless",
-    "meaning": "겁 없는\n\ndomare(길들이다) -> domitare(자주 계속 기들이다)",
+    "meaning": "겁 없는\n\n유래: daunt + -less.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-012",
     "day": 7,
     "word": "dawdle",
-    "meaning": "꾸물거리다, 늑장부리다 \n\n doddle(천천히 움직이다)",
+    "meaning": "꾸물거리다, 늑장부리다\n\n유래: 중세 저지 독일어 dȫdelen (“to dawdle”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-013",
     "day": 7,
     "word": "daze",
-    "meaning": "멍한 상태, 멍하게 하다\n\ndasathr(지친)",
+    "meaning": "멍한 상태, 멍하게 하다\n\n유래: 중세 영어; 원시 게르만어 *dusāną; 중세 네덜란드어 dasen (“act silly”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-014",
     "day": 7,
     "word": "dazzle",
-    "meaning": "눈부시게 하다; 매료시키다, 압도하다 \n\ndasathr(지친) -> daze(멍해질만큼 충격을 주다) -> dazzle(놀라게 하다, 압도하다)",
+    "meaning": "눈부시게 하다; 매료시키다, 압도하다\n\n유래: daze + -le, a frequentative form.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-015",
     "day": 7,
     "word": "deadpan",
-    "meaning": "무표정한, 진지한 표정의 \n\n(dead + pan(프라이팬))",
+    "meaning": "무표정한, 진지한 표정의\n\n구성: dead + pan (“face”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-016",
     "day": 7,
     "word": "dearth",
-    "meaning": "부족, 결핍\n\ndear(비싼고 귀한) + th(명사형 어미)",
+    "meaning": "부족, 결핍\n\n유래: 중세 영어 derth; 고대 영어 *dīerþ; 원시 서게르만어 *diuriþu; 원시 게르만어 *diuriþō (“costliness, preciousness, honour”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-017",
     "day": 7,
     "word": "debacle",
-    "meaning": "대실패\n\n( dé-(반대) + bâcler(막다) -> 막지 못하다)",
+    "meaning": "대실패\n\n유래: 프랑스어 débâcle; 중세 프랑스어; 고대 프랑스어; 민중 라틴어 *bacculare.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-018",
     "day": 7,
     "word": "debase",
-    "meaning": "(가치, 품위) 저하시키다\n\nde(아래로) + base(낮추다)",
+    "meaning": "(가치, 품위) 저하시키다\n\n유래: 고대 프랑스어 bas; 라틴어 bassus.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4344,21 +4344,21 @@ window.GRE_WORDS = [
     "id": "d07-021",
     "day": 7,
     "word": "debunk",
-    "meaning": "허구임을 드러내다, (생각, 믿음) 틀렸음을 드러내다\n\nde(반대) + bunk(헛소리)",
+    "meaning": "허구임을 드러내다, (생각, 믿음) 틀렸음을 드러내다\n\n구성: de- (“away”) + bunk (“nonsense”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-022",
     "day": 7,
     "word": "decimate",
-    "meaning": "대량으로 죽이다, 파괴하다\n\n(decimus(10분의 1). 10명 중에 1명을 죽이다 -> 많이 죽이다)",
+    "meaning": "대량으로 죽이다, 파괴하다\n\n유래: 라틴어 decimātus; 라틴어 decimatus (“tithing area; tithing rights”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-023",
     "day": 7,
     "word": "decipher",
-    "meaning": "(암호, 수수께끼) 풀다, 해독하다\n\n(de(반대)+로 풀다)",
+    "meaning": "(암호, 수수께끼) 풀다, 해독하다\n\n유래: de-('반대로, 제거') + cipher('암호'). cipher는 아랍어 sifr('0, 비어 있음')에서 유래.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4379,35 +4379,35 @@ window.GRE_WORDS = [
     "id": "d07-026",
     "day": 7,
     "word": "decrepit",
-    "meaning": "(사람) 노쇠한, (사물) 노후한\n\nde(아래로) + crepare(끽끽거리다)",
+    "meaning": "(사람) 노쇠한, (사물) 노후한\n\n유래: 중세 영어 decrepyt.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-027",
     "day": 7,
     "word": "decry",
-    "meaning": "비난하다\n\nde(아래로) + cry",
+    "meaning": "비난하다\n\n유래: 중세 프랑스어 decrier (“to denigrate; depreciate”); 고대 프랑스어 descrier (“to shout”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-028",
     "day": 7,
     "word": "deduce",
-    "meaning": "추론하다\n\nde(아래로) + ducere(이끌다)",
+    "meaning": "추론하다\n\n유래: 중세 영어 deducen (“to demonstrate, prove, show; to argue, infer; to bring, lead; to turn (something) to a use; to deduct”); 라틴어 dēdūcere; 원시 인도유럽어 *dewk- (“to lead; to draw, pull”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-029",
     "day": 7,
     "word": "defame",
-    "meaning": "명예를 훼손하다\n\ndis(제거) + fama(보고서)",
+    "meaning": "명예를 훼손하다\n\n유래: 중세 영어 defamen; 앵글로노르만어 defamer; 라틴어 diffāmō.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-030",
     "day": 7,
     "word": "default",
-    "meaning": "(채무) 체납하다, 불이행하다\n\nde(아래로) + fallere(실망시키다, 속이다)",
+    "meaning": "(채무) 체납하다, 불이행하다\n\n유래: 중세 영어 defaut, defaute; 고대 프랑스어 defaute (“fault, defect, failure, culpability, lack”); 라틴어 de- (“away”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4421,56 +4421,56 @@ window.GRE_WORDS = [
     "id": "d07-032",
     "day": 7,
     "word": "defer (to)",
-    "meaning": "연기하다, 미루다; 뜻을 따라주다\n to yield *respectfully* \n\nde(뒤로) + ferre(옮기다)",
+    "meaning": "연기하다, 미루다; 뜻을 따라주다\n to yield *respectfully*\n\n유래: 중세 영어 differren (“to postpone”); 고대 프랑스어 differer; 라틴어 differō.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-033",
     "day": 7,
     "word": "deference",
-    "meaning": "존중, 경의\n\nde(뒤로) + ferre(옮기다)",
+    "meaning": "존중, 경의\n\n유래: 프랑스어 déférence.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-034",
     "day": 7,
     "word": "deferential",
-    "meaning": "공손한\n\nde(뒤로)+ ferre(옮기다)\n\nRESPECTFUL",
+    "meaning": "공손한\n\n유래: 라틴어.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-035",
     "day": 7,
     "word": "deferrable",
-    "meaning": "연기할 수 있는\n\nde(뒤로) + ferre(옮기다)",
+    "meaning": "연기할 수 있는\n\n유래: defer + -able.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-036",
     "day": 7,
     "word": "defiant",
-    "meaning": "도전적인, 반항적인, 시비조의 \n\ndis(반대) + fidus(신실한)",
+    "meaning": "도전적인, 반항적인, 시비조의\n\n유래: 프랑스어 défiant.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-037",
     "day": 7,
     "word": "deficiency",
-    "meaning": "부족; 결점\n\ndis(반대) + facere(하다)",
+    "meaning": "부족; 결점\n\n구성: deficient + -cy.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-038",
     "day": 7,
     "word": "definitive",
-    "meaning": "결론적인, 확정적인; 최고의\n\nde(아래로) + finire(끝내다)",
+    "meaning": "결론적인, 확정적인; 최고의\n\n유래: 중세 프랑스어 définitif.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-039",
     "day": 7,
     "word": "deflate",
-    "meaning": "(타이어, 풍선 등) 공기를 빼다; 기를 꺾다\n\nde(반대) + flare(부풀어 오르다)",
+    "meaning": "(타이어, 풍선 등) 공기를 빼다; 기를 꺾다\n\n구성: de- + (in)flate.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4491,7 +4491,7 @@ window.GRE_WORDS = [
     "id": "d07-042",
     "day": 7,
     "word": "defuse",
-    "meaning": "(긴장 등을) 완화시키다.\n\n\n(de(반대) + fūsus(축->퓨즈))",
+    "meaning": "(긴장 등을) 완화시키다.\n\n유래: de- + fuse.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4505,28 +4505,28 @@ window.GRE_WORDS = [
     "id": "d07-044",
     "day": 7,
     "word": "degenerate",
-    "meaning": "(도덕적, 육체적, 정신적으로) 악화되다; (육체적, 정신적으로) 퇴폐한, 쇠퇴한\n\nde-(멀리) + genus, gener-(종, 종류)",
+    "meaning": "(도덕적, 육체적, 정신적으로) 악화되다; (육체적, 정신적으로) 퇴폐한, 쇠퇴한\n\n유래: 학술 차용: 라틴어 dēgenerātus.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-045",
     "day": 7,
     "word": "dehydrate",
-    "meaning": "탈수시키다, 건조시키다\n\nde(반대) + hudros(물)",
+    "meaning": "탈수시키다, 건조시키다\n\n유래: de- + hydrate.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-046",
     "day": 7,
     "word": "deify",
-    "meaning": "신격화하다, 숭배하다\n\ndeus(신) + -ficare(만들다)",
+    "meaning": "신격화하다, 숭배하다\n\n유래: 프랑스어 déifier, from 라틴어 deificāre, from deus (“god”). 형태 분석: deity + -ify.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-047",
     "day": 7,
     "word": "deject",
-    "meaning": "사기를 꺾다, 낙담시키다\n\n(de(아래로) + jacere(던지다))",
+    "meaning": "사기를 꺾다, 낙담시키다\n\n유래: 라틴어 dēiectus.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4540,14 +4540,14 @@ window.GRE_WORDS = [
     "id": "d07-049",
     "day": 7,
     "word": "delegate",
-    "meaning": "대표; (회의) 대표로 파견하다; 위임하다\n\nde(아래로) + legare(임명하다)",
+    "meaning": "대표; (회의) 대표로 파견하다; 위임하다\n\n유래: 중세 영어 delegat; 고대 프랑스어 delegat; 라틴어 dēlēgātus.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-050",
     "day": 7,
     "word": "deleterious",
-    "meaning": "해로운, 유해한\n\nde(아래로) + legare(임명하다)",
+    "meaning": "해로운, 유해한\n\n유래: 고대 그리스어 δηλητήριος (dēlētḗrios, “noxious, deleterious”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4561,14 +4561,14 @@ window.GRE_WORDS = [
     "id": "d07-052",
     "day": 7,
     "word": "delineate",
-    "meaning": "정확하게 묘사하다\n\nde(반대로) + lineare(윤곽, 선)",
+    "meaning": "정확하게 묘사하다\n\n유래: 라틴어 dēlīneātus.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-053",
     "day": 7,
     "word": "delirious",
-    "meaning": "의식이 혼미한, 헛소리를 하는\n\nde(아래로) + lira(고랑사이의 솟은 곳) -> (물이) 고랑 밖으로 흘러 나온다",
+    "meaning": "의식이 혼미한, 헛소리를 하는\n\n유래: delirium + -ous; see also 라틴어 delirus (“silly, doting, crazy”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4589,7 +4589,7 @@ window.GRE_WORDS = [
     "id": "d07-056",
     "day": 7,
     "word": "demanding",
-    "meaning": "일이 힘든, 사람이 까다로운\n\n(de 반대로 + mandeare 명령하다)",
+    "meaning": "일이 힘든, 사람이 까다로운\n\n유래: demand + -ing.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4624,14 +4624,14 @@ window.GRE_WORDS = [
     "id": "d07-061",
     "day": 7,
     "word": "demonstrable",
-    "meaning": "논증할 수 있는, 명백한\n\nINDISPUTABLE",
+    "meaning": "논증할 수 있는, 명백한\n\n유래: 중세 영어 demonstrable; 고대 프랑스어.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-062",
     "day": 7,
     "word": "demoralize",
-    "meaning": "사기를 꺾다\n\ndé-(반대로) + moral(도덕, 윤리)",
+    "meaning": "사기를 꺾다\n\n유래: 프랑스어 démoraliser.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4652,98 +4652,98 @@ window.GRE_WORDS = [
     "id": "d07-065",
     "day": 7,
     "word": "demure",
-    "meaning": "(여자) 얌전한, 조신한\n\ndemurely = self-effacingly",
+    "meaning": "(여자) 얌전한, 조신한\n\n유래: 중세 영어 demure; 앵글로노르만어 de mure port (“with a mature demeanor”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-066",
     "day": 7,
     "word": "demystify",
-    "meaning": "(신비함, 편견) 없애다, 이해하기 쉽게 설명하다\n\nELUCIDATE\nde(반대로) + mystère(미스테리)",
+    "meaning": "(신비함, 편견) 없애다, 이해하기 쉽게 설명하다\n\n구성: de- + mystify.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-067",
     "day": 7,
     "word": "denigrate",
-    "meaning": "(명예) 훼손하다; 비난하다\n\nde(멀리, 완전히) + nigrare(검은색, 흑인)",
+    "meaning": "(명예) 훼손하다; 비난하다\n\n유래: 라틴어 dēnigrātus.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-068",
     "day": 7,
     "word": "denounce",
-    "meaning": "공공연히 비난하다 (강한 비난)\n\nLAMBASTE\nde(반대) + nuntiare(발표하다)",
+    "meaning": "공공연히 비난하다 (강한 비난)\n\n유래: 고대 프랑스어 denuncier, from 라틴어 dēnūntiō (“to announce, to denounce, to threaten”), from de + nūntiō (“to announce, to report, to denounce”), from nūntius (“messenger, message”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-069",
     "day": 7,
     "word": "dense",
-    "meaning": "난해한; 우둔한\n\nInaccessible; stupid",
+    "meaning": "난해한; 우둔한\n\n유래: 중세 프랑스어 dense; 라틴어 dēnsus; 원시 인도유럽어 *dens- (“thick, dense”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-070",
     "day": 7,
     "word": "denude",
-    "meaning": "발가벗기다, 박탈하다\n\nde(아래로) + nude(벗기다)",
+    "meaning": "발가벗기다, 박탈하다\n\n유래: 중세 프랑스어 dénuder; 라틴어 dēnūdāre.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-071",
     "day": 7,
     "word": "deplete",
-    "meaning": "고갈시키다\n\nde(반대로) + plere(채우다)",
+    "meaning": "고갈시키다\n\n유래: 라틴어 dēplētus (“empty”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-072",
     "day": 7,
     "word": "deplore",
-    "meaning": "한탄하다, 슬퍼하다; 비난하다, 개탄하다;\n\nde(아래로) + plorare(슬퍼하다, 괴로워하다)",
+    "meaning": "한탄하다, 슬퍼하다; 비난하다, 개탄하다;\n\n유래: 중세 프랑스어 déplorer; 고대 프랑스어 deplorer; 라틴어 dēplōrāre (“to lament over, bewail”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-073",
     "day": 7,
     "word": "deploy",
-    "meaning": "(군대) 배치하다; 이용하다\n\nde(반대말) + plicare(접다)",
+    "meaning": "(군대) 배치하다; 이용하다\n\n유래: 프랑스어 déployer (“to unroll, unfold”); 고대 프랑스어 desploiier; 후기 라틴어 displicāre (“to unfold, display”); 라틴어 dis- (“apart”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-074",
     "day": 7,
     "word": "depravity",
-    "meaning": "타락, 부패, 사악\n\nde(아래로) + pravus(삐뚤어진)",
+    "meaning": "타락, 부패, 사악\n\n유래: deprave + -ity. deprave는 라틴어 depravare('비뚤게 만들다, 타락시키다')에서 유래.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-075",
     "day": 7,
     "word": "deprecate",
-    "meaning": "비난하다, 반대하다; 깎아내리다\n\nde(아래로) + pravus(삐뚤어진)",
+    "meaning": "비난하다, 반대하다; 깎아내리다\n\n유래: 라틴어 dēprecātus.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-076",
     "day": 7,
     "word": "depreciate",
-    "meaning": "평가절하하다; 깎아내리다\n\nde(아래로) + pretium(가격)",
+    "meaning": "평가절하하다; 깎아내리다\n\n유래: 중세 영어 depreciaten; 후기 라틴어 dēpretiātus / dēpreciātus.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-077",
     "day": 7,
     "word": "deracinate",
-    "meaning": "뿌리째 뽑다, 근절하다\n\n dé-(반대) + racine(뿌리)",
+    "meaning": "뿌리째 뽑다, 근절하다\n\n유래: calque of 프랑스어 déraciner; 라틴어 rādīx, rādīcis (“a root”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-078",
     "day": 7,
     "word": "derelict",
-    "meaning": "(건물 등) 방치된, 버려진; 태만한\n\nde-(아래로) + relinquere(저버리다)",
+    "meaning": "(건물 등) 방치된, 버려진; 태만한\n\n유래: learned borrowing from 라틴어 dērelictus (“(completely) abandoned, deserted, forsaken; discarded”); 원시 인도유럽어 *leykʷ- (“to leave”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4757,14 +4757,14 @@ window.GRE_WORDS = [
     "id": "d07-080",
     "day": 7,
     "word": "derivative",
-    "meaning": "파생적인, (새롭지 않은\n특히 예술행위) 모방한;\n\nde(아래) + rivus(개울, 강)",
+    "meaning": "파생적인, (새롭지 않은\n특히 예술행위) 모방한;\n\n유래: 중세 프랑스어 dérivatif; 라틴어 dērīvātus.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-081",
     "day": 7,
     "word": "derogate",
-    "meaning": "비하하다, 격하시키다\n\nde(뒤로) + rogare(묻다, 요청하다)",
+    "meaning": "비하하다, 격하시키다\n\n유래: 중세 영어 derogaten; 라틴어 dērogātus.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4778,7 +4778,7 @@ window.GRE_WORDS = [
     "id": "d07-083",
     "day": 7,
     "word": "desecrate",
-    "meaning": "신성 모독하다 (profane)\n\nde(반대) + sacer(거룩한)",
+    "meaning": "신성 모독하다 (profane)\n\n유래: de- + stem of consecrate.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4792,42 +4792,42 @@ window.GRE_WORDS = [
     "id": "d07-085",
     "day": 7,
     "word": "despicable",
-    "meaning": "경멸스러운, 비열한, 야비한\n\nde(아래로) + specere(보다)",
+    "meaning": "경멸스러운, 비열한, 야비한\n\n유래: 후기 라틴어 dēspicābilis; 라틴어 dēspicor.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-086",
     "day": 7,
     "word": "despondent",
-    "meaning": "낙심한, 풀 죽은\n\nde(아래로) + spondere(약속하다)",
+    "meaning": "낙심한, 풀 죽은\n\n유래: 라틴어 dēspondēns, from the verb despondere (“to give up, to abandon”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-087",
     "day": 7,
     "word": "desultory",
-    "meaning": "두서 없는, 되는대로, 산만한\n\n(desultor(높이 뛰기 선수) -> 성금 성금 뛰어어서 넘어가는 모습.)",
+    "meaning": "두서없는, 되는대로의, 산만한\n\n유래: 라틴어 desultorius('이리저리 뛰는') < de- + salire('뛰다'); 한 주제에서 다른 주제로 건너뛴다는 뜻으로 발전.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-088",
     "day": 7,
     "word": "detachment",
-    "meaning": "무심함; 객관적인 태도*\n\ndes(반대말로) + attacher(붙이다, 부착시키다)",
+    "meaning": "무심함; 객관적인 태도*\n\n유래: 프랑스어 détachement.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-089",
     "day": 7,
     "word": "detain",
-    "meaning": "붙들다, 지체시키다; 구류하다\n\nde(멀리) + tenere(붙들다)",
+    "meaning": "붙들다, 지체시키다; 구류하다\n\n유래: 고대 프랑스어 detenir.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-090",
     "day": 7,
     "word": "deter",
-    "meaning": "단념시키다, 그만두게 하다\n\nde(멀리) + terrere(겁을 주다, 무섭게 하다)",
+    "meaning": "단념시키다, 그만두게 하다\n\n유래: 라틴어 dēterreō (“deter, discourage”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4848,7 +4848,7 @@ window.GRE_WORDS = [
     "id": "d07-093",
     "day": 7,
     "word": "deterministic",
-    "meaning": "결정론의, 결정론적인\n\nde(완전히) + terminare(끝내다)",
+    "meaning": "결정론의, 결정론적인\n\n유래: determinist + -ic.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4862,14 +4862,14 @@ window.GRE_WORDS = [
     "id": "d07-095",
     "day": 7,
     "word": "detract (from)",
-    "meaning": "(가치, 중요성, 명성 따위를) 떨어뜨리다, 줄이다; (주의를) 딴 데로 돌리다\n\nde(멀리) + trahere(당기다)",
+    "meaning": "(가치, 중요성, 명성 따위를) 떨어뜨리다, 줄이다; (주의를) 딴 데로 돌리다\n\n유래: 중세 프랑스어 détracter; 라틴어 detractum.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-096",
     "day": 7,
     "word": "detractor",
-    "meaning": "중상을 일삼는 사람, 명예 훼손자\n\nde(멀리) + trahere(당기다)",
+    "meaning": "중상을 일삼는 사람, 명예 훼손자\n\n유래: 중세 영어 detractor; 앵글로노르만어 detractour; 고대 프랑스어 detractor.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4890,14 +4890,14 @@ window.GRE_WORDS = [
     "id": "d07-099",
     "day": 7,
     "word": "deviate",
-    "meaning": "벗어나다, 빗나가다\n\nde(멀리) + via(길)",
+    "meaning": "벗어나다, 빗나가다\n\n유래: 후기 라틴어 dēviātus.",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
     "id": "d07-100",
     "day": 7,
     "word": "devious",
-    "meaning": "부정한, 사악한; 돌아가는, 우회하는\n\nde(멀리) + via(길)",
+    "meaning": "부정한, 사악한; 돌아가는, 우회하는\n\n유래: 라틴어 devius (“out of the way, remote, off the main road”).",
     "source": "https://quizlet.com/kr/1206327244/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-07-flash-cards"
   },
   {
@@ -4918,7 +4918,7 @@ window.GRE_WORDS = [
     "id": "d08-003",
     "day": 8,
     "word": "dexterous",
-    "meaning": "솜씨 좋은, 능숙한;\n\n(dex=오른손)",
+    "meaning": "솜씨 좋은, 능숙한;\n\n유래: 라틴어 dexter (“right, ready”) + -ous.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -4939,14 +4939,14 @@ window.GRE_WORDS = [
     "id": "d08-006",
     "day": 8,
     "word": "diaphanous",
-    "meaning": "(천이) 얇은, 비치는;\n\n dia(통하여) + phainein(보여주다)",
+    "meaning": "(천이) 얇은, 비치는;\n\n유래: 중세 라틴어 diaphanus; 고대 그리스어 διαφανής (diaphanḗs).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-007",
     "day": 8,
     "word": "diatribe",
-    "meaning": "통렬한 비난;\n\n dia(통하여) + tribein(문지르다)",
+    "meaning": "통렬한 비난;\n\n유래: 프랑스어 diatribe; 라틴어 diatriba (“learned discussion or discourse”); 고대 그리스어 διατριβή (diatribḗ, “way of spending time, lecture”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -4967,70 +4967,70 @@ window.GRE_WORDS = [
     "id": "d08-010",
     "day": 8,
     "word": "diehard",
-    "meaning": "보수적인, 완고한\n\ndie + hard",
+    "meaning": "보수적인, 완고한\n\n유래: die hard('쉽게 사라지거나 굴복하지 않다')라는 구에서 형성.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-011",
     "day": 8,
     "word": "differentiate",
-    "meaning": "차별, 구별하다\n\ndis(멀리) + ferre(가져오다, 가지고 다니다)",
+    "meaning": "차별, 구별하다\n\n유래: 신라틴어 differentiātus; 라틴어 differentia (“difference”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-012",
     "day": 8,
     "word": "diffident",
-    "meaning": "자신 없는, 기가 죽은, 수줍어하는\n\ndis(정반대) + fidere(신뢰하다)",
+    "meaning": "자신 없는, 기가 죽은, 수줍어하는\n\n유래: 라틴어 diffīdentem.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-013",
     "day": 8,
     "word": "diffuse",
-    "meaning": "퍼뜨리다, 확산시키다; 널리 퍼진, 분산된; 장황한 (verbose)\n\ndis(멀리) + fundere(붓다)",
+    "meaning": "퍼뜨리다, 확산시키다; 널리 퍼진, 분산된; 장황한 (verbose)\n\n유래: 중세 프랑스어 diffuser; 라틴어 diffūsus.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-014",
     "day": 8,
     "word": "digress",
-    "meaning": "(주제, 본론에서)\n벗어나다\n\n\ndi(옆에) + gradi(걷다)",
+    "meaning": "(주제, 본론에서)\n벗어나다\n\n유래: 라틴어 digressum.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-015",
     "day": 8,
     "word": "dilapidated",
-    "meaning": "다 허물어져 가는, 낡고 황폐한\n\ndi(분리, 멀리) + lapis, lapid(돌)",
+    "meaning": "다 허물어져 가는, 낡고 황폐한\n\n유래: dilapidate + -ed. 라틴어 dilapidare('돌을 흩뜨리다, 낭비하다')에서 유래.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-016",
     "day": 8,
     "word": "dilate",
-    "meaning": "넓히다; 상세히 말하다, 상술하다(elaborate);\n\ndi(분리) + latus(폭넓은)",
+    "meaning": "넓히다; 상세히 말하다, 상술하다(elaborate);\n\n유래: 라틴어 dilatare('넓히다, 확장하다') < dis-('떨어져') + latus('넓은').",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-017",
     "day": 8,
     "word": "dilatory",
-    "meaning": "행동이 느린, 늑장부리는;\n\ndilettare(즐거워하다)",
+    "meaning": "행동이 느린, 늑장부리는;\n\n유래: 중세 영어 dilatorie; 고대 프랑스어 dilatoire; 라틴어 dīlātōrius (“extending or putting off (time)”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-018",
     "day": 8,
     "word": "dilettante",
-    "meaning": "아마추어 (예술가) ;\n\ndilettare(즐거워하다)",
+    "meaning": "아마추어 (예술가) ;\n\n유래: 이탈리아어 dilettante; 라틴어 dēlectāre (“to delight”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-019",
     "day": 8,
     "word": "dilute",
-    "meaning": "묽게 하다, 약화시키다;\n\ndilator(미루는 사람)",
+    "meaning": "묽게 하다, 약화시키다;\n\n유래: 라틴어 dīlūtus.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -5051,28 +5051,28 @@ window.GRE_WORDS = [
     "id": "d08-022",
     "day": 8,
     "word": "diplomatic",
-    "meaning": "수완이 있는, 능숙한;\n\ndiploun(접다, 포개다) -> diplōma(포개진 종이) -> 정부 문서",
+    "meaning": "수완이 있는, 능숙한;\n\n유래: 프랑스어 diplomatique; 신라틴어 diplōmaticus.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-023",
     "day": 8,
     "word": "dire",
-    "meaning": "끔찍한, 비참한; 절박한, 엄청난;\n\ndirus(두려워하는, 위협적인)",
+    "meaning": "끔찍한, 비참한; 절박한, 엄청난;\n\n유래: 라틴어 dīrus (“fearful, ominous”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-024",
     "day": 8,
     "word": "disabuse",
-    "meaning": "(그릇된 생각) 바로잡아주다;\n\ndis(반대) + ab(멀리, 잘못해서) + uti(사용하다)",
+    "meaning": "(그릇된 생각) 바로잡아주다;\n\n구성: dis- + abuse.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-025",
     "day": 8,
     "word": "disaffected",
-    "meaning": "불만, 반감을 품은\n\ndis(반대) + ad(~에, ~로) + facere(하다)",
+    "meaning": "불만, 반감을 품은\n\n유래: disaffect + -ed.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -5086,7 +5086,7 @@ window.GRE_WORDS = [
     "id": "d08-027",
     "day": 8,
     "word": "disarming",
-    "meaning": "(심리적으로) 상대방을 무장 해제시키는, 마음(화, 적개심)을 누그러뜨리는\n\ndis(반대) + armare(무기)",
+    "meaning": "(심리적으로) 상대방을 무장 해제시키는, 마음(화, 적개심)을 누그러뜨리는\n\n유래: disarm + -ing. dis-('제거') + arm('무장하다').",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -5100,28 +5100,28 @@ window.GRE_WORDS = [
     "id": "d08-029",
     "day": 8,
     "word": "disavow",
-    "meaning": "부인하다, 거부하다, 의절하다\n\ndis(반대) + 고대 불어 avouer(인정하다) ad(~로) + vocare(부르다) -> avow\n\nRECANT",
+    "meaning": "부인하다, 거부하다, 의절하다\n\n유래: 고대 프랑스어 desavouer.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-030",
     "day": 8,
     "word": "discern",
-    "meaning": "알아보다, 이해하다, 분별하다;\n\ndis(분리) + cerener(분리시키다)",
+    "meaning": "알아보다, 이해하다, 분별하다;\n\n유래: 중세 영어 discernen; 고대 프랑스어 discerner; 라틴어 discernere (“to separate, divide, distinguish, discern”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-031",
     "day": 8,
     "word": "discerning",
-    "meaning": "안목이 있는, 통찰력이 있는;\n\ndis(분리) + cerener(분리시키다)",
+    "meaning": "안목이 있는, 통찰력이 있는;\n\n유래: discern + -ing. discern은 라틴어 discernere('분리하여 구별하다')에서 유래.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-032",
     "day": 8,
     "word": "discernment",
-    "meaning": "인식력, 분별력, 판단력;\n\ndis(분리) + cerener(분리시키다)\n\nPERSPICACITY",
+    "meaning": "인식력, 분별력, 판단력;\n\n유래: 중세 프랑스어 discernement, equivalent to discern + -ment.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -5135,7 +5135,7 @@ window.GRE_WORDS = [
     "id": "d08-034",
     "day": 8,
     "word": "disciplinary",
-    "meaning": "징계의;\n\ndiscere(배우다)",
+    "meaning": "징계의;\n\n유래: 중세 라틴어 disciplinarius; 라틴어 disciplina (“instruction, teaching, field of study, habit”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -5149,7 +5149,7 @@ window.GRE_WORDS = [
     "id": "d08-036",
     "day": 8,
     "word": "disciplined",
-    "meaning": "규율, 기강을 따르는, 훈련, 단련된;\n\ndiscere(배우다)",
+    "meaning": "규율, 기강을 따르는, 훈련, 단련된;\n\n유래: discipline + -ed. discipline은 라틴어 disciplina('교육, 훈련')에서 유래.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -5163,35 +5163,35 @@ window.GRE_WORDS = [
     "id": "d08-038",
     "day": 8,
     "word": "discomfit",
-    "meaning": "당황하게 하다, 혼란스럽게 하다;\n\ndis(반대) + con(함께) + facere(만들다)",
+    "meaning": "당황하게 하다, 혼란스럽게 하다;\n\n유래: 중세 영어 discomfiten; 고대 프랑스어 desconfit; 라틴어 dis-; 고대 프랑스어 confire (“to make”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-039",
     "day": 8,
     "word": "discompose",
-    "meaning": "마음의 평정을 없애다, 동요시키다\n\ndis(반대) + con(함께) + poser(두다)\n\nPERTURB",
+    "meaning": "마음의 평정을 없애다, 동요시키다\n\n유래: dis- + compose.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-040",
     "day": 8,
     "word": "disconcert",
-    "meaning": "동요시키다, 혼란스럽게 하다;\n\ndis(반대) + concerter(함께 두다)\n\nUNSETTLE",
+    "meaning": "동요시키다, 혼란스럽게 하다;\n\n유래: 중세 프랑스어 desconcerter, from des- (“dis-”) + concerter (“to bring into agreement, organize”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-041",
     "day": 8,
     "word": "discordant",
-    "meaning": "조화를 이루지 못하는, 불협화음의;\n\ndis(반대) + cord(심장)",
+    "meaning": "조화를 이루지 못하는, 불협화음의;\n\n유래: 중세 영어 discordaunt (“(adjective) not in accord or harmony; dissonant; (noun) element not in accord or harmony”); 앵글로노르만어 descorda(u)nt; 중세 프랑스어 descordant; 고대 프랑스어 descordant.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-042",
     "day": 8,
     "word": "discourteous",
-    "meaning": "무례한;\n\ndis(반대) + court(법정에 맞는 예의)",
+    "meaning": "무례한;\n\n유래: dis- + courteous.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -5205,35 +5205,35 @@ window.GRE_WORDS = [
     "id": "d08-044",
     "day": 8,
     "word": "discreet",
-    "meaning": "지각 있는, 현명한, 신중한, 조심스러운;\n\ndis(분리) + cerener(분리시키다)",
+    "meaning": "지각 있는, 현명한, 신중한, 조심스러운;\n\n유래: 중세 영어 discrete; 고대 프랑스어 discret; 라틴어 discrētus.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-045",
     "day": 8,
     "word": "discrepancy",
-    "meaning": "모순, 불일치, 차이, 어긋남;\n\ndis(분리, 멀리) + crepare(삐걱거리다)\n\nINCONGRUITY",
+    "meaning": "모순, 불일치, 차이, 어긋남;\n\n유래: 라틴어 discrepantia.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-046",
     "day": 8,
     "word": "discrete",
-    "meaning": "불연속의, 분리된, 별개의;\n\ndis(분리) + cerener(분리시키다)\n\nSeperate",
+    "meaning": "불연속의, 분리된, 별개의;\n\n유래: 고대 프랑스어 discret; 라틴어 discrētus.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-047",
     "day": 8,
     "word": "discretion",
-    "meaning": "신중함\n자유재량, 결정;\n\ndis(분리) + cerener(분리시키다)\n\nLeeway, latitude, license",
+    "meaning": "신중함\n자유재량, 결정;\n\n유래: 중세 영어 discrecioun; 고대 프랑스어 discretion; 후기 라틴어 discrētiō; 라틴어 discerno.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-048",
     "day": 8,
     "word": "discretionary",
-    "meaning": "재량껏 할 수 있는;\n\ndis(분리) + cerener(분리시키다)",
+    "meaning": "재량껏 할 수 있는;\n\n유래: discretion + -ary (“pertaining to”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -5247,28 +5247,28 @@ window.GRE_WORDS = [
     "id": "d08-050",
     "day": 8,
     "word": "discriminating",
-    "meaning": "안목이 있는; 식별력 있는\n\ndis(분리) + cerener(분리시키다)\n\nDiscerning",
+    "meaning": "안목이 있는; 식별력 있는\n\n유래: discriminate + -ing. 라틴어 discriminare('구별하다')에서 유래.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-051",
     "day": 8,
     "word": "discursion",
-    "meaning": "주제에서 벗어난 이야기\n\nExcursion, digression",
+    "meaning": "주제에서 벗어난 이야기\n\n유래: 라틴어 discursiō, from discurrō (“to run to and fro”); compare the English discurre, discurrent, discursation, and discurse.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-052",
     "day": 8,
     "word": "discursive",
-    "meaning": "주제를 벗어난, 산만한; 분석적인, 논증적인\n\ndis(멀리) + currere(달리다)\n\nRambling;\nAnalytical",
+    "meaning": "주제를 벗어난, 산만한; 분석적인, 논증적인\n\n유래: 중세 프랑스어 discursif; 라틴어 discursus; 중세 라틴어 discursivus.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-053",
     "day": 8,
     "word": "disdain",
-    "meaning": "무시, 경멸\n무시, 경멸하다\n\nde(반대) + dignari(가치 있다고 여기다)\n\nOPPROBRIUM",
+    "meaning": "무시, 경멸\n무시, 경멸하다\n\n유래: 중세 영어 disdeynen; 고대 프랑스어 desdeignier.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -5282,70 +5282,70 @@ window.GRE_WORDS = [
     "id": "d08-055",
     "day": 8,
     "word": "disengage",
-    "meaning": "(연결, 접속) 풀다\n(의무) 해방하다;\n\ndis(반대)+ en(동사화) 저당",
+    "meaning": "(연결, 접속) 풀다\n(의무) 해방하다;\n\n구성: dis- + engage.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-056",
     "day": 8,
     "word": "disgorge",
-    "meaning": "(많은 양을) 쏟아 내다, 토해내다;\n\ndis(반대로) + gorge(목구멍, 삼키다)\n\nCf. Gorge 협곡, 잔뜩 먹다",
+    "meaning": "(많은 양을) 쏟아 내다, 토해내다;\n\n유래: 중세 프랑스어 desgorger.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-057",
     "day": 8,
     "word": "disgruntled",
-    "meaning": "화난, 불만족한;\n\ndis(강조) + grunt(끙 앓는 소리 내다)\n\nCf. Gruntle; 기쁘게 하다, 만족시키다",
+    "meaning": "화난, 불만족한;\n\n구성: disgruntle + -ed (suffix forming past tense and past participle forms of verbs).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-058",
     "day": 8,
     "word": "disillusion",
-    "meaning": "(환상, 몽상을) 깨뜨리다;\n\ndis(반대) + illusion",
+    "meaning": "(환상, 몽상을) 깨뜨리다;\n\n구성: dis- + illusion.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-059",
     "day": 8,
     "word": "disinfect",
-    "meaning": "살균 소독하다;\n\ndis(반대) + infecter(감염시키다)",
+    "meaning": "살균 소독하다;\n\n유래: 중세 프랑스어 desinfecter.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-060",
     "day": 8,
     "word": "disingenuous",
-    "meaning": "솔직하지 않은, 부정직한;\n\ndis(반대)\ningenuous(순진한, 솔직한)",
+    "meaning": "솔직하지 않은, 부정직한;\n\n유래: dis- + ingenuous.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-061",
     "day": 8,
     "word": "disintegrate",
-    "meaning": "붕괴, 해체되다;\n\ndis(반대) + integrate(합치다);",
+    "meaning": "붕괴, 해체되다;\n\n구성: dis- + integrate.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-062",
     "day": 8,
     "word": "disinterested",
-    "meaning": "객관적인, 공정한;\n\ndis(반대) + interest(이익, 관심)\n\nDispassionate",
+    "meaning": "객관적인, 공정한;\n\n구성: dis- (prefix meaning ‘not’) + interested (“having a stake in; showing interest”, adjective).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-063",
     "day": 8,
     "word": "disjunction",
-    "meaning": "괴리, 차이;\n\ndis(반대) + jungere(합류하다)",
+    "meaning": "괴리, 차이;\n\n유래: 라틴어 disiunctiō.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-064",
     "day": 8,
     "word": "dislocate",
-    "meaning": "(뼈) 탈구시키다; 혼란에 빠뜨리다, 붕괴시키다;\n\ndis(제거) + locare(두다)",
+    "meaning": "(뼈) 탈구시키다; 혼란에 빠뜨리다, 붕괴시키다;\n\n유래: dis- + locate.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -5359,112 +5359,112 @@ window.GRE_WORDS = [
     "id": "d08-066",
     "day": 8,
     "word": "dismal",
-    "meaning": "음산한, 음울한, 참담한, 매우 안 좋은;\n\ndies(날, 하루) + mail(사악한)",
+    "meaning": "음산한, 음울한, 참담한, 매우 안 좋은;\n\n유래: 중세 영어 dismal; 앵글로노르만어 dismal; 고대 프랑스어 (li) dis mals (“(the) bad days”); 중세 라틴어 diēs malī (“bad days”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-067",
     "day": 8,
     "word": "dismay",
-    "meaning": "경악하게 만들다; 낙담, 낙심시키다;\n\ndis(부정) + may(조동사)",
+    "meaning": "경악하게 만들다; 낙담, 낙심시키다;\n\n유래: 중세 영어 dismayen; 앵글로노르만어 *desmaiier; 고대 프랑스어 esmaier (“to frighten”); 민중 라틴어 *exmagare (“to deprive (someone) of strength, to disable”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-068",
     "day": 8,
     "word": "dismiss (as)",
-    "meaning": "일축하다, 묵살하다; \n해산하다\n\nreject as\n\ndis(멀리) + mittere(보내다)\n\nIGNORE, DISPEL",
+    "meaning": "일축하다, 묵살하다;\n해산하다\n\n유래: 라틴어 dimissus (“sent away, dismissed, banished”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-069",
     "day": 8,
     "word": "disparage",
-    "meaning": "깎아내리다, 폄하하다, 비하하다;\n\ndes(반대로) par(동등한)",
+    "meaning": "깎아내리다, 폄하하다, 비하하다;\n\n유래: 중세 영어 disparage (noun); 고대 프랑스어 desparage (noun).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-070",
     "day": 8,
     "word": "disparate",
-    "meaning": "본질적으로 다른;\n\n(dis(분리) + parare(준비하다)\n\nHETEROGENEOUS, unequal",
+    "meaning": "본질적으로 다른;\n\n유래: 중세 프랑스어 desparat; 라틴어 disparātus; 원시 인도유럽어 *dwóh₁ (“two”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-071",
     "day": 8,
     "word": "dispassionate",
-    "meaning": "감정에 휘둘리지 않는, 객관적인, 공정한;\n\ndis(반대) + pati(고통을 겪다)",
+    "meaning": "감정에 휘둘리지 않는, 객관적인, 공정한;\n\n유래: dis- + passionate.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-072",
     "day": 8,
     "word": "dispel",
-    "meaning": "(느낌, 믿음) 떨쳐 버리다, 없애다;\n\ndis(분리해서) + pellere(몰고가다)",
+    "meaning": "(느낌, 믿음) 떨쳐 버리다, 없애다;\n\n유래: 중세 영어 dispelen; 라틴어 dispellere (“to disperse; to dispel”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-073",
     "day": 8,
     "word": "dispensable",
-    "meaning": "없어도 되는;\n\ndis(멀리)\npendere(무게 달다) ->",
+    "meaning": "없어도 되는;\n\n유래: dispense + -able.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-074",
     "day": 8,
     "word": "dispirit",
-    "meaning": "(열정, 사기, 희망 등을) 잃게 하다;\n\ndis(제거)+ spiritus(호흡, 영혼),",
+    "meaning": "(열정, 사기, 희망 등을) 잃게 하다;\n\n유래: dis- + spirit.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-075",
     "day": 8,
     "word": "displace",
-    "meaning": "쫓아내다, 강제 이주시키다; 대신, 대체하다;\n\ndis(멀리) + platea(열린 공간)\n\nDislodge",
+    "meaning": "쫓아내다, 강제 이주시키다; 대신, 대체하다;\n\n유래: 중세 프랑스어 desplacer (프랑스어: déplacer).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-076",
     "day": 8,
     "word": "disquiet",
-    "meaning": "불안, 동요\n동요, 걱정시키다\n\ndis(제거, 반대) + quiet,quiet-(휴식, 고요한)\n\nAFFRONT",
+    "meaning": "불안, 동요\n동요, 걱정시키다\n\n유래: dis- + quiet.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-077",
     "day": 8,
     "word": "disrepute",
-    "meaning": "불명예\n\ndis(제거, 반대) + re(강조) + putare(생각하다)",
+    "meaning": "불명예\n\n유래: dis- + repute.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-078",
     "day": 8,
     "word": "disrupt",
-    "meaning": "방해하다, 지장을 주다, 중단시키다\n\ndis(분리) + rumpere(부수다)",
+    "meaning": "방해하다, 지장을 주다, 중단시키다\n\n유래: 라틴어 disruptus.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-079",
     "day": 8,
     "word": "dissect",
-    "meaning": "(표본) 해부하다, 분석하다\n\ndis(분리) + secare(자르다)",
+    "meaning": "(표본) 해부하다, 분석하다\n\n유래: 라틴어 dissectus.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-080",
     "day": 8,
     "word": "dissemble",
-    "meaning": "숨기다, 가식적으로 꾸미다, 가장하다\n\ndis(강조) + simulare(흉내내다)",
+    "meaning": "숨기다, 가식적으로 꾸미다, 가장하다\n\n유래: 중세 영어 dissemblen, dissimblen, dissemelen; 고대 프랑스어 dessambler, dissembler, disembler; 라틴어 dissimulō.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-081",
     "day": 8,
     "word": "disseminate",
-    "meaning": "퍼뜨리다, 전파하다;\n\n(dis(넓게) + semen(씨앗))",
+    "meaning": "퍼뜨리다, 전파하다;\n\n차용: 라틴어 dissēminātus, the perfect passive participle of dissēminō (“to broadcast, disseminate”) (see -ate (verb-forming suffix)), further from dis- (“asunder, in all directions”) + sēminō (“to plant, sow”), from sēmen (“seed”) + -ō (verb-forming suffix).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -5478,70 +5478,70 @@ window.GRE_WORDS = [
     "id": "d08-083",
     "day": 8,
     "word": "dissident",
-    "meaning": "반대하는; 반대자, 반체제인사\n\ndis(분리) + sedere(앉다)",
+    "meaning": "반대하는; 반대자, 반체제인사\n\n유래: 라틴어 dissidēns.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-084",
     "day": 8,
     "word": "dissimulate",
-    "meaning": "(실제 감정, 의도를) 감추다, 위장하다\n\ndis(강조) + simulare(흉내내다)",
+    "meaning": "(실제 감정, 의도를) 감추다, 위장하다\n\n유래: 중세 영어 dissimulaten, dissimilaten; 라틴어 dissimulātus.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-085",
     "day": 8,
     "word": "dissipate",
-    "meaning": "소멸하다, 소멸시키다; 탕진하다\n\ndis(분리, 넓게) + supare(던지다)",
+    "meaning": "소멸하다, 소멸시키다; 탕진하다\n\n유래: 중세 영어 dissipaten; 라틴어 dissipātus.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-086",
     "day": 8,
     "word": "dissolution",
-    "meaning": "(단체, 의회) 해체, 해산, (결혼) 파경,\n (사업관계) 해소, 소멸, 사라짐\n\ndis(분리) + solvere(풀어주다, 풀다)",
+    "meaning": "(단체, 의회) 해체, 해산, (결혼) 파경,\n (사업관계) 해소, 소멸, 사라짐\n\n유래: 중세 영어 dissolucioun; 고대 프랑스어 dissolucion; 라틴어 dissolūtiō (“a dissolving, destroying, breaking up, dissolution”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-087",
     "day": 8,
     "word": "dissonance",
-    "meaning": "불협화음; 불화, 의견 충돌\n\ndis(다른) + sonus(소리), sonare(소리나다)",
+    "meaning": "불협화음; 불화, 의견 충돌\n\n유래: 중세 프랑스어 dissonance; 라틴어 dissonantia.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-088",
     "day": 8,
     "word": "distill",
-    "meaning": "증류하여 불순물을 제거하다; 추출하다, 정수를 빼내다, \n\nde(아래, 멀리) + stillare(물방이 떨어지다)",
+    "meaning": "증류하여 불순물을 제거하다; 추출하다, 정수를 빼내다,\n\n유래: 중세 영어 distillen, 라틴어 destillare('방울져 떨어지다')에서 유래.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-089",
     "day": 8,
     "word": "distort",
-    "meaning": "비틀다; 왜곡하다;\n\ndis(분리) + torquere(비틀다)",
+    "meaning": "비틀다; 왜곡하다;\n\n유래: 라틴어 distortum.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-090",
     "day": 8,
     "word": "distract",
-    "meaning": "(주의를) 딴 데로 돌리다;\n\ndis(분리) + trahere(당기다)",
+    "meaning": "(주의를) 딴 데로 돌리다;\n\n유래: 라틴어 distractus.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-091",
     "day": 8,
     "word": "divergent",
-    "meaning": "분기하는, 갈라지는, (의견) 다른;\n\ndis(두 갈래로) + vergere(기울다)\n\nDISSIMILAR",
+    "meaning": "분기하는, 갈라지는, (의견) 다른;\n\n유래: 라틴어 dis- (“apart”) + vergere (“to turn”) + the adjectival suffix -ent.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-092",
     "day": 8,
     "word": "divert",
-    "meaning": "경로, 방향을 바꾸다; (생각, 관심을) 다른 데로 돌리다; 즐겁게 해주다;\n\ndi(옆으로) + vertere(돌리다)\n\nDiverting=amusing, entertaining",
+    "meaning": "경로, 방향을 바꾸다; (생각, 관심을) 다른 데로 돌리다; 즐겁게 해주다;\n\n유래: 중세 영어 diverten; 고대 프랑스어 divertir (“to turn or go different ways, part, separate, divert”); 라틴어 di- (“apart”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -5555,28 +5555,28 @@ window.GRE_WORDS = [
     "id": "d08-094",
     "day": 8,
     "word": "divorce",
-    "meaning": "분리시키다;\n\ndi(옆으로) + vertere(돌리다)\n\nABSTRACT, UNTETHER",
+    "meaning": "분리시키다;\n\n유래: 고대 프랑스어 divorce; 라틴어 dīvortium.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-095",
     "day": 8,
     "word": "divulge",
-    "meaning": "누설하다, 알리다\n\ndi(폭넓게) + vulgare(발표하다)",
+    "meaning": "누설하다, 알리다\n\n유래: 중세 영어 divulgen; 라틴어 dīvulgō.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-096",
     "day": 8,
     "word": "doctrinaire",
-    "meaning": "독단적인, 교조적인 \n\ndocere(가르치다)\n\nINFLEXIBLE",
+    "meaning": "독단적인, 교조적인\n\n유래: 프랑스어 doctrinaire.",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
     "id": "d08-097",
     "day": 8,
     "word": "doctrine",
-    "meaning": "정설, 원칙\n\ndocere(가르치다)",
+    "meaning": "정설, 원칙\n\n유래: 중세 영어; 고대 프랑스어; 라틴어 doctrina (“teaching, instruction, learning, knowledge”).",
     "source": "https://quizlet.com/kr/1206327295/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-08-flash-cards"
   },
   {
@@ -5618,14 +5618,14 @@ window.GRE_WORDS = [
     "id": "d09-003",
     "day": 9,
     "word": "domineering",
-    "meaning": "지배(군림)하려는, 거만한, 오만한\n\n(dominus(주인) -> dominari(지배하다))",
+    "meaning": "지배(군림)하려는, 거만한, 오만한\n\n유래: domineer + -ing. domineer는 네덜란드어 domineren('지배하다')에서 유래.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-004",
     "day": 9,
     "word": "dormant",
-    "meaning": "활동이 없는, 휴면기의\n\n(dorm(sleep) + ant : \"잠자고 있는\")",
+    "meaning": "활동이 없는, 휴면기의\n\n유래: 중세 영어; 고대 프랑스어; 라틴어 dormiēns.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -5674,7 +5674,7 @@ window.GRE_WORDS = [
     "id": "d09-011",
     "day": 9,
     "word": "drab",
-    "meaning": "칙칙한, 재미없는\n\nuninteresting, dull, dreary, dingy, somber, sober",
+    "meaning": "칙칙한, 재미없는\n\n유래: 중세 프랑스어; 고대 프랑스어 drap (“cloth”); 후기 라틴어 drappus (“drabcloth, kerchief; piece of cloth”); Gaulish *drappo.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -5709,7 +5709,7 @@ window.GRE_WORDS = [
     "id": "d09-016",
     "day": 9,
     "word": "dreary",
-    "meaning": "지루한, 따분한, 음울한, 음침한\n\nDull, drab",
+    "meaning": "지루한, 따분한, 음울한, 음침한\n\n유래: 중세 영어 drery; 고대 영어 drēoriġ (“sad”); 원시 서게르만어 *dreuʀag; 원시 게르만어 *dreuzagaz (“bloody”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -5730,7 +5730,7 @@ window.GRE_WORDS = [
     "id": "d09-019",
     "day": 9,
     "word": "droll",
-    "meaning": "웃기는, 익살스런\n\nFunny\n\nDrollness = quip, zinger",
+    "meaning": "웃기는, 익살스런\n\n유래: 프랑스어 drôle (“comical, odd, funny”); 중세 프랑스어 drolle (“a merry fellow, pleasant rascal”); 고대 프랑스어 drolle (“one who lives luxuriously”); 중세 네덜란드어 drol (“fat little man, goblin”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -5751,7 +5751,7 @@ window.GRE_WORDS = [
     "id": "d09-022",
     "day": 9,
     "word": "ductile",
-    "meaning": "(금속) 두드려 변형시킬 수 있는; 영향을 잘 받는 , 잘 변하는\n\nPLASTIC, elastic",
+    "meaning": "(금속) 두드려 변형시킬 수 있는; 영향을 잘 받는 , 잘 변하는\n\n유래: 고대 프랑스어, from 라틴어 ductilis (“easily led”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -5779,7 +5779,7 @@ window.GRE_WORDS = [
     "id": "d09-026",
     "day": 9,
     "word": "duplicity",
-    "meaning": "이중성, 표리부동\n\nDISSEMBLANCE",
+    "meaning": "이중성, 표리부동\n\n유래: 라틴어 duplicare (double).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -5793,7 +5793,7 @@ window.GRE_WORDS = [
     "id": "d09-028",
     "day": 9,
     "word": "dysfunctional",
-    "meaning": "기능을 하지 않는, 고장 난\n\n(dys(나쁜, 어려운) + fungi(수행하다))",
+    "meaning": "기능을 하지 않는, 고장 난\n\n유래: dysfunction + -al.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -5807,14 +5807,14 @@ window.GRE_WORDS = [
     "id": "d09-030",
     "day": 9,
     "word": "ebb",
-    "meaning": "(서서히) 사그라지다, 약해지다.\n\nWANE",
+    "meaning": "(서서히) 사그라지다, 약해지다.\n\n유래: 중세 영어 ebbe; 고대 영어 ebba (“ebb, tide”); 원시 서게르만어 *abbjā; 원시 게르만어 *abjô.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-031",
     "day": 9,
     "word": "ebullient",
-    "meaning": "비등하는(boiling); 활기, 열정이 넘치는, 패기넘치는;\n\n(e(밖으로) + bullire(끓다))",
+    "meaning": "비등하는(boiling); 활기, 열정이 넘치는, 패기넘치는;\n\nBorrowing from 라틴어 ēbulliēns, present participle of ēbulliō (“to boil”), from bulliō (“to bubble up”) (English boil).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -5842,14 +5842,14 @@ window.GRE_WORDS = [
     "id": "d09-035",
     "day": 9,
     "word": "eclectic",
-    "meaning": "다양한, 다방면의, 취사선택의\n\n(k(밖으로) + legein(선택하다))\n\nMULTIFACED, WIDE-RANGING",
+    "meaning": "다양한, 다방면의, 취사선택의\n\n유래: 프랑스어 éclectique; 고대 그리스어 ἐκλεκτικός (eklektikós, “selective”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-036",
     "day": 9,
     "word": "eclipse",
-    "meaning": "(천체, 빛을) 가리다.; 빛을 잃게(무색하게) 만들다; (일식, 월식) 식\n\n(ek(밖으로) + leipein(떠나다))\n\nOUTDO, outshine",
+    "meaning": "(천체, 빛을) 가리다.; 빛을 잃게(무색하게) 만들다; (일식, 월식) 식\n\n유래: 중세 영어 eclipse; 고대 프랑스어 eclipse; 라틴어 eclīpsis; 고대 그리스어 ἔκλειψις (ékleipsis, “eclipse”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -5870,14 +5870,14 @@ window.GRE_WORDS = [
     "id": "d09-039",
     "day": 9,
     "word": "edifying",
-    "meaning": "교훈적인, 의식을 고양시키는\n\n(aedis(거주지, 집) + facere(만들다))",
+    "meaning": "교훈적인, 의식을 고양시키는\n\n유래: edify + -ing. edify는 라틴어 aedificare('건축하다')에서 출발해 '정신적으로 세우다'라는 뜻으로 발전.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-040",
     "day": 9,
     "word": "efface",
-    "meaning": "삭제하다; 눈에 띄지 않게 행동하다.\n\n(edis(거주지, 집) + facere(만들다))\n\nMake oneself inconspicuous\n\nCf. Self-effacing 자신을 드러내지 않는",
+    "meaning": "삭제하다; 눈에 띄지 않게 행동하다.\n\n유래: 중세 프랑스어 effacer (“erase”), from 고대 프랑스어 esfacier (“remove the face”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -5891,70 +5891,70 @@ window.GRE_WORDS = [
     "id": "d09-042",
     "day": 9,
     "word": "effectual",
-    "meaning": "(사물이) 효과적인, 유효한; \n(협정, 증서 등이)법적으로 구속력이 있는\n\n(ex(밖으로, 철저하게) + facere(만들다, 하다))",
+    "meaning": "(사물이) 효과적인, 유효한;\n(협정, 증서 등이)법적으로 구속력이 있는\n\n유래: 중세 영어 effectual; 고대 프랑스어 effectuel; 후기 라틴어 effectualis.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-043",
     "day": 9,
     "word": "effervescent",
-    "meaning": "거품이 이는\n쾌활한, 활발한, 활력 넘치는\n\n(ex(밖으로, 위로) + fervescere(끓기 시작하다))",
+    "meaning": "거품이 이는\n쾌활한, 활발한, 활력 넘치는\n\n유래: 라틴어 effervescentem.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-044",
     "day": 9,
     "word": "effete",
-    "meaning": "기운이 빠진, 무기력한 \n\n(ex(밖으로) + fetus(기르는))\n\nEnfeebled, enervated",
+    "meaning": "기운이 빠진, 무기력한\n\n유래: 라틴어 effētus (“exhausted”, literally “that has given birth”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-045",
     "day": 9,
     "word": "efficacious",
-    "meaning": "효과적인, 효능, 효험 있는\n\n(ex(밖으로, 철저하게) + facere(만들다, 하다))",
+    "meaning": "효과적인, 효능, 효험 있는\n\n유래: 고대 프랑스어 efficacieux; 라틴어 efficāx (“efficacious”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-046",
     "day": 9,
     "word": "efficient",
-    "meaning": "효율적인, 유능한, 실력 있는\n\n(ex-(완전히, 철저히) + facere(하다, 만들다))",
+    "meaning": "효율적인, 유능한, 실력 있는\n\n유래: 고대 프랑스어; 라틴어 efficientem.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-047",
     "day": 9,
     "word": "effluvium",
-    "meaning": "악취\n\nEffluent\nEffluvial",
+    "meaning": "악취\n\n유래: 라틴어 effluvium (“an outlet”), from effluō (“flow out or away”), from ex (“out of, from”) + fluō (“flow”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-048",
     "day": 9,
     "word": "effusive",
-    "meaning": "(감정 표현이) 넘치는, (감정을) 토로, 분출하는; 용암 분출의;\n\n(ex(밖으로) + fundere(붓다))\n\nIMMODERATE",
+    "meaning": "(감정 표현이) 넘치는, (감정을) 토로, 분출하는; 용암 분출의;\n\n유래: 중세 라틴어 effūsīvus.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-049",
     "day": 9,
     "word": "egalitarian",
-    "meaning": "평등주의적인 \n\n\n(equal(똑같은) + tarian)",
+    "meaning": "평등주의적인\n\n유래: 프랑스어 égalitaire.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-050",
     "day": 9,
     "word": "egregious",
-    "meaning": "지독히 나쁜, 충격적인;\n\n(ex(밖으로) + grex, gre(무리))\n\nShocking, appalling",
+    "meaning": "지독히 나쁜, 충격적인;\n\n유래: 라틴어 ēgregius.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-051",
     "day": 9,
     "word": "elaborate",
-    "meaning": "공들인, 복잡한, 정교한.\n전개하다, 상술하다\n\n(ex(밖으로) + labor(일하다))\n\nexpatiate, expound, dilate, amplify, delineate",
+    "meaning": "공들인, 복잡한, 정교한.\n전개하다, 상술하다\n\n유래: 후기 라틴어 ēlabōrātus (“worked out”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -5968,7 +5968,7 @@ window.GRE_WORDS = [
     "id": "d09-053",
     "day": 9,
     "word": "elated",
-    "meaning": "아주 행복한, 신이 난, 의기 양양한;\n\n(ex(밖으로) + ferre(짐 나르다))",
+    "meaning": "아주 행복한, 신이 난, 의기 양양한;\n\n라틴어 elatus (“raised”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -5982,70 +5982,70 @@ window.GRE_WORDS = [
     "id": "d09-055",
     "day": 9,
     "word": "elevate",
-    "meaning": "들어올리다; 승진시키다, 승격시키다; (상태, 정도를) 높이다.\n\n(ex(밖으로, 멀리) + levare(가볍게하다),)",
+    "meaning": "들어올리다; 승진시키다, 승격시키다; (상태, 정도를) 높이다.\n\n유래: 중세 영어 elevaten (“to raise up, erect; to elate, inflate (e.g. with pride); (alchemy) to vaporize; (of a bone, excressence, blood vessel) to protrude”); 라틴어 ēlevātus.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-056",
     "day": 9,
     "word": "elicit",
-    "meaning": "(감정, 반응을) 이끌어 내다.\n\n(e(밖으로) + lacere(유혹하다, 속이다))",
+    "meaning": "(감정, 반응을) 이끌어 내다.\n\n유래: 라틴어 elicitus.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-057",
     "day": 9,
     "word": "elliptical",
-    "meaning": "타원형의; (너무 생략되어) 의미가 모호한;\n\nOblique, obscure",
+    "meaning": "타원형의; (너무 생략되어) 의미가 모호한;\n\n유래: elliptic + -al, from 고대 그리스어 ἐλλειπτικός (elleiptikós), from ἐλλείπω (elleípō, “I leave out, omit”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-058",
     "day": 9,
     "word": "elongate",
-    "meaning": "길어지다, 길이를 늘리다.\n\n(e(멀리) + longe(아주 먼), longus(긴))",
+    "meaning": "길어지다, 길이를 늘리다.\n\n유래: 중세 영어 elongat; 후기 라틴어 ēlongātus (“having been stretched out, elongated; prolonged, protracted; having been kept aloof, removed”); 라틴어 ē-; 원시 인도유럽어 *dlongʰos (“long”, adjective).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-059",
     "day": 9,
     "word": "eloquent",
-    "meaning": "웅변(연설)을 잘하는, (말, 글이) 유창한\n\n(e(밖으로) + loqui(말하다))",
+    "meaning": "웅변(연설)을 잘하는, (말, 글이) 유창한\n\n유래: 고대 프랑스어 eloquent; 라틴어 eloquens (“speaking, having the faculty of speech, eloquent”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-060",
     "day": 9,
     "word": "elucidate",
-    "meaning": "명료하게 하다, (명확히) 설명하다.\n\n(e(밖으로) + lucidus(명백한))",
+    "meaning": "명료하게 하다, (명확히) 설명하다.\n\n유래: 후기 라틴어 ēlūcidātus; 원시 인도유럽어 *lewk- (“bright; to see; to shine”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-061",
     "day": 9,
     "word": "elusive",
-    "meaning": "찾기 힘든, 잡기 힘든\n(개념 등) 이해하기 힘든, 정의하기 힘든잡아서 연구하기 힘든\n\n(e(밖으로, 멀리) + ludere(놀다))\n\nCRYPTIC, SLIPPERY",
+    "meaning": "찾기 힘든, 잡기 힘든\n(개념 등) 이해하기 힘든, 정의하기 힘든잡아서 연구하기 힘든\n\n유래: 라틴어 elusus, past participle of eludo (“to parry a blow, to deceive”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-062",
     "day": 9,
     "word": "emaciated",
-    "meaning": "(병, 기아로) 수척해진\n\n(e(밖으로) + macies(비쩍마름))",
+    "meaning": "(병, 기아로) 수척해진\n\n유래: emaciate + -ed. emaciate는 라틴어 emaciare('야위게 하다')에서 유래.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-063",
     "day": 9,
     "word": "emanate",
-    "meaning": "발산하다, 내뿜다.\n\n(e(밖으로) + manare(흐르다))",
+    "meaning": "발산하다, 내뿜다.\n\n유래: 라틴어 ēmānāre (“to flow out, spring out of, arise, proceed from”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-064",
     "day": 9,
     "word": "emancipate",
-    "meaning": "(억압, 속박, 구속으로부터) 해방시키다.\n\n(e(밖으로) + mancipium(노예))",
+    "meaning": "(억압, 속박, 구속으로부터) 해방시키다.\n\n유래: 학술 차용: 라틴어 ēmancipātus (“liberated, emancipated”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -6059,28 +6059,28 @@ window.GRE_WORDS = [
     "id": "d09-066",
     "day": 9,
     "word": "embellish",
-    "meaning": "꾸미다, 장식하다; (이야기를) 꾸미다\n\n(em(강조) + bel(예쁜, 잘생긴))",
+    "meaning": "꾸미다, 장식하다; (이야기를) 꾸미다\n\n유래: 중세 영어 embelishen; 고대 프랑스어 embellir.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-067",
     "day": 9,
     "word": "embezzle",
-    "meaning": "횡령하다, 사취하다.\n\nPilfer, purloin",
+    "meaning": "횡령하다, 사취하다.\n\n유래: 중세 영어 embesilen; 앵글로노르만어 embesiler; 고대 프랑스어 besillier (“to torment, destroy, gouge”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-068",
     "day": 9,
     "word": "emblematic",
-    "meaning": "상징적인\n\n(em(안에) + ballein(던지다))\n\nTOTEMTIC, CHARACTERISTIC",
+    "meaning": "상징적인\n\n유래: 그리스어 emblema('삽입물, 상징')에서 나온 emblem + -atic.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-069",
     "day": 9,
     "word": "embody",
-    "meaning": "구체화하다. 구현하다. 포함하다.\n\n(em(안으로) + body)\n\nEmbodiment = personification, epitome, paragon, incarnation",
+    "meaning": "구체화하다. 구현하다. 포함하다.\n\n구성: em- + body.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -6094,42 +6094,42 @@ window.GRE_WORDS = [
     "id": "d09-071",
     "day": 9,
     "word": "embrace",
-    "meaning": "포함하다. (생각, 의견) 받아들이다, 채택하다.\n\n(in(안으로) + bracchium(팔))",
+    "meaning": "포함하다. (생각, 의견) 받아들이다, 채택하다.\n\n유래: 고대 프랑스어 embracer; 후기 라틴어 *imbracchiāre.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-072",
     "day": 9,
     "word": "embryonic",
-    "meaning": "미발달의\n\n(em(안으로) + bruein(부풀다, 자라다))",
+    "meaning": "미발달의\n\n유래: 신라틴어 embryonicus.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-073",
     "day": 9,
     "word": "emend",
-    "meaning": "교정, 수정하다.\n\n(e(밖으로) + menda(오류))",
+    "meaning": "교정, 수정하다.\n\n유래: 중세 영어 emenden; 라틴어 ēmendō (“to free from fault”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-074",
     "day": 9,
     "word": "empathy",
-    "meaning": "공감, 이해\n\n(em(안에) + pathos(느낌, 기분))",
+    "meaning": "공감, 이해\n\n유래: 고대 그리스어 ἐμπάθεια (empátheia, literally “passion”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-075",
     "day": 9,
     "word": "empirical",
-    "meaning": "경험(실험)에 의거한, 실증적인\n\n(em(동사화) + peira(시도, 실험, 경험))",
+    "meaning": "경험(실험)에 의거한, 실증적인\n\n유래: empiric + -al.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-076",
     "day": 9,
     "word": "emulate",
-    "meaning": "모방하다, 경쟁하다\n\nIMITATE",
+    "meaning": "모방하다, 경쟁하다\n\n유래: 라틴어 aemulātus; 라틴어 aemulor (“to rival, emulate”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -6143,49 +6143,49 @@ window.GRE_WORDS = [
     "id": "d09-078",
     "day": 9,
     "word": "enamored",
-    "meaning": "매료된 \n\n(en(안에) + amour(사랑))",
+    "meaning": "매료된\n\n유래: 중세 영어 enamoured; 고대 프랑스어 enamore.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-079",
     "day": 9,
     "word": "encapsulate",
-    "meaning": "요약하다.\n\n(en(안에) + capsula(상자))",
+    "meaning": "요약하다.\n\n유래: en- + capsule + -ate (verb-forming suffix).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-080",
     "day": 9,
     "word": "enchant",
-    "meaning": "매료시키다.마법을 걸다.\n\n(en(안에) + cantare(노래하다))",
+    "meaning": "매료시키다.마법을 걸다.\n\n유래: 중세 영어 enchaunten; 고대 프랑스어 enchanter; 라틴어 incantāre.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-081",
     "day": 9,
     "word": "encomium",
-    "meaning": "찬사\n\n(en(안에) + komos(축하))\n\nTRIBUTE",
+    "meaning": "찬사\n\n유래: 라틴어 encōmium (“praise, eulogy”); 고대 그리스어 ἐγκώμιον (enkṓmion, “laudatory ode, praise”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-082",
     "day": 9,
     "word": "encompass",
-    "meaning": "둘러싸다, 포위하다; 포함하다.\n\n(en(안에) + com(함께) + passus(발걸음))",
+    "meaning": "둘러싸다, 포위하다; 포함하다.\n\n유래: 중세 영어 encompassen.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-083",
     "day": 9,
     "word": "encumber",
-    "meaning": "짐 지우다; 막다, 방해하다.\n\n(en(안에) + combre(강, 댐))",
+    "meaning": "짐 지우다; 막다, 방해하다.\n\n유래: 중세 영어 encombren; 고대 프랑스어 encombrer.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-084",
     "day": 9,
     "word": "encyclopedic",
-    "meaning": "(정보가) 철저한, 백과사전의\n\nEXHAUSTIVE, COMPREHENSIVE, POLYMATHIC",
+    "meaning": "(정보가) 철저한, 백과사전의\n\n유래: encyclopedia + -ic.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -6199,98 +6199,98 @@ window.GRE_WORDS = [
     "id": "d09-086",
     "day": 9,
     "word": "endemic",
-    "meaning": "고유의, 풍토적인, 고질적인\n\n(en(내부의) + dēmos(서민, 사람들))",
+    "meaning": "고유의, 풍토적인, 고질적인\n\n유래: 고대 그리스어 ἐν (en, “in”); 고대 그리스어 ἔνδημος (éndēmos, “among one's people, at home, native”); 프랑스어 endémique.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-087",
     "day": 9,
     "word": "endorse",
-    "meaning": "승인, 지지하다. (수표에) 배서하다.\n\n(in(안에, 위에) + dorsum(등))\n\nSANCTION, UNDERWRITE",
+    "meaning": "승인, 지지하다. (수표에) 배서하다.\n\n유래: 중세 라틴어 indorsare; 중세 영어 endosse; 고대 프랑스어 endosser (“to put on the back”); 라틴어 dossum.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-088",
     "day": 9,
     "word": "endow",
-    "meaning": "주다, 부여하다. 기부하다.\n\n(en(안에, 향하여) + 고대 프랑스어 douer(선 물로 주다))",
+    "meaning": "주다, 부여하다. 기부하다.\n\n유래: 중세 영어 endowen; 앵글로노르만어 endouer; 고대 프랑스어 en- (prefix meaning ‘in, into’); 라틴어 dōtāre.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-089",
     "day": 9,
     "word": "enduring",
-    "meaning": "영속적인, 지속적인\n\n(in(안에) + durus(단단한))",
+    "meaning": "영속적인, 지속적인\n\n유래: endure + -ing. endure는 라틴어 indurare('단단하게 하다')에서 유래.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-090",
     "day": 9,
     "word": "enervate",
-    "meaning": "약화시키다.\n\n(e(밖으로) + nervus(힘줄, 힘, 정력))\n\nEnfeeble, debilitate",
+    "meaning": "약화시키다.\n\n유래: 라틴어 ēnervātus, past participle of ēnervō (“to weaken”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-091",
     "day": 9,
     "word": "enfeeble",
-    "meaning": "약화시키다, 활력을 없애다.\n\n(en(변화) + feble(약한))",
+    "meaning": "약화시키다, 활력을 없애다.\n\n유래: 중세 영어 enfeblen; 고대 프랑스어 enfeblir.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-092",
     "day": 9,
     "word": "enfranchise",
-    "meaning": "투표권을 주다. 자유롭게 해주다.\n\n(en(변화) + franche(자유로운))",
+    "meaning": "투표권을 주다. 자유롭게 해주다.\n\n구성: en- + franchise.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-093",
     "day": 9,
     "word": "engaging",
-    "meaning": "(사람이) 남을 매혹하는, 애교(매력) 있는, 붙임성 있는; (이야기 등이) 재미있는, 흥미로운\n\n(en(동사화) + gage(저당) -> 저당잡히다 -> 계약을 맺다 -> 관여시키다)\n\nWINNING",
+    "meaning": "(사람이) 남을 매혹하는, 애교(매력) 있는, 붙임성 있는; (이야기 등이) 재미있는, 흥미로운\n\n유래: engage + -ing. engage는 고대 프랑스어 engagier('담보로 잡다, 약속으로 묶다')에서 유래.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-094",
     "day": 9,
     "word": "engender",
-    "meaning": "낳다, 일으키다.\n\n(en(안에) + generare(낳다))\n\nINDUCE",
+    "meaning": "낳다, 일으키다.\n\n유래: 중세 영어 engendren; 고대 프랑스어 engendrer; 라틴어 ingenerāre.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-095",
     "day": 9,
     "word": "engross",
-    "meaning": "몰두, 열중시키다.\n\n(en(안에) + grossus(큰))",
+    "meaning": "몰두, 열중시키다.\n\n유래: 중세 영어 engrossen; 앵글로노르만어 engrosser (“to gather in large quantities, draft something in final form”); 중세 라틴어 ingrossō (“thicken, write something large and in bold lettering”, v.); Old High 독일어 grōz (“big, thick, coarse”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-096",
     "day": 9,
     "word": "enigmatic",
-    "meaning": "수수께끼 같은, 난해한\n\n(enigma(수수께끼) )",
+    "meaning": "수수께끼 같은, 난해한\n\n유래: 라틴어 aenigmaticus; 프랑스어 énigmatique; 고대 그리스어 αἰνιγματικός (ainigmatikós).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-097",
     "day": 9,
     "word": "enjoin",
-    "meaning": "명령하다; (법률로) 금지하다.\n\n(en(향해서) + jungere(합류하다))",
+    "meaning": "명령하다; (법률로) 금지하다.\n\n유래: 중세 영어 enjoinen; 고대 프랑스어 enjoindre (“to join with”); 라틴어 iniungo (“to attach”).",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-098",
     "day": 9,
     "word": "enlighten",
-    "meaning": "설명하다, 가르치다; 계몽하다.\n\n(en light 빛을 주다 )",
+    "meaning": "설명하다, 가르치다; 계몽하다.\n\n유래: 중세 영어 enlightenen; 고대 영어 inlīhtan.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
     "id": "d09-099",
     "day": 9,
     "word": "enmity",
-    "meaning": "적대감\n\n(e + amicus(친구))",
+    "meaning": "적대감\n\n유래: 중세 영어 enemyte; 고대 프랑스어 enemisté; 후기 라틴어; 민중 라틴어 *inimīcitās, *inimīcitātem.",
     "source": "https://quizlet.com/kr/1206327358/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-09-flash-cards"
   },
   {
@@ -6325,14 +6325,14 @@ window.GRE_WORDS = [
     "id": "d10-004",
     "day": 10,
     "word": "entail",
-    "meaning": "~라는 논리적 결론에 이르다. 수반하다, 일으키다.\n\n curtail(자르고 또 자르다→짧게 줄이다, 생략하다),\n\nEntailed by = inferable from\n\nInfer, imply",
+    "meaning": "~라는 논리적 결론에 이르다. 수반하다, 일으키다.\n\n유래: 중세 영어 entaillen; 고대 프랑스어 entaillier; 후기 라틴어 taliare; 라틴어 talea.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-005",
     "day": 10,
     "word": "entangle",
-    "meaning": "뒤엉키게 하다, 복잡하게 만들다.\n\n[en(make) + tangle: \"접촉하게 하다\" → 뒤얽히게 하다 ]",
+    "meaning": "뒤엉키게 하다, 복잡하게 만들다.\n\n유래: 중세 영어 entanglen (“to involve [someone] in difficulty”, “to embarrass”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
@@ -6346,42 +6346,42 @@ window.GRE_WORDS = [
     "id": "d10-007",
     "day": 10,
     "word": "enthrall",
-    "meaning": "매료시키다.; 노예로 만들다;\n\nen(강조) + thrall(노예)",
+    "meaning": "매료시키다.; 노예로 만들다;\n\n유래: 중세 영어 enthrallen.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-008",
     "day": 10,
     "word": "entice",
-    "meaning": "유인하다, 유혹하다.\n\n(en(동사화) + titio(휏불) -> 불지르다)",
+    "meaning": "유인하다, 유혹하다.\n\n유래: 중세 영어 enticen; 고대 프랑스어 enticier (“to stir up or excite”); 민중 라틴어 *intitiāre (“I set on fire”); 원시 이탈리아어 *tītjō (“heating”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-009",
     "day": 10,
     "word": "entrammel",
-    "meaning": "얽히게 하다, 구속하다, 방해하다.\n\nen(동사화) + tri-(세 개의) + macula(그물)\n\nConfine, limit",
+    "meaning": "얽히게 하다, 구속하다, 방해하다.\n\n유래: en- + trammel.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-010",
     "day": 10,
     "word": "entrance",
-    "meaning": "도취시키다, 황홀하게 만들다.\n\nen(안으로) + trance(몰입상태)\n\nEnchant",
+    "meaning": "도취시키다, 황홀하게 만들다.\n\n유래: 중세 프랑스어 entrance (“entry”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-011",
     "day": 10,
     "word": "entreat",
-    "meaning": "간청, 탄원하다.\n\n[en(~에 대해) + treat(다루다, 접대하다)]",
+    "meaning": "간청, 탄원하다.\n\n유래: 고대 프랑스어 entraiter('다루다, 협상하다')에서 왔으며, 이후 '간청하다'라는 뜻으로 발전.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-012",
     "day": 10,
     "word": "entrenched",
-    "meaning": "(습관, 믿음) 확고히 자리잡은, 깊이 뿌리 내린\n\nen(in) + trench(cut) : \"안을 파다\"",
+    "meaning": "(습관, 믿음) 확고히 자리잡은, 깊이 뿌리 내린\n\n유래: entrench + -ed. en-('안에') + trench('참호').",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
@@ -6395,84 +6395,84 @@ window.GRE_WORDS = [
     "id": "d10-014",
     "day": 10,
     "word": "enunciate",
-    "meaning": "명확히 발음하다; 명확히 표현/설명 하다.\n\n[e(out) + nunc < nounce(공표하다) + iate : \"밖으로 공표하다\";]",
+    "meaning": "명확히 발음하다; 명확히 표현/설명 하다.\n\n유래: 라틴어 ēnuntiātus, past participle of ēnuntiō (“to report, declare”), from ē- + nūntiō (“to report”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-015",
     "day": 10,
     "word": "envision",
-    "meaning": "상상하다, 그리다.\n\n[en(make) + vis(look) + ion : \"보이게 만들다\" ]",
+    "meaning": "상상하다, 그리다.\n\n구성: en- + vision.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-016",
     "day": 10,
     "word": "ephemeral",
-    "meaning": "일시적인, 덧없는\n\n[< epi(upon) + hemer(day) + al : \"하루에\" ]",
+    "meaning": "일시적인, 덧없는\n\n유래: 신라틴어 ephemerus; 고대 그리스어 ἐφήμερος (ephḗmeros).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-017",
     "day": 10,
     "word": "epicenter",
-    "meaning": "(지진) 진앙지\n중심점\n\nepi(위의) + kentron(중심)",
+    "meaning": "(지진) 진앙지\n중심점\n\n유래: epi- + center.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-018",
     "day": 10,
     "word": "epistolary",
-    "meaning": "서간의, 서한의, 서간체의, 편지에 알맞는\n\nEpistle",
+    "meaning": "서간의, 서한의, 서간체의, 편지에 알맞는\n\n유래: 라틴어 epistolārius; 고대 그리스어 ἐπιστολή (epistolḗ).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-019",
     "day": 10,
     "word": "epitome",
-    "meaning": "전형, 모범, 완벽한 예; 요약, 줄거리\n\n[epi(upon) + tome(cut) : \"위에 자른 것\"]",
+    "meaning": "전형, 모범, 완벽한 예; 요약, 줄거리\n\n유래: 중세 프랑스어; 라틴어 epitomē; 고대 그리스어 ἐπιτομή (epitomḗ, “an abridgment, also a surface-incision”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-020",
     "day": 10,
     "word": "epitomize",
-    "meaning": "요약하다. 전형이 되다.\n\n[epi(upon) + tome(cut) : \"위에 자른 것\"]",
+    "meaning": "요약하다. 전형이 되다.\n\n유래: epitome + -ize.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-021",
     "day": 10,
     "word": "equable",
-    "meaning": "(마음) 차분한, 평온한\n(날씨) 기온 변화가 적은, 고른\n \nequi(동등한)\n\nStoic, staid, placid, unflappable, imperturbable",
+    "meaning": "(마음) 차분한, 평온한\n(날씨) 기온 변화가 적은, 고른\n\n유래: 학술 차용: 라틴어 aequābilis.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-022",
     "day": 10,
     "word": "equanimity",
-    "meaning": "(마음) 평정, 차분함\n\nequi(동등한) + animus(마음)\n\nSangfroid, aplomb, composure",
+    "meaning": "(마음) 평정, 차분함\n\n유래: 프랑스어 équanimité, from 라틴어 aequanimitās (“calmness, equanimity”), from aequus (“even; calm; fair”) + animus (“mind, soul”) + -itās. 형태 분석: equ- + anim(us) + -ity.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-023",
     "day": 10,
     "word": "equilibrium",
-    "meaning": "평형, 균형; (마음) 평정\n\nequi(동등한) + libra(저울, 균형)\n\nEQUIPOISE; composure, equanimity, sangfroid, aplomb",
+    "meaning": "평형, 균형; (마음) 평정\n\n유래: 라틴어 aequilībrium, from equal + lībra (“balance”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-024",
     "day": 10,
     "word": "equipoise",
-    "meaning": "균형, 평형\n\nequi(동등한) + pensum(저울, 무게)\n\nEQUILIBRIUM",
+    "meaning": "균형, 평형\n\n유래: equi- + poise.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-025",
     "day": 10,
     "word": "equitable",
-    "meaning": "공평한, 공정한\n \nequi(동등한)",
+    "meaning": "공평한, 공정한\n\n유래: 프랑스어 équitable, from 고대 프랑스어, from equité (“equity”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
@@ -6486,49 +6486,49 @@ window.GRE_WORDS = [
     "id": "d10-027",
     "day": 10,
     "word": "equivocal",
-    "meaning": "애매한\n\n(aequi(동등하게) + vocare(부르다))\n\nVAGUE",
+    "meaning": "애매한\n\n구성: aequus + vocō.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-028",
     "day": 10,
     "word": "equivocate",
-    "meaning": "얼버무리다, 모호하게 말하다.\n\n(aequi(동등하게) + vocare(부르다))\n\nPalter, prevaricate\n\nEquivocation= prevarication, paltering, circumlocution, periphrasis",
+    "meaning": "얼버무리다, 모호하게 말하다.\n\n유래: 중세 영어 equivocaten; 중세 라틴어 aequivocātus; 후기 라틴어 aequivocus (“ambiguous, equivocal”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-029",
     "day": 10,
     "word": "eradicate",
-    "meaning": "근절하다.\n\n(e(밖으로) + raix, radic-(뿌리))",
+    "meaning": "근절하다.\n\n유래: 중세 영어 eradicaten (“to eradicate”); 라틴어 ērādīcātus.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-030",
     "day": 10,
     "word": "err",
-    "meaning": "틀리다, 실수하다.\n\nerrare(방황하다, 헤매다)",
+    "meaning": "틀리다, 실수하다.\n\n유래: 중세 영어 erren; 고대 프랑스어 errer (“to wander, err, mistake”); 라틴어 errō (“wander, stray, err, mistake”, verb); 원시 인도유럽어 *h₁ers- (“to be angry, lose one's temper”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-031",
     "day": 10,
     "word": "errant",
-    "meaning": "정도를 벗어난, 잘못된, 비정상의\n\nWAYWARD, aberrant, erring",
+    "meaning": "정도를 벗어난, 잘못된, 비정상의\n\n유래: 중세 영어 erraunt; 앵글로노르만어 erraunt; 고대 프랑스어 errant; 민중 라틴어 iterāre.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-032",
     "day": 10,
     "word": "erratic",
-    "meaning": "불규칙한, 일정치 않은, 변덕스러운\n\nerrare(방황하다, 헤매다)\n\nIrregular",
+    "meaning": "불규칙한, 일정치 않은, 변덕스러운\n\n유래: 중세 영어 erratik; 중세 프랑스어 erratique; 고대 프랑스어 erratique; Classical 라틴어 errāticus.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-033",
     "day": 10,
     "word": "erroneous",
-    "meaning": "잘못된, 틀린\n\nerrare(방황하다, 헤매다)",
+    "meaning": "잘못된, 틀린\n\n유래: 중세 영어 erroneous; 중세 프랑스어 erroneux; 라틴어 erroneus.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
@@ -6542,7 +6542,7 @@ window.GRE_WORDS = [
     "id": "d10-035",
     "day": 10,
     "word": "erstwhile",
-    "meaning": "이전의\n\n(erst(과거의, 옛날의) + while(시간, 기간))\n\nONE-TIME",
+    "meaning": "이전의\n\n유래: erst (“first, formerly”) + while.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
@@ -6556,49 +6556,49 @@ window.GRE_WORDS = [
     "id": "d10-037",
     "day": 10,
     "word": "eschew",
-    "meaning": "피하다, 삼가다.\n\n( es+CHEW.)\n\nAVOID, FORSWEAR, SHUN",
+    "meaning": "피하다, 삼가다.\n\n유래: 중세 영어 eschewen; 앵글로노르만어 eschiver; 프랑크어 *skiuhijan (“to dread, shun, avoid”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-038",
     "day": 10,
     "word": "esoteric",
-    "meaning": "난해한, 소수만 아는\n \n(esō(내부에, 안에))\n\nARCANE, RECONDITE, abstruse",
+    "meaning": "난해한, 소수만 아는\n\n유래: 학술 차용: 고대 그리스어 ἐσωτερικός (esōterikós, “belonging to an inner circle”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-039",
     "day": 10,
     "word": "espouse",
-    "meaning": "(믿음이나 신념 등) 받아들이다, 채택하다, 지지하다, 신봉하다.\n\nADOPT",
+    "meaning": "(믿음이나 신념 등) 받아들이다, 채택하다, 지지하다, 신봉하다.\n\n유래: 중세 영어 espousen; 고대 프랑스어 espouser; 라틴어 spōnsāre; 원시 인도유럽어 *spend-.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-040",
     "day": 10,
     "word": "esteem",
-    "meaning": "존경, 존중하다; 존경, 존중\n\n(aestimare(평가하다))",
+    "meaning": "존경, 존중하다; 존경, 존중\n\n유래: 중세 프랑스어 estimer; 라틴어 aestimō.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-041",
     "day": 10,
     "word": "estimable",
-    "meaning": "존경할 만한; 어림(평가) 할 수 있는\n\n(aestimare(평가하다))",
+    "meaning": "존경할 만한; 어림(평가) 할 수 있는\n\n유래: 중세 영어 estimable; 고대 프랑스어 estimable; 라틴어 aestimābilis.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-042",
     "day": 10,
     "word": "estrange",
-    "meaning": "사이를 멀어지게 하다, 소원하게 하다.\n\n(extraneare(이방인으로 대하다))",
+    "meaning": "사이를 멀어지게 하다, 소원하게 하다.\n\n유래: 고대 프랑스어 estranger (“to treat as a stranger”); 라틴어 extraneus (“foreigner, stranger”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-043",
     "day": 10,
     "word": "ethereal",
-    "meaning": "가볍고 섬세한; 천상의, 영적인\n\n[ether(에테르, 하늘, 대기 밖의 정기) ]",
+    "meaning": "가볍고 섬세한; 천상의, 영적인\n\n유래: 라틴어 aetherius (“of or pertaining to the ether, the sky, Heaven or the air or upper air”); 고대 그리스어 αἰθέριος (aithérios, “of or pertaining to the upper air”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
@@ -6612,133 +6612,133 @@ window.GRE_WORDS = [
     "id": "d10-045",
     "day": 10,
     "word": "eulogy",
-    "meaning": "(고인에 대한) 추도 연설; 칭송, 찬양\n\n[eu(good) + logy(word) : \"좋은 말\"]",
+    "meaning": "(고인에 대한) 추도 연설; 칭송, 찬양\n\n유래: 라틴어 eulogium; 고대 그리스어 εὐλογία (eulogía, “praise”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-046",
     "day": 10,
     "word": "euphemism",
-    "meaning": "완곡어법\n\n(eu(좋은) + phēmē(말))",
+    "meaning": "완곡어법\n\n유래: 고대 그리스어 εὐφημισμός (euphēmismós).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-047",
     "day": 10,
     "word": "euphonious",
-    "meaning": "듣기 좋은\n \n(eu(좋은) + phone 소리)",
+    "meaning": "듣기 좋은\n\n유래: 프랑스어 euphonie; 고대 그리스어 εὐφωνία (euphōnía); 원시 인도유럽어 *bʰeh₂- (“to say, speak”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-048",
     "day": 10,
     "word": "euphoria",
-    "meaning": "행복감, 희열\n \neu(좋은) + pherein(들고 다니다)",
+    "meaning": "행복감, 희열\n\n유래: 신라틴어 euphoria; 고대 그리스어 εὐφορίᾱ (euphoríā).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-049",
     "day": 10,
     "word": "evade",
-    "meaning": "(감금, 법, 의무, 문제 등) 피하다.\n\n(e(밖으로) + vadere(가다))",
+    "meaning": "(감금, 법, 의무, 문제 등) 피하다.\n\n유래: 중세 프랑스어 évader, from 라틴어 ēvādō (“to pass or go over; flee”), from ē (“out of, from”) + vādō (“to go; walk”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-050",
     "day": 10,
     "word": "evanescent",
-    "meaning": "사라져가는, 덧 없는\n\n[e(밖으로) + vanus(텅빈) ]\n\nMOMENTARY, ephemeral",
+    "meaning": "사라져가는, 덧 없는\n\n유래: 프랑스어 évanescent (“evanescent”); 라틴어 ēvānēscēns (“disappearing, vanishing”); 원시 인도유럽어 *h₁weh₂- (“to abandon, leave”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-051",
     "day": 10,
     "word": "even-handed",
-    "meaning": "공정한\n\neven(균형잡힌, 평평한) + hand(손으로 다룬 다)",
+    "meaning": "공정한\n\n유래: even('공정한, 균형 잡힌') + handed('손으로 다루는').",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-052",
     "day": 10,
     "word": "even-tempered",
-    "meaning": "(마음) 차분한, 온화한\n\neven(균형잡힌, 평평한) + temper(기질)",
+    "meaning": "(마음) 차분한, 온화한\n\n유래: even('고른, 안정된') + tempered('기질을 지닌').",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-053",
     "day": 10,
     "word": "evict",
-    "meaning": "퇴거시키다, 내쫓다.\n\ne(밖으로) + vincere(정복하다, 이기다)",
+    "meaning": "퇴거시키다, 내쫓다.\n\n유래: 중세 영어 evicten; 라틴어 ēvictus.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-054",
     "day": 10,
     "word": "evidence",
-    "meaning": "입증하다; 증언하다\n\ne(밖으로) + videre(보다)",
+    "meaning": "입증하다; 증언하다\n\n유래: 중세 영어 evidence; 라틴어 evidentia (“clearness, in 후기 라틴어 a proof”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-055",
     "day": 10,
     "word": "evince",
-    "meaning": "명시하다.\n\ne(밖으로) + vincere(정복하다, 이기다)\n\nBETRAY",
+    "meaning": "명시하다.\n\n유래: 중세 프랑스어 évincer; 라틴어 ēvincō (“conquer entirely, prevail over; prove exhaustively”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-056",
     "day": 10,
     "word": "evoke",
-    "meaning": "(감정, 기억, 이미지를) 환기시키다, \n(반응) 야기하다, 불러 일으키다\n\ne(밖으로) + vocare(부르다)\n\nArouse",
+    "meaning": "(감정, 기억, 이미지를) 환기시키다,\n(반응) 야기하다, 불러 일으키다\n\n유래: 프랑스어 évoquer; 라틴어 ēvocō (“to call out, summon”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-057",
     "day": 10,
     "word": "exacerbate",
-    "meaning": "악화시키다\n\nex(유발시키는) + acerbus(신랄한)\n\nAGGRAVATE",
+    "meaning": "악화시키다\n\n유래: 라틴어 exacerbātus; 라틴어 exacerbō (“to provoke”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-058",
     "day": 10,
     "word": "exacting",
-    "meaning": "힘든, 까다로운\n\nex(철저히) + agere(실행하다)\n\nMETICULOUS, STRINGENT, demanding; PROSCRIPTIVE",
+    "meaning": "힘든, 까다로운\n\n유래: exact + -ing.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-059",
     "day": 10,
     "word": "exaction",
-    "meaning": "강요, 강제 징수, 부당한 요구\n\nex(철저히) + agere(실행하다)",
+    "meaning": "강요, 강제 징수, 부당한 요구\n\n유래: 중세 영어 exaccioun; 중세 프랑스어 exaction; 라틴어 exāctiō.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-060",
     "day": 10,
     "word": "exactitude",
-    "meaning": "정밀성, 철저함\n\nex(철저히) + agere(실행하다)\n\nMETICULOUSNESS",
+    "meaning": "정밀성, 철저함\n\n유래: 프랑스어 exactitude; 라틴어 exactus.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-061",
     "day": 10,
     "word": "exalt",
-    "meaning": "높이다; 칭송하다.\n\n(ex(밖으로, 위로) + altus(높은))\n\nVALORIZE, acclaim, lionize",
+    "meaning": "높이다; 칭송하다.\n\n유래: 중세 영어 exalten; 고대 프랑스어 exalter; 라틴어 exaltō.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-062",
     "day": 10,
     "word": "exasperate",
-    "meaning": "몹시 화나게 하다; 악화시키다.\n exasperate(excess + parade)\n\n(ex(유발시키는) + asper(거친))",
+    "meaning": "몹시 화나게 하다; 악화시키다.\n exasperate(excess + parade)\n\n유래: 라틴어 exasperātus; 라틴어 exasperō.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-063",
     "day": 10,
     "word": "exceptionable",
-    "meaning": "반대될 수 있는, 이의제기 될 수 있는\n\n(ex(밖으로) + capere(가져가다))",
+    "meaning": "반대하거나 이의를 제기할 만한\n\n유래: exception + -able.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
@@ -6752,133 +6752,133 @@ window.GRE_WORDS = [
     "id": "d10-065",
     "day": 10,
     "word": "excise",
-    "meaning": "삭제하다, 잘라 내다.\n\n(ex(밖으로) + caedere(자르다))",
+    "meaning": "삭제하다, 잘라 내다.\n\n유래: 중세 네덜란드어 excijs; 고대 프랑스어 acceis (“tax, assessment”); 민중 라틴어 *accensum; 라틴어 ad.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-066",
     "day": 10,
     "word": "excoriate",
-    "meaning": "몹시 비난하다, 혹평하다.\n\n(ex(밖으로) + corium(피부, 가죽))\n\nLAMBASTE",
+    "meaning": "몹시 비난하다, 혹평하다.\n\n유래: 중세 영어 *excoriaten (only attested in its past participle); 후기 라틴어 excoriātus.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-067",
     "day": 10,
     "word": "excruciating",
-    "meaning": "심한 고통을 주는, 괴롭히는\n\n(ex(철저한) + cruc-(십자가 형별))",
+    "meaning": "심한 고통을 주는, 괴롭히는\n\nPresent participle of excruciate, from 라틴어 excruciō, from ex- + cruciō (“to torment”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-068",
     "day": 10,
     "word": "exculpate",
-    "meaning": "1.혐의를 벗겨주다, 무죄로 하다. /\n2.용서하다, 죄책을 면해주다\n\nAbsolve\n1.Vindicate\n2. Acquit, exonerate\n\n(ex(밖으로) + culpa(죄, 비난))",
+    "meaning": "1.혐의를 벗겨주다, 무죄로 하다. /\n2.용서하다, 죄책을 면해주다\n\n유래: 중세 라틴어 exculpātus, perfect passive participle of exculpō (see -ate (verb-forming suffix)), from ex- (“out, from”) + culpa (“fault; blame”) + -ō (verb-forming suffix).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-069",
     "day": 10,
     "word": "execrate",
-    "meaning": "혐오하다; 비난하다; 저주하다.\n\n(ex(밖으로) + sacer(거룩한))",
+    "meaning": "혐오하다; 비난하다; 저주하다.\n\n유래: 라틴어 exsecrārī, execrārī, from ex (“out”) + sacrāre (“to consecrate, declare accursed”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-070",
     "day": 10,
     "word": "exemplar",
-    "meaning": "전형, 모범\n\n(ex(밖으로) + emere(가져가다))",
+    "meaning": "전형, 모범\n\n유래: 중세 영어 exempler; 중세 프랑스어 exemplair; 라틴어 exemplar; 라틴어 exemplum (“example”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-071",
     "day": 10,
     "word": "exemplary",
-    "meaning": "전형적인, 모범적인\n\n(ex(밖으로) + emere(가져가다))",
+    "meaning": "전형적인, 모범적인\n\n유래: 중세 영어 exemplarie; 라틴어 exemplāris (“exemplary; a copy, facsimile”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-072",
     "day": 10,
     "word": "exemplify",
-    "meaning": "예증하다. 전형이 되다.\n\n(ex(밖으로) + emere(가져가다))",
+    "meaning": "예증하다. 전형이 되다.\n\n유래: 중세 영어 exemplifien; 중세 프랑스어 exemplifier; 중세 라틴어 exemplificō; 라틴어 exemplum (“example”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-073",
     "day": 10,
     "word": "exempt",
-    "meaning": "면제하다.\n\nex(밖으로) + emere(가져가다)",
+    "meaning": "면제하다.\n\n유래: 중세 프랑스어 exempt; 라틴어 exemptus.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-074",
     "day": 10,
     "word": "exhaust",
-    "meaning": "지치게 하다; \n고갈시키다;\n(연구 등) 철처히 살피다;\n(자동차) 배기가스\n\n\nex(밖으로) + haurire(물을 빼다)",
+    "meaning": "지치게 하다;\n고갈시키다;\n(연구 등) 철처히 살피다;\n(자동차) 배기가스\n\n유래: 라틴어 exhaustus.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-075",
     "day": 10,
     "word": "exhaustive",
-    "meaning": "포괄적인, 철저한\n\nex(밖으로) + haurire(물을 빼다)",
+    "meaning": "포괄적인, 철저한\n\n차용: 중세 라틴어 exhaustīvus. 형태 분석: exhaust + -ive.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-076",
     "day": 10,
     "word": "exhilarate",
-    "meaning": "유쾌하게, 즐겁게 하다.\n\nex(유발시키는) + hilaris(기쁜, 들뜬)",
+    "meaning": "유쾌하게, 즐겁게 하다.\n\n유래: 라틴어 exhilarō (“to delight, to gladden, to make merry”); 원시 인도유럽어 *h₁eǵʰs (“out”); 고대 그리스어 ἱλαρός (hilarós, “cheerful, merry”); 원시 인도유럽어 *selh₂- (“comfort, mercy”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-077",
     "day": 10,
     "word": "exhort",
-    "meaning": "권고, 촉구하다.\n\nex(완전히, 철저히) + hortari(독려하다, 장려 하다)",
+    "meaning": "권고, 촉구하다.\n\n유래: 중세 영어 exorten; 고대 프랑스어 exhorter; 라틴어 exhortārī (“to encourage”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-078",
     "day": 10,
     "word": "exhume",
-    "meaning": "(특히 검시를 위해 시체를) 파내다(발굴하다)\n\nex(밖으로) + humus(땅)",
+    "meaning": "(특히 검시를 위해 시체를) 파내다(발굴하다)\n\n유래: 중세 라틴어 exhumō; 라틴어 ex-.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-079",
     "day": 10,
     "word": "exigent",
-    "meaning": "위급한, 급박한\n\nex(철저히) + agere(실행하다)\n\nPRESSING, emergent",
+    "meaning": "위급한, 급박한\n\n유래: 라틴어 exigēns.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-080",
     "day": 10,
     "word": "exonerate",
-    "meaning": "면죄하다; (책임, 의무) 면제하다.\n\n(ex(로부터) + onus(짐))",
+    "meaning": "면죄하다; (책임, 의무) 면제하다.\n\n유래: 중세 영어 exoneraten; 라틴어 exonerātus; 원시 인도유럽어 *h₃énh₂os (“burden, load”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-081",
     "day": 10,
     "word": "exorbitant",
-    "meaning": "과도한, 지나친\n\n(ex(밖으로) + orbita(궤도, 트랙))\n\nProhibitive",
+    "meaning": "과도한, 지나친\n\n유래: 중세 영어 exorbitant; 고대 프랑스어; 후기 라틴어 exorbitāns.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-082",
     "day": 10,
     "word": "exorcise",
-    "meaning": "(나쁜 생각 등을) 몰아내다, 떨쳐버리다 (비유적 의미)\n(사람, 장소에서) (귀신을) 몰아내다.\n\n(ex(밖으로) + horkos(맹세))",
+    "meaning": "(나쁜 생각 등을) 몰아내다, 떨쳐버리다 (비유적 의미)\n(사람, 장소에서) (귀신을) 몰아내다.\n\n유래: 중세 영어 exorcisen; 중세 라틴어 exorcizō; 고대 그리스어 ἐξορκίζω (exorkízō, “to banish an evil spirit; bind by oath”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-083",
     "day": 10,
     "word": "expansive",
-    "meaning": "(성격, 태도) 개방적인, 말 많은\n포괄적인\n\n(ex(밖으로) + pandere(펼치다))",
+    "meaning": "(성격, 태도) 개방적인, 말 많은\n포괄적인\n\n유래: 라틴어 expāns-.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
@@ -6899,77 +6899,77 @@ window.GRE_WORDS = [
     "id": "d10-086",
     "day": 10,
     "word": "expediency",
-    "meaning": "편의주의, 편법, 꼼수\n\nex(밖으로) + ped-(발)",
+    "meaning": "편의주의, 편법, 꼼수\n\n유래: expedient + -cy. expedient는 라틴어 expedire('발을 풀어 주다, 준비시키다')에서 유래.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-087",
     "day": 10,
     "word": "expedient",
-    "meaning": "편의주의적인, 편리한, 편법의\n\nex(밖으로) + ped-(발)",
+    "meaning": "편의주의적인, 편리한, 편법의\n\n유래: 중세 영어 expedient; 고대 프랑스어 expedient; 라틴어 expediens.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-088",
     "day": 10,
     "word": "expedite",
-    "meaning": "촉진시키다, 신속하게 하다.\n\nex(밖으로) + ped-(발)\n\nFACILITATE",
+    "meaning": "촉진시키다, 신속하게 하다.\n\n유래: 라틴어 expedītus (“unimpeded, unfettered”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-089",
     "day": 10,
     "word": "expeditious",
-    "meaning": "신속한, 효율적인\n\nex(밖으로) + ped-(발)",
+    "meaning": "신속한, 효율적인\n\n유래: 중세 영어 expedycius (“useful, fitting”); 라틴어 expedītus (“disengaged, ready, convenient, prompt; unfettered, unencumbered”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-090",
     "day": 10,
     "word": "experimental",
-    "meaning": "실험적인, 혁신적인\n\npeira(시도, 실험, 경험)",
+    "meaning": "실험적인, 혁신적인\n\n유래: experiment + -al.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-091",
     "day": 10,
     "word": "expiate",
-    "meaning": "속죄하다\n\nAtone for",
+    "meaning": "속죄하다\n\n유래: 라틴어 expiātus, past participle of expiō (“atone for”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-092",
     "day": 10,
     "word": "explicate",
-    "meaning": "설명하다.\n\nex(밖으로) + plicare(접다, 포개다)\n\nELUCIDATE, demystify",
+    "meaning": "설명하다.\n\n유래: 라틴어 explicāre (“unfold, explain”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-093",
     "day": 10,
     "word": "explicit",
-    "meaning": "명백한, 명시적인\n\nex(밖으로) + plicare(접다, 포개다)",
+    "meaning": "명백한, 명시적인\n\n유래: 프랑스어 explicite; 라틴어 explicitus (“disentangled, easy”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-094",
     "day": 10,
     "word": "exploit",
-    "meaning": "위업, 업적; 부당하게 이용하다, 착취하다; (자원 등) 이용하다, 활용하다.\n\nex(밖으로) + plicare(접다, 포개다)",
+    "meaning": "위업, 업적; 부당하게 이용하다, 착취하다; (자원 등) 이용하다, 활용하다.\n\n유래: 고대 프랑스어 esploit (noun).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-095",
     "day": 10,
     "word": "exponent",
-    "meaning": "지지자; 설명, 해석가\n\nex(밖으로) + ponere(두다)",
+    "meaning": "지지자; 설명, 해석가\n\n유래: 라틴어 expōnēns.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-096",
     "day": 10,
     "word": "exponential",
-    "meaning": "기하급수적인, 급격한\n\nex(밖으로) + ponere(두다)",
+    "meaning": "기하급수적인, 급격한\n\n유래: exponent + -ial.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
@@ -6983,21 +6983,21 @@ window.GRE_WORDS = [
     "id": "d10-098",
     "day": 10,
     "word": "expostulate",
-    "meaning": "(~에 반대하여) 충고하다, 훈계하다, 간언하다, 충언하다, ~에게 이의를 제기하다.\n\nex(밖으로) + postulare(요구하다)\n\nDisagree with, argue with",
+    "meaning": "(~에 반대하여) 충고하다, 훈계하다, 간언하다, 충언하다, ~에게 이의를 제기하다.\n\n구성: 라틴어 expostulō (“demand, claim”) + -ate (verb-forming suffix).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-099",
     "day": 10,
     "word": "expunge",
-    "meaning": "지우다, 삭제하다.\n\nex(밖으로) + pungere(찌르다)",
+    "meaning": "지우다, 삭제하다.\n\n학술 차용: 라틴어 expungere.",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
     "id": "d10-100",
     "day": 10,
     "word": "expurgate",
-    "meaning": "(책이나 기록에서 부적당한 부분을) 삭제하다.\n\nex(밖으로) + purgare(씻다, 청소하다)",
+    "meaning": "(책이나 기록에서 부적당한 부분을) 삭제하다.\n\n유래: 라틴어 expurgātus, perfect passive participle of expurgō (“purge, cleanse, purify”).",
     "source": "https://quizlet.com/kr/1206327437/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-10-flash-cards"
   },
   {
@@ -7039,49 +7039,49 @@ window.GRE_WORDS = [
     "id": "d11-006",
     "day": 11,
     "word": "extirpate",
-    "meaning": "제거하다, 없애다;\n\nex(밖으로) + stirps(줄기)\n\nELIMINATE",
+    "meaning": "제거하다, 없애다;\n\n유래: 라틴어 exstirpātus.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-007",
     "day": 11,
     "word": "extol",
-    "meaning": "극찬하다;\n\nex(밖으로, 위로) + tollere(올리다)",
+    "meaning": "극찬하다;\n\n유래: 라틴어 extollō (“elevate, raise high”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-008",
     "day": 11,
     "word": "extortionate",
-    "meaning": "(가격 등이) 터무니 없이 높은; 가격이 깡패다\n\nex(밖으로) + torquere(비틀다)\n\nExorbitant, extravagant\n\nExtort 강탈하다",
+    "meaning": "(가격 등이) 터무니 없이 높은; 가격이 깡패다\n\n구성: extortion + -ate (adjective-forming suffix).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-009",
     "day": 11,
     "word": "extraneous",
-    "meaning": "이질적인, 관련 없는\n\nIRRELEVANT, immaterial, inconsequential, impertinent",
+    "meaning": "이질적인, 관련 없는\n\n유래: 라틴어 extrāneus (“from without, strange”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-010",
     "day": 11,
     "word": "extrapolate",
-    "meaning": "(...을 기반으로) 추론[추정]하다;\n\nextra(밖으로) + interpolate(삽입하 다)",
+    "meaning": "(...을 기반으로) 추론[추정]하다;\n\n유래: extra- + (inter)polate.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-011",
     "day": 11,
     "word": "extravagant",
-    "meaning": "사치하는, 낭비하는; 터무니 없는, 지나친;\n\nextra(밖으로) + vagari(헤매다, 방황하다)",
+    "meaning": "사치하는, 낭비하는; 터무니 없는, 지나친;\n\n유래: 중세 영어 extravagaunt; 중세 프랑스어 extravagant; 중세 라틴어 extravagans; 라틴어 extra (“beyond”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-012",
     "day": 11,
     "word": "extricate",
-    "meaning": "(위험, 곤란에서)\n벗어나게 하다;\n\nex(밖으로) + tricae(당황스러움)\n\nExtract",
+    "meaning": "(위험, 곤란에서)\n벗어나게 하다;\n\n유래: 라틴어 extrīcātus.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7095,21 +7095,21 @@ window.GRE_WORDS = [
     "id": "d11-014",
     "day": 11,
     "word": "exuberant",
-    "meaning": "(잎이)무성한;\n열의에 찬, 원기왕성한;\n\nex(강조) + uber(비옥한)",
+    "meaning": "(잎이)무성한;\n열의에 찬, 원기왕성한;\n\n유래: 중세 프랑스어 exubérant; 라틴어 exūberāns.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-015",
     "day": 11,
     "word": "exude",
-    "meaning": "스며나오게 하다,발산시키다, 강하게 풍기다;\n\nex(밖으로) + sudare(땀 흘리다)",
+    "meaning": "스며 나오게 하다; 발산시키다, 강하게 풍기다\n\n유래: 라틴어 exudare('땀처럼 배어 나오다') < ex-('밖으로') + sudare('땀 흘리다').",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-016",
     "day": 11,
     "word": "exultant",
-    "meaning": "매우기뻐하는;\n\nex(밖으로, 위로) + salire(뛰다)\n\nJubilant, euphoric, elated",
+    "meaning": "매우기뻐하는;\n\n유래: 라틴어 exsultāns.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7130,35 +7130,35 @@ window.GRE_WORDS = [
     "id": "d11-019",
     "day": 11,
     "word": "facetious",
-    "meaning": "익살스런, 웃기는; 까부는, 경박스러운\n\n(facetus(재치있는) -> fcetia(농담, 유머))\n\nHumorous\nFrivolous, giddy, flip, flippant",
+    "meaning": "익살스런, 웃기는; 까부는, 경박스러운\n\n유래: 프랑스어 facétieux; 라틴어 facētia (“jest, wit, humor”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-020",
     "day": 11,
     "word": "facile",
-    "meaning": "피상적인; 손쉬운, 용이한\n\nfacere(하다, 만들다) -> facilis(쉬운)\n\nSimplistic, superficial\nEffortless",
+    "meaning": "피상적인; 손쉬운, 용이한\n\n유래: 중세 프랑스어 facile; 라틴어 facilis (“easy to do, easy, doable”); 라틴어 facere (“to do, make”); 원시 인도유럽어 *dʰeh₁- (“to do, put”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-021",
     "day": 11,
     "word": "facilitate",
-    "meaning": "용이하게 하다\n\nfacere(하다, 만들다) -> facilis(쉬운)\n\nEXPEDITE, assist, help",
+    "meaning": "용이하게 하다\n\n유래: 프랑스어 faciliter (“facilitate”); 라틴어 facilis.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-022",
     "day": 11,
     "word": "faction",
-    "meaning": "파벌, 분파; 파벌싸움\n\nfacere(하다, 만들다)",
+    "meaning": "파벌, 분파; 파벌싸움\n\n유래: 중세 프랑스어 faction; 라틴어 factiō (“a group of people acting together, a political faction”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-023",
     "day": 11,
     "word": "factious",
-    "meaning": "당파적인,편파적인,\n당파 중심의\n\nfacere(하다, 만들다)",
+    "meaning": "당파적인,편파적인,\n당파 중심의\n\n유래: 라틴어 factiosus (“divisive; inclined to separate”); derivative of factio.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7179,21 +7179,21 @@ window.GRE_WORDS = [
     "id": "d11-026",
     "day": 11,
     "word": "faddish",
-    "meaning": "일시적으로 유행하는,\n그런 유행을 좇는\n\n(fiddle-faddle(사소한 것들, 헛소리))",
+    "meaning": "일시적으로 유행하는,\n그런 유행을 좇는\n\n유래: fad + -ish.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-027",
     "day": 11,
     "word": "fallacious",
-    "meaning": "(격식) 잘못된, 틀린,\n(남을) 속이는,기만하는\n\nfallere(속이다)",
+    "meaning": "(격식) 잘못된, 틀린,\n(남을) 속이는,기만하는\n\n유래: 고대 프랑스어 fallacieux; 라틴어 fallācia.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-028",
     "day": 11,
     "word": "fallacy",
-    "meaning": "(많은 사람이 옳다고 믿는)\n틀린 생각;\n(인식상의)오류, 궤변\n\nfallere(속이다)",
+    "meaning": "(많은 사람이 옳다고 믿는)\n틀린 생각;\n(인식상의)오류, 궤변\n\n유래: 중세 영어 fallaci; 고대 프랑스어 fallace; 라틴어 fallācia (“deception, deceit”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7214,7 +7214,7 @@ window.GRE_WORDS = [
     "id": "d11-031",
     "day": 11,
     "word": "fanciful",
-    "meaning": "공상적인, 비현실적인\n\nWhimsical",
+    "meaning": "공상적인, 비현실적인\n\n유래: fancy + -ful.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7228,21 +7228,21 @@ window.GRE_WORDS = [
     "id": "d11-033",
     "day": 11,
     "word": "farcical",
-    "meaning": "우스꽝스런,\n터무니없는\n\nRidiculous",
+    "meaning": "우스꽝스런,\n터무니없는\n\n유래: farce + -ical, after comical etc.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-034",
     "day": 11,
     "word": "fashion",
-    "meaning": "만들어내다;\n방법, 방식\n\nfacere(하다, 만들다)",
+    "meaning": "만들어내다;\n방법, 방식\n\n유래: 중세 영어 facioun; 앵글로노르만어 fechoun; 라틴어 factiō (“a making”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-035",
     "day": 11,
     "word": "fastidious",
-    "meaning": "꼼꼼한, 까다로운;\n\nfastidium(혐오)\n\nPainstaking, meticulous",
+    "meaning": "꼼꼼한, 까다로운;\n\n유래: 라틴어 fastīdiōsus (“passive: that feels disgust, disdainful, scornful, fastidious; active: that causes disgust, disgusting, loathsome”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7277,14 +7277,14 @@ window.GRE_WORDS = [
     "id": "d11-040",
     "day": 11,
     "word": "favor",
-    "meaning": "편애하다, 호의를 보이다,찬성하다; 유리하다;\n\nfavere(친절하게 대하다)\n\nAID",
+    "meaning": "편애하다, 호의를 보이다,찬성하다; 유리하다;\n\n유래: 중세 영어 favour; 앵글로노르만어 favour; 고대 프랑스어 favor; 라틴어 favor (“good will; kindness; partiality”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-041",
     "day": 11,
     "word": "fawn",
-    "meaning": "아부하다\n\nBe obsequious to, be sycophantic",
+    "meaning": "아부하다\n\n유래: 중세 영어 fawne, fowne, foun; 고대 프랑스어 faon, foon, feon; 민중 라틴어 *fētōnem; 라틴어 fētus (“offspring, young”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7298,49 +7298,49 @@ window.GRE_WORDS = [
     "id": "d11-043",
     "day": 11,
     "word": "feasible",
-    "meaning": "실행가능한\n\nfacere(하다, 만들다)",
+    "meaning": "실행가능한\n\n유래: 앵글로노르만어 fesable; 라틴어 facere; 고대 프랑스어 fesable, faisable (“doable”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-044",
     "day": 11,
     "word": "feckless",
-    "meaning": "쓸모없는; 무책임한\n\n(feck(effect의 방언) + less)\n\nUseless\nLazy",
+    "meaning": "쓸모없는; 무책임한\n\n유래: Scots feckless.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-045",
     "day": 11,
     "word": "fecund",
-    "meaning": "비옥한,\n생산력이 있는,\n풍성한\n\nfecundus(생산성)\n\nFertile",
+    "meaning": "비옥한,\n생산력이 있는,\n풍성한\n\n유래: 라틴어 fēcundus (“fertile”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-046",
     "day": 11,
     "word": "feeble",
-    "meaning": "연약한,\n(효과 등) 미미한, 약한\n\nflere(울다)",
+    "meaning": "연약한,\n(효과 등) 미미한, 약한\n\n유래: 중세 영어 feble; 앵글로노르만어 feble (“weak, feeble”); 라틴어 flēbilis (“tearful, mournful, lamentable”); 원시 인도유럽어 *bʰleh₁-.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-047",
     "day": 11,
     "word": "feign",
-    "meaning": "가장하다, 꾸미다\n\nfingere(만들다, 고안하다)\n\nDissemble, dissimulate",
+    "meaning": "가장하다, 꾸미다\n\n유래: 중세 영어 feynen; 고대 프랑스어 feindre (“to pretend”); 라틴어 fingere (“to form, shape, invent”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-048",
     "day": 11,
     "word": "feisty",
-    "meaning": "적극적인,\n원기왕성한\n\nSpirited",
+    "meaning": "적극적인,\n원기왕성한\n\n유래: 중세 영어; 고대 영어; 원시 게르만어; 원시 인도유럽어.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-049",
     "day": 11,
     "word": "felicity",
-    "meaning": "대단한 행복, 적절한 행동/태도\n\nBliss, happiness; eloquence\n(felix, felic(행복한))\n\nfelicitous",
+    "meaning": "대단한 행복, 적절한 행동/태도\n\n유래: 중세 영어 felicite (“bliss, happiness, joy; delight, pleasure; a source of happiness; good fortune; prosperity; well-being; of a planet: in an influential position”); 고대 프랑스어 felicité; 라틴어 fēlīcitātem; 원시 인도유럽어 *dʰeh₁(y)- (“to nurse, suckle”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7354,35 +7354,35 @@ window.GRE_WORDS = [
     "id": "d11-051",
     "day": 11,
     "word": "ferocity",
-    "meaning": "잔인, 흉포, 포악, 극악무도\n\nFerocious = atrocious, heinous",
+    "meaning": "잔인, 흉포, 포악, 극악무도\n\n유래: 중세 프랑스어 férocité; 라틴어 ferocitas.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-052",
     "day": 11,
     "word": "ferret",
-    "meaning": "찾다, 뒤지다\n\n(furo(도둑, 흰담비))",
+    "meaning": "찾다, 뒤지다\n\n유래: 중세 영어 furet; 고대 프랑스어 furet; 민중 라틴어 *furittum (“weasel, ferret”); 라틴어 fūr (“thief”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-053",
     "day": 11,
     "word": "fervor",
-    "meaning": "열성, 열렬\n\n(fervere(끓다))",
+    "meaning": "열성, 열렬\n\n유래: 중세 영어 fervour; 고대 프랑스어; 라틴어 fervor (“a boiling or raging heat, heat, vehemence, passion”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-054",
     "day": 11,
     "word": "festering",
-    "meaning": "(너무 방치해 두어서) 진부한, 지겨운, 싫증나는, 악화되는\n\nFester\n\nFusty, musty, stale",
+    "meaning": "(너무 방치해 두어서) 진부한, 지겨운, 싫증나는, 악화되는\n\n유래: fester + -ing. fester는 고대 프랑스어 festre('곪은 상처')에서 유래.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-055",
     "day": 11,
     "word": "fetch",
-    "meaning": "(특정 가격에) 팔리다; (어디를 가서) 가지고 오다, 데려오다\n\nSell for",
+    "meaning": "(특정 가격에) 팔리다; (어디를 가서) 가지고 오다, 데려오다\n\n유래: 중세 영어 fecchen (“to get and bring back, fetch; to come for, get and take away; to steal; to carry away to kill; to search for; to obtain, procure”); 고대 영어 feċċan; 원시 게르만어 *fatōną; 원시 인도유럽어 *ped- (“to step, walk; to fall, stumble”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7410,7 +7410,7 @@ window.GRE_WORDS = [
     "id": "d11-059",
     "day": 11,
     "word": "fiasco",
-    "meaning": "'대실패, 완패a complete failure or disaster\n\nAnt. Eclat 대성공",
+    "meaning": "대실패, 완패\n\n유래: 이탈리아어 fiasco('병, 플라스크'). '대실패'라는 비유적 의미가 생긴 정확한 경위는 불확실.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7431,14 +7431,14 @@ window.GRE_WORDS = [
     "id": "d11-062",
     "day": 11,
     "word": "fiery",
-    "meaning": "(사람의 성품이나 표현이) 맹렬한, 격한, 사나운\n\nIMPASSIONED",
+    "meaning": "(사람의 성품이나 표현이) 맹렬한, 격한, 사나운\n\n유래: 중세 영어 fyry.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-063",
     "day": 11,
     "word": "figurative",
-    "meaning": "비유적인;\n\nfingere(만들다, 고안하다)",
+    "meaning": "비유적인;\n\n유래: 중세 프랑스어 figuratif.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7452,28 +7452,28 @@ window.GRE_WORDS = [
     "id": "d11-065",
     "day": 11,
     "word": "finale",
-    "meaning": "공연의 마지막, 대미\n\nfinis(끝)",
+    "meaning": "공연의 마지막, 대미\n\n유래: 이탈리아어 finale (“ending”); 후기 라틴어 fīnālis; 라틴어 fīnis (“end; boundary, limit”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-066",
     "day": 11,
     "word": "finesse",
-    "meaning": "섬세함, 솜씨,\n기교, 수완, 능숙함\n\nfinis(끝)",
+    "meaning": "섬세함, 솜씨,\n기교, 수완, 능숙함\n\n유래: 중세 영어 finesse (“a degree of excellence; (of metal) fineness, purity”); 중세 프랑스어 finesse; 고대 프랑스어 finesse (“a fineness; a delicacy; slenderness”); 라틴어 fīnis (“an end”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-067",
     "day": 11,
     "word": "finicky",
-    "meaning": "몹시 까다로운\n\nfinis(끝)",
+    "meaning": "몹시 까다로운\n\n구성: finick (“to work in a fastidious manner, wasting time over unnecessary details”) + -y.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-068",
     "day": 11,
     "word": "fiscal",
-    "meaning": "재정의, 재무의, 회계의\n\nfiscus(지갑, 보물)",
+    "meaning": "재정의, 재무의, 회계의\n\n유래: 중세 프랑스어 fiscal, from 라틴어 fiscus (“treasury”) – see fiscus and fisc.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7487,14 +7487,14 @@ window.GRE_WORDS = [
     "id": "d11-070",
     "day": 11,
     "word": "fit",
-    "meaning": "적당하다, 발작\n\nfitt(갈등)",
+    "meaning": "적당하다, 발작\n\n유래: 중세 영어 fit (“an adversary of equal power”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-071",
     "day": 11,
     "word": "fitful",
-    "meaning": "불규칙적인,\n발작적인\n\nfitt(갈등)",
+    "meaning": "불규칙적인,\n발작적인\n\n유래: fit (“convulsion, seizure; sudden burst of activity”) + -ful (suffix forming adjectives from nouns, with the sense of being full of, tending to, or thoroughly possessing the quality expressed by the noun).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7508,56 +7508,56 @@ window.GRE_WORDS = [
     "id": "d11-073",
     "day": 11,
     "word": "flabbergasted",
-    "meaning": "크게 놀란, 당황한\n\n(* flabber 축늘어저 있는사람이 )\n\nAstonished",
+    "meaning": "크게 놀란, 당황한\n\n유래: flabbergast('몹시 놀라게 하다') + -ed. flabbergast 자체의 어원은 불확실.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-074",
     "day": 11,
     "word": "flabby",
-    "meaning": "살이 축늘어진,\n무기력한\n\n(* flabber 축늘어저 있는사람이 )",
+    "meaning": "살이 축늘어진,\n무기력한\n\n유래: a variant of flappy, from flap (“to hang loose”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-075",
     "day": 11,
     "word": "flag",
-    "meaning": "Vi. 약화되다; (cf. flagging [adj] 축처진)\n\nCf. Damper vt. 빼앗다, 약화시키다",
+    "meaning": "Vi. 약화되다; (cf. flagging [adj] 축처진)\n\n유래: 중세 영어 flag; 중세 영어 flage; 고대 영어 flagg; 원시 게르만어 *flaką (“something flat”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-076",
     "day": 11,
     "word": "flagrant",
-    "meaning": "극악한, 악명높은;\n노골적인, 명백한\n\nflagrant-(맹렬히 불타는)\n\nBlatant, brazen",
+    "meaning": "극악한, 악명높은;\n노골적인, 명백한\n\n유래: 중세 프랑스어 flagrant; 라틴어 flagrantem.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-077",
     "day": 11,
     "word": "flamboyant",
-    "meaning": "눈부신, 화려한, 현란한\n\nflambe(화염 flame)",
+    "meaning": "눈부신, 화려한, 현란한\n\n유래: 프랑스어 flamboyant (“flaming, wavy”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-078",
     "day": 11,
     "word": "flatter",
-    "meaning": "추켜세우다,\n알랑거리다,\n(찬사 등으로)\n기쁘게하다\n\nflaterie(아부하다)\n\nAdulate, blandish",
+    "meaning": "추켜세우다,\n알랑거리다,\n(찬사 등으로)\n기쁘게하다\n\n유래: flat + -er (comparative suffix).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-079",
     "day": 11,
     "word": "flaunt",
-    "meaning": "자랑,과시하다\n\nShow off, vaunt",
+    "meaning": "자랑,과시하다\n\n어원 불확실. 16세기부터 쓰였으며 북게르만어 계통과 관련된 것으로 추정.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-080",
     "day": 11,
     "word": "flay",
-    "meaning": "껍질을 벗기다, 남을 깎아내리다, 혹평하다\n\nExcoriate, peel",
+    "meaning": "껍질을 벗기다, 남을 깎아내리다, 혹평하다\n\n유래: 중세 영어 flayen; 고대 영어 flīeġan; 원시 게르만어 *flaugijaną (“to let fly, cause to fly”); 원시 게르만어 *fleuganą (“to fly”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7578,7 +7578,7 @@ window.GRE_WORDS = [
     "id": "d11-083",
     "day": 11,
     "word": "flimsy",
-    "meaning": "부서지기 쉬운, 약한,\n(주장이)설득력이 없는\n\nTENTATIVE, unconvincing",
+    "meaning": "부서지기 쉬운, 약한,\n(주장이)설득력이 없는\n\n어원 불확실. flim-flam('허튼소리') 또는 film('얇은 막')의 음위 전환과 관련되었을 가능성이 있음.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7592,7 +7592,7 @@ window.GRE_WORDS = [
     "id": "d11-085",
     "day": 11,
     "word": "flippant",
-    "meaning": "경박한, 성의 없는\n(가볍고 무례한)\n\n(flip(손가락으로 휙뽑다) + ant)\n\nGiddy, flip, facetious, frivolous\n\nCf. Flippancy",
+    "meaning": "경박한, 성의 없는\n(가볍고 무례한)\n\n유래: 북부 잉글랜드 방언 flippand('수다스럽고 경박한') < flip('재잘거리다'); 더 먼 어원은 불확실.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7606,35 +7606,35 @@ window.GRE_WORDS = [
     "id": "d11-087",
     "day": 11,
     "word": "florid",
-    "meaning": "장식이 너무 많은,\n화려한, 얼굴이 발그레한\n\n(flos, flor-(꽃))\n\nFlamboyant; ruddy",
+    "meaning": "장식이 너무 많은,\n화려한, 얼굴이 발그레한\n\n유래: 프랑스어 floride (“flourishing”), from 라틴어 floridus (“flowery, blooming”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-088",
     "day": 11,
     "word": "flounder",
-    "meaning": "간신히 나아가다, ; 버둥거리다, 몸부림치다\n\n(founder(배에 물이 차서 가라앉다) )\n\nStagger; struggle",
+    "meaning": "간신히 나아가다; 버둥거리다, 몸부림치다\n\n유래: 중세 영어 flowndre; 앵글로노르만어 floundre; Old Northern 프랑스어 flondre; 고대 노르드어 flyðra.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-089",
     "day": 11,
     "word": "flourish",
-    "meaning": "번성하다; (칼, 깃발 등을) 휘두르다, (비유적) 과시하다;\n(말, 글의) 수식\n\n(flos, flor-(꽃))\n\nGrow ; brandish",
+    "meaning": "번성하다; (칼, 깃발 등을) 휘두르다, (비유적) 과시하다;\n(말, 글의) 수식\n\n유래: 중세 영어 floryschen; 고대 프랑스어 florir; 후기 라틴어 flōrīre; 라틴어 flōrēre.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-090",
     "day": 11,
     "word": "flout",
-    "meaning": "(법, 규칙)\n공공연히 무시하다;\n경멸하다, 비웃다, 멸시하다\n\nSPURN, decry, defy, affront, disregard",
+    "meaning": "(법, 규칙)\n공공연히 무시하다;\n경멸하다, 비웃다, 멸시하다\n\n유래: 중세 영어 flouten (“to play the flute”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-091",
     "day": 11,
     "word": "fluid",
-    "meaning": "유동적인, 확정되지 않은\n\nUNSTABLE",
+    "meaning": "유동적인, 확정되지 않은\n\n유래: 중세 영어 fluid; 라틴어 fluidus (“flowing; fluid”); 라틴어 fluō (“to flow”); 원시 인도유럽어 *bʰleh₁- (“to swell; surge; overflow; run”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7648,42 +7648,42 @@ window.GRE_WORDS = [
     "id": "d11-093",
     "day": 11,
     "word": "flummox",
-    "meaning": "(어찌할 바 모를만큼)\n당황하게 하다\n\nCONFOUND, befuddle, baffle",
+    "meaning": "(어찌할 바 모를만큼)\n당황하게 하다\n\n어원 불확실. 영국 방언에서 생긴 말로 추정.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-094",
     "day": 11,
     "word": "fluster",
-    "meaning": "(특히 너무 많은 일로)\n허둥지둥하게 만들다\n\n(flaustra(서두르다, 부산떨다))\n\nBaffle, bewilder",
+    "meaning": "(특히 너무 많은 일로)\n허둥지둥하게 만들다\n\n유래: 중세 영어 *flostren; 북게르만어.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-095",
     "day": 11,
     "word": "flux",
-    "meaning": "흐름,\n끝없는 변동\n\n(fluere(흐르다))",
+    "meaning": "흐름,\n끝없는 변동\n\n유래: 고대 프랑스어 flux, from 라틴어 fluxus (“flow”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-096",
     "day": 11,
     "word": "foe",
-    "meaning": "적, 원수\n\n(fāh(적대적인))",
+    "meaning": "적, 원수\n\n유래: 중세 영어 fo (“foe; hostile”); 고대 영어 ġefāh (“enemy”); 원시 서게르만어 *faih; 원시 게르만어 *faihaz.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-097",
     "day": 11,
     "word": "foible",
-    "meaning": "(사소한) 기벽[약점]\n\n(flere(울다))\n\nDefect",
+    "meaning": "(사소한) 기벽[약점]\n\n유래: 프랑스어 foible (“feeble”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
     "id": "d11-098",
     "day": 11,
     "word": "foil",
-    "meaning": "방해하다,\n막다,\n좌절시키다\n\nThwart, frustrate",
+    "meaning": "방해하다,\n막다,\n좌절시키다\n\n유래: 중세 영어 foyle; 중세 프랑스어 fueille; 고대 프랑스어 fueille (“plant leaf”); 후기 라틴어 folia.",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7697,7 +7697,7 @@ window.GRE_WORDS = [
     "id": "d11-100",
     "day": 11,
     "word": "foment",
-    "meaning": "선동하다, 자극하다\n\n(fovere(열을 가하다))\n\nGALVANIZE, instigate, incite",
+    "meaning": "선동하다, 자극하다\n\n유래: 중세 영어 fomenten; 고대 프랑스어 fomenter; 후기 라틴어 fōmentāre; 라틴어 fōmentum (“lotion”).",
     "source": "https://quizlet.com/kr/1206327488/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-11-flash-cards"
   },
   {
@@ -7795,7 +7795,7 @@ window.GRE_WORDS = [
     "id": "d12-014",
     "day": 12,
     "word": "formidable",
-    "meaning": "1. 겁먹게 하는, 위협적인, 경외감을 갖게 하는, 가공할 만한 daunting \n2. 만만치 않은, 감당하기 어려운",
+    "meaning": "1. 겁먹게 하는, 위협적인, 경외감을 갖게 하는, 가공할 만한 daunting\n2. 만만치 않은, 감당하기 어려운",
     "source": "https://quizlet.com/kr/1208393194/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-12-flash-cards"
   },
   {
@@ -9097,7 +9097,7 @@ window.GRE_WORDS = [
     "id": "d13-100",
     "day": 13,
     "word": "hortative",
-    "meaning": "(조언, 연설 등이) 격려하는, 충고의, 권고적인\ndidactic",
+    "meaning": "(조언이나 연설 등이) 권고하거나 격려하는",
     "source": "https://quizlet.com/kr/1208393683/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-13-flash-cards"
   },
   {
@@ -9250,7 +9250,7 @@ window.GRE_WORDS = [
   {
     "id": "d14-022",
     "day": 14,
-    "word": "idylic",
+    "word": "idyllic",
     "meaning": "목가적인, 전원적인",
     "source": "https://quizlet.com/kr/1208393879/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-14-flash-cards"
   },
@@ -9411,7 +9411,7 @@ window.GRE_WORDS = [
   {
     "id": "d14-045",
     "day": 14,
-    "word": "impassionate",
+    "word": "impassioned",
     "meaning": "열정적인, 열렬한",
     "source": "https://quizlet.com/kr/1208393879/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-14-flash-cards"
   },
@@ -9706,7 +9706,7 @@ window.GRE_WORDS = [
     "id": "d14-087",
     "day": 14,
     "word": "inadequate",
-    "meaning": "부적당한, 불충분한\nscarce",
+    "meaning": "부적당한; 불충분한, 부족한",
     "source": "https://quizlet.com/kr/1208393879/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-14-flash-cards"
   },
   {
@@ -9867,7 +9867,7 @@ window.GRE_WORDS = [
     "id": "d15-010",
     "day": 15,
     "word": "incorporate",
-    "meaning": "흡수하다, (부분으로) 포함시키다; \n통합시키다",
+    "meaning": "흡수하다, (부분으로) 포함시키다;\n통합시키다",
     "source": "https://quizlet.com/kr/1208393967/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-15-flash-cards"
   },
   {
@@ -10049,7 +10049,7 @@ window.GRE_WORDS = [
     "id": "d15-036",
     "day": 15,
     "word": "inept",
-    "meaning": "서투른\nunequal",
+    "meaning": "서투른, 무능한; 부적절한",
     "source": "https://quizlet.com/kr/1208393967/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-15-flash-cards"
   },
   {
@@ -10111,7 +10111,7 @@ window.GRE_WORDS = [
   {
     "id": "d15-045",
     "day": 15,
-    "word": "infintesimal",
+    "word": "infinitesimal",
     "meaning": "극소의, 매우 작은",
     "source": "https://quizlet.com/kr/1208393967/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-15-flash-cards"
   },
@@ -10546,14 +10546,14 @@ window.GRE_WORDS = [
     "id": "d16-007",
     "day": 16,
     "word": "intrepid",
-    "meaning": "겁없는, 대담한\naggressive",
+    "meaning": "겁 없는, 대담한",
     "source": "https://quizlet.com/kr/1208394035/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-16-flash-cards"
   },
   {
     "id": "d16-008",
     "day": 16,
     "word": "intricate",
-    "meaning": "복잡한, 얽힌\nconvoulted",
+    "meaning": "복잡한, 뒤얽힌",
     "source": "https://quizlet.com/kr/1208394035/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-16-flash-cards"
   },
   {
@@ -10734,7 +10734,7 @@ window.GRE_WORDS = [
   {
     "id": "d16-034",
     "day": 16,
-    "word": "irrelevent",
+    "word": "irrelevant",
     "meaning": "무관한, 중요하지 않은, (지금 다루어지는 문제와) 관련없는\nextraneous, immaterial",
     "source": "https://quizlet.com/kr/1208394035/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-16-flash-cards"
   },
@@ -10867,7 +10867,7 @@ window.GRE_WORDS = [
   {
     "id": "d16-053",
     "day": 16,
-    "word": "jubiliant",
+    "word": "jubilant",
     "meaning": "승리감이 넘치는, 환희에 가득찬, 매우 기뻐하는",
     "source": "https://quizlet.com/kr/1208394035/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-16-flash-cards"
   },
@@ -10889,7 +10889,7 @@ window.GRE_WORDS = [
     "id": "d16-056",
     "day": 16,
     "word": "jumble",
-    "meaning": "1.뒤범벅이 되다 \n2.뒤범벅, 혼란 gallimaufry",
+    "meaning": "1.뒤범벅이 되다\n2.뒤범벅, 혼란 gallimaufry",
     "source": "https://quizlet.com/kr/1208394035/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-16-flash-cards"
   },
   {
@@ -11064,7 +11064,7 @@ window.GRE_WORDS = [
     "id": "d16-081",
     "day": 16,
     "word": "largesse",
-    "meaning": "후함\nphilanthropy",
+    "meaning": "후한 증여; 아낌없이 베풂",
     "source": "https://quizlet.com/kr/1208394035/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-16-flash-cards"
   },
   {
@@ -11777,7 +11777,7 @@ window.GRE_WORDS = [
   {
     "id": "d17-083",
     "day": 17,
-    "word": "maudin",
+    "word": "maudlin",
     "meaning": "지나치게 감상적인, 취하면 우는",
     "source": "https://quizlet.com/kr/1208394115/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-17-flash-cards"
   },
@@ -12022,7 +12022,7 @@ window.GRE_WORDS = [
   {
     "id": "d18-018",
     "day": 18,
-    "word": "milleu",
+    "word": "milieu",
     "meaning": "(한 사람의) 사회적 환경",
     "source": "https://quizlet.com/kr/1208394191/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-18-flash-cards"
   },
@@ -13681,7 +13681,7 @@ window.GRE_WORDS = [
   {
     "id": "d20-055",
     "day": 20,
-    "word": "perservere",
+    "word": "persevere",
     "meaning": "인내하다, 견디다",
     "source": "https://quizlet.com/kr/1208394383/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-20-flash-cards"
   },
@@ -14256,7 +14256,7 @@ window.GRE_WORDS = [
     "id": "d21-037",
     "day": 21,
     "word": "precipitate",
-    "meaning": "1. 촉발시키다, 재촉하다\n2. 가라앉게 하다, 침전하게 하다 \n3. 성급한 rash\n4. (변화, 감소) 급격한",
+    "meaning": "1. 촉발시키다, 재촉하다\n2. 가라앉게 하다, 침전하게 하다\n3. 성급한 rash\n4. (변화, 감소) 급격한",
     "source": "https://quizlet.com/kr/1208394462/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-21-flash-cards"
   },
   {
@@ -14479,7 +14479,7 @@ window.GRE_WORDS = [
   {
     "id": "d21-069",
     "day": 21,
-    "word": "presumptous",
+    "word": "presumptuous",
     "meaning": "건방진, 주제넘은\nimpertinent",
     "source": "https://quizlet.com/kr/1208394462/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-21-flash-cards"
   },
@@ -14781,7 +14781,7 @@ window.GRE_WORDS = [
     "id": "d22-012",
     "day": 22,
     "word": "propitiate",
-    "meaning": "비위를 맞추다, 달래다\ncoddle",
+    "meaning": "달래다, 비위를 맞추어 화를 누그러뜨리다",
     "source": "https://quizlet.com/kr/1208394531/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-22-flash-cards"
   },
   {
@@ -15124,7 +15124,7 @@ window.GRE_WORDS = [
     "id": "d22-061",
     "day": 22,
     "word": "qualm",
-    "meaning": "양심의 가책, 양심의 가책 때문에 불편한 마음\ninhibition",
+    "meaning": "양심의 가책; 불안, 의구심",
     "source": "https://quizlet.com/kr/1208394531/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-22-flash-cards"
   },
   {
@@ -15263,7 +15263,7 @@ window.GRE_WORDS = [
   {
     "id": "d22-081",
     "day": 22,
-    "word": "railery",
+    "word": "raillery",
     "meaning": "(악의 없는) 농담",
     "source": "https://quizlet.com/kr/1208394531/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-22-flash-cards"
   },
@@ -16111,7 +16111,7 @@ window.GRE_WORDS = [
     "id": "d24-002",
     "day": 24,
     "word": "resignation",
-    "meaning": "사퇴; 체념, 포기, 단념\ndiffidence",
+    "meaning": "사임, 사직; 체념, 수용",
     "source": "https://quizlet.com/kr/1208394665/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-24-flash-cards"
   },
   {
@@ -16622,7 +16622,7 @@ window.GRE_WORDS = [
     "id": "d24-075",
     "day": 24,
     "word": "salient",
-    "meaning": "눈에 띄든, 중요한\nvisible",
+    "meaning": "눈에 띄는, 두드러진; 중요한",
     "source": "https://quizlet.com/kr/1208394665/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-24-flash-cards"
   },
   {
@@ -16839,7 +16839,7 @@ window.GRE_WORDS = [
     "id": "d25-006",
     "day": 25,
     "word": "score",
-    "meaning": "1. 악보, 총보 \n2. 편곡하다, (영화음악 등을) 작곡하다",
+    "meaning": "1. 악보, 총보\n2. 편곡하다, (영화음악 등을) 작곡하다",
     "source": "https://quizlet.com/kr/1208394747/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-25-flash-cards"
   },
   {
@@ -16951,7 +16951,7 @@ window.GRE_WORDS = [
     "id": "d25-022",
     "day": 25,
     "word": "sedulous",
-    "meaning": "근면 성실한, 주의 깊고 부지런한\nasssiduous",
+    "meaning": "근면 성실한, 주의 깊고 부지런한",
     "source": "https://quizlet.com/kr/1208394747/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-25-flash-cards"
   },
   {
@@ -17112,7 +17112,7 @@ window.GRE_WORDS = [
     "id": "d25-045",
     "day": 25,
     "word": "serendipity",
-    "meaning": "운수 좋은 뜻밖의 발견(물)\ncontingency",
+    "meaning": "뜻밖의 행운; 운 좋게 이루어진 뜻밖의 발견",
     "source": "https://quizlet.com/kr/1208394747/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-25-flash-cards"
   },
   {
@@ -17385,7 +17385,7 @@ window.GRE_WORDS = [
     "id": "d25-084",
     "day": 25,
     "word": "skittish",
-    "meaning": "1. (동물, 사람) 잘 놀라는, 겁 많은 \n2. (사람) 가벼운, 경박한\nrestive",
+    "meaning": "1. (동물, 사람) 잘 놀라는, 겁 많은\n2. (사람) 가벼운, 경박한\nrestive",
     "source": "https://quizlet.com/kr/1208394747/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-25-flash-cards"
   },
   {
@@ -17783,8 +17783,8 @@ window.GRE_WORDS = [
   {
     "id": "d26-041",
     "day": 26,
-    "word": "sprited",
-    "meaning": "활기(용기, 열의) 넘치는\nvigorous",
+    "word": "spirited",
+    "meaning": "활기찬, 기운찬; 용기와 열의가 넘치는",
     "source": "https://quizlet.com/kr/1208394805/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-26-flash-cards"
   },
   {
@@ -17840,7 +17840,7 @@ window.GRE_WORDS = [
     "id": "d26-049",
     "day": 26,
     "word": "spurn",
-    "meaning": "경멸하며 거절하다, 퇴짜놓다\nflout",
+    "meaning": "경멸하며 거절하다, 퇴짜 놓다",
     "source": "https://quizlet.com/kr/1208394805/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-26-flash-cards"
   },
   {
@@ -17875,7 +17875,7 @@ window.GRE_WORDS = [
     "id": "d26-054",
     "day": 26,
     "word": "squarely",
-    "meaning": "1. 정면으로, 똑바로\n2. 직접적으로, 단호하게\n3. 정확히, 바로\n\nsquare(반듯한, 공정한) + -ly(부사형)",
+    "meaning": "1. 정면으로, 똑바로\n2. 직접적으로, 단호하게\n3. 정확히, 바로\n\n구성: square + -ly.",
     "source": "https://quizlet.com/kr/1208394805/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-26-flash-cards"
   },
   {
@@ -18106,7 +18106,7 @@ window.GRE_WORDS = [
     "id": "d26-087",
     "day": 26,
     "word": "strain",
-    "meaning": "1. 잡아당기다; 무리하게 사용하다\n2. 긴장시키다; 부담을 주다\n3. 긴장, 부담; (근육 등의) 염좌\n4. (동식물·병원체의) 계통, 변종\n\n고대 프랑스어 estreindre(단단히 묶다, 압박하다) ← 라틴어 stringere(팽팽하게 당기다)",
+    "meaning": "1. 잡아당기다; 무리하게 사용하다\n2. 긴장시키다; 부담을 주다\n3. 긴장, 부담; (근육 등의) 염좌\n4. (동식물·병원체의) 계통, 변종\n\n유래: 중세 영어 streen; 고대 영어 strēon; 원시 서게르만어 *streun; 원시 게르만어 *streuną (“heap, treasure, profit, gain”).",
     "source": "https://quizlet.com/kr/1208394805/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-26-flash-cards"
   },
   {
@@ -18470,7 +18470,7 @@ window.GRE_WORDS = [
     "id": "d27-039",
     "day": 27,
     "word": "superlative",
-    "meaning": "최고의, 최상급의\npraiseworthy",
+    "meaning": "최고의, 최상의; 최상급의",
     "source": "https://quizlet.com/kr/1208394887/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-27-flash-cards"
   },
   {
@@ -18686,7 +18686,7 @@ window.GRE_WORDS = [
   {
     "id": "d27-070",
     "day": 27,
-    "word": "synchoronous",
+    "word": "synchronous",
     "meaning": "동시발생의",
     "source": "https://quizlet.com/kr/1208394887/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-27-flash-cards"
   },
@@ -19170,7 +19170,7 @@ window.GRE_WORDS = [
     "id": "d28-039",
     "day": 28,
     "word": "tolerate",
-    "meaning": "용인해 주다, 차이를 인정해주다\nBrook",
+    "meaning": "용인하다, 참다; 차이를 인정하다",
     "source": "https://quizlet.com/kr/1208394973/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-28-flash-cards"
   },
   {
@@ -19849,14 +19849,14 @@ window.GRE_WORDS = [
     "id": "d29-036",
     "day": 29,
     "word": "unprecedented",
-    "meaning": "전례없는, 공전의 \nnovel, unexampled",
+    "meaning": "전례없는, 공전의\nnovel, unexampled",
     "source": "https://quizlet.com/kr/1208395376/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-29-flash-cards"
   },
   {
     "id": "d29-037",
     "day": 29,
     "word": "unqualified",
-    "meaning": "절대적인, 무조건적인 \nunalloyed",
+    "meaning": "절대적인, 무조건적인\nunalloyed",
     "source": "https://quizlet.com/kr/1208395376/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-29-flash-cards"
   },
   {
@@ -20192,7 +20192,7 @@ window.GRE_WORDS = [
     "id": "d29-085",
     "day": 29,
     "word": "variance",
-    "meaning": "격차, 차이, 불일치 \ndisparity",
+    "meaning": "격차, 차이, 불일치\ndisparity",
     "source": "https://quizlet.com/kr/1208395376/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-29-flash-cards"
   },
   {
@@ -20346,7 +20346,7 @@ window.GRE_WORDS = [
     "id": "d30-007",
     "day": 30,
     "word": "vernacular",
-    "meaning": "1. (특정 지역・집단이 쓰는) 말, 토착어, 방언\n2. (국어,어법,말이) 자국의, 토착의\n2. (건축의) 일반 주택 양식 \n4. (건축,공예 등이) 그 지방(시대) 특유의\ncolloquial language, common parlance, dialect",
+    "meaning": "1. (특정 지역・집단이 쓰는) 말, 토착어, 방언\n2. (국어,어법,말이) 자국의, 토착의\n2. (건축의) 일반 주택 양식\n4. (건축,공예 등이) 그 지방(시대) 특유의\ncolloquial language, common parlance, dialect",
     "source": "https://quizlet.com/kr/1208395445/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-30-flash-cards"
   },
   {
@@ -20521,7 +20521,7 @@ window.GRE_WORDS = [
     "id": "d30-032",
     "day": 30,
     "word": "vitriolic",
-    "meaning": "신랄한 \nacerbic",
+    "meaning": "신랄한\nacerbic",
     "source": "https://quizlet.com/kr/1208395445/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-30-flash-cards"
   },
   {
@@ -20556,7 +20556,7 @@ window.GRE_WORDS = [
     "id": "d30-037",
     "day": 30,
     "word": "vociferous",
-    "meaning": "떠들석한, 큰 소리로 외치는, 소란스런 \nclamorous, vocal",
+    "meaning": "떠들석한, 큰 소리로 외치는, 소란스런\nclamorous, vocal",
     "source": "https://quizlet.com/kr/1208395445/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-30-flash-cards"
   },
   {
@@ -20654,7 +20654,7 @@ window.GRE_WORDS = [
     "id": "d30-051",
     "day": 30,
     "word": "wag",
-    "meaning": "1. (꼬리나 손을)흔들다. \n2. 익살꾼, 재치가 풍부한 사람",
+    "meaning": "1. (꼬리나 손을)흔들다.\n2. 익살꾼, 재치가 풍부한 사람",
     "source": "https://quizlet.com/kr/1208395445/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-30-flash-cards"
   },
   {
@@ -20843,7 +20843,7 @@ window.GRE_WORDS = [
     "id": "d30-078",
     "day": 30,
     "word": "winning",
-    "meaning": "매력적인, 사람을 끄는 \nengaging, winsome",
+    "meaning": "매력적인, 사람을 끄는\nengaging, winsome",
     "source": "https://quizlet.com/kr/1208395445/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-30-flash-cards"
   },
   {
@@ -20969,7 +20969,7 @@ window.GRE_WORDS = [
     "id": "d30-096",
     "day": 30,
     "word": "zealous",
-    "meaning": "(정치, 종교 등에 대하여) 열심인, 열렬한 \nstaunch",
+    "meaning": "(정치, 종교 등에 대하여) 열심인, 열렬한\nstaunch",
     "source": "https://quizlet.com/kr/1208395445/%EA%B1%B0%EB%A7%8C%EC%96%B4-100-day-30-flash-cards"
   },
   {
