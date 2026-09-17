@@ -6,51 +6,53 @@
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="theme-color" content="#f5f6f8">
   <title>GRE Vocabulary</title>
-  <link rel="stylesheet" href="styles.css?v=12">
+  <link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
   <main class="app-shell">
-    <header class="topbar">
-      <div>
-        <p class="eyebrow">GRE · VERBAL REASONING</p>
-        <h1>Vocabulary</h1>
-      </div>
-      <div class="header-actions">
-        <button class="text-button" id="shuffleButton" type="button" aria-label="남은 단어 섞기">섞기</button>
-        <button class="text-button muted" id="resetButton" type="button" aria-label="학습 기록 초기화">처음부터</button>
-      </div>
-    </header>
+    <div class="top-stack">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">GRE · VERBAL REASONING</p>
+          <h1>Vocabulary</h1>
+        </div>
+        <div class="header-actions">
+          <button class="text-button" id="shuffleButton" type="button" aria-label="남은 단어 섞기">섞기</button>
+          <button class="text-button muted" id="resetButton" type="button" aria-label="학습 기록 초기화">처음부터</button>
+        </div>
+      </header>
 
-    <section class="voice-loader" id="voiceLoader" role="status" aria-live="polite">
-      <div class="voice-loader-copy">
-        <span class="voice-loader-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12"></path></svg>
-        </span>
-        <span class="voice-loader-text">
-          <strong id="voiceStatusTitle">음성 모델 준비 중</strong>
-          <small id="voiceStatusDetail">고품질 영어 음성을 연결하고 있어요.</small>
-        </span>
-        <span class="voice-loader-percent" id="voiceProgressText">연결 중</span>
-      </div>
-      <div class="voice-loader-track" aria-hidden="true">
-        <div class="voice-loader-fill" id="voiceProgressFill"></div>
-      </div>
-    </section>
+      <section class="voice-loader" id="voiceLoader" role="status" aria-live="polite">
+        <div class="voice-loader-copy">
+          <span class="voice-loader-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12"></path></svg>
+          </span>
+          <span class="voice-loader-text">
+            <strong id="voiceStatusTitle">음성 모델 준비 중</strong>
+            <small id="voiceStatusDetail">고품질 영어 음성을 연결하고 있어요.</small>
+          </span>
+          <span class="voice-loader-percent" id="voiceProgressText">연결 중</span>
+        </div>
+        <div class="voice-loader-track" aria-hidden="true">
+          <div class="voice-loader-fill" id="voiceProgressFill"></div>
+        </div>
+      </section>
 
-    <section class="progress-panel" aria-label="학습 진행 상황">
-      <div class="progress-copy">
-        <span id="progressLabel">단어를 준비하고 있어요</span>
-        <span id="progressCount">0 / 0</span>
-      </div>
-      <div class="progress-track" aria-hidden="true">
-        <div class="progress-fill" id="progressFill"></div>
-      </div>
-      <div class="stats">
-        <div><strong id="knownCount">0</strong><span>아는 단어</span></div>
-        <div><strong id="unknownCount">0</strong><span>다시 볼 단어</span></div>
-        <div><strong id="remainingCount">0</strong><span>남은 단어</span></div>
-      </div>
-    </section>
+      <section class="progress-panel" aria-label="학습 진행 상황">
+        <div class="progress-copy">
+          <span id="progressLabel">단어를 준비하고 있어요</span>
+          <span id="progressCount">0 / 0</span>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="stats">
+          <div><strong id="knownCount">0</strong><span>아는 단어</span></div>
+          <div><strong id="unknownCount">0</strong><span>다시 볼 단어</span></div>
+          <div><strong id="remainingCount">0</strong><span>남은 단어</span></div>
+        </div>
+      </section>
+    </div>
 
     <section class="study-area" aria-live="polite">
       <div class="swipe-label unknown-label" aria-hidden="true">모름</div>
@@ -68,10 +70,7 @@
               <span class="card-kicker" id="dayText">MEANING</span>
               <p class="meaning" id="meaningText">단어 데이터를 불러오고 있습니다.</p>
               <div class="meaning-note" id="meaningNote" hidden>
-                <div class="meaning-note-heading">
-                  <span>검증된 어원</span>
-                  <a id="etymologySource" href="https://en.wiktionary.org/" target="_blank" rel="noopener noreferrer">출처: Wiktionary</a>
-                </div>
+                <span class="meaning-note-title">단어 구성</span>
                 <p id="noteText"></p>
               </div>
               <p class="tap-hint">눌러서 단어 보기</p>
@@ -103,13 +102,24 @@
       </button>
     </section>
 
-    <section class="shortcut-guide" aria-label="키보드 단축키">
-      <p class="shortcut-line"><strong>키보드</strong><span><kbd>Space</kbd> 뜻 보기</span><span><kbd>←</kbd> 모름</span><span><kbd>→</kbd> 알아요</span><span><kbd>S</kbd> 발음</span></p>
-    </section>
   </main>
 
+  <button class="help-button" id="helpButton" type="button" aria-label="도움말 열기" title="도움말">?</button>
+  <dialog class="help-dialog" id="helpDialog" aria-labelledby="helpTitle">
+    <div class="help-dialog-header">
+      <h2 id="helpTitle">키보드 단축키</h2>
+      <button class="dialog-close" id="helpCloseButton" type="button" aria-label="도움말 닫기">×</button>
+    </div>
+    <div class="shortcut-list">
+      <div><kbd>Space</kbd><span>단어와 뜻 전환</span></div>
+      <div><kbd>←</kbd><span>모르는 단어</span></div>
+      <div><kbd>→</kbd><span>아는 단어</span></div>
+      <div><kbd>S</kbd><span>발음 듣기</span></div>
+    </div>
+  </dialog>
+
   <audio id="pronunciationAudio" preload="auto" playsinline></audio>
-  <script src="words.js?v=12"></script>
-  <script src="app.js?v=12"></script>
+  <script src="words.js?v=13"></script>
+  <script src="app.js?v=13"></script>
 </body>
 </html>

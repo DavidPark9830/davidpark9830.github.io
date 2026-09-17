@@ -14,7 +14,7 @@
     meaning: document.getElementById("meaningText"),
     meaningNote: document.getElementById("meaningNote"),
     note: document.getElementById("noteText"),
-    etymologySource: document.getElementById("etymologySource"),
+    helpDialog: document.getElementById("helpDialog"),
     pronounce: document.getElementById("pronounceButton"),
     pronounceText: document.getElementById("pronounceText"),
     pronunciationAudio: document.getElementById("pronunciationAudio"),
@@ -377,7 +377,6 @@
     const note = meaningParts.join("\n\n").trim();
     els.meaning.textContent = meaning;
     els.note.textContent = note;
-    els.etymologySource.href = `https://en.wiktionary.org/wiki/${encodeURIComponent(word.word)}#English`;
     els.meaningNote.hidden = !note;
     els.day.textContent = word.day ? `DAY ${String(word.day).padStart(2, "0")} · MEANING` : "MEANING";
     els.card.setAttribute("aria-label", `${word.word}. 눌러서 뜻 보기`);
@@ -646,8 +645,14 @@
     saveState();
     render();
   });
+  document.getElementById("helpButton").addEventListener("click", () => els.helpDialog.showModal());
+  document.getElementById("helpCloseButton").addEventListener("click", () => els.helpDialog.close());
+  els.helpDialog.addEventListener("click", (event) => {
+    if (event.target === els.helpDialog) els.helpDialog.close();
+  });
 
   window.addEventListener("keydown", (event) => {
+    if (els.helpDialog.open) return;
     const tag = event.target?.tagName?.toLowerCase();
     if (tag === "input" || tag === "textarea" || tag === "select") return;
     if (event.key === "ArrowLeft") {

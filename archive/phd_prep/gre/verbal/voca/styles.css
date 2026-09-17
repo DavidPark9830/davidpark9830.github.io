@@ -13,7 +13,11 @@
 
 * { box-sizing: border-box; }
 
-html, body { min-height: 100%; }
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
 body {
   margin: 0;
@@ -30,12 +34,16 @@ button { font: inherit; }
 
 .app-shell {
   width: min(100%, 760px);
-  min-height: 100vh;
+  height: 100vh;
+  height: 100dvh;
   margin: 0 auto;
-  padding: max(24px, env(safe-area-inset-top)) 22px max(28px, env(safe-area-inset-bottom));
-  display: flex;
-  flex-direction: column;
+  padding: max(16px, env(safe-area-inset-top)) 22px max(58px, calc(env(safe-area-inset-bottom) + 46px));
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  overflow: hidden;
 }
+
+.top-stack { min-width: 0; }
 
 .topbar {
   display: flex;
@@ -74,7 +82,7 @@ h1 {
 .text-button.muted { color: var(--muted); }
 
 .voice-loader {
-  margin-top: 22px;
+  margin-top: clamp(10px, 2dvh, 22px);
   padding: 13px 15px 12px;
   overflow: hidden;
   border: 1px solid rgba(44, 87, 214, .14);
@@ -175,7 +183,7 @@ h1 {
   to { transform: translateX(310%); }
 }
 
-.progress-panel { margin-top: 28px; }
+.progress-panel { margin-top: clamp(12px, 2.5dvh, 28px); }
 
 .progress-copy {
   display: flex;
@@ -224,18 +232,19 @@ h1 {
 
 .study-area {
   position: relative;
-  flex: 1;
-  min-height: 390px;
+  min-width: 0;
+  min-height: 0;
   display: grid;
   place-items: center;
-  padding: 36px 0 26px;
+  padding: clamp(12px, 3dvh, 30px) 0 clamp(10px, 2.2dvh, 24px);
 }
 
 .card-wrap {
   position: relative;
   width: min(100%, 610px);
-  height: min(50vh, 440px);
-  min-height: 330px;
+  height: 100%;
+  max-height: 440px;
+  min-height: 0;
   border-radius: 58px;
 }
 
@@ -272,7 +281,7 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 38px;
-  overflow: auto;
+  overflow: hidden;
   border: 1px solid rgba(28, 34, 52, .055);
   border-radius: inherit;
   background: linear-gradient(145deg, #ffffff 0%, #fdfdff 58%, #f8f9fd 100%);
@@ -349,31 +358,13 @@ h1 {
   text-align: left;
 }
 
-.meaning-note-heading {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 12px;
+.meaning-note-title {
+  display: block;
   margin-bottom: 7px;
-}
-
-.meaning-note-heading span {
   color: var(--accent);
   font-size: 11px;
   font-weight: 780;
   letter-spacing: .08em;
-}
-
-.meaning-note-heading a {
-  color: var(--accent);
-  font-size: 11px;
-  font-weight: 680;
-  text-decoration: none;
-}
-
-.meaning-note-heading a:hover,
-.meaning-note-heading a:focus-visible {
-  text-decoration: underline;
 }
 
 .meaning-note p {
@@ -452,27 +443,65 @@ h1 {
   color: var(--muted);
 }
 
-.shortcut-guide {
-  margin-top: 18px;
-  padding: 12px 16px;
+.help-button {
+  position: fixed;
+  z-index: 20;
+  left: max(14px, env(safe-area-inset-left));
+  bottom: max(13px, env(safe-area-inset-bottom));
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid #d5d8df;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .9);
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 760;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(28, 34, 52, .08);
+  backdrop-filter: blur(12px);
+}
+
+.help-button:hover,
+.help-button:focus-visible { color: var(--accent); border-color: rgba(44, 87, 214, .35); }
+
+.help-dialog {
+  width: min(calc(100% - 32px), 390px);
+  padding: 22px;
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: rgba(255, 255, 255, .62);
-  backdrop-filter: blur(12px);
-  overflow-x: auto;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow);
 }
 
-.shortcut-line {
-  margin: 0;
+.help-dialog::backdrop { background: rgba(23, 25, 31, .28); backdrop-filter: blur(3px); }
+
+.help-dialog-header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 18px;
-  white-space: nowrap;
+  justify-content: space-between;
+  gap: 16px;
 }
 
-.shortcut-line strong { color: var(--ink); font-size: 12px; }
-.shortcut-line span { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 12px; }
+.help-dialog h2 { margin: 0; font-size: 19px; }
+
+.dialog-close {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 9px;
+  background: var(--bg);
+  color: var(--muted);
+  font-size: 23px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.shortcut-list { margin-top: 20px; display: grid; gap: 10px; }
+.shortcut-list div { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.shortcut-list span { color: var(--muted); font-size: 13px; }
 
 kbd {
   min-width: 31px;
@@ -531,14 +560,32 @@ kbd {
   .header-actions { flex-direction: column; align-items: flex-end; }
   .stats div { padding: 11px 8px; display: grid; gap: 2px; text-align: center; }
   .stats strong { font-size: 17px; }
-  .card-wrap { height: 47vh; min-height: 315px; border-radius: 44px; }
+  .card-wrap { border-radius: 44px; }
   .card-face { padding: 28px 22px; }
   .pronounce-button { top: 15px; right: 15px; }
   .controls { gap: 8px; }
   .choice-button { padding: 11px; }
   .choice-button small { display: none; }
   .meaning-note { margin-top: 17px; padding: 12px 14px; }
-  .shortcut-line { justify-content: flex-start; gap: 14px; }
+}
+
+@media (max-height: 760px) {
+  .app-shell { padding-top: max(10px, env(safe-area-inset-top)); }
+  .eyebrow { margin-bottom: 2px; font-size: 10px; }
+  h1 { font-size: 25px; }
+  .text-button { padding: 6px 8px; }
+  .progress-panel { margin-top: 10px; }
+  .progress-track { margin-top: 6px; }
+  .stats { margin-top: 9px; }
+  .stats div { padding-top: 8px; padding-bottom: 8px; }
+  .study-area { padding-top: 9px; padding-bottom: 9px; }
+  .choice-button { min-height: 56px; padding-top: 8px; padding-bottom: 8px; }
+  .card-face { padding-top: 24px; padding-bottom: 24px; }
+  .card-kicker { margin-bottom: 12px; }
+  .meaning { font-size: clamp(18px, 3.7vw, 26px); line-height: 1.4; }
+  .meaning-note { margin-top: 12px; padding: 10px 13px; }
+  .meaning-note p { font-size: clamp(12px, 2.2vw, 15px); line-height: 1.45; }
+  .tap-hint { bottom: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
