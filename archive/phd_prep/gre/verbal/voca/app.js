@@ -53,6 +53,8 @@
   let pronunciationBusy = false;
   let pronunciationRequest = 0;
   let voiceLoaderTimer = null;
+  let userActivatedAudio = false;
+  let mediaElementUnlocked = false;
 
   function shuffle(items) {
     const result = [...items];
@@ -245,6 +247,40 @@
     }
   }
 
+  function activateAudio(event) {
+    userActivatedAudio = true;
+
+    const manualPronunciation = event?.key?.toLowerCase() === "s"
+      || event?.target?.closest?.("#pronounceButton");
+    if (manualPronunciation || mediaElementUnlocked) return;
+
+    const audio = els.pronunciationAudio;
+    if (!audio.currentSrc && !audio.src) return;
+
+    const wasMuted = audio.muted;
+    audio.muted = true;
+    try {
+      const playback = audio.play();
+      if (playback?.then) {
+        playback.then(() => {
+          mediaElementUnlocked = true;
+          audio.pause();
+          audio.currentTime = 0;
+          audio.muted = wasMuted;
+        }).catch(() => {
+          audio.muted = wasMuted;
+        });
+      } else {
+        mediaElementUnlocked = true;
+        audio.pause();
+        audio.currentTime = 0;
+        audio.muted = wasMuted;
+      }
+    } catch {
+      audio.muted = wasMuted;
+    }
+  }
+
   function setPronunciationActive(active) {
     els.pronounce.classList.toggle("is-speaking", active);
     els.pronounce.setAttribute("aria-pressed", String(active));
@@ -315,7 +351,7 @@
         state: "ready"
       });
       dismissVoiceLoader(1800);
-      void preparePronunciation(currentWord());
+      void preparePronunciation(currentWord(), true);
     } catch (error) {
       console.error("Piper voice initialization failed", error);
       piperStatus = "fallback";
@@ -328,6 +364,7 @@
         state: "fallback"
       });
       dismissVoiceLoader(5000);
+      if (userActivatedAudio) window.setTimeout(() => pronounce(true), 0);
     }
   }
 
@@ -380,7 +417,11 @@
     els.meaningNote.hidden = !note;
     els.day.textContent = word.day ? `DAY ${String(word.day).padStart(2, "0")} · MEANING` : "MEANING";
     els.card.setAttribute("aria-label", `${word.word}. 눌러서 뜻 보기`);
-    void preparePronunciation(word);
+    if (piperStatus === "fallback") {
+      if (userActivatedAudio) window.setTimeout(() => pronounce(true), 0);
+    } else {
+      void preparePronunciation(word, true);
+    }
   }
 
   function classify(result) {
@@ -455,6 +496,10 @@
 
   function useBrowserFallback(error, word, requestId) {
     if (requestId !== pronunciationRequest || piperStatus !== "ready") return;
+    if (error?.name === "NotAllowedError") {
+      finishPronunciation(requestId);
+      return;
+    }
     console.error("Piper pronunciation failed", error);
     piperStatus = "fallback";
     activeAudio = null;
@@ -470,7 +515,7 @@
     pronounceWithBrowser(word, requestId);
   }
 
-  function preparePronunciation(word) {
+  function preparePronunciation(word, autoPlay = false) {
     if (!word || piperStatus !== "ready") return Promise.resolve();
     const wordId = String(word.id);
     const requestId = ++preparationRequest;
@@ -491,6 +536,7 @@
         preparedAudio = { audio, url, wordId };
         els.pronounce.disabled = false;
         els.pronounceText.textContent = "발음";
+        if (autoPlay && userActivatedAudio && String(currentWord()?.id) === wordId) pronounce(true);
       } catch (error) {
         if (requestId !== preparationRequest) return;
         console.error("Piper pronunciation preparation failed", error);
@@ -498,6 +544,7 @@
         els.pronounce.disabled = !speechSupported;
         els.pronounceText.textContent = "발음";
         els.pronounce.title = speechSupported ? "브라우저 기본 영어 음성" : "음성을 재생할 수 없습니다.";
+        if (autoPlay && userActivatedAudio) window.setTimeout(() => pronounce(true), 0);
       }
     });
     return preparationQueue;
@@ -506,7 +553,7 @@
   function pronounceWithPiper(word, requestId) {
     if (!preparedAudio || preparedAudio.wordId !== String(word.id)) {
       finishPronunciation(requestId);
-      void preparePronunciation(word);
+      void preparePronunciation(word, true);
       return;
     }
 
@@ -520,7 +567,10 @@
     els.pronounceText.textContent = "재생 중";
     try {
       const playback = audio.play();
-      if (playback?.catch) playback.catch((error) => useBrowserFallback(error, word, requestId));
+      if (playback?.then) {
+        playback.then(() => { mediaElementUnlocked = true; })
+          .catch((error) => useBrowserFallback(error, word, requestId));
+      }
     } catch (error) {
       useBrowserFallback(error, word, requestId);
     }
@@ -560,15 +610,15 @@
     }
   }
 
-  function pronounce() {
+  function pronounce(automatic = false) {
     const word = currentWord();
     if (!word || piperStatus === "loading") return;
     if (piperStatus === "ready" && (!preparedAudio || preparedAudio.wordId !== String(word.id))) {
-      void preparePronunciation(word);
+      void preparePronunciation(word, true);
       return;
     }
     if (pronunciationBusy || activeAudio || activeUtterance) {
-      stopPronunciation();
+      if (!automatic) stopPronunciation();
       return;
     }
 
@@ -626,7 +676,7 @@
   });
 
   els.card.addEventListener("click", flip);
-  els.pronounce.addEventListener("click", pronounce);
+  els.pronounce.addEventListener("click", () => pronounce(false));
   document.getElementById("unknownButton").addEventListener("click", () => classify("unknown"));
   document.getElementById("knownButton").addEventListener("click", () => classify("known"));
   document.getElementById("shuffleButton").addEventListener("click", () => {
@@ -652,6 +702,7 @@
   });
 
   window.addEventListener("keydown", (event) => {
+    activateAudio(event);
     if (els.helpDialog.open) return;
     const tag = event.target?.tagName?.toLowerCase();
     if (tag === "input" || tag === "textarea" || tag === "select") return;
@@ -669,9 +720,11 @@
     }
     if (event.key.toLowerCase() === "s" && !event.metaKey && !event.ctrlKey && !event.altKey) {
       event.preventDefault();
-      pronounce();
+      pronounce(false);
     }
   });
+
+  window.addEventListener("pointerdown", activateAudio, { capture: true });
 
   window.startVocabularySession = () => {
     shuffleCurrentQueue();
