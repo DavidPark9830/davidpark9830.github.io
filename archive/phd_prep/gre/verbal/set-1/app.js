@@ -114,7 +114,7 @@ function questionHTML(question) {
   }
 
   const isMulti = question.type === "multi";
-  html += `<div class="choices${isMulti ? " multi" : ""}>`;
+  html += `<div class="choices${isMulti ? " multi" : ""}">`;
   question.choices.forEach(choice => {
     html += `<label class="choice"><input type="${isMulti ? "checkbox" : "radio"}" name="answer" value="${choice.key}" ${selected.includes(choice.key) ? "checked" : ""}><span class="choice-key">${choice.key}</span><span class="choice-text">${choice.text}</span></label>`;
   });

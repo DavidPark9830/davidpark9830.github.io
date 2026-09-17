@@ -226,7 +226,7 @@ function renderHTML(question, index) {
   }
   const isMulti = question.type === "multi";
   const selected = state.answers[index] || [];
-  body += `<div class="choices${isMulti ? " multi" : ""}>`;
+  body += `<div class="choices${isMulti ? " multi" : ""}">`;
   question.choices.forEach(choice => {
     body += `<label class="choice"><input type="${isMulti ? "checkbox" : "radio"}" name="answer" value="${choice.key}" ${selected.includes(choice.key) ? "checked" : ""}><span class="choice-key">${choice.key}</span><span class="choice-text">${choice.text}</span></label>`;
   });
@@ -263,7 +263,7 @@ function questionHTML(question) {
   const selected = state.answers[index] || [];
   if (isMulti) html = `<div class="directions">Select all the answer choices that apply.</div>${html}`;
   else if (question.type !== "qc") html = `<div class="directions">Select one answer choice.</div>${html}`;
-  html += `<div class="choices${isMulti ? " multi" : ""}>`;
+  html += `<div class="choices${isMulti ? " multi" : ""}">`;
   question.choices.forEach(choice => {
     html += `<label class="choice"><input type="${isMulti ? "checkbox" : "radio"}" name="answer" value="${choice.key}" ${selected.includes(choice.key) ? "checked" : ""}><span class="choice-key">${choice.key}</span><span class="choice-text">${choice.text}</span></label>`;
   });
