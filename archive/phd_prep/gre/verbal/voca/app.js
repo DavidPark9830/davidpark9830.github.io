@@ -62,24 +62,85 @@
 
   function freshState() {
     return {
-      queue: shuffle(words.map((word) => String(word.id))),
+      unseen: shuffle(words.map((word) => String(word.id))),
+      reviewQueue: [],
       known: [],
       missed: {},
+      lastShown: null,
       startedAt: Date.now()
     };
+  }
+
+  function sanitizeMissed(missed, knownSet) {
+    if (!missed || typeof missed !== "object") return {};
+    return Object.fromEntries(
+      Object.entries(missed)
+        .map(([id, count]) => [String(id), Math.max(1, Number(count) || 1)])
+        .filter(([id]) => byId.has(id) && !knownSet.has(id))
+    );
+  }
+
+  function uniqueValidIds(ids, excluded = new Set()) {
+    const seen = new Set();
+    return (Array.isArray(ids) ? ids : [])
+      .map(String)
+      .filter((id) => byId.has(id) && !excluded.has(id) && !seen.has(id) && seen.add(id));
+  }
+
+  function shuffledReview(ids, lastShown) {
+    const result = shuffle(ids);
+    if (result.length > 1 && result[0] === lastShown) {
+      const swapIndex = 1 + Math.floor(Math.random() * (result.length - 1));
+      [result[0], result[swapIndex]] = [result[swapIndex], result[0]];
+    }
+    return result;
   }
 
   function loadState() {
     if (!words.length) return freshState();
     try {
       const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-      if (!saved || !Array.isArray(saved.queue) || !Array.isArray(saved.known)) return freshState();
-      const known = saved.known.map(String).filter((id) => byId.has(id));
+      if (!saved || !Array.isArray(saved.known)) return freshState();
+      const known = uniqueValidIds(saved.known);
       const knownSet = new Set(known);
-      let queue = saved.queue.map(String).filter((id) => byId.has(id) && !knownSet.has(id));
-      const missing = words.map((word) => String(word.id)).filter((id) => !knownSet.has(id) && !queue.includes(id));
-      queue = [...queue, ...shuffle(missing)];
-      return { queue, known, missed: saved.missed || {}, startedAt: saved.startedAt || Date.now() };
+      const missed = sanitizeMissed(saved.missed, knownSet);
+      const missedSet = new Set(Object.keys(missed));
+      const excluded = new Set([...knownSet, ...missedSet]);
+
+      if (Array.isArray(saved.unseen) && Array.isArray(saved.reviewQueue)) {
+        const savedUnseen = uniqueValidIds(saved.unseen, excluded);
+        const savedUnseenSet = new Set(savedUnseen);
+        const addedWords = words
+          .map((word) => String(word.id))
+          .filter((id) => !excluded.has(id) && !savedUnseenSet.has(id));
+        const unseen = [...savedUnseen, ...shuffle(addedWords)];
+        const reviewQueue = unseen.length
+          ? []
+          : uniqueValidIds(saved.reviewQueue, knownSet).filter((id) => missedSet.has(id));
+        return {
+          unseen,
+          reviewQueue,
+          known,
+          missed,
+          lastShown: saved.lastShown ? String(saved.lastShown) : null,
+          startedAt: saved.startedAt || Date.now()
+        };
+      }
+
+      if (!Array.isArray(saved.queue)) return freshState();
+      const queuedUnseen = uniqueValidIds(saved.queue, excluded);
+      const queuedSet = new Set(queuedUnseen);
+      const remainingUnseen = words
+        .map((word) => String(word.id))
+        .filter((id) => !excluded.has(id) && !queuedSet.has(id));
+      return {
+        unseen: [...queuedUnseen, ...shuffle(remainingUnseen)],
+        reviewQueue: [],
+        known,
+        missed,
+        lastShown: null,
+        startedAt: saved.startedAt || Date.now()
+      };
     } catch {
       return freshState();
     }
@@ -89,8 +150,27 @@
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   }
 
+  function activeMissedIds() {
+    const knownSet = new Set(state.known.map(String));
+    return Object.keys(state.missed).filter((id) => byId.has(id) && !knownSet.has(id));
+  }
+
+  function startReviewRound() {
+    if (state.unseen.length || state.reviewQueue.length) return;
+    state.reviewQueue = shuffledReview(activeMissedIds(), state.lastShown);
+  }
+
+  function currentQueue() {
+    return state.unseen.length ? state.unseen : state.reviewQueue;
+  }
+
+  function shuffleCurrentQueue() {
+    if (state.unseen.length) state.unseen = shuffle(state.unseen);
+    else state.reviewQueue = shuffledReview(state.reviewQueue, state.lastShown);
+  }
+
   function currentWord() {
-    return byId.get(String(state.queue[0]));
+    return byId.get(String(currentQueue()[0]));
   }
 
   function refreshVoices() {
@@ -221,19 +301,25 @@
   function render() {
     stopPronunciation();
     clearPreparedPronunciation();
+    startReviewRound();
     const knownSet = new Set(state.known.map(String));
     const missedIds = Object.keys(state.missed).filter((id) => !knownSet.has(id));
     const done = state.known.length;
     const total = words.length;
     const remaining = Math.max(0, total - done);
+    const firstPass = state.unseen.length > 0;
+    const firstPassDone = total - state.unseen.length;
+    const progress = firstPass ? firstPassDone : done;
     const word = currentWord();
 
     els.known.textContent = done.toLocaleString("ko-KR");
     els.unknown.textContent = missedIds.length.toLocaleString("ko-KR");
     els.remaining.textContent = remaining.toLocaleString("ko-KR");
-    els.progressCount.textContent = `${done.toLocaleString("ko-KR")} / ${total.toLocaleString("ko-KR")}`;
-    els.progressFill.style.width = total ? `${(done / total) * 100}%` : "0%";
-    els.progressLabel.textContent = total ? "전체 단어 믹스 학습" : "단어 데이터가 없습니다";
+    els.progressCount.textContent = `${progress.toLocaleString("ko-KR")} / ${total.toLocaleString("ko-KR")}`;
+    els.progressFill.style.width = total ? `${(progress / total) * 100}%` : "0%";
+    els.progressLabel.textContent = total
+      ? (firstPass ? "전체 단어 첫 학습" : "모르는 단어 랜덤 복습")
+      : "단어 데이터가 없습니다";
 
     const complete = total > 0 && !word;
     els.cardWrap.hidden = complete;
@@ -263,18 +349,12 @@
     void preparePronunciation(word);
   }
 
-  function insertLater(id) {
-    const min = 4;
-    const max = Math.min(state.queue.length, 9);
-    const position = Math.max(1, Math.floor(Math.random() * Math.max(1, max - min + 1)) + min);
-    state.queue.splice(Math.min(position, state.queue.length), 0, id);
-  }
-
   function classify(result) {
     if (animating || !currentWord()) return;
     stopPronunciation();
     animating = true;
-    const id = String(state.queue.shift());
+    const id = String(currentQueue().shift());
+    state.lastShown = id;
     const direction = result === "known" ? 1 : -1;
     els.unknownLabel.style.opacity = "0";
     els.knownLabel.style.opacity = "0";
@@ -287,9 +367,9 @@
       delete state.missed[id];
     } else {
       state.missed[id] = (state.missed[id] || 0) + 1;
-      insertLater(id);
     }
 
+    startReviewRound();
     saveState();
     window.setTimeout(() => {
       els.card.style.transition = "none";
@@ -500,7 +580,7 @@
   document.getElementById("unknownButton").addEventListener("click", () => classify("unknown"));
   document.getElementById("knownButton").addEventListener("click", () => classify("known"));
   document.getElementById("shuffleButton").addEventListener("click", () => {
-    state.queue = shuffle(state.queue);
+    shuffleCurrentQueue();
     saveState();
     render();
   });
@@ -538,7 +618,7 @@
   });
 
   window.startVocabularySession = () => {
-    state.queue = shuffle(state.queue);
+    shuffleCurrentQueue();
     saveState();
     render();
     return { total: words.length, remaining: words.length - state.known.length };
@@ -555,7 +635,7 @@
         inputSchema: { type: "object", properties: {}, additionalProperties: false },
         annotations: { readOnlyHint: false, untrustedContentHint: false },
         execute() {
-          state.queue = shuffle(state.queue);
+          shuffleCurrentQueue();
           saveState();
           render();
           return { remaining: words.length - state.known.length, currentWord: currentWord()?.word || null };
