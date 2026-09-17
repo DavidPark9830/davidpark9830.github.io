@@ -231,6 +231,14 @@ a {
   color: #3b86ca;
 }
 
+.item-icon.web {
+  color: var(--blue);
+}
+
+.item-icon.file {
+  color: #687680;
+}
+
 .item-icon svg {
   width: 22px;
   height: 22px;
