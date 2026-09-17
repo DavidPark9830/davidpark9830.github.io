@@ -1,6 +1,8 @@
 (() => {
   const STORAGE_KEY = "gre-vocabulary-progress-v1";
   const PIPER_BUNDLE_URL = "./vendor/piper-tts.js?v=4";
+  const MIN_INTERLEAVE_GAP = 30;
+  const MAX_INTERLEAVE_GAP = 120;
   const words = Array.isArray(window.GRE_WORDS) ? window.GRE_WORDS : [];
   const byId = new Map(words.map((word) => [String(word.id), word]));
   const speechSupported = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
@@ -60,12 +62,19 @@
     return result;
   }
 
+  function randomReviewGap() {
+    return MIN_INTERLEAVE_GAP
+      + Math.floor(Math.random() * (MAX_INTERLEAVE_GAP - MIN_INTERLEAVE_GAP + 1));
+  }
+
   function freshState() {
     return {
       unseen: shuffle(words.map((word) => String(word.id))),
       reviewQueue: [],
       known: [],
       missed: {},
+      activeReview: null,
+      nextReviewIn: randomReviewGap(),
       lastShown: null,
       startedAt: Date.now()
     };
@@ -117,11 +126,16 @@
         const reviewQueue = unseen.length
           ? []
           : uniqueValidIds(saved.reviewQueue, knownSet).filter((id) => missedSet.has(id));
+        const savedActiveReview = saved.activeReview ? String(saved.activeReview) : null;
+        const activeReview = unseen.length && missedSet.has(savedActiveReview) ? savedActiveReview : null;
+        const savedGap = Number(saved.nextReviewIn);
         return {
           unseen,
           reviewQueue,
           known,
           missed,
+          activeReview,
+          nextReviewIn: Number.isFinite(savedGap) ? Math.max(0, Math.round(savedGap)) : randomReviewGap(),
           lastShown: saved.lastShown ? String(saved.lastShown) : null,
           startedAt: saved.startedAt || Date.now()
         };
@@ -138,6 +152,8 @@
         reviewQueue: [],
         known,
         missed,
+        activeReview: null,
+        nextReviewIn: randomReviewGap(),
         lastShown: null,
         startedAt: saved.startedAt || Date.now()
       };
@@ -157,7 +173,22 @@
 
   function startReviewRound() {
     if (state.unseen.length || state.reviewQueue.length) return;
+    state.activeReview = null;
+    state.nextReviewIn = randomReviewGap();
     state.reviewQueue = shuffledReview(activeMissedIds(), state.lastShown);
+  }
+
+  function prepareInterleavedReview() {
+    if (!state.unseen.length || state.activeReview || state.nextReviewIn > 0) return;
+    const missedIds = activeMissedIds();
+    if (!missedIds.length) {
+      state.nextReviewIn = randomReviewGap();
+      return;
+    }
+    const alternatives = missedIds.filter((id) => id !== state.lastShown);
+    const candidates = alternatives.length ? alternatives : missedIds;
+    state.activeReview = candidates[Math.floor(Math.random() * candidates.length)];
+    state.nextReviewIn = randomReviewGap();
   }
 
   function currentQueue() {
@@ -170,6 +201,7 @@
   }
 
   function currentWord() {
+    if (state.unseen.length && state.activeReview) return byId.get(String(state.activeReview));
     return byId.get(String(currentQueue()[0]));
   }
 
@@ -302,6 +334,7 @@
     stopPronunciation();
     clearPreparedPronunciation();
     startReviewRound();
+    prepareInterleavedReview();
     const knownSet = new Set(state.known.map(String));
     const missedIds = Object.keys(state.missed).filter((id) => !knownSet.has(id));
     const done = state.known.length;
@@ -318,7 +351,7 @@
     els.progressCount.textContent = `${progress.toLocaleString("ko-KR")} / ${total.toLocaleString("ko-KR")}`;
     els.progressFill.style.width = total ? `${(progress / total) * 100}%` : "0%";
     els.progressLabel.textContent = total
-      ? (firstPass ? "전체 단어 첫 학습" : "모르는 단어 랜덤 복습")
+      ? (firstPass ? "전체 단어 학습 · 랜덤 복습" : "모르는 단어 랜덤 복습")
       : "단어 데이터가 없습니다";
 
     const complete = total > 0 && !word;
@@ -353,7 +386,13 @@
     if (animating || !currentWord()) return;
     stopPronunciation();
     animating = true;
-    const id = String(currentQueue().shift());
+    const firstPass = state.unseen.length > 0;
+    const wasInterleavedReview = firstPass && Boolean(state.activeReview);
+    const hadMisses = activeMissedIds().length > 0;
+    const id = wasInterleavedReview
+      ? String(state.activeReview)
+      : String(currentQueue().shift());
+    if (wasInterleavedReview) state.activeReview = null;
     state.lastShown = id;
     const direction = result === "known" ? 1 : -1;
     els.unknownLabel.style.opacity = "0";
@@ -369,7 +408,17 @@
       state.missed[id] = (state.missed[id] || 0) + 1;
     }
 
-    startReviewRound();
+    if (state.unseen.length) {
+      const hasMisses = activeMissedIds().length > 0;
+      if (!hasMisses || !hadMisses) {
+        state.nextReviewIn = randomReviewGap();
+      } else if (!wasInterleavedReview) {
+        state.nextReviewIn = Math.max(0, state.nextReviewIn - 1);
+      }
+      prepareInterleavedReview();
+    } else {
+      startReviewRound();
+    }
     saveState();
     window.setTimeout(() => {
       els.card.style.transition = "none";
