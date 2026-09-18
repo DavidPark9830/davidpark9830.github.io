@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="KMF GRE Verbal practice organized by question type.">
+  <title>KMF Verbal Study</title>
+  <link rel="stylesheet" href="study.css?v=2">
+</head>
+<body>
+  <div class="study-app">
+    <header class="study-header">
+      <a class="library-link" href="./" aria-label="KMF Verbal 자료 목록으로 이동">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+        <span>KMF Library</span>
+      </a>
+      <div class="title-block">
+        <span>KMF Verbal</span>
+        <strong id="typeTitle">Study</strong>
+      </div>
+      <button class="answer-toggle" id="answerToggle" type="button" aria-pressed="false">
+        <span id="answerToggleLabel">정답·해설 보기</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="study-controls" aria-label="학습 범위 설정">
+        <label id="levelControl">
+          <span>Difficulty</span>
+          <select id="levelSelect"></select>
+        </label>
+        <label>
+          <span>Set</span>
+          <select id="groupSelect"></select>
+        </label>
+        <label class="jump-control">
+          <span>Question</span>
+          <input id="questionJump" type="number" min="1" inputmode="numeric">
+          <button id="jumpButton" type="button">Go</button>
+        </label>
+        <div class="control-actions">
+          <button id="randomButton" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"></path></svg>
+            Random
+          </button>
+          <div class="zoom-controls" aria-label="이미지 확대 및 축소">
+            <button id="zoomOut" type="button" aria-label="축소">−</button>
+            <button id="zoomReset" type="button">Fit</button>
+            <button id="zoomIn" type="button" aria-label="확대">+</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="progress-row" aria-label="학습 진행률">
+        <div class="progress-track"><span id="progressBar"></span></div>
+        <span id="progressText">0 completed</span>
+      </section>
+
+      <article class="question-frame">
+        <header class="question-heading">
+          <div>
+            <span id="questionCounter">Question 1</span>
+            <strong id="questionLabel"></strong>
+            <small id="questionMeta"></small>
+          </div>
+          <label class="complete-control">
+            <input id="completeCheckbox" type="checkbox">
+            <span>학습 완료</span>
+          </label>
+        </header>
+
+        <div class="image-scroll" id="questionScroll">
+          <div class="image-status" id="questionLoading">문제 이미지를 불러오는 중...</div>
+          <img class="study-image" id="questionImage" alt="KMF verbal practice question">
+        </div>
+
+        <section class="answer-panel" id="answerPanel" hidden>
+          <header>
+            <div>
+              <strong>Answer, Explanation & Vocabulary</strong>
+              <span>정답과 해설, 보기 어휘 뜻</span>
+            </div>
+            <button id="closeAnswer" type="button">닫기</button>
+          </header>
+          <div class="image-scroll answer-scroll" id="answerScroll">
+            <div class="image-status" id="answerLoading">해설 이미지를 불러오는 중...</div>
+            <img class="study-image" id="answerImage" alt="KMF answer, explanation, and vocabulary">
+            <p class="answer-missing" id="answerMissing" hidden>이 문항은 원본 자료에 해설 이미지가 없습니다.</p>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="study-footer">
+      <button id="previousButton" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+        Previous
+      </button>
+      <a href="./">All Types</a>
+      <button class="next-button" id="nextButton" type="button">
+        Next
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+      </button>
+    </footer>
+  </div>
+
+  <script src="study-data.js?v=3"></script>
+  <script src="study.js?v=3"></script>
+</body>
+</html>
