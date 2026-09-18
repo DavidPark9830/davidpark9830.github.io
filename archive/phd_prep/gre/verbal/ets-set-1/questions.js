@@ -1,5 +1,5 @@
 const TEST_CONFIG = {
-  "title": "Verbal Practice Set 1",
+  "title": "ETS Verbal Practice Set 1",
   "testNumber": 1,
   "durationSeconds": 2940,
   "questions": [
