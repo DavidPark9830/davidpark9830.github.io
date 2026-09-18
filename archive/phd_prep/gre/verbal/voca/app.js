@@ -1,8 +1,8 @@
 (() => {
   const STORAGE_KEY = "gre-vocabulary-progress-v1";
   const PIPER_BUNDLE_URL = "./vendor/piper-tts.js?v=4";
-  const MIN_INTERLEAVE_GAP = 30;
-  const MAX_INTERLEAVE_GAP = 120;
+  const MIN_INTERLEAVE_GAP = 20;
+  const MAX_INTERLEAVE_GAP = 80;
   const words = Array.isArray(window.GRE_WORDS) ? window.GRE_WORDS : [];
   const byId = new Map(words.map((word) => [String(word.id), word]));
   const speechSupported = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
@@ -138,7 +138,9 @@
           known,
           missed,
           activeReview,
-          nextReviewIn: Number.isFinite(savedGap) ? Math.max(0, Math.round(savedGap)) : randomReviewGap(),
+          nextReviewIn: Number.isFinite(savedGap)
+            ? Math.min(MAX_INTERLEAVE_GAP, Math.max(0, Math.round(savedGap)))
+            : randomReviewGap(),
           lastShown: saved.lastShown ? String(saved.lastShown) : null,
           startedAt: saved.startedAt || Date.now()
         };
