@@ -1,8 +1,8 @@
 (() => {
   const STORAGE_KEY = "gre-vocabulary-progress-v1";
   const PIPER_BUNDLE_URL = "./vendor/piper-tts.js?v=4";
-  const MIN_INTERLEAVE_GAP = 20;
-  const MAX_INTERLEAVE_GAP = 80;
+  const MIN_INTERLEAVE_GAP = 5;
+  const MAX_INTERLEAVE_GAP = 20;
   const words = Array.isArray(window.GRE_WORDS) ? window.GRE_WORDS : [];
   const byId = new Map(words.map((word) => [String(word.id), word]));
   const speechSupported = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
