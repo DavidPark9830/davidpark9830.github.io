@@ -1,4 +1,5 @@
 const DATA = window.KMF_STUDY_DATA;
+const TEXT_DATA = window.KMF_TEXT_DATA || {};
 const params = new URLSearchParams(window.location.search);
 const requestedType = params.get("type");
 const type = DATA.types[requestedType] ? requestedType : Object.keys(DATA.types)[0];
@@ -12,6 +13,8 @@ let state = {
   group: "All",
   currentId: null,
   answerVisible: false,
+  answerImageVisible: false,
+  questionView: "text",
   zoom: 1
 };
 let filteredQuestions = [];
@@ -109,11 +112,122 @@ function loadImage(image, loading, source) {
   if (image.complete && image.naturalWidth) imageLoaded(image, loading);
 }
 
+function groupRows(lines) {
+  const rows = [];
+  [...lines].sort((left, right) => Math.abs(left.y - right.y) > .012 ? right.y - left.y : left.x - right.x).forEach(line => {
+    const current = rows.at(-1);
+    if (current && Math.abs(current.y - line.y) <= .012) {
+      current.lines.push(line);
+      current.y = (current.y + line.y) / 2;
+    } else {
+      rows.push({ y: line.y, lines: [line] });
+    }
+  });
+  return rows.map(row => row.lines.sort((left, right) => left.x - right.x).map(line => line.t).join(" "));
+}
+
+function appendOCRLines(container, lines, className = "") {
+  const block = document.createElement("div");
+  block.className = `ocr-lines ${className}`.trim();
+  groupRows(lines).forEach(text => {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = text;
+    block.append(paragraph);
+  });
+  container.append(block);
+}
+
+function renderQuestionText(question) {
+  const record = TEXT_DATA[question.id];
+  const container = el("questionTextContent");
+  container.replaceChildren();
+  const lines = record?.l || [];
+  if (!lines.length) {
+    const empty = document.createElement("p");
+    empty.className = "ocr-empty";
+    empty.textContent = "이 문항의 텍스트를 인식하지 못했습니다. 원본 보기로 확인해 주세요.";
+    container.append(empty);
+    return;
+  }
+
+  const strongLeft = lines.filter(line => line.x + line.w <= .49);
+  const strongRight = lines.filter(line => line.x >= .51);
+  const hasColumns = strongLeft.length >= 3 && strongRight.length >= 3;
+  if (!hasColumns) {
+    appendOCRLines(container, lines);
+    return;
+  }
+
+  const spanning = lines.filter(line => line.x < .48 && line.x + line.w > .52);
+  const spanningRows = spanning.map(line => line.y);
+  const full = lines.filter(line => spanningRows.some(y => Math.abs(y - line.y) <= .012));
+  const fullSet = new Set(full);
+  const left = lines.filter(line => !fullSet.has(line) && line.x < .51);
+  const right = lines.filter(line => !fullSet.has(line) && line.x >= .51);
+  if (full.length) appendOCRLines(container, full, "ocr-full");
+  const columns = document.createElement("div");
+  columns.className = "ocr-columns";
+  appendOCRLines(columns, left);
+  appendOCRLines(columns, right);
+  container.append(columns);
+}
+
+function setQuestionView(view) {
+  state.questionView = view;
+  const showText = view === "text";
+  el("questionTextView").hidden = !showText;
+  el("questionScroll").hidden = showText;
+  el("textViewButton").classList.toggle("active", showText);
+  el("imageViewButton").classList.toggle("active", !showText);
+  el("textViewButton").setAttribute("aria-pressed", String(showText));
+  el("imageViewButton").setAttribute("aria-pressed", String(!showText));
+}
+
+function renderAnswerSummary(question) {
+  const record = TEXT_DATA[question.id];
+  const answer = record?.a;
+  const vocabulary = record?.v || [];
+  el("answerValue").textContent = answer?.value ? answer.value.split("").join(" · ") : "확인 필요";
+  el("answerConfidence").textContent = answer?.confidence === "inferred" ? "해설 문장에서 추출" : "";
+  el("vocabularyList").replaceChildren();
+  vocabulary.forEach(item => {
+    const row = document.createElement("div");
+    row.className = "vocabulary-item";
+    const term = document.createElement("strong");
+    term.textContent = item.term;
+    const meaning = document.createElement("span");
+    meaning.textContent = item.meaning || "한글 뜻 미확인";
+    const gloss = document.createElement("small");
+    gloss.textContent = item.gloss || "";
+    row.append(term, meaning, gloss);
+    el("vocabularyList").append(row);
+  });
+  el("vocabularySection").hidden = !vocabulary.length;
+
+  const hasSourceAnswer = Boolean(question.answer);
+  el("answerMissing").hidden = Boolean(answer?.value) && hasSourceAnswer;
+  if (!hasSourceAnswer) el("answerMissing").textContent = "이 문항은 원본 자료에 정답 이미지가 없습니다.";
+  else if (!answer?.value) el("answerMissing").textContent = "정답 문자를 자동으로 인식하지 못했습니다. 원본 해설 이미지로 확인해 주세요.";
+  el("originalAnswerToggle").hidden = !hasSourceAnswer;
+}
+
+function toggleOriginalAnswer() {
+  const question = filteredQuestions[currentIndex];
+  if (!question?.answer) return;
+  state.answerImageVisible = !state.answerImageVisible;
+  el("answerScroll").hidden = !state.answerImageVisible;
+  el("originalAnswerToggle").textContent = state.answerImageVisible ? "원본 해설 이미지 닫기" : "원본 해설 이미지 보기";
+  if (state.answerImageVisible && !el("answerImage").getAttribute("src")) {
+    loadImage(el("answerImage"), el("answerLoading"), question.answer);
+  }
+}
+
 function renderQuestion() {
   const question = filteredQuestions[currentIndex];
   if (!question) return;
   state.currentId = question.id;
   state.answerVisible = false;
+  state.answerImageVisible = false;
   updateAnswerVisibility();
   el("questionCounter").textContent = `Question ${currentIndex + 1} of ${filteredQuestions.length}`;
   el("questionLabel").textContent = question.label;
@@ -126,30 +240,24 @@ function renderQuestion() {
   el("answerImage").removeAttribute("src");
   el("answerImage").hidden = true;
   el("answerMissing").hidden = true;
+  el("answerScroll").hidden = true;
+  el("originalAnswerToggle").textContent = "원본 해설 이미지 보기";
   el("answerLoading").textContent = "해설 이미지를 불러오는 중...";
+  renderQuestionText(question);
+  renderAnswerSummary(question);
   loadImage(el("questionImage"), el("questionLoading"), question.question);
   el("questionScroll").scrollTo({ top: 0, left: 0 });
+  setQuestionView(state.questionView);
   updateProgress();
   applyZoom();
   saveState();
 }
 
 function updateAnswerVisibility() {
-  const question = filteredQuestions[currentIndex];
   el("answerPanel").hidden = !state.answerVisible;
   el("answerToggle").classList.toggle("active", state.answerVisible);
   el("answerToggle").setAttribute("aria-pressed", String(state.answerVisible));
-  el("answerToggleLabel").textContent = state.answerVisible ? "정답·해설 닫기" : "정답·해설 보기";
-  if (!state.answerVisible || !question) return;
-
-  if (question.answer) {
-    el("answerMissing").hidden = true;
-    loadImage(el("answerImage"), el("answerLoading"), question.answer);
-  } else {
-    el("answerLoading").hidden = true;
-    el("answerImage").hidden = true;
-    el("answerMissing").hidden = false;
-  }
+  el("answerToggleLabel").textContent = state.answerVisible ? "정답·어휘 닫기" : "정답·어휘 보기";
 }
 
 function toggleAnswer(force) {
@@ -226,6 +334,9 @@ el("groupSelect").addEventListener("change", event => {
 });
 el("answerToggle").addEventListener("click", () => toggleAnswer());
 el("closeAnswer").addEventListener("click", () => toggleAnswer(false));
+el("textViewButton").addEventListener("click", () => setQuestionView("text"));
+el("imageViewButton").addEventListener("click", () => setQuestionView("image"));
+el("originalAnswerToggle").addEventListener("click", toggleOriginalAnswer);
 el("previousButton").addEventListener("click", () => navigate(-1));
 el("nextButton").addEventListener("click", () => navigate(1));
 el("randomButton").addEventListener("click", randomQuestion);
