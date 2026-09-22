@@ -166,10 +166,6 @@ select { width: 100%; padding: 6px 30px 6px 9px; }
   padding: 6px 12px;
 }
 
-.zoom-controls { display: flex; }
-.zoom-controls button { min-width: 38px; padding: 5px 9px; border-radius: 0; }
-.zoom-controls button + button { border-left: 0; }
-
 button:focus-visible,
 select:focus-visible,
 input:focus-visible,
@@ -295,89 +291,18 @@ a:focus-visible {
 .blank-group h3 { margin: 0 0 12px; color: var(--navy-dark); font-family: Arial, Helvetica, sans-serif; font-size: .92rem; }
 .blank-group .choice { padding: 7px 6px; }
 
-.answer-mode .choice { grid-template-columns: 30px minmax(0, 1fr) auto minmax(150px, .48fr); cursor: default; }
+.answer-mode .choice { grid-template-columns: 30px minmax(0, 1fr) minmax(210px, .62fr); cursor: default; }
 .answer-mode .choice:hover { border-color: transparent; background: #fff; }
 .answer-mode .choice.correct-choice { border-color: #3675aa; background: #edf6fd; }
 .answer-mode .choice.wrong-choice { border-color: #b76464; background: #fff3f3; }
 .answer-mode .correct-choice .choice-key { border-color: var(--blue); background: var(--blue); color: #fff; box-shadow: inset 0 0 0 2px #fff; }
 .answer-mode .wrong-choice .choice-key { border-color: #9b3f3f; background: #9b3f3f; color: #fff; box-shadow: inset 0 0 0 2px #fff; }
-.answer-badge { align-self: center; padding: 2px 7px; border: 1px solid #6f9dc2; color: #174f7d; background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: .7rem; font-weight: 700; white-space: nowrap; }
-.choice-gloss { align-self: center; color: #075fa8; font-family: Arial, Helvetica, sans-serif; font-size: .78rem; line-height: 1.38; text-align: right; }
-.choice-gloss b { margin-right: 4px; }
+.choice-gloss { align-self: center; display: grid; gap: 2px; padding-left: 12px; border-left: 1px solid #b9d5e9; color: #075fa8; font-family: Arial, Helvetica, sans-serif; font-size: .78rem; line-height: 1.38; text-align: left; }
+.choice-meaning { font-weight: 700; }
+.choice-synonyms { color: #536779; font-size: .72rem; }
+.choice-synonyms b { margin-right: 3px; color: #31566f; }
 .blank-group .choice.answer-revealed { grid-template-columns: 30px minmax(0, 1fr) auto; }
 .blank-group .choice-gloss { grid-column: 2 / -1; text-align: left; }
-
-.image-scroll {
-  --zoom: 1;
-  position: relative;
-  min-height: 230px;
-  max-height: calc(100dvh - 260px);
-  overflow: auto;
-  background: #fff;
-  overscroll-behavior: contain;
-}
-
-.study-image {
-  width: calc(100% * var(--zoom));
-  max-width: none;
-  display: block;
-  background: #fff;
-}
-
-.study-image:not([src]),
-.study-image[src=""] { visibility: hidden; }
-
-.image-status {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  color: var(--muted);
-  font-size: .85rem;
-  pointer-events: none;
-}
-
-.answer-panel { border-top: 4px solid var(--blue); scroll-margin-top: 72px; }
-.answer-panel > header {
-  min-height: 54px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  padding: 9px 14px;
-  color: #fff;
-  background: var(--navy);
-}
-
-.answer-panel > header div { display: grid; gap: 2px; }
-.answer-panel > header strong { font-size: .88rem; }
-.answer-panel > header span { color: #dbe6ef; font-size: .74rem; }
-.answer-panel > header button { min-height: 32px; padding: 5px 12px; border: 1px solid rgba(255,255,255,.45); color: #fff; background: transparent; }
-.answer-summary { padding: 20px 22px 24px; background: #f8fafc; }
-.answer-result { display: flex; align-items: center; gap: 12px; padding-bottom: 18px; border-bottom: 1px solid var(--line-soft); }
-.answer-result > span { color: var(--muted); font-size: .76rem; font-weight: 700; text-transform: uppercase; }
-.answer-result strong { color: var(--navy); font-size: 1.5rem; letter-spacing: .08em; }
-.answer-result small { color: var(--muted); font-size: .74rem; }
-.vocabulary-section { margin-top: 20px; }
-.vocabulary-section h3 { margin: 0 0 9px; color: var(--navy-dark); font-size: .82rem; text-transform: uppercase; }
-.vocabulary-list { border-top: 1px solid var(--line); }
-.vocabulary-item {
-  display: grid;
-  grid-template-columns: minmax(150px, .7fr) minmax(180px, 1fr) minmax(220px, 1.35fr);
-  gap: 18px;
-  padding: 10px 4px;
-  border-bottom: 1px solid var(--line-soft);
-  align-items: baseline;
-}
-.vocabulary-item strong { color: var(--navy-dark); font-size: .94rem; }
-.vocabulary-item span { color: #20262c; font-size: .9rem; line-height: 1.5; }
-.vocabulary-item small { color: var(--muted); font-size: .78rem; line-height: 1.45; }
-.dictionary-credit { margin: 14px 0 0; color: var(--muted); font-size: .7rem; }
-.dictionary-credit a { color: var(--blue); text-decoration: none; }
-.dictionary-credit a:hover, .dictionary-credit a:focus-visible { text-decoration: underline; }
-.original-answer-toggle { margin-top: 16px; min-height: 36px; padding: 6px 12px; border: 1px solid #78838d; color: var(--navy-dark); background: #fff; font-weight: 700; }
-.answer-scroll { max-height: none; background: #f1f5f9; }
-.answer-missing { margin: 18px 0 0; padding: 16px; border: 1px solid #d7dde2; color: var(--muted); background: #fff; text-align: center; }
 
 .study-footer {
   position: sticky;
@@ -439,11 +364,6 @@ a:focus-visible {
   .blank-groups { grid-template-columns: 1fr; }
   .answer-mode .choice { grid-template-columns: 30px minmax(0, 1fr) auto; }
   .answer-mode .choice-gloss { grid-column: 2 / -1; text-align: left; }
-  .answer-summary { padding: 17px 14px 20px; }
-  .vocabulary-item { grid-template-columns: minmax(110px, .65fr) minmax(0, 1.35fr); gap: 6px 12px; }
-  .vocabulary-item small { grid-column: 1 / -1; }
-  .image-scroll { min-height: 190px; max-height: calc(100dvh - 315px); }
-  .answer-scroll { max-height: none; }
   .study-footer { min-height: 58px; padding: 8px 10px; }
   .study-footer button, .study-footer a { min-height: 38px; padding-inline: 12px; }
 }
@@ -460,5 +380,4 @@ a:focus-visible {
   .study-header, .study-controls, .progress-row, .study-footer, .complete-control { display: none !important; }
   main { width: 100%; padding: 0; }
   .question-frame { border: 0; box-shadow: none; }
-  .image-scroll { max-height: none; overflow: visible; }
 }

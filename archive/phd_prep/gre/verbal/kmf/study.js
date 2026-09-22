@@ -57,16 +57,26 @@ const READING_OVERRIDES = {
     ]
   }
 };
+const COLON_AFTER_BLANK = new Set([
+  "sentence-equivalence-0258f06856c3",
+  "sentence-equivalence-2bd0ee717773",
+  "sentence-equivalence-d06ea8cfb2d9",
+  "sentence-equivalence-2a3db3b35875",
+  "sentence-equivalence-4a4f48d178ac",
+  "sentence-equivalence-92a79813670f",
+  "sentence-equivalence-06ce5f8f2abe",
+  "sentence-equivalence-59f1ba033171",
+  "sentence-equivalence-021ab26af9b3",
+  "sentence-equivalence-ea53209cb50f",
+  "sentence-equivalence-0e13c4d83c67"
+]);
 
 let state = {
   level: "All",
   group: "All",
   currentId: null,
   answers: {},
-  answerVisible: false,
-  answerImageVisible: false,
-  questionView: "text",
-  zoom: 1
+  answerVisible: false
 };
 let filteredQuestions = [];
 let currentIndex = 0;
@@ -87,7 +97,8 @@ function saveState() {
     level: state.level,
     group: state.group,
     currentId: filteredQuestions[currentIndex]?.id || null,
-    answers: state.answers
+    answers: state.answers,
+    answerVisible: state.answerVisible
   }));
 }
 
@@ -148,22 +159,6 @@ function applyFilters(preferredId = null) {
   renderQuestion();
 }
 
-function imageLoaded(image, loading) {
-  loading.hidden = true;
-  image.hidden = false;
-}
-
-function loadImage(image, loading, source) {
-  image.hidden = true;
-  loading.hidden = false;
-  image.onload = () => imageLoaded(image, loading);
-  image.onerror = () => {
-    loading.textContent = "이미지를 불러오지 못했습니다.";
-  };
-  image.src = source;
-  if (image.complete && image.naturalWidth) imageLoaded(image, loading);
-}
-
 function groupRows(lines) {
   const rows = [];
   [...lines].sort((left, right) => Math.abs(left.y - right.y) > .014 ? right.y - left.y : left.x - right.x).forEach(line => {
@@ -196,7 +191,8 @@ function cleanText(value) {
     .replace(/\(\s*(?:li|ll|11)\s*\)/gi, "(ii)")
     .replace(/m\]/g, "rm")
     .replace(/n\]/g, "m")
-    .replace(/rni/g, "rm")
+    .replace(/^[Oo0•]\s+(?=[A-Za-z])/, "")
+    .replace(/\bSource\]\s*/gi, "")
     .replace(/\s+([,.;:!?])/g, "$1")
     .replace(/\s{2,}/g, " ")
     .trim();
@@ -225,7 +221,7 @@ function paragraphsFromLines(lines) {
   return paragraphs;
 }
 
-function completionStemHTML(lines, blankCount) {
+function completionStemHTML(question, lines, blankCount) {
   const rows = groupRows(lines);
   const gaps = [];
   rows.forEach((row, rowIndex) => {
@@ -239,8 +235,10 @@ function completionStemHTML(lines, blankCount) {
   let inserted = selected.size;
   const html = rows.map((row, rowIndex) => row.lines.map((line, lineIndex) => {
     const text = escapeHTML(cleanText(line.t));
-    const blank = selected.has(`${rowIndex}:${lineIndex}`) ? '<span class="blank-token" aria-label="blank"></span>' : "";
-    return `${lineIndex ? " " : ""}${blank}${text}`;
+    const hasBlank = selected.has(`${rowIndex}:${lineIndex}`);
+    const blank = hasBlank ? '<span class="blank-token" aria-label="blank"></span>' : "";
+    const punctuation = hasBlank && COLON_AFTER_BLANK.has(question.id) ? ": " : "";
+    return `${lineIndex ? " " : ""}${blank}${punctuation}${text}`;
   }).join("")).join(" ");
   const missing = Math.max(0, blankCount - inserted);
   return `${html}${'<span class="blank-token" aria-label="blank"></span>'.repeat(missing)}`;
@@ -311,7 +309,7 @@ function completionModel(question, lines) {
     directions: question.type === "sentence-equivalence"
       ? "Select the two answer choices that complete the sentence and produce sentences alike in meaning."
       : blankCount > 1 ? "Select one answer choice for each blank." : "Select one answer choice.",
-    stem: completionStemHTML(stemLines, blankCount),
+    stem: completionStemHTML(question, stemLines, blankCount),
     groups,
     multiple: question.type === "sentence-equivalence",
     limit: question.type === "sentence-equivalence" ? 2 : 1,
@@ -407,6 +405,19 @@ function vocabularyForChoice(record, text) {
   return (record?.v || []).find(item => normalized.includes(cleanText(item.term).toLowerCase()));
 }
 
+function vocabularyGloss(vocabulary) {
+  if (!vocabulary) return "";
+  const term = cleanText(vocabulary.term || "");
+  const meaning = cleanText(vocabulary.meaning || "");
+  let gloss = cleanText(vocabulary.gloss || "")
+    .replace(/^[A-F][.):-]?\s*/i, "")
+    .replace(new RegExp(`^${term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*[:;,-]?\\s*`, "i"), "")
+    .trim();
+  if (gloss.toLowerCase() === meaning.toLowerCase()) gloss = "";
+  if (!meaning && !gloss) return "";
+  return `<span class="choice-gloss">${meaning ? `<span class="choice-meaning">${escapeHTML(meaning)}</span>` : ""}${gloss ? `<span class="choice-synonyms"><b>유의어·설명</b> ${escapeHTML(gloss)}</span>` : ""}</span>`;
+}
+
 function validAnswer(record, choiceKeys) {
   const answer = String(record?.a?.value || "").split("");
   return answer.length && answer.every(key => choiceKeys.includes(key)) ? answer : [];
@@ -420,9 +431,8 @@ function choiceHTML(question, record, choice, inputType, inputName, answer, sele
   if (state.answerVisible) classes.push("answer-revealed");
   if (state.answerVisible && isCorrect) classes.push("correct-choice");
   if (state.answerVisible && isSelected && !isCorrect) classes.push("wrong-choice");
-  const meaning = vocabulary?.meaning ? `<span class="choice-gloss"><b>${escapeHTML(vocabulary.term)}</b> ${escapeHTML(vocabulary.meaning)}</span>` : "";
-  const badge = state.answerVisible && isCorrect ? '<span class="answer-badge">정답</span>' : "";
-  return `<label class="${classes.join(" ")}"><input type="${inputType}" name="${inputName}" value="${choice.key}" ${isSelected ? "checked" : ""} ${state.answerVisible ? "disabled" : ""}><span class="choice-key">${choice.key}</span><span class="choice-text">${escapeHTML(choice.text)}</span>${badge}${meaning}</label>`;
+  const gloss = state.answerVisible ? vocabularyGloss(vocabulary) : "";
+  return `<label class="${classes.join(" ")}"><input type="${inputType}" name="${inputName}" value="${choice.key}" ${isSelected ? "checked" : ""} ${state.answerVisible ? "disabled" : ""}><span class="choice-key">${choice.key}</span><span class="choice-text">${escapeHTML(choice.text)}</span>${gloss}</label>`;
 }
 
 function bindChoiceInputs(question, model) {
@@ -444,7 +454,7 @@ function renderQuestionText(question) {
   container.replaceChildren();
   const lines = record?.l || [];
   if (!lines.length) {
-    container.innerHTML = '<p class="ocr-empty">이 문항의 텍스트를 인식하지 못했습니다. 원본 보기로 확인해 주세요.</p>';
+    container.innerHTML = '<p class="ocr-empty">이 문항의 텍스트를 확인하지 못했습니다.</p>';
     return null;
   }
 
@@ -485,65 +495,10 @@ function renderQuestionText(question) {
   return model;
 }
 
-function setQuestionView(view) {
-  state.questionView = view;
-  const showText = view === "text";
-  el("questionTextView").hidden = !showText;
-  el("questionScroll").hidden = showText;
-  el("textViewButton").classList.toggle("active", showText);
-  el("imageViewButton").classList.toggle("active", !showText);
-  el("textViewButton").setAttribute("aria-pressed", String(showText));
-  el("imageViewButton").setAttribute("aria-pressed", String(!showText));
-}
-
-function renderAnswerSummary(question) {
-  const record = TEXT_DATA[question.id];
-  const model = questionModel(question, record?.l || []);
-  const choices = model.groups ? model.groups.flat() : model.choices;
-  const candidateAnswer = validAnswer(record, choices.map(choice => choice.key));
-  const answer = candidateAnswer.length === model.expectedAnswerCount ? candidateAnswer : [];
-  const vocabulary = record?.v || [];
-  el("answerValue").textContent = answer.length ? answer.join(" · ") : "확인 필요";
-  el("answerConfidence").textContent = record?.a?.confidence === "inferred" && answer.length ? "해설 문장에서 추출" : "";
-  el("vocabularyList").replaceChildren();
-  vocabulary.forEach(item => {
-    const row = document.createElement("div");
-    row.className = "vocabulary-item";
-    const term = document.createElement("strong");
-    term.textContent = item.term;
-    const meaning = document.createElement("span");
-    meaning.textContent = item.meaning || "한글 뜻 미확인";
-    const gloss = document.createElement("small");
-    gloss.textContent = item.gloss || "";
-    row.append(term, meaning, gloss);
-    el("vocabularyList").append(row);
-  });
-  el("vocabularySection").hidden = !vocabulary.length;
-
-  const hasSourceAnswer = Boolean(question.answer);
-  el("answerMissing").hidden = Boolean(answer.length) && hasSourceAnswer;
-  if (!hasSourceAnswer) el("answerMissing").textContent = "이 문항은 원본 자료에 정답 이미지가 없습니다.";
-  else if (!answer.length) el("answerMissing").textContent = "정답 문자를 신뢰할 수 있게 인식하지 못했습니다. 원본 해설 이미지로 확인해 주세요.";
-  el("originalAnswerToggle").hidden = !hasSourceAnswer;
-}
-
-function toggleOriginalAnswer() {
-  const question = filteredQuestions[currentIndex];
-  if (!question?.answer) return;
-  state.answerImageVisible = !state.answerImageVisible;
-  el("answerScroll").hidden = !state.answerImageVisible;
-  el("originalAnswerToggle").textContent = state.answerImageVisible ? "원본 해설 이미지 닫기" : "원본 해설 이미지 보기";
-  if (state.answerImageVisible && !el("answerImage").getAttribute("src")) {
-    loadImage(el("answerImage"), el("answerLoading"), question.answer);
-  }
-}
-
 function renderQuestion() {
   const question = filteredQuestions[currentIndex];
   if (!question) return;
   state.currentId = question.id;
-  state.answerVisible = false;
-  state.answerImageVisible = false;
   updateAnswerVisibility();
   el("questionCounter").textContent = `Question ${currentIndex + 1} of ${filteredQuestions.length}`;
   el("questionLabel").textContent = question.label;
@@ -553,24 +508,13 @@ function renderQuestion() {
   el("completeCheckbox").checked = completed.has(question.id);
   el("previousButton").disabled = currentIndex === 0;
   el("nextButton").disabled = currentIndex === filteredQuestions.length - 1;
-  el("answerImage").removeAttribute("src");
-  el("answerImage").hidden = true;
-  el("answerMissing").hidden = true;
-  el("answerScroll").hidden = true;
-  el("originalAnswerToggle").textContent = "원본 해설 이미지 보기";
-  el("answerLoading").textContent = "해설 이미지를 불러오는 중...";
   renderQuestionText(question);
-  renderAnswerSummary(question);
-  loadImage(el("questionImage"), el("questionLoading"), question.question);
-  el("questionScroll").scrollTo({ top: 0, left: 0 });
-  setQuestionView(state.questionView);
+  updateAnswerVisibility();
   updateProgress();
-  applyZoom();
   saveState();
 }
 
 function updateAnswerVisibility() {
-  el("answerPanel").hidden = !state.answerVisible;
   el("answerToggle").classList.toggle("active", state.answerVisible);
   el("answerToggle").setAttribute("aria-pressed", String(state.answerVisible));
   el("answerToggleLabel").textContent = state.answerVisible ? "정답·어휘 닫기" : "정답·어휘 보기";
@@ -581,6 +525,7 @@ function toggleAnswer(force) {
   updateAnswerVisibility();
   const question = filteredQuestions[currentIndex];
   if (question) renderQuestionText(question);
+  saveState();
 }
 
 function updateProgress() {
@@ -617,21 +562,10 @@ function jumpToQuestion() {
   renderQuestion();
 }
 
-function applyZoom() {
-  document.querySelectorAll(".image-scroll").forEach(container => container.style.setProperty("--zoom", state.zoom));
-  el("zoomOut").disabled = state.zoom <= .75;
-  el("zoomIn").disabled = state.zoom >= 2.5;
-  el("zoomReset").textContent = state.zoom === 1 ? "Fit" : `${Math.round(state.zoom * 100)}%`;
-}
-
-function changeZoom(delta) {
-  state.zoom = Math.min(2.5, Math.max(.75, Math.round((state.zoom + delta) * 100) / 100));
-  applyZoom();
-}
-
 function initialize() {
   const saved = loadState();
   state.answers = saved.answers && typeof saved.answers === "object" ? saved.answers : {};
+  state.answerVisible = Boolean(saved.answerVisible);
   document.title = `${config.title} | KMF Verbal`;
   el("typeTitle").textContent = `${config.title} · ${config.koreanTitle}`;
   populateLevels(saved.level || "All");
@@ -649,10 +583,6 @@ el("groupSelect").addEventListener("change", event => {
   applyFilters();
 });
 el("answerToggle").addEventListener("click", () => toggleAnswer());
-el("closeAnswer").addEventListener("click", () => toggleAnswer(false));
-el("textViewButton").addEventListener("click", () => setQuestionView("text"));
-el("imageViewButton").addEventListener("click", () => setQuestionView("image"));
-el("originalAnswerToggle").addEventListener("click", toggleOriginalAnswer);
 el("previousButton").addEventListener("click", () => navigate(-1));
 el("nextButton").addEventListener("click", () => navigate(1));
 el("randomButton").addEventListener("click", randomQuestion);
@@ -665,10 +595,6 @@ el("completeCheckbox").addEventListener("change", event => {
   saveCompleted();
   updateProgress();
 });
-el("zoomOut").addEventListener("click", () => changeZoom(-.25));
-el("zoomIn").addEventListener("click", () => changeZoom(.25));
-el("zoomReset").addEventListener("click", () => { state.zoom = 1; applyZoom(); });
-
 document.addEventListener("keydown", event => {
   if (event.target.matches("input, select, button")) return;
   if (event.key === "ArrowLeft") navigate(-1);

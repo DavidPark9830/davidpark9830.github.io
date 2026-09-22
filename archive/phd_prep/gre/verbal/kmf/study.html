@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="description" content="KMF GRE Verbal practice organized by question type.">
   <title>KMF Verbal Study</title>
-  <link rel="stylesheet" href="study.css?v=4">
+  <link rel="stylesheet" href="study.css?v=6">
 </head>
 <body>
   <div class="study-app">
@@ -44,11 +44,6 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"></path></svg>
             Random
           </button>
-          <div class="zoom-controls" aria-label="이미지 확대 및 축소">
-            <button id="zoomOut" type="button" aria-label="축소">−</button>
-            <button id="zoomReset" type="button">Fit</button>
-            <button id="zoomIn" type="button" aria-label="확대">+</button>
-          </div>
         </div>
       </section>
 
@@ -65,10 +60,6 @@
             <small id="questionMeta"></small>
           </div>
           <div class="question-heading-actions">
-            <div class="view-switch" aria-label="문제 표시 방식">
-              <button class="active" id="textViewButton" type="button" aria-pressed="true">텍스트</button>
-              <button id="imageViewButton" type="button" aria-pressed="false">원본</button>
-            </div>
             <label class="complete-control">
               <input id="completeCheckbox" type="checkbox">
               <span>학습 완료</span>
@@ -80,40 +71,6 @@
           <div class="ocr-content" id="questionTextContent"></div>
         </section>
 
-        <div class="image-scroll" id="questionScroll" hidden>
-          <div class="image-status" id="questionLoading">문제 이미지를 불러오는 중...</div>
-          <img class="study-image" id="questionImage" alt="KMF verbal practice question">
-        </div>
-
-        <section class="answer-panel" id="answerPanel" hidden>
-          <header>
-            <div>
-              <strong>Answer & Vocabulary</strong>
-              <span>정답과 선택지 어휘의 한글 뜻</span>
-            </div>
-            <button id="closeAnswer" type="button">닫기</button>
-          </header>
-
-          <div class="answer-summary" id="answerSummary">
-            <div class="answer-result">
-              <span>정답</span>
-              <strong id="answerValue">-</strong>
-              <small id="answerConfidence"></small>
-            </div>
-            <section class="vocabulary-section" id="vocabularySection">
-              <h3>선택지 어휘</h3>
-              <div class="vocabulary-list" id="vocabularyList"></div>
-            </section>
-            <p class="answer-missing" id="answerMissing" hidden></p>
-            <p class="dictionary-credit">한글 뜻은 개인 GRE 단어장과 <a href="https://github.com/jhseo1211/open-english-korean-dict" target="_blank" rel="noreferrer">Open English-Korean Dictionary</a>를 참고했습니다.</p>
-            <button class="original-answer-toggle" id="originalAnswerToggle" type="button">원본 해설 이미지 보기</button>
-          </div>
-
-          <div class="image-scroll answer-scroll" id="answerScroll" hidden>
-            <div class="image-status" id="answerLoading">해설 이미지를 불러오는 중...</div>
-            <img class="study-image" id="answerImage" alt="KMF answer, explanation, and vocabulary">
-          </div>
-        </section>
       </article>
     </main>
 
@@ -130,8 +87,8 @@
     </footer>
   </div>
 
-  <script src="study-data.js?v=3"></script>
-  <script src="study-text-data.js?v=1"></script>
-  <script src="study.js?v=5"></script>
+  <script src="study-data.js?v=4"></script>
+  <script src="study-text-data.js?v=2"></script>
+  <script src="study.js?v=7"></script>
 </body>
 </html>
