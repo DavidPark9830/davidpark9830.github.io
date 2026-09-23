@@ -131,7 +131,6 @@ function questionHTML(question) {
     html += `</div>`;
   }
 
-  if (state.showAnswers) html += explanationHTML(question);
   return html;
 }
 
@@ -146,7 +145,7 @@ function choiceHTML(question, choice, selected, inputType, inputName) {
   const glossHTML = glosses.length
     ? `<span class="choice-gloss">${glosses.map(gloss => `<span><b>${escapeHTML(gloss.term)}</b> ${escapeHTML(gloss.meaning)}</span>`).join("")}</span>`
     : "";
-  const answerBadge = state.showAnswers && isCorrect ? `<span class="answer-badge">정답</span>` : "";
+  const answerBadge = "";
 
   return `<label class="${classes.join(" ")}"><input type="${inputType}" name="${inputName}" value="${choice.key}" ${isSelected ? "checked" : ""} ${state.showAnswers ? "disabled" : ""}><span class="choice-key">${choice.key}</span><span class="choice-text">${choice.text}</span>${answerBadge}${glossHTML}</label>`;
 }

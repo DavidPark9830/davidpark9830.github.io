@@ -739,3 +739,24 @@ input:focus-visible {
     position: static;
   }
 }
+
+
+
+/* POWERPREP PREVIEW ALIGNMENT */
+:root{--exam-navy:#353231;--exam-navy-dark:#262323;--exam-blue:#1976aa;--exam-blue-soft:#e6f3fb;--exam-canvas:#b9b9b9;--exam-line:#767676;--exam-line-light:#d1d1d1;--exam-focus:#ffcc39}
+body{background:#aaa}
+#app{width:min(1024px,100%);margin:0 auto;background:#fff;box-shadow:0 0 24px rgba(0,0,0,.25)}
+.test-header{min-height:58px;background:#353231;border-bottom:7px solid #cf1f75;box-shadow:none}
+.header-title{gap:13px;padding:7px 18px}
+.header-title:before{content:'gre.';display:grid;place-items:center;width:66px;height:38px;border-radius:50%;color:#fff;background:#222;font:bold italic 22px Georgia,serif}
+.section-name{font-size:.92rem}.header-title>span:last-child{font-size:.76rem}
+.header-tools{background:#353231}.header-button{min-width:92px;background:#353231;border-left:1px solid #74706f;font-size:.78rem}.header-button:hover{background:#4a4645}
+.screen{min-height:calc(100dvh - 123px);padding:20px 22px 82px}.start-screen,.result-screen,.review-screen{background:#b9b9b9}
+.instruction-card,.score-card,.review-card{width:min(940px,100%);border:1px solid #666;box-shadow:none}
+.question-shell{width:100%;border:1px solid #6e6e6e}.question-status{min-height:34px;padding:5px 10px;border:0;border-bottom:1px solid #999;background:#f7e7ed;font-size:.78rem}
+.question-content{padding:22px 25px 88px}.directions{margin:0 -25px 22px;padding:8px 14px;border-width:0 0 1px;background:#ececec}
+.test-footer{width:min(1024px,100%);margin:auto;min-height:58px;background:#d2d2d2;border-top:1px solid #777}
+.primary-button,.footer-button.next{background:#187aaa;border-color:#0b5278}.rule{background:#cf1f75;height:2px}
+.choice{border-color:#aaa;border-radius:0}.choice:hover{background:#f4f4f4}.choice:has(input:checked){background:#e6f3fb;border-color:#1976aa}
+.answer-badge{display:none!important}
+@media(max-width:720px){#app{width:100%}.header-title:before{width:52px;height:31px;font-size:17px}.header-title>span:last-child{display:none}.screen{padding-inline:8px}.question-content{padding-inline:14px}.directions{margin-inline:-14px}}
