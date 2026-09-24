@@ -271,6 +271,13 @@ function cleanText(value) {
     .replace(/n\]/g, "m")
     .replace(/^[Oo0•]\s+(?=[A-Za-z])/, "")
     .replace(/\bSource\]\s*/gi, "")
+    .replace(/\bworkers, rights\b/gi, "workers' rights")
+    .replace(/\bcelebrities, donations\b/gi, "celebrities' donations")
+    .replace(/\bband width\b/gi, "bandwidth")
+    .replace(/\bCDS\b/g, "CDs")
+    .replace(/\bRamachandran[\"”]\s*s\b/g, "Ramachandran's")
+    .replace(/\bsomethings\b/gi, "sometimes")
+    .replace(/\bliterature\. there\b/g, "literature. There")
     .replace(/\s+([,.;:!?])/g, "$1")
     .replace(/\s{2,}/g, " ")
     .trim();
@@ -309,7 +316,12 @@ function completionStemHTML(question, lines, blankCount) {
     }
   }));
   const gaps = [];
+  const leftEdge = Math.min(...rows.flatMap(row => row.lines.map(line => line.x)));
   rows.forEach((row, rowIndex) => {
+    if (rowIndex > 0) {
+      const leadingGap = row.lines[0].x - leftEdge;
+      if (leadingGap > .018) gaps.push({ rowIndex, lineIndex: 0, gap: leadingGap });
+    }
     row.lines.slice(1).forEach((line, lineIndex) => {
       const previous = row.lines[lineIndex];
       const gap = line.x - (previous.x + previous.w);
