@@ -1,5 +1,6 @@
 const DATA = window.KMF_STUDY_DATA;
 const TEXT_DATA = window.KMF_TEXT_DATA || {};
+const STATIC_TRANSLATIONS = window.KMF_TRANSLATIONS || {};
 const params = new URLSearchParams(window.location.search);
 const requestedType = params.get("type");
 const type = DATA.types[requestedType] ? requestedType : Object.keys(DATA.types)[0];
@@ -454,7 +455,10 @@ function explanationSources(model, answer) {
     ].filter(Boolean);
   }
 
-  if (!answer.length) return [];
+  if (!answer.length) {
+    const blanks = Array.from({ length: model.groups?.length || 1 }, () => "_____");
+    return [{ label: "문장 전체 해석", text: completedStem(model, blanks) }];
+  }
   if (model.multiple) {
     return model.groups.flat()
       .filter(choice => answer.includes(choice.key))
@@ -540,6 +544,8 @@ function translationCacheKey(questionId, index, text) {
 }
 
 function cachedTranslation(questionId, index, text) {
+  const stored = STATIC_TRANSLATIONS[questionId]?.[index];
+  if (stored) return stored;
   return loadTranslationCache()[translationCacheKey(questionId, index, text)]?.text || "";
 }
 
