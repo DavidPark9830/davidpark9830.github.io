@@ -321,9 +321,23 @@ a:focus-visible {
   background: #fbfbfb;
 }
 
+.passage-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 0 0 13px; }
 .passage-label { margin: 0 0 13px !important; color: var(--navy-dark); font-family: Arial, Helvetica, sans-serif; font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.passage-heading .passage-label { margin: 0 !important; }
 .passage-card p { margin: 0; }
 .passage-card p + p { margin-top: 1em; }
+.logic-highlight-key { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 14px; color: #4d5862; font-family: Arial, Helvetica, sans-serif; font-size: .73rem; line-height: 1.25; }
+.logic-highlight-key span { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+.logic-highlight-key b,
+.logic-highlight-label { width: 1.35rem; height: 1.35rem; display: inline-grid; place-items: center; border-radius: 50%; color: #1f2933; font-family: Arial, Helvetica, sans-serif; font-size: .7rem; font-style: normal; font-weight: 800; line-height: 1; vertical-align: .08em; }
+.logic-key-one,
+.logic-highlight-1 .logic-highlight-label { background: #f3ca63; }
+.logic-key-two,
+.logic-highlight-2 .logic-highlight-label { background: #9cc7ea; }
+.logic-highlight { padding: .07em .18em; border-radius: .24em; color: inherit; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.logic-highlight-1 { background: #fff1b7; }
+.logic-highlight-2 { background: #dceefd; }
+.logic-highlight-label { margin-right: .28rem; }
 .question-stem { max-width: 980px; margin: 0 0 22px; }
 .blank-token { min-width: 7.2em; height: 1em; display: inline-block; margin: 0 .18em; border-bottom: 2px solid currentColor; vertical-align: -.08em; }
 

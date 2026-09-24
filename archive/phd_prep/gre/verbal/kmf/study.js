@@ -60,6 +60,47 @@ const READING_OVERRIDES = {
     ]
   }
 };
+const LOGIC_HIGHLIGHTS = {
+  "logic-1cff44b32846": [
+    "sea levels are falling relative to the Scandinavian coast by four millimeters a year",
+    "in Scandinavia the land is now rising faster than the sea"
+  ],
+  "logic-de2ff04f1aa4": [
+    "The number of traffic deaths in our region has increased over the past several years.",
+    "better roads will encourage people to drive more, worsening traffic congestion"
+  ],
+  "logic-55bb3a4610f7": [
+    "this difference should be attributed to color",
+    "the mere difference in accident rates is not decisive evidence"
+  ],
+  "logic-425bc55595b0": [
+    "the ban will result in reducing the incidence of that type of cancer in Seligia by as much as 50 percent",
+    "less than 30 percent of the death certificates of Seligians who have died of that cancer have \"construction\" listed as the deceased's occupation"
+  ],
+  "logic-a5f01f64be97": [
+    "sales of magazine issues that prominently feature international news stories have declined significantly, and declining sales reflect declining reader interest",
+    "editors can often intensify reader interest in a news topic by giving it frequent coverage"
+  ],
+  "logic-b2592010476d": [
+    "sales of magazine issues that prominently feature international news stories have declined significantly, and declining sales reflect declining reader interest",
+    "editors can often intensify reader interest in a news topic by giving it frequent coverage"
+  ],
+  "logic-dd225846cb9f": [
+    "Presorbin is superior",
+    "the advertisement's argument is absurd"
+  ],
+  "logic-0c08ae8e9920": [
+    "Garden of Eden is a work of the Flemish master van Eyck",
+    "armadillos are native only to the Americas, and van Eyck died decades before Europeans reached the Americas"
+  ],
+  "logic-c61ac6a4cd7e": [
+    "Cuts that need to be held closed in order to heal properly have generally been held closed with stitches.",
+    "for any cut that the adhesive can hold closed as well as stitches can, it is more economical to use the adhesive"
+  ]
+};
+const ANSWER_OVERRIDES = {
+  "logic-0c08ae8e9920": "A"
+};
 const COLON_AFTER_BLANK = new Set([
   "sentence-equivalence-0258f06856c3",
   "sentence-equivalence-2bd0ee717773",
@@ -269,6 +310,30 @@ function escapeHTML(value) {
   })[character]);
 }
 
+function highlightedPassageHTML(question, paragraph) {
+  const highlights = LOGIC_HIGHLIGHTS[question.id] || [];
+  if (!highlights.length) return escapeHTML(paragraph);
+
+  const lowerParagraph = paragraph.toLowerCase();
+  const ranges = highlights
+    .map((highlight, index) => {
+      const start = lowerParagraph.indexOf(highlight.toLowerCase());
+      return start >= 0 ? { start, end: start + highlight.length, index } : null;
+    })
+    .filter(Boolean)
+    .sort((left, right) => left.start - right.start);
+
+  if (!ranges.length) return escapeHTML(paragraph);
+  let cursor = 0;
+  let html = "";
+  ranges.forEach(range => {
+    html += escapeHTML(paragraph.slice(cursor, range.start));
+    html += `<mark class="logic-highlight logic-highlight-${range.index + 1}"><span class="logic-highlight-label" aria-hidden="true">${range.index + 1}</span>${escapeHTML(paragraph.slice(range.start, range.end))}</mark>`;
+    cursor = range.end;
+  });
+  return html + escapeHTML(paragraph.slice(cursor));
+}
+
 function cleanText(value) {
   return String(value)
     .replace(/\(\s*(?:lli|lll|111)\s*\)/gi, "(iii)")
@@ -283,6 +348,10 @@ function cleanText(value) {
     .replace(/\bCDS\b/g, "CDs")
     .replace(/\bRamachandran[\"”]\s*s\b/g, "Ramachandran's")
     .replace(/\bsomethings\b/gi, "sometimes")
+    .replace(/\bneivs\b/gi, "news")
+    .replace(/\bsignificantly9\s*and\b/gi, "significantly, and")
+    .replace(/\bnative only to Americas\b/gi, "native only to the Americas")
+    .replace(/\bl\s+00 million\b/gi, "100 million")
     .replace(/\bliterature\. there\b/g, "literature. There")
     .replace(/\s+([,.;:!?])/g, "$1")
     .replace(/\s{2,}/g, " ")
@@ -573,12 +642,12 @@ function completedStem(model, fills) {
   return cleanText(wrapper.textContent || "");
 }
 
-function explanationSources(model, answer) {
+function explanationSources(question, model, answer) {
   if (model.kind === "reading") {
     const passage = cleanText(model.passage.join("\n\n"));
     return [
       passage ? { label: "지문 전체 해석", text: passage } : null,
-      model.prompt ? { label: "문제 해석", text: cleanText(model.prompt) } : null
+      question.type !== "logic" && model.prompt ? { label: "문제 해석", text: cleanText(model.prompt) } : null
     ].filter(Boolean);
   }
 
@@ -663,7 +732,7 @@ function explanationVocabulary(record, model) {
 }
 
 function explanationHTML(question, record, model, answer) {
-  const sources = explanationSources(model, answer);
+  const sources = explanationSources(question, model, answer);
   const vocabulary = explanationVocabulary(record, model);
   const translations = sources.length
     ? sources.map((source, index) => `<div class="translation-item"><h4>${escapeHTML(source.label)}</h4><p class="translation-source-text" lang="en">${escapeHTML(source.text)}</p><p class="translation-result" data-translation-index="${index}" lang="ko">해석을 준비하고 있습니다…</p></div>`).join("")
@@ -827,12 +896,19 @@ function renderQuestionText(question) {
   const model = questionModel(question, lines);
   const selected = state.answers[question.id] || [];
   const allChoices = model.groups ? model.groups.flat() : model.choices;
-  const candidateAnswer = validAnswer(record, allChoices.map(choice => choice.key));
+  const answerRecord = ANSWER_OVERRIDES[question.id]
+    ? { ...record, a: { ...(record.a || {}), value: ANSWER_OVERRIDES[question.id] } }
+    : record;
+  const candidateAnswer = validAnswer(answerRecord, allChoices.map(choice => choice.key));
   const answer = candidateAnswer.length === model.expectedAnswerCount ? candidateAnswer : [];
   let html = `<div class="directions">${escapeHTML(model.directions)}</div>`;
 
   if (model.kind === "reading") {
-    html += `<article class="passage-card"><p class="passage-label">Passage</p>${model.passage.map(paragraph => `<p>${escapeHTML(paragraph)}</p>`).join("")}</article>`;
+    const hasLogicHighlights = Boolean(LOGIC_HIGHLIGHTS[question.id]);
+    const highlightKey = hasLogicHighlights
+      ? '<div class="logic-highlight-key" aria-label="논증의 강조 구간"><span><b class="logic-key-one">1</b>첫 번째 강조</span><span><b class="logic-key-two">2</b>두 번째 강조</span></div>'
+      : "";
+    html += `<article class="passage-card"><div class="passage-heading"><p class="passage-label">Passage</p>${highlightKey}</div>${model.passage.map(paragraph => `<p>${highlightedPassageHTML(question, paragraph)}</p>`).join("")}</article>`;
     html += `<p class="question-stem">${escapeHTML(model.prompt)}</p>`;
     html += `<div class="choices${model.multiple ? " multi" : ""}${state.answerVisible ? " answer-mode" : ""}">`;
     model.choices.forEach(choice => {
