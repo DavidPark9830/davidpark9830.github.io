@@ -71,6 +71,65 @@ const COLON_AFTER_BLANK = new Set([
   "sentence-equivalence-ea53209cb50f",
   "sentence-equivalence-0e13c4d83c67"
 ]);
+const PUNCTUATION_AFTER_BLANK = {
+  "sentence-equivalence-037f207e5a63": ["."],
+  "sentence-equivalence-ce9d83ba23b2": ["."],
+  "sentence-equivalence-bf9800cf2dbe": ["."],
+  "single-blank-d2462635173a": ["."],
+  "double-blank-46ad6423dcc1": [".", ""],
+  "double-blank-b91cf2c52962": [".", ":"],
+  "double-blank-822f6be4f08d": [".", ""],
+  "double-blank-404f4e7b001b": [".", ""],
+  "double-blank-e95ab0242f0b": [".", ""],
+  "double-blank-c202933d3a66": [".", ""],
+  "double-blank-9ebacf854341": ["", ";"],
+  "triple-blank-9101e7e09ae3": [".", ".", ""],
+  "triple-blank-bcb48624947c": ["", "", "."],
+  "triple-blank-394b6616d6c8": [".", "", ""],
+  "triple-blank-311470a6e86e": [".", "", ""],
+  "triple-blank-44e8bdab60b9": ["", ".", ""],
+  "triple-blank-a5286324e158": ["", ".", ""],
+  "triple-blank-5efa7dad7ee9": ["", ".", ""],
+  "triple-blank-5107d7f12392": ["", ".", ""],
+  "triple-blank-a97204b559aa": ["", ".", ""],
+  "triple-blank-58bf533b96c4": ["", ".", ""],
+  "triple-blank-93d3cf64e742": [".", "", ""],
+  "triple-blank-904b78943591": [".", "", ""],
+  "triple-blank-a87c5fa2c0e1": [",", "", "."],
+  "triple-blank-6c09364afce1": [".", "", ""],
+  "triple-blank-41e40316a7d8": [".", "", ""],
+  "triple-blank-484dfe7d894c": [".", "", ""],
+  "triple-blank-e794b3e2c72f": ["", ".", ""],
+  "triple-blank-3f5909a6aee8": [".", "", ""],
+  "triple-blank-f517675f9600": ["", ".", ""],
+  "triple-blank-60ebe85d67d9": ["", ".", ""],
+  "text-completion-80b4342df310": ["", "", "."],
+  "text-completion-d3d03e16ca95": ["", "."],
+  "text-completion-b44ef0a40247": ["", ";"],
+  "text-completion-45c781f001ed": ["", ".", ""],
+  "text-completion-0754a53f9a11": ["", "", "."],
+  "text-completion-48f25f113286": [".", "", ""],
+  "text-completion-3b68864cfbc9": [".", ""],
+  "text-completion-3f60bf7750b5": ["", ".", ""],
+  "text-completion-1f91ac9e58be": [".", "", ""],
+  "text-completion-efe23fc9b354": ["."],
+  "text-completion-13706874dddf": [",", ""],
+  "text-completion-fc94087ecfb5": [".", "", ""],
+  "text-completion-b83a472078a9": [",", "."],
+  "text-completion-19a0e7f5ae8e": ["."],
+  "text-completion-3f873732ce96": [".", "", ""],
+  "text-completion-990141f03169": ["", ".", ""],
+  "text-completion-26e3c21d3863": ["", ".", ""],
+  "text-completion-ed9a9c92e3c4": [".", "", ""],
+  "text-completion-ccbcaf5b6667": ["", ".", ""],
+  "text-completion-6d20136ceb41": [".", ""],
+  "text-completion-f90eec93adcf": ["", "", "."],
+  "text-completion-85cb4f165bac": [".", "", ""],
+  "text-completion-6538fa5c0d6e": [".", "", ""]
+};
+const BLANK_AFTER_ROW = {
+  "text-completion-b6f6e79dab68": [0]
+};
 
 let state = {
   level: "All",
@@ -242,25 +301,48 @@ function paragraphsFromLines(lines) {
 
 function completionStemHTML(question, lines, blankCount) {
   const rows = groupRows(lines);
+  const blankAfterRows = new Set(BLANK_AFTER_ROW[question.id] || []);
+  const explicitBlankAfter = new Set();
+  rows.forEach((row, rowIndex) => row.lines.forEach((line, lineIndex) => {
+    if (/\((?:i{1,3}|l{1,3}|1{1,3})\)\s*$/i.test(cleanText(line.t)) || (blankAfterRows.has(rowIndex) && lineIndex === row.lines.length - 1)) {
+      explicitBlankAfter.add(`${rowIndex}:${lineIndex}`);
+    }
+  }));
   const gaps = [];
   rows.forEach((row, rowIndex) => {
     row.lines.slice(1).forEach((line, lineIndex) => {
       const previous = row.lines[lineIndex];
       const gap = line.x - (previous.x + previous.w);
-      if (gap > .018) gaps.push({ rowIndex, lineIndex: lineIndex + 1, gap });
+      if (gap > .018 && !explicitBlankAfter.has(`${rowIndex}:${lineIndex}`)) gaps.push({ rowIndex, lineIndex: lineIndex + 1, gap });
     });
   });
-  const selected = new Set(gaps.sort((left, right) => right.gap - left.gap).slice(0, blankCount).map(gap => `${gap.rowIndex}:${gap.lineIndex}`));
-  let inserted = selected.size;
+  const remaining = Math.max(0, blankCount - explicitBlankAfter.size);
+  const selected = new Set(gaps.sort((left, right) => right.gap - left.gap).slice(0, remaining).map(gap => `${gap.rowIndex}:${gap.lineIndex}`));
+  let inserted = selected.size + explicitBlankAfter.size;
+  let blankIndex = 0;
+  const blankHTML = () => {
+    const configured = PUNCTUATION_AFTER_BLANK[question.id]?.[blankIndex];
+    const punctuation = `${configured || (COLON_AFTER_BLANK.has(question.id) ? ":" : "")} `;
+    blankIndex += 1;
+    return `<span class="blank-token" aria-label="blank"></span>${punctuation}`;
+  };
   const html = rows.map((row, rowIndex) => row.lines.map((line, lineIndex) => {
     const text = escapeHTML(cleanText(line.t));
-    const hasBlank = selected.has(`${rowIndex}:${lineIndex}`);
-    const blank = hasBlank ? '<span class="blank-token" aria-label="blank"></span>' : "";
-    const punctuation = hasBlank && COLON_AFTER_BLANK.has(question.id) ? ": " : "";
-    return `${lineIndex ? " " : ""}${blank}${punctuation}${text}`;
+    const key = `${rowIndex}:${lineIndex}`;
+    const before = selected.has(key) ? blankHTML() : "";
+    const after = explicitBlankAfter.has(key) ? ` ${blankHTML()}` : "";
+    return `${lineIndex ? " " : ""}${before}${text}${after}`;
   }).join("")).join(" ");
   const missing = Math.max(0, blankCount - inserted);
-  return `${html}${'<span class="blank-token" aria-label="blank"></span>'.repeat(missing)}`;
+  const trailingBlanks = '<span class="blank-token" aria-label="blank"></span>'.repeat(missing);
+  const sourceText = cleanText(`${rows.flatMap(row => row.lines).map(line => cleanText(line.t)).join(" ")}${" _____".repeat(missing)}`);
+  let completed = `${html}${trailingBlanks}`;
+  if (!/[.!?](?:["”’)]*)$/.test(sourceText)) {
+    completed = missing === 0 && /(?:&quot;|["”’])$/.test(completed)
+      ? completed.replace(/(&quot;|["”’])$/, ".$1")
+      : `${completed}.`;
+  }
+  return completed;
 }
 
 function blankCountFor(question, lines) {
@@ -291,6 +373,7 @@ function completionModel(question, lines) {
 
   const blankCount = blankCountFor(question, lines);
   const headers = lines.filter(line => /^\s*Blank/i.test(line.t)).sort((left, right) => left.x - right.x);
+  let sentenceEquivalence = question.type === "sentence-equivalence";
   let stemLines;
   let groups;
 
@@ -315,24 +398,26 @@ function completionModel(question, lines) {
         text: cleanText(rows.map(rowText).join(" "))
       })));
   } else {
-    const choiceCount = question.type === "sentence-equivalence" ? 6 : 5;
-    const ordered = [...lines].sort((left, right) => left.y - right.y);
-    const choices = ordered.slice(0, choiceCount).sort((left, right) => right.y - left.y);
-    const choiceSet = new Set(choices);
-    stemLines = lines.filter(line => !choiceSet.has(line) && !headers.includes(line));
-    groups = [choices.map((line, index) => ({ key: "ABCDEFGHI"[index], text: cleanText(line.t) }))];
+    const contentRows = groupRows(lines.filter(line => !headers.includes(line)));
+    const rowGaps = contentRows.slice(1).map((row, index) => ({ index: index + 1, gap: contentRows[index].y - row.y }));
+    const choiceStart = rowGaps.sort((left, right) => right.gap - left.gap)[0]?.index || Math.max(1, contentRows.length - 5);
+    const stemRows = contentRows.slice(0, choiceStart);
+    const choiceRows = contentRows.slice(choiceStart);
+    sentenceEquivalence ||= choiceRows.length === 6;
+    stemLines = stemRows.flatMap(row => row.lines);
+    groups = [choiceRows.map((row, index) => ({ key: "ABCDEFGHI"[index], text: rowText(row) }))];
   }
 
   return {
     kind: "completion",
-    directions: question.type === "sentence-equivalence"
+    directions: sentenceEquivalence
       ? "Select the two answer choices that complete the sentence and produce sentences alike in meaning."
       : blankCount > 1 ? "Select one answer choice for each blank." : "Select one answer choice.",
     stem: completionStemHTML(question, stemLines, blankCount),
     groups,
-    multiple: question.type === "sentence-equivalence",
-    limit: question.type === "sentence-equivalence" ? 2 : 1,
-    expectedAnswerCount: question.type === "sentence-equivalence" ? 2 : groups.length
+    multiple: sentenceEquivalence,
+    limit: sentenceEquivalence ? 2 : 1,
+    expectedAnswerCount: sentenceEquivalence ? 2 : groups.length
   };
 }
 
