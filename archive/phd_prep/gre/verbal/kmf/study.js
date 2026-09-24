@@ -421,18 +421,42 @@ function questionModel(question, lines) {
 
 function vocabularyForChoice(record, text) {
   const normalized = cleanText(text).toLowerCase();
-  return (record?.v || []).find(item => normalized.includes(cleanText(item.term).toLowerCase()));
+  return (record?.v || []).find(item => normalized.includes(vocabularyTerm(item.term).toLowerCase()));
+}
+
+function stripChoicePrefix(value) {
+  return cleanText(value || "")
+    .replace(/^[)\]}(\s]*/, "")
+    .replace(/^[A-F](?:[.):-])?\s+/i, "")
+    .trim();
+}
+
+function vocabularyTerm(value) {
+  return stripChoicePrefix(value).replace(/[.;:,]+$/, "").trim();
+}
+
+function cleanedVocabularyGloss(vocabulary, term) {
+  let gloss = stripChoicePrefix(vocabulary?.gloss || "");
+  if (!gloss) return "";
+  const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const leadingTerm = new RegExp(`^${escapedTerm}(?=$|[\\s:;,.(]|[A-Z])`, "i");
+  while (leadingTerm.test(gloss)) gloss = gloss.replace(leadingTerm, "").trim();
+
+  const parts = gloss
+    .replace(/[()]/g, ";")
+    .replace(/\bSyn(?:onym)?s?\.?\s*/gi, "")
+    .split(/[;,]+|\.(?=\s|$)/)
+    .map(part => part.replace(/^[\s:,.\-/]+|[\s:,.\-/]+$/g, "").trim())
+    .filter(Boolean)
+    .filter(part => part.toLowerCase() !== term.toLowerCase());
+  return [...new Map(parts.map(part => [part.toLowerCase(), part])).values()].slice(0, 6).join(", ");
 }
 
 function vocabularyGloss(vocabulary) {
   if (!vocabulary) return "";
-  const term = cleanText(vocabulary.term || "");
-  const meaning = cleanText(vocabulary.meaning || "");
-  let gloss = cleanText(vocabulary.gloss || "")
-    .replace(/^[A-F][.):-]?\s*/i, "")
-    .replace(new RegExp(`^${term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*[:;,-]?\\s*`, "i"), "")
-    .trim();
-  if (gloss.toLowerCase() === meaning.toLowerCase()) gloss = "";
+  const term = vocabularyTerm(vocabulary.term);
+  const meaning = VOCABULARY_MEANING_OVERRIDES[term.toLowerCase()] || cleanText(vocabulary.meaning || "");
+  const gloss = cleanedVocabularyGloss(vocabulary, term);
   if (!meaning && !gloss) return "";
   return `<span class="choice-gloss">${meaning ? `<span class="choice-meaning">${escapeHTML(meaning)}</span>` : ""}${gloss ? `<span class="choice-synonyms"><b>유의어·설명</b> ${escapeHTML(gloss)}</span>` : ""}</span>`;
 }
@@ -476,7 +500,7 @@ function buildVocabularyIndex() {
   if (vocabularyIndex) return vocabularyIndex;
   const entries = new Map();
   Object.values(TEXT_DATA).forEach(record => (record?.v || []).forEach(item => {
-    const term = cleanText(item.term || "").replace(/^(?:[A-F][.):-]\s*|[A-F]\s+)/i, "").replace(/[.;:,]+$/, "").trim();
+    const term = vocabularyTerm(item.term);
     const meaning = VOCABULARY_MEANING_OVERRIDES[term.toLowerCase()] || cleanText(item.meaning || "");
     const key = term.toLowerCase();
     if (term.length >= 4 && /[가-힣]/.test(meaning) && !entries.has(key)) entries.set(key, { term, meaning });
@@ -493,7 +517,7 @@ function explanationVocabulary(record, model, answer, sources) {
   const selected = new Map();
 
   (record?.v || []).forEach(item => {
-    const term = cleanText(item.term || "").replace(/^(?:[A-F][.):-]\s*|[A-F]\s+)/i, "").replace(/[.;:,]+$/, "").trim();
+    const term = vocabularyTerm(item.term);
     const meaning = VOCABULARY_MEANING_OVERRIDES[term.toLowerCase()] || cleanText(item.meaning || "");
     const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     if (term.length >= 4 && /[가-힣]/.test(meaning) && new RegExp(`(^|[^a-z])${escaped}(?=$|[^a-z])`, "i").test(sourceText)) {
