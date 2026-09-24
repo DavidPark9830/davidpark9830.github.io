@@ -81,6 +81,24 @@ let state = {
 let filteredQuestions = [];
 let currentIndex = 0;
 let completed = loadCompleted();
+let translatorPromise = null;
+let explanationRequest = 0;
+let vocabularyIndex = null;
+
+const TRANSLATION_CACHE_KEY = "kmf-verbal-ko-translation-cache-v1";
+const TRANSLATION_CACHE_LIMIT = 120;
+const VOCABULARY_MEANING_OVERRIDES = {
+  "yield to": "~에 굴복하다, ~에 따르다",
+  "partiality": "편파성, 편애",
+  "bias": "편견, 편향"
+};
+const READING_VOCABULARY_EXCLUDE = new Set([
+  "according", "although", "approach", "because", "certain", "different", "everyone",
+  "evidence", "example", "experience", "following", "however", "important", "increased",
+  "indicates", "individual", "little", "mentioned", "possible", "question", "recent",
+  "report", "researchers", "scientific", "scientists", "suggests", "temperature",
+  "temperatures", "therefore", "warm"
+]);
 
 const el = id => document.getElementById(id);
 
@@ -418,6 +436,199 @@ function vocabularyGloss(vocabulary) {
   return `<span class="choice-gloss">${meaning ? `<span class="choice-meaning">${escapeHTML(meaning)}</span>` : ""}${gloss ? `<span class="choice-synonyms"><b>유의어·설명</b> ${escapeHTML(gloss)}</span>` : ""}</span>`;
 }
 
+function completedStem(model, fills) {
+  const wrapper = document.createElement("div");
+  wrapper.innerHTML = model.stem;
+  wrapper.querySelectorAll(".blank-token").forEach((blank, index) => {
+    blank.replaceWith(document.createTextNode(` ${fills[index] || "_____"} `));
+  });
+  return cleanText(wrapper.textContent || "");
+}
+
+function explanationSources(model, answer) {
+  if (model.kind === "reading") {
+    const passage = cleanText(model.passage.join("\n\n"));
+    return [
+      passage ? { label: "지문 전체 해석", text: passage } : null,
+      model.prompt ? { label: "문제 해석", text: cleanText(model.prompt) } : null
+    ].filter(Boolean);
+  }
+
+  if (!answer.length) return [];
+  if (model.multiple) {
+    return model.groups.flat()
+      .filter(choice => answer.includes(choice.key))
+      .map((choice, index) => ({
+        label: answer.length > 1 ? `완성 문장 ${index + 1} 해석` : "문장 전체 해석",
+        text: completedStem(model, [choice.text])
+      }));
+  }
+
+  const fills = model.groups.map(group => group.find(choice => answer.includes(choice.key))?.text || "_____");
+  return [{ label: "문장 전체 해석", text: completedStem(model, fills) }];
+}
+
+function buildVocabularyIndex() {
+  if (vocabularyIndex) return vocabularyIndex;
+  const entries = new Map();
+  Object.values(TEXT_DATA).forEach(record => (record?.v || []).forEach(item => {
+    const term = cleanText(item.term || "").replace(/^(?:[A-F][.):-]\s*|[A-F]\s+)/i, "").replace(/[.;:,]+$/, "").trim();
+    const meaning = VOCABULARY_MEANING_OVERRIDES[term.toLowerCase()] || cleanText(item.meaning || "");
+    const key = term.toLowerCase();
+    if (term.length >= 4 && /[가-힣]/.test(meaning) && !entries.has(key)) entries.set(key, { term, meaning });
+  }));
+  vocabularyIndex = [...entries.values()].sort((left, right) => right.term.length - left.term.length);
+  return vocabularyIndex;
+}
+
+function explanationVocabulary(record, model, answer, sources) {
+  const sourceText = cleanText([
+    ...sources.map(source => source.text),
+    ...(model.groups || []).flat().filter(choice => answer.includes(choice.key)).map(choice => choice.text)
+  ].join(" ")).toLowerCase();
+  const selected = new Map();
+
+  (record?.v || []).forEach(item => {
+    const term = cleanText(item.term || "").replace(/^(?:[A-F][.):-]\s*|[A-F]\s+)/i, "").replace(/[.;:,]+$/, "").trim();
+    const meaning = VOCABULARY_MEANING_OVERRIDES[term.toLowerCase()] || cleanText(item.meaning || "");
+    const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    if (term.length >= 4 && /[가-힣]/.test(meaning) && new RegExp(`(^|[^a-z])${escaped}(?=$|[^a-z])`, "i").test(sourceText)) {
+      selected.set(term.toLowerCase(), { term, meaning });
+    }
+  });
+
+  if (!(record?.v || []).length) {
+    for (const item of buildVocabularyIndex()) {
+      if (selected.size >= 6) break;
+      const key = item.term.toLowerCase();
+      if ((item.term.length < 9 && !item.term.includes(" ")) || READING_VOCABULARY_EXCLUDE.has(key)) continue;
+      const escaped = item.term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      if (!selected.has(key) && new RegExp(`(^|[^a-z])${escaped}(?=$|[^a-z])`, "i").test(sourceText)) selected.set(key, item);
+    }
+  }
+  return [...selected.values()];
+}
+
+function explanationHTML(question, record, model, answer) {
+  const sources = explanationSources(model, answer);
+  const vocabulary = explanationVocabulary(record, model, answer, sources);
+  const translations = sources.length
+    ? sources.map((source, index) => `<div class="translation-item"><h4>${escapeHTML(source.label)}</h4><p class="translation-source-text" lang="en">${escapeHTML(source.text)}</p><p class="translation-result" data-translation-index="${index}" lang="ko">해석을 준비하고 있습니다…</p></div>`).join("")
+    : '<p class="explanation-unavailable">정답 정보가 확인되지 않아 완성 문장 해석을 표시할 수 없습니다.</p>';
+  const words = vocabulary.length
+    ? `<div class="explanation-vocabulary"><h4>핵심 어휘</h4><ul>${vocabulary.map(item => `<li><strong>${escapeHTML(item.term)}</strong><span>${escapeHTML(item.meaning)}</span></li>`).join("")}</ul></div>`
+    : "";
+
+  return {
+    sources,
+    html: `<section class="answer-explanation" data-question-id="${escapeHTML(question.id)}"><div class="explanation-heading"><div><span>ANSWER REVIEW</span><h3>문장 해석과 핵심 어휘</h3></div><button class="translation-retry" type="button" hidden>해석 다시 불러오기</button></div><div class="translation-list">${translations}</div>${words}</section>`
+  };
+}
+
+function loadTranslationCache() {
+  try {
+    return JSON.parse(localStorage.getItem(TRANSLATION_CACHE_KEY)) || {};
+  } catch {
+    return {};
+  }
+}
+
+function translationCacheKey(questionId, index, text) {
+  let hash = 0;
+  for (let cursor = 0; cursor < text.length; cursor += 1) hash = ((hash << 5) - hash + text.charCodeAt(cursor)) | 0;
+  return `${questionId}:${index}:${hash}`;
+}
+
+function cachedTranslation(questionId, index, text) {
+  return loadTranslationCache()[translationCacheKey(questionId, index, text)]?.text || "";
+}
+
+function cacheTranslation(questionId, index, source, translated) {
+  const cache = loadTranslationCache();
+  cache[translationCacheKey(questionId, index, source)] = { text: translated, savedAt: Date.now() };
+  const entries = Object.entries(cache).sort((left, right) => right[1].savedAt - left[1].savedAt).slice(0, TRANSLATION_CACHE_LIMIT);
+  localStorage.setItem(TRANSLATION_CACHE_KEY, JSON.stringify(Object.fromEntries(entries)));
+}
+
+function setTranslationMessage(message) {
+  document.querySelectorAll(".translation-result").forEach(node => {
+    if (!node.dataset.ready) node.textContent = message;
+  });
+}
+
+function prepareTranslator() {
+  if (!("Translator" in window)) return Promise.resolve(null);
+  if (translatorPromise) return translatorPromise;
+  translatorPromise = (async () => {
+    const availability = await window.Translator.availability({ sourceLanguage: "en", targetLanguage: "ko" });
+    if (availability === "unavailable") return null;
+    return window.Translator.create({
+      sourceLanguage: "en",
+      targetLanguage: "ko",
+      monitor(monitor) {
+        monitor.addEventListener("downloadprogress", event => {
+          setTranslationMessage(`한영 해석 모델을 준비하고 있습니다… ${Math.round(event.loaded * 100)}%`);
+        });
+      }
+    });
+  })().catch(() => {
+    translatorPromise = null;
+    return null;
+  });
+  return translatorPromise;
+}
+
+async function renderTranslations(question, sources) {
+  if (!sources.length) return;
+  const panel = document.querySelector(`.answer-explanation[data-question-id="${question.id}"]`);
+  if (!panel) return;
+  const request = ++explanationRequest;
+  const targets = [...panel.querySelectorAll(".translation-result")];
+  const retry = panel.querySelector(".translation-retry");
+
+  sources.forEach((source, index) => {
+    const cached = cachedTranslation(question.id, index, source.text);
+    if (cached && targets[index]) {
+      targets[index].textContent = cached;
+      targets[index].dataset.ready = "true";
+    }
+  });
+  if (targets.every(target => target.dataset.ready)) return;
+
+  const translator = await prepareTranslator();
+  if (request !== explanationRequest || !panel.isConnected) return;
+  if (!translator) {
+    targets.filter(target => !target.dataset.ready).forEach(target => {
+      target.textContent = "자동 해석은 데스크톱 Chrome에서 사용할 수 있습니다.";
+      target.classList.add("translation-note");
+    });
+    retry.hidden = !("Translator" in window);
+    retry.addEventListener("click", () => {
+      translatorPromise = null;
+      retry.hidden = true;
+      setTranslationMessage("해석을 다시 준비하고 있습니다…");
+      prepareTranslator();
+      renderTranslations(question, sources);
+    }, { once: true });
+    return;
+  }
+
+  for (let index = 0; index < sources.length; index += 1) {
+    if (targets[index]?.dataset.ready) continue;
+    try {
+      const translated = await translator.translate(sources[index].text);
+      if (request !== explanationRequest || !panel.isConnected) return;
+      targets[index].textContent = translated;
+      targets[index].dataset.ready = "true";
+      cacheTranslation(question.id, index, sources[index].text, translated);
+    } catch {
+      targets[index].textContent = "해석을 불러오지 못했습니다. 다시 시도해 주세요.";
+      targets[index].classList.add("translation-note");
+      retry.hidden = false;
+    }
+  }
+}
+
 function validAnswer(record, choiceKeys) {
   const answer = String(record?.a?.value || "").split("");
   return answer.length && answer.every(key => choiceKeys.includes(key)) ? answer : [];
@@ -490,8 +701,15 @@ function renderQuestionText(question) {
     }
   }
 
+  let explanation = null;
+  if (state.answerVisible) {
+    explanation = explanationHTML(question, record, model, answer);
+    html += explanation.html;
+  }
+
   container.innerHTML = html;
   bindChoiceInputs(question, model);
+  if (explanation) renderTranslations(question, explanation.sources);
   return model;
 }
 
@@ -582,7 +800,10 @@ el("groupSelect").addEventListener("change", event => {
   state.group = event.target.value;
   applyFilters();
 });
-el("answerToggle").addEventListener("click", () => toggleAnswer());
+el("answerToggle").addEventListener("click", () => {
+  if (!state.answerVisible) prepareTranslator();
+  toggleAnswer();
+});
 el("previousButton").addEventListener("click", () => navigate(-1));
 el("nextButton").addEventListener("click", () => navigate(1));
 el("randomButton").addEventListener("click", randomQuestion);

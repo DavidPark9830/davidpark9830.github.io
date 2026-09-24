@@ -237,6 +237,70 @@ a:focus-visible {
 .ocr-content { max-width: 1080px; margin: 0 auto; color: #111; font-family: Georgia, "Times New Roman", serif; font-size: 1.12rem; line-height: 1.62; }
 .ocr-empty { margin: 70px 0; color: var(--muted); font-family: Arial, Helvetica, sans-serif; text-align: center; }
 
+.answer-explanation {
+  margin: 34px 0 0;
+  padding: clamp(18px, 3vw, 28px);
+  border: 1px solid #9bb8cf;
+  border-radius: 10px;
+  background: #f4f8fb;
+  color: #17212a;
+  font-family: Arial, Helvetica, "Noto Sans KR", sans-serif;
+}
+
+.explanation-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #c9d9e5;
+}
+
+.explanation-heading span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--blue);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.explanation-heading h3,
+.translation-item h4,
+.explanation-vocabulary h4 { margin: 0; }
+.explanation-heading h3 { color: var(--navy-dark); font-size: 1.06rem; }
+.translation-list { display: grid; gap: 18px; }
+.translation-item h4,
+.explanation-vocabulary h4 { margin-bottom: 7px; color: #35546d; font-size: .8rem; }
+.translation-source-text { margin: 0 0 8px; color: #53616d; font-family: Georgia, "Times New Roman", serif; font-size: .84rem; line-height: 1.55; }
+.translation-result { margin: 0; color: #17212a; font-size: .94rem; line-height: 1.72; white-space: pre-line; }
+.translation-note,
+.explanation-unavailable { color: var(--muted); font-size: .86rem; }
+
+.translation-retry {
+  min-height: 34px;
+  padding: 6px 11px;
+  border: 1px solid #6f8aa0;
+  border-radius: 5px;
+  color: var(--navy-dark);
+  background: #fff;
+  font-size: .76rem;
+  font-weight: 700;
+}
+
+.explanation-vocabulary { margin-top: 22px; padding-top: 18px; border-top: 1px solid #c9d9e5; }
+.explanation-vocabulary ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 24px; margin: 0; padding: 0; list-style: none; }
+.explanation-vocabulary li { display: grid; grid-template-columns: minmax(100px, auto) 1fr; gap: 10px; align-items: baseline; padding: 7px 0; border-bottom: 1px solid #dce7ef; }
+.explanation-vocabulary strong { color: var(--navy-dark); font-family: Georgia, "Times New Roman", serif; font-size: .95rem; }
+.explanation-vocabulary span { color: #43515d; font-size: .82rem; line-height: 1.5; }
+
+@media (max-width: 720px) {
+  .explanation-vocabulary ul { grid-template-columns: 1fr; }
+  .explanation-vocabulary li { grid-template-columns: 1fr; gap: 2px; }
+  .explanation-heading { align-items: flex-start; }
+}
+
 .directions {
   margin: 0 0 24px;
   padding: 10px 13px;
