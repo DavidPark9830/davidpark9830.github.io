@@ -1,6 +1,8 @@
 const DATA = window.KMF_STUDY_DATA;
 const TEXT_DATA = window.KMF_TEXT_DATA || {};
 const STATIC_TRANSLATIONS = window.KMF_TRANSLATIONS || {};
+const GRE_WORDS = window.GRE_WORDS || [];
+const GRE_GLOSSARY = window.GRE_GLOSSARY || {};
 const params = new URLSearchParams(window.location.search);
 const requestedType = params.get("type");
 const type = DATA.types[requestedType] ? requestedType : Object.keys(DATA.types)[0];
@@ -150,7 +152,11 @@ const TRANSLATION_CACHE_LIMIT = 120;
 const VOCABULARY_MEANING_OVERRIDES = {
   "yield to": "~에 굴복하다, ~에 따르다",
   "partiality": "편파성, 편애",
-  "bias": "편견, 편향"
+  "bias": "편견, 편향",
+  "committed to": "~에 전념하는, ~을 굳게 지지하는",
+  "politically neutral": "정치적으로 중립적인",
+  "enterprise": "사업, 활동; 기업",
+  "enemy nation": "적대국"
 };
 const READING_VOCABULARY_EXCLUDE = new Set([
   "according", "although", "approach", "because", "certain", "different", "everyone",
@@ -596,6 +602,21 @@ function explanationSources(model, answer) {
 function buildVocabularyIndex() {
   if (vocabularyIndex) return vocabularyIndex;
   const entries = new Map();
+  Object.entries(VOCABULARY_MEANING_OVERRIDES).forEach(([term, meaning]) => {
+    entries.set(term.toLowerCase(), { term, meaning });
+  });
+  GRE_WORDS.forEach(item => {
+    const term = vocabularyTerm(item.word || "");
+    const meaning = cleanText(item.meaning || "");
+    const key = term.toLowerCase();
+    if (term.length >= 4 && /[가-힣]/.test(meaning) && !entries.has(key)) entries.set(key, { term, meaning });
+  });
+  Object.entries(GRE_GLOSSARY).forEach(([rawTerm, rawMeaning]) => {
+    const term = vocabularyTerm(rawTerm);
+    const meaning = cleanText(rawMeaning || "");
+    const key = term.toLowerCase();
+    if (term.length >= 4 && /[가-힣]/.test(meaning) && !entries.has(key)) entries.set(key, { term, meaning });
+  });
   Object.values(TEXT_DATA).forEach(record => (record?.v || []).forEach(item => {
     const term = vocabularyTerm(item.term);
     const meaning = VOCABULARY_MEANING_OVERRIDES[term.toLowerCase()] || cleanText(item.meaning || "");
@@ -606,47 +627,54 @@ function buildVocabularyIndex() {
   return vocabularyIndex;
 }
 
-function explanationVocabulary(record, model, answer, sources) {
-  const sourceText = cleanText([
-    ...sources.map(source => source.text),
-    ...(model.groups || []).flat().filter(choice => answer.includes(choice.key)).map(choice => choice.text)
-  ].join(" ")).toLowerCase();
+function vocabularySourceText(model) {
+  if (model.kind === "reading") return cleanText([...model.passage, model.prompt].join(" "));
+  const wrapper = document.createElement("div");
+  wrapper.innerHTML = model.stem;
+  wrapper.querySelectorAll(".blank-token").forEach(blank => blank.replaceWith(document.createTextNode(" ")));
+  return cleanText(wrapper.textContent || "");
+}
+
+function vocabularyAppears(sourceText, term) {
+  const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const plural = /[a-z]$/i.test(term) && !/s$/i.test(term) ? "(?:s|es)?" : "";
+  return new RegExp(`(^|[^a-z])${escaped}${plural}(?=$|[^a-z])`, "i").test(sourceText);
+}
+
+function explanationVocabulary(record, model) {
+  const sourceText = vocabularySourceText(model).toLowerCase();
   const selected = new Map();
 
   (record?.v || []).forEach(item => {
     const term = vocabularyTerm(item.term);
     const meaning = VOCABULARY_MEANING_OVERRIDES[term.toLowerCase()] || cleanText(item.meaning || "");
-    const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    if (term.length >= 4 && /[가-힣]/.test(meaning) && new RegExp(`(^|[^a-z])${escaped}(?=$|[^a-z])`, "i").test(sourceText)) {
+    if (term.length >= 4 && /[가-힣]/.test(meaning) && vocabularyAppears(sourceText, term)) {
       selected.set(term.toLowerCase(), { term, meaning });
     }
   });
 
-  if (!(record?.v || []).length) {
-    for (const item of buildVocabularyIndex()) {
-      if (selected.size >= 6) break;
-      const key = item.term.toLowerCase();
-      if ((item.term.length < 9 && !item.term.includes(" ")) || READING_VOCABULARY_EXCLUDE.has(key)) continue;
-      const escaped = item.term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-      if (!selected.has(key) && new RegExp(`(^|[^a-z])${escaped}(?=$|[^a-z])`, "i").test(sourceText)) selected.set(key, item);
-    }
+  for (const item of buildVocabularyIndex()) {
+    if (selected.size >= 6) break;
+    const key = item.term.toLowerCase();
+    if (READING_VOCABULARY_EXCLUDE.has(key)) continue;
+    if (!selected.has(key) && vocabularyAppears(sourceText, item.term)) selected.set(key, item);
   }
   return [...selected.values()];
 }
 
 function explanationHTML(question, record, model, answer) {
   const sources = explanationSources(model, answer);
-  const vocabulary = explanationVocabulary(record, model, answer, sources);
+  const vocabulary = explanationVocabulary(record, model);
   const translations = sources.length
     ? sources.map((source, index) => `<div class="translation-item"><h4>${escapeHTML(source.label)}</h4><p class="translation-source-text" lang="en">${escapeHTML(source.text)}</p><p class="translation-result" data-translation-index="${index}" lang="ko">해석을 준비하고 있습니다…</p></div>`).join("")
     : '<p class="explanation-unavailable">정답 정보가 확인되지 않아 완성 문장 해석을 표시할 수 없습니다.</p>';
   const words = vocabulary.length
-    ? `<div class="explanation-vocabulary"><h4>핵심 어휘</h4><ul>${vocabulary.map(item => `<li><strong>${escapeHTML(item.term)}</strong><span>${escapeHTML(item.meaning)}</span></li>`).join("")}</ul></div>`
+    ? `<div class="explanation-vocabulary"><h4>본문 핵심 어휘</h4><ul>${vocabulary.map(item => `<li><strong>${escapeHTML(item.term)}</strong><span>${escapeHTML(item.meaning)}</span></li>`).join("")}</ul></div>`
     : "";
 
   return {
     sources,
-    html: `<section class="answer-explanation" data-question-id="${escapeHTML(question.id)}"><div class="explanation-heading"><div><span>ANSWER REVIEW</span><h3>문장 해석과 핵심 어휘</h3></div><button class="translation-retry" type="button" hidden>해석 다시 불러오기</button></div><div class="translation-list">${translations}</div>${words}</section>`
+    html: `<section class="answer-explanation" data-question-id="${escapeHTML(question.id)}"><div class="explanation-heading"><div><span>ANSWER REVIEW</span><h3>문장 해석과 본문 어휘</h3></div><button class="translation-retry" type="button" hidden>해석 다시 불러오기</button></div><div class="translation-list">${translations}</div>${words}</section>`
   };
 }
 
