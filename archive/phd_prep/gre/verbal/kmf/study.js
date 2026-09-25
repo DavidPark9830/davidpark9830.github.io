@@ -34,6 +34,11 @@ const QUESTION_OVERRIDES = {
       ["heartbreaking", "comical", "terrifying"],
       ["a commonplace", "a superior", "an unfamiliar"]
     ]
+  },
+  "sentence-equivalence-f85b4d337b7c": {
+    stem: "Tompkinson's prior donations to the university, while very generous, failed to {blank} the magnitude of her latest gift.",
+    groups: [["compensate for", "portend", "clarify", "predict", "offset", "undermine"]],
+    sentenceEquivalence: true
   }
 };
 const READING_OVERRIDES = {
@@ -101,6 +106,20 @@ const LOGIC_HIGHLIGHTS = {
 const ANSWER_OVERRIDES = {
   "logic-0c08ae8e9920": "A"
 };
+const READING_CHOICE_START = {
+  "logic-9a8002df39c4": 2,
+  "logic-0c08ae8e9920": 2,
+  "logic-c4389320b30b": 1,
+  "short-reading-4b1e6f2edc75": 3,
+  "short-reading-a88ffbcf3945": 1,
+  "long-reading-25ad366cc6b1": 3,
+  "long-reading-fbddeb5729ab": 2,
+  "long-reading-da711ab1b6eb": 3,
+  "long-reading-76da4c19cc95": 2,
+  "long-reading-fb24f72ec83a": 1,
+  "long-reading-848558c7f130": 3
+};
+const MULTIPLE_READING_PROMPT = /select all|consider each|which (?:two|three)|select the (?:two|three)/i;
 const COLON_AFTER_BLANK = new Set([
   "sentence-equivalence-0258f06856c3",
   "sentence-equivalence-2bd0ee717773",
@@ -449,12 +468,14 @@ function completionModel(question, lines) {
     const groups = override.groups.map(group => group.map(text => ({ key: "ABCDEFGHI"[keyIndex++], text })));
     return {
       kind: "completion",
-      directions: "Select one answer choice for each blank.",
+      directions: override.sentenceEquivalence
+        ? "Select the two answer choices that complete the sentence and produce sentences alike in meaning."
+        : "Select one answer choice for each blank.",
       stem: escapeHTML(override.stem).replaceAll("{blank}", '<span class="blank-token" aria-label="blank"></span>'),
       groups,
-      multiple: false,
-      limit: 1,
-      expectedAnswerCount: groups.length
+      multiple: Boolean(override.sentenceEquivalence),
+      limit: override.sentenceEquivalence ? 2 : 1,
+      expectedAnswerCount: override.sentenceEquivalence ? 2 : groups.length
     };
   }
 
@@ -542,18 +563,30 @@ function readingModel(question, lines) {
 
   const left = lines.filter(line => line.x < .49);
   const right = lines.filter(line => line.x >= .49);
-  const rightRows = groupRows(right);
+  const rightRows = groupRows(right).filter(row => !/^(?:\d+\s*)+$/.test(rowText(row)));
   const bulletPattern = /^[Oo0]\s+/;
   const bulletChoice = rightRows.findIndex(row => bulletPattern.test(rowText(row)));
-  const minimumX = Math.min(...rightRows.flatMap(row => row.lines.map(line => line.x)));
-  const indentedChoice = rightRows.findIndex((row, index) => index > 0 && Math.min(...row.lines.map(line => line.x)) > minimumX + .022);
-  const candidates = [bulletChoice, indentedChoice].filter(index => index >= 0);
-  const firstChoice = candidates.length ? Math.min(...candidates) : -1;
+  const fullRightText = cleanText(rightRows.map(rowText).join(" "));
+  const selectSentence = /\b(?:select|click on) (?:a|the) sentence/i.test(fullRightText);
+  const sourceAnswer = String(TEXT_DATA[question.id]?.a?.value || "").replace(/[^A-I]/gi, "");
+  const sourceAnswerLength = sourceAnswer.length;
+  const isExplicitMulti = MULTIPLE_READING_PROMPT.test(fullRightText);
+  const expectedChoiceCount = question.type === "logic" ? 5 : (isExplicitMulti || sourceAnswerLength > 1 ? 3 : 5);
+  const rowGaps = rightRows.slice(1).map((row, index) => ({ index: index + 1, gap: rightRows[index].y - row.y }));
+  const likelyGroupStarts = rowGaps
+    .sort((leftGap, rightGap) => rightGap.gap - leftGap.gap)
+    .slice(0, Math.min(expectedChoiceCount, rowGaps.length))
+    .map(item => item.index);
+  const automaticChoiceStart = likelyGroupStarts.length ? Math.min(...likelyGroupStarts) : -1;
+  const questionEnd = rightRows.findIndex(row => /\?\s*$/.test(rowText(row)));
+  const firstChoice = selectSentence ? -1
+    : Number.isInteger(READING_CHOICE_START[question.id]) ? READING_CHOICE_START[question.id]
+      : bulletChoice >= 0 ? bulletChoice
+        : questionEnd >= 0 ? questionEnd + 1 : automaticChoiceStart;
 
   const promptRows = firstChoice >= 0 ? rightRows.slice(0, firstChoice) : rightRows;
   const choiceRows = firstChoice >= 0 ? rightRows.slice(firstChoice) : [];
   const prompt = cleanText(promptRows.map(rowText).join(" "));
-  const selectSentence = /\b(?:select|click on) (?:a|the) sentence/i.test(prompt);
   let choices = [];
 
   if (selectSentence) {
@@ -561,9 +594,13 @@ function readingModel(question, lines) {
     choices = (passage.match(/[^.!?]+[.!?]+(?:[\"']|$)?/g) || [passage]).map((text, index) => ({ key: "ABCDEFGHI"[index], text: cleanText(text) }));
   } else if (choiceRows.length) {
     const bulletStarts = choiceRows.map((row, index) => bulletPattern.test(rowText(row)) ? index : -1).filter(index => index >= 0);
-    const sourceAnswerLength = String(TEXT_DATA[question.id]?.a?.value || "").length;
-    const isExplicitMulti = /select all|each of the following|which (?:two|three)|select the (?:two|three)/i.test(prompt);
-    const expectedCount = isExplicitMulti || sourceAnswerLength > 1 || choiceRows.length < 5 ? 3 : 5;
+    const fixedChoiceCount = question.type === "logic" || Number.isInteger(READING_CHOICE_START[question.id]) ? 5 : 0;
+    const choiceGaps = choiceRows.slice(1).map((row, index) => choiceRows[index].y - row.y);
+    const smallestChoiceGap = choiceGaps.length ? Math.min(...choiceGaps) : 0;
+    const visualChoiceCount = choiceRows.length <= 1 ? choiceRows.length
+      : choiceGaps.filter(gap => gap > smallestChoiceGap * 1.45).length + 1;
+    const inferredChoiceCount = visualChoiceCount === 1 ? choiceRows.length : visualChoiceCount;
+    const expectedCount = fixedChoiceCount || ([3, 5].includes(inferredChoiceCount) ? inferredChoiceCount : expectedChoiceCount);
     const grouped = partitionChoiceRows(choiceRows, Math.min(expectedCount, choiceRows.length), bulletStarts);
     choices = grouped.map((rows, index) => ({
       key: "ABCDEFGHI"[index],
@@ -571,8 +608,8 @@ function readingModel(question, lines) {
     }));
   }
 
-  const answerLength = String(TEXT_DATA[question.id]?.a?.value || "").length;
-  const multiple = !selectSentence && /select all|each of the following|which (?:two|three)|select the (?:two|three)/i.test(prompt);
+  const answerLength = String(TEXT_DATA[question.id]?.a?.value || "").replace(/[^A-I]/gi, "").length;
+  const multiple = !selectSentence && (choices.length === 3 || MULTIPLE_READING_PROMPT.test(prompt));
   return {
     kind: "reading",
     directions: selectSentence ? "Select one sentence in the passage." : multiple ? "Select all the answer choices that apply." : "Select one answer choice.",
@@ -580,8 +617,8 @@ function readingModel(question, lines) {
     prompt,
     choices,
     multiple,
-    limit: multiple ? Math.min(3, Math.max(2, answerLength)) : 1,
-    expectedAnswerCount: multiple ? Math.min(3, Math.max(2, answerLength)) : 1
+    limit: multiple ? 3 : 1,
+    expectedAnswerCount: multiple ? Math.min(3, Math.max(1, answerLength)) : 1
   };
 }
 
