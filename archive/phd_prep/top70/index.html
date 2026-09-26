@@ -12,6 +12,9 @@
 body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 system-ui,-apple-system,"Noto Sans KR",sans-serif}
 header{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:28px;background:var(--navy);color:#fff;padding:14px max(18px,2vw)}
 header h1{margin:0;font-size:clamp(21px,2vw,29px);line-height:1.2;white-space:nowrap}
+.titleblock{display:grid;gap:4px}
+.breadcrumb{display:flex;align-items:center;gap:7px;color:#bfcfda;font-size:12px;line-height:1}
+.breadcrumb a{color:#d9e5ee;text-decoration:none}.breadcrumb a:hover{color:#fff;text-decoration:underline}.breadcrumb strong{color:#fff}
 .headermeta{min-width:0;text-align:right}
 .headermeta p{margin:0;color:#d9e5ee;font-size:12px;line-height:1.45}
 .headermeta p+p{margin-top:2px;color:#bfcfda}
@@ -58,7 +61,7 @@ a{color:#185f90}.tag{display:inline-block;border-radius:999px;padding:2px 7px;fo
 </style>
 </head>
 <body>
-<header><h1>2027 U.S. Statistics PhD Top 70</h1><div class="headermeta"><p>2026 U.S. News Statistics 70위 이내 · 공동 66위 포함 71개교 · GRE · 영어/TA · 연구 · 펀딩 · 접수상태</p><p>순위는 오름차순이며 동점은 원표 표기를 유지 · 공식 페이지 확인 2026-09-26</p></div></header>
+<header><div class="titleblock"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">PhD Preparation</a><span>/</span><strong>Top 70</strong></nav><h1>2027 U.S. Statistics PhD Top 70</h1></div><div class="headermeta"><p>2026 U.S. News Statistics 70위 이내 · 공동 66위 포함 71개교 · GRE · 영어/TA · 연구 · 펀딩 · 접수상태</p><p>순위는 오름차순이며 동점은 원표 표기를 유지 · 공식 페이지 확인 2026-09-26</p></div></header>
 <main class="wrap">
 <section class="card"><div class="toolbar"><input id="q" aria-label="대학과 연구분야 검색" placeholder="대학·과정·연구분야 검색"><button id="reset" type="button">조건 초기화</button><span id="shown" class="small" aria-live="polite"></span></div><div class="filtergrid" id="filters"></div></section>
 <div class="tablebox"><table><thead><tr>
