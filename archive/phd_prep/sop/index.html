@@ -56,8 +56,6 @@
     .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
     .card h3 { margin: 0; font-size: 18px; line-height: 1.35; }
     .school { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
-    .mark { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; color: var(--muted); font-size: 12px; white-space: nowrap; }
-    .mark input { width: 17px; height: 17px; accent-color: var(--green); }
     .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 15px 0; }
     .tag { padding: 3px 8px; border-radius: 999px; background: var(--soft); color: #506078; font-size: 11px; font-weight: 700; }
     .tag.high { color: var(--green); background: var(--green-soft); }
@@ -68,12 +66,7 @@
     .links a { padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; color: var(--blue); text-decoration: none; font-size: 12px; font-weight: 750; }
     .links a:hover { border-color: #98afd0; background: var(--blue-soft); }
     .empty { padding: 30px; border: 1px dashed #c9d0da; border-radius: 12px; color: var(--muted); text-align: center; }
-    .prompt-table { width: 100%; border-collapse: separate; border-spacing: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
-    .prompt-table th, .prompt-table td { padding: 13px 14px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
-    .prompt-table th { color: #fff; background: var(--navy); font-size: 12px; }
-    .prompt-table tr:last-child td { border-bottom: 0; }
-    .prompt-table a { color: var(--blue); font-weight: 750; text-decoration: none; }
-    @media (max-width: 700px) { .topbar-inner { grid-template-columns: 1fr; gap: 5px; } .updated { text-align: right; } .titleblock h1 { white-space: normal; } .library-tools { grid-template-columns: 1fr; } .cards { grid-template-columns: 1fr; } .section-head { align-items: start; flex-direction: column; } .prompt-table { display: block; overflow-x: auto; } }
+    @media (max-width: 700px) { .topbar-inner { grid-template-columns: 1fr; gap: 5px; } .updated { text-align: right; } .titleblock h1 { white-space: normal; } .library-tools { grid-template-columns: 1fr; } .cards { grid-template-columns: 1fr; } .section-head { align-items: start; flex-direction: column; } }
   </style>
 </head>
 <body>
@@ -87,8 +80,8 @@
   <main class="shell">
     <section class="section" aria-labelledby="examples-title">
       <div class="section-head">
-        <div><h2 id="examples-title">미국 PhD SOP 자료</h2></div>
-        <div class="count"><strong id="visibleCount">0</strong>개 표시 · <strong id="readCount">0</strong>개 읽음</div>
+        <div><h2 id="examples-title">실제 미국 PhD 지원서</h2></div>
+        <div class="count"><strong id="visibleCount">0</strong>개 표시</div>
       </div>
       <div class="library-tools" aria-label="SOP 자료 검색 및 필터">
         <input id="resourceSearch" type="search" placeholder="학교·학과·주제 검색" aria-label="SOP 자료 검색">
@@ -96,6 +89,7 @@
           <option value="all">모든 분야</option>
           <option value="statistics">Statistics · Biostatistics</option>
           <option value="theory">ML Theory</option>
+          <option value="bio">Biomedical · Computational Biology</option>
           <option value="ml">Machine Learning</option>
         </select>
         <button id="resetFilters" type="button">초기화</button>
@@ -104,34 +98,6 @@
       <p class="empty" id="emptyResults" hidden>조건에 맞는 SOP 자료가 없습니다.</p>
     </section>
 
-    <section class="section" aria-labelledby="prompts-title">
-      <div class="section-head"><div><h2 id="prompts-title">학교별 공식 SOP 요구</h2></div></div>
-      <table class="prompt-table">
-        <thead><tr><th>학교</th><th>분량·핵심 요구</th></tr></thead>
-        <tbody>
-          <tr><td><a href="https://statistics.stanford.edu/admissions/statistics-phd-admissions/phd-admissions-requirements-and-procedures" target="_blank" rel="noopener">Stanford Statistics ↗</a></td><td>2페이지 이내 · 첫 문장에 프로그램 명시</td></tr>
-          <tr><td><a href="https://statistics.berkeley.edu/academics/phd/requirements" target="_blank" rel="noopener">Berkeley Statistics ↗</a></td><td>약 500–1,000단어</td></tr>
-          <tr><td><a href="https://stat.cornell.edu/phd-statistics/apply" target="_blank" rel="noopener">Cornell Statistics ↗</a></td><td>배경 · 박사 동기 · 연구 초점</td></tr>
-          <tr><td><a href="https://lsa.umich.edu/stats/phd-students/ProspectiveGraduateStudents/graduate-degree-application.html" target="_blank" rel="noopener">Michigan Statistics ↗</a></td><td>통계학 동기 · 준비 과정 · 진로 목표</td></tr>
-          <tr><td><a href="https://stat.wisc.edu/graduate-admissions/phd-program/" target="_blank" rel="noopener">Wisconsin Statistics ↗</a></td><td>상호 적합도</td></tr>
-          <tr><td><a href="https://www.cmu.edu/dietrich/statistics-datascience/academics/phd/application-process.html" target="_blank" rel="noopener">CMU Statistics ↗</a></td><td>2페이지 이내</td></tr>
-          <tr><td><a href="https://stat.uw.edu/academics/graduate/applying" target="_blank" rel="noopener">UW Statistics ↗</a></td><td>1–2페이지</td></tr>
-          <tr><td><a href="https://www.biostat.washington.edu/apply/instructions" target="_blank" rel="noopener">UW Biostatistics ↗</a></td><td>1–2페이지</td></tr>
-          <tr><td><a href="https://stat.utexas.edu/academics/phd-statistics/phd-statistics-admissions-process" target="_blank" rel="noopener">UT Austin Statistics ↗</a></td><td>지적 준비도 · 연구 잠재력</td></tr>
-          <tr><td><a href="https://stat.uchicago.edu/academics/phd-in-statistics/admissions-faqs/" target="_blank" rel="noopener">Chicago Statistics ↗</a></td><td>약 250–500단어</td></tr>
-          <tr><td><a href="https://statistics.ucdavis.edu/grad/admissions" target="_blank" rel="noopener">UC Davis Statistics ↗</a></td><td>공백 포함 4,000자</td></tr>
-          <tr><td><a href="https://biostatistics.ucdavis.edu/admissions" target="_blank" rel="noopener">UC Davis Biostatistics ↗</a></td><td>공백 포함 4,000자</td></tr>
-          <tr><td><a href="https://stt.natsci.msu.edu/graduate-programs/prospective-students/phd-in-statistics.aspx" target="_blank" rel="noopener">Michigan State Statistics ↗</a></td><td>지원 동기 · 박사 동기 · 향후 연구 관심 · 통계·확률 준비도</td></tr>
-          <tr><td><a href="https://ph.ucsd.edu/phd/biostat/prospective-students-phd/index.html" target="_blank" rel="noopener">UC San Diego Biostatistics ↗</a></td><td>500–1,000단어 권장 · 관심 형성 경험 · 목표 · 강점 · 프로그램 적합도 · 가장 의미 있는 학업 경험</td></tr>
-          <tr><td><a href="https://biostatistics.georgetown.edu/phd-admissions/" target="_blank" rel="noopener">Georgetown Biostatistics ↗</a></td><td>1–2페이지 · 지원 동기 · 연구 경험 · 박사 중·후 장기 목표</td></tr>
-          <tr><td><a href="https://www.vanderbilt.edu/biostatistics-graduate/application-process/" target="_blank" rel="noopener">Vanderbilt Biostatistics ↗</a></td><td>1–2페이지, 11pt 이상 · Biostatistics를 공부하려는 이유</td></tr>
-          <tr><td><a href="https://stat.umd.edu/grad-home/apply-grad.html" target="_blank" rel="noopener">Maryland Statistics ↗</a></td><td>Statement of Purpose 필수 · 별도 공개 세부 문항 없음</td></tr>
-          <tr><td><a href="https://sds.washu.edu/graduate-application-information" target="_blank" rel="noopener">Washington University Statistics ↗</a></td><td>Statement of Purpose 필수 · 별도 공개 분량 없음</td></tr>
-          <tr><td><a href="https://sph.umich.edu/biostat/apply-phd-biostat.html" target="_blank" rel="noopener">Michigan Biostatistics ↗</a></td><td>Statement of Purpose와 Personal Statement를 각각 제출</td></tr>
-          <tr><td><a href="https://publichealth.arizona.edu/admissions/graduate/criteria/ms-phd-bio" target="_blank" rel="noopener">Arizona Biostatistics ↗</a></td><td>목적·목표 진술과 별도 writing sample 필수</td></tr>
-        </tbody>
-      </table>
-    </section>
   </main>
 
   <script>
@@ -139,11 +105,15 @@
       {id:'cornell-stat',name:'Cornell Statistics 합격 SOP',school:'Cornell University',status:'Statistics PhD · 합격',year:'공개 사례',field:'statistics',priority:'high',tags:['Statistics','직접 합격 확인'],source:'직접 공개',statement:'https://docs.google.com/document/d/18SR7l4JpsECe-KTK70_iPVYNLYcb1jLibXB1G2PNVF4/edit?usp=sharing',profile:'https://www.youtube.com/watch?v=9KceRFaQ9Nc',profileLabel:'해설 영상',note:'통계학자로서의 정체성, 연구·교육 목표, 학과 적합도를 한 흐름으로 연결하는 방식을 본다.',caution:'개인 서사형 도입은 현재 연구 실적이 있는 지원자에게는 길게 쓰지 않는 편이 낫다.'},
       {id:'hoffman-uw',name:'Katherine Hoffman',school:'University of Washington',status:'Biostatistics PhD · 5개교 합격 · UW 진학',year:'2023',field:'statistics',priority:'high',tags:['Biostatistics','주석 포함','5개교 합격'],source:'직접 공개',statement:'https://docs.google.com/document/d/1Ex3nUpPqc8CCWTnMKeyRUDnUF_C9GOriJBtY-47eASg/edit?usp=sharing',profile:'https://www.khstats.com/blog/phd-apps/',profileLabel:'지원 과정',note:'이미 석사와 연구경력이 있는 지원자가 경험을 박사 연구 동기로 바꾸는 방법을 보여준다.',caution:'응용·인과추론 중심이므로 연구 주제 자체보다 구조와 전환 논리를 참고한다.'},
       {id:'peter-krafft',name:'Peter Krafft',school:'UC Berkeley',status:'EECS · Bayesian Methodology 지원서 · 합격 미확인',year:'공개 원문',field:'statistics',kind:'example',priority:'high',tags:['Bayesian Statistics','Methodology','공간통계','Monte Carlo'],source:'직접 공개',statement:'https://people.csail.mit.edu/pkrafft/cv/Application-Materials/Grad-School/Krafft-Statement-of-Purpose-Methodological.pdf',profile:'https://www.peterkrafft.net/',profileLabel:'프로필',note:'Bayesian model·Monte Carlo·응용 프로젝트를 방법론 연구자로서의 장기 목표로 연결한 2페이지 원문이다.',caution:'Berkeley CS 지원본이며 합격 결과는 문서 자체에서 확인되지 않는다. 다만 통계 방법론 서술은 현재 지원 방향과 매우 가깝다.'},
-      {id:'nolan-cole',name:'Nolan Cole',school:'Biostatistics PhD SOP 작성법',year:'2024 지침',field:'statistics',kind:'guide',priority:'high',tags:['Biostatistics','실제 지원 문단','Research-first'],source:'전공자 가이드',statement:'https://www.nolan-cole.com/home/blog/phd-apps-statement-of-purpose',statementLabel:'작성법·예시 문단',profile:'https://www.nolan-cole.com/',profileLabel:'프로필',note:'연구 문단을 개념–문제–행동–결과–faculty fit–전환의 여섯 단계로 해부하고 실제 오믹스·mediation analysis 문단을 보여준다.',caution:'전체 SOP 원문은 아니지만 통계 연구 경험 한 문단을 설계하는 데 가장 직접적인 자료다.'},
-      {id:'simon-couch',name:'Simon P. Couch',school:'Statistics/Biostatistics PhD 지원 회고',year:'2021',field:'statistics',kind:'guide',priority:'high',tags:['Statistics','Biostatistics','지원전략'],source:'합격자 회고',statement:'https://simonpcouch.com/blog/2021-03-15-apply-to-stats-grad-school/',statementLabel:'지원 가이드',profile:'https://simonpcouch.com/',profileLabel:'프로필',note:'Statistics와 Biostatistics의 평가 성향, 연구 경험·추천서·statement의 역할을 실제 지원자의 관점에서 정리한다.',caution:'2020 지원 주기 경험이므로 GRE와 현재 입학 요건은 이 사이트의 Top 70 최신 정보가 우선한다.'},
-      {id:'marina-meila',name:'Marina Meilă',school:'UW Statistics 교수 강의',year:'2016',field:'statistics',kind:'guide',priority:'high',tags:['Statistics','교수 관점','SOP 강의'],source:'대학 강의자료',statement:'https://sites.stat.washington.edu/mmp/math498/winter16/Resources/how-to-write-statement.pdf',statementLabel:'강의 슬라이드',profile:'https://sites.stat.washington.edu/mmp/',profileLabel:'교수 페이지',note:'통계학 교수의 관점에서 SOP가 학습력·독립적 사고·주도성·장기 연구 수행 가능성을 어떻게 입증해야 하는지 설명한다.',caution:'예시 SOP가 아니라 평가자가 찾는 증거를 정리한 자료다.'},
-      {id:'takumi-saegusa',name:'Takumi Saegusa',school:'UW Biostatistics 박사과정 소개',year:'2013',field:'statistics',kind:'guide',priority:'medium',tags:['Biostatistics','연구잠재력','지원 강의'],source:'대학 강의자료',statement:'https://www.csun.edu/~hcmth031/biostatgrad.pdf',statementLabel:'강의 슬라이드',profile:'https://sph.umich.edu/faculty-profiles/saegusa-takumi.html',profileLabel:'프로필',note:'Biostatistics 관심이 형성된 과정을 구체적으로 쓰고, 연구 잠재력을 말이 아니라 증거로 제시하라는 전공 특화 체크리스트가 있다.',caution:'오래된 자료이므로 프로그램·시험 정보가 아니라 SOP 평가 관점만 참고한다.'},
-      {id:'lee-richardson',name:'Lee Richardson',school:'Applying to Statistics PhD Programs',year:'ASA Amstat News',field:'statistics',kind:'guide',priority:'medium',tags:['Statistics','ASA','지원전략'],source:'ASA 기고',statement:'https://magazine.amstat.org/wp-content/uploads/2014an/November2014.pdf',statementLabel:'ASA 기사',profile:'https://magazine.amstat.org/blog/2014/11/01/stattrak/',profileLabel:'기사 소개',note:'Statistics PhD 지원서의 네 핵심 요소 중 SOP/CV가 어떤 역할을 하는지 지원 경험을 바탕으로 정리한다.',caution:'2014년 자료라 GRE 관련 내용은 낡았다. 영어 표현력과 연구 준비도 전달에 관한 부분만 활용한다.'},
+      {id:'seonghwan-jun',name:'Seong-Hwan Jun',school:'University of Michigan',status:'Statistics PhD 지원서 · 합격 여부 미확인',year:'2012',field:'statistics',priority:'high',tags:['Statistics','Statistical ML','Monte Carlo'],source:'지원자 공개본',statement:'https://www.scribd.com/document/179847898/SOP-Statistcs-UMich-pdf',note:'통계학 박사를 선택한 이유를 확률·추론·계산 관점에서 설명하고, Bayesian nonparametrics와 Monte Carlo 연구 경험을 연결한 실제 지원서다.',caution:'제3자 업로드본이며 해당 지원서의 최종 합격 여부는 확인되지 않는다.'},
+      {id:'mirajul-islam',name:'Mirajul Islam',school:'University of Florida',status:'Statistics PhD 지원서 · 합격 여부 미확인',year:'2019',field:'statistics',priority:'medium',tags:['Statistics','Teaching','Applied Statistics'],source:'지원자 공개본',statement:'https://www.scribd.com/document/920027288/Sop-UF-1',note:'수학·통계 훈련과 교육 경험을 교수·연구자라는 장기 목표로 연결한 실제 Statistics PhD 지원서다.',caution:'제3자 업로드본이며 작성자와 업로더가 달라 출처 및 합격 결과를 독립적으로 확인할 수 없다.'},
+      {id:'mahmud-akash',name:'Mahmud Hasan Akash',school:'University of Nevada, Reno',status:'Statistics & Data Science PhD 지원서 · 합격 여부 미확인',year:'공개 원문',field:'statistics',priority:'medium',tags:['Statistics','Data Science','Applied Statistics'],source:'지원자 공개본',statement:'https://www.scribd.com/document/499201884/SOP-Mahmud-Hasan-Akash-Nevada-Reno',note:'응용 통계와 데이터과학 경험을 산업 연구라는 진로 목표 및 박사 필요성과 연결한 지원서다.',caution:'제3자 플랫폼 공개본으로 최종 제출 여부와 합격 결과는 확인되지 않는다.'},
+      {id:'uwm-stat-applicant',name:'UW–Milwaukee Statistics 지원서',school:'University of Wisconsin–Milwaukee',status:'Statistics PhD 지원서 · 합격 여부 미확인',year:'공개 원문',field:'statistics',priority:'medium',tags:['Statistics','Biostatistics','Applied Statistics'],source:'지원자 공개본',statement:'https://www.scribd.com/document/920027285/SOP-for-UWM-1',note:'통계·프로그래밍 수업, 사회자료 분석 프로젝트, 교수 진로를 하나의 지원 동기로 구성한 실제 지원서다.',caution:'지원자 이름과 합격 결과가 확인되지 않는 제3자 업로드본이다.'},
+      {id:'tanzeem-reza',name:'Tanzeem Tahmeed Reza',school:'University of Texas at Austin',status:'Biomedical Informatics PhD · 진학',year:'2025',field:'bio',priority:'high',tags:['Biomedical Informatics','Health Data','CS-SOP'],source:'CS-SOP',statement:'https://drive.google.com/file/d/1Uvx0HR_eSp-DsYF15xsty5A5z8ILKryT/view?usp=sharing',profile:'http://ttreza.github.io/',profileLabel:'프로필',note:'의료·음성 데이터를 다루는 연구 경험을 방법론적 관심과 박사 연구 계획으로 연결한 실제 지원서다.',caution:'Biostatistics가 아니라 Biomedical Informatics 지원서이므로 질병 맥락보다 통계적 방법과 본인의 연구 기여를 참고한다.'},
+      {id:'kevin-guo',name:'Kevin Guo',school:'Vanderbilt University',status:'Biomedical Informatics PhD · 진학',year:'2024',field:'bio',priority:'high',tags:['Biomedical Informatics','ML for Healthcare','CS-SOP'],source:'CS-SOP',statement:'https://drive.google.com/file/d/1JHzb0LDZbH98n0ikJfbpZ94hTxu6QaFt/view?usp=sharing',profile:'http://kevin-guo.dev/',profileLabel:'프로필',note:'의료 ML 연구를 임상적 문제, 방법론적 한계, 향후 연구 질문으로 전개한 실제 미국 박사 지원서다.',caution:'통계학과용으로 활용할 때는 모델 성능보다 불확실성·추론·검증의 통계적 질문을 전면에 둔다.'},
+      {id:'arghamitra-talukder',name:'Arghamitra Talukder',school:'Columbia University',status:'Computational Biology PhD · 진학',year:'2023',field:'bio',priority:'medium',tags:['Computational Biology','Computer Vision','CS-SOP'],source:'CS-SOP',statement:'https://drive.google.com/file/d/1L-k2t1t5XeIkTKCCtzczsUgRvy8O3liR/view?usp=drivesdk',profile:'https://arghamitrat.github.io/',profileLabel:'프로필',note:'계산 방법을 생물학적 연구 질문과 결합하고 여러 연구 경험 사이의 공통 축을 만드는 실제 지원서다.',caution:'통계 방법론보다 계산생물학 중심이므로 응용 문제를 정의하고 연구 기여를 설명하는 구조만 참고한다.'},
+      {id:'toki-tahmid',name:'Md Toki Tahmid',school:'Princeton University',status:'Computational Biology PhD · 진학',year:'2024',field:'bio',priority:'medium',tags:['Computational Biology','CS-SOP'],source:'CS-SOP',statement:'https://drive.google.com/file/d/147TTO_69Nnpg8OoECg3C8oPBDfz7G93e/view?usp=sharing',profile:'https://tokitahmid64.github.io/',profileLabel:'프로필',note:'계산생물학 프로젝트들을 하나의 연구 방향으로 좁히고 학과·교수 적합도를 연결한 실제 지원서다.',caution:'Statistics SOP에서는 생물학적 목표와 함께 어떤 추론 문제를 해결하려는지 더 분명히 해야 한다.'},
+      {id:'megan-le',name:'Megan Le',school:'MIT',status:'Computational Biology PhD · 진학',year:'2022',field:'bio',priority:'medium',tags:['Computational Biology','CS-SOP'],source:'직접 공개',statement:'https://www.megankle.com/files/example_sop.pdf',profile:'http://www.megankle.com/posts/phd_admissions/',profileLabel:'지원 결과',note:'미국 Computational Biology 박사 지원을 위해 연구 경험과 미래 질문을 압축한 실제 SOP 원문이다.',caution:'Biostatistics 지원서와 평가 대상이 다르므로 기술 내용보다 연구경험의 선택과 전환 방식을 참고한다.'},
       {id:'deep-patel',name:'Deep Patel',school:'University of Wisconsin–Madison',status:'Computer Science PhD · ML Theory · 진학',year:'2022',field:'theory',priority:'high',tags:['ML Theory','CS-SOP'],source:'CS-SOP',statement:'https://drive.google.com/file/d/12GzBPOueLQWjLnZ7y_kRLndo_gdhsmZf/view?usp=sharing',profile:'https://dbp1994.github.io/',profileLabel:'프로필',note:'ML 이론 지원자가 수학적 준비와 연구 문제를 압축하는 방식을 비교하기 좋다.',caution:'Statistics 지원서에서는 ML 언어를 Bayesian inference와 uncertainty 질문으로 번역해야 한다.'},
       {id:'honam-wong',name:'Honam Wong',school:'University of Pennsylvania',status:'Computer Science PhD · ML Theory · 진학',year:'2024',field:'theory',priority:'high',tags:['ML Theory','CS-SOP'],source:'CS-SOP',statement:'https://www.overleaf.com/read/tqwnttmqpmcc#42bcb5',profile:'https://matheart.github.io/',profileLabel:'프로필',note:'이론적 연구 관심을 좁게 정의하고 향후 질문과 교수 적합도를 연결하는 방식을 본다.',caution:'수학·CS 이론의 표현을 그대로 사용하기보다 통계적 목표와 posterior 관점으로 바꾼다.'},
       {id:'narutatsu-ri',name:'Narutatsu Ri',school:'Princeton University',status:'Computer Science PhD · ML Theory · 진학',year:'2024',field:'theory',priority:'high',tags:['ML Theory','NLP','CS-SOP'],source:'CS-SOP',statement:'https://drive.google.com/file/d/1k4pO0wfiqtp8LuwLOhrXZkXC1xBrq4G6/view?usp=sharing',profile:'https://narutatsuri.github.io/',profileLabel:'프로필',note:'여러 프로젝트를 하나의 연구 관심으로 정리하는 outline과 반복 수정의 결과를 살펴본다.',caution:'NLP 응용 세부보다 프로젝트 사이의 연구 질문 연결만 참고한다.'},
@@ -160,15 +130,10 @@
 
     const cards = document.getElementById('cards');
     const visibleCount = document.getElementById('visibleCount');
-    const readCount = document.getElementById('readCount');
     const resourceSearch = document.getElementById('resourceSearch');
     const fieldFilter = document.getElementById('fieldFilter');
     const resetFilters = document.getElementById('resetFilters');
     const emptyResults = document.getElementById('emptyResults');
-    const validIds = new Set(resources.map(resource => resource.id));
-    let savedReads = [];
-    try { savedReads = JSON.parse(localStorage.getItem('stats-sop-read') || '[]'); } catch { savedReads = []; }
-    const stored = new Set(Array.isArray(savedReads) ? savedReads.filter(id => validIds.has(id)) : []);
 
     function escapeHTML(value) {
       return String(value).replace(/[&<>\"]/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[character]));
@@ -187,12 +152,11 @@
     function render() {
       const visible = visibleResources();
       cards.innerHTML = visible.map(r => {
-        const isGuide = (r.kind || 'example') === 'guide';
-        const status = r.status || (isGuide ? '통계 특화 작성 자료' : `${r.tags[0]} · ${r.source === 'CS-SOP' ? '진학' : '지원서 공개'}`);
+        const status = r.status || `${r.tags[0]} · ${r.source === 'CS-SOP' ? '진학' : '지원서 공개'}`;
         const tags = [...new Set([r.priority === 'high' ? '우선 읽기' : '확장 참고', r.source, ...(r.tags || [])])];
         return `
         <article class="card" data-id="${r.id}">
-          <div class="card-top"><div><h3>${escapeHTML(r.name)}</h3><p class="school">${escapeHTML(r.school)} · ${escapeHTML(status)}${r.year ? ` · ${escapeHTML(r.year)}` : ''}</p></div><label class="mark"><input type="checkbox" ${stored.has(r.id)?'checked':''} data-read="${r.id}"> 읽음</label></div>
+          <div class="card-top"><div><h3>${escapeHTML(r.name)}</h3><p class="school">${escapeHTML(r.school)} · ${escapeHTML(status)}${r.year ? ` · ${escapeHTML(r.year)}` : ''}</p></div></div>
           <div class="tags">${tags.map((tag, index) => `<span class="tag ${index === 0 && r.priority === 'high'?'high':''} ${index === 1?'direct':''}">${escapeHTML(tag)}</span>`).join('')}</div>
           <p class="resource-note">${escapeHTML(r.note)}</p>
           <p class="resource-caution"><strong>적용 메모</strong> · ${escapeHTML(r.caution)}</p>
@@ -200,13 +164,7 @@
         </article>`;
       }).join('');
       visibleCount.textContent = visible.length;
-      readCount.textContent = stored.size;
       emptyResults.hidden = visible.length > 0;
-      document.querySelectorAll('[data-read]').forEach(box => box.addEventListener('change', e => {
-        e.target.checked ? stored.add(e.target.dataset.read) : stored.delete(e.target.dataset.read);
-        localStorage.setItem('stats-sop-read', JSON.stringify([...stored]));
-        readCount.textContent = stored.size;
-      }));
     }
     resourceSearch.addEventListener('input', render);
     fieldFilter.addEventListener('change', render);
