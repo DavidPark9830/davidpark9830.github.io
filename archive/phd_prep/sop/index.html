@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="Statistics PhD SOP examples and a personalized writing guide for Gyeongmin Park.">
+  <title>Statistics PhD SOP Library</title>
+  <style>
+    :root {
+      --bg: #f4f7fa;
+      --paper: #ffffff;
+      --navy: #18324a;
+      --ink: #16232d;
+      --muted: #5d6b75;
+      --line: #d5dee6;
+      --soft: #eef2f7;
+      --blue: #315f9b;
+      --blue-soft: #eaf1fa;
+      --green: #2f7657;
+      --green-soft: #e9f5ef;
+      --amber: #94651f;
+      --amber-soft: #fbf3e2;
+      --shadow: none;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--bg); font: 14px/1.55 system-ui, -apple-system, "Noto Sans KR", sans-serif; }
+    a { color: inherit; }
+    button, input, select { font: inherit; }
+    .topbar { background: var(--navy); color: #fff; }
+    .topbar-inner { display: grid; grid-template-columns: auto minmax(0,1fr); align-items: center; gap: 28px; padding: 14px max(18px,2vw); }
+    .titleblock { display: grid; gap: 4px; }
+    .crumbs { display: flex; align-items: center; gap: 7px; color: #bfcfda; font-size: 12px; line-height: 1; }
+    .crumbs a { text-decoration: none; }
+    .crumbs a { color: #d9e5ee; }
+    .crumbs a:hover { color: #fff; text-decoration: underline; }
+    .crumbs span { color: #8fa5b6; }
+    .titleblock h1 { margin: 0; font-size: clamp(21px,2vw,29px); line-height: 1.2; white-space: nowrap; }
+    .updated { min-width: 0; color: #d9e5ee; font-size: 12px; text-align: right; }
+    .shell { width: 100%; max-width: none; margin: 0; padding: 16px max(12px,1.5vw) 60px; }
+    .section { margin-top: 0; }
+    .section + .section { margin-top: 24px; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 14px; }
+    .section-head h2 { margin: 0; font-size: 20px; letter-spacing: -.015em; color: var(--navy); }
+    .section-head p { margin: 5px 0 0; color: var(--muted); }
+    .count { color: var(--muted); font-size: 13px; white-space: nowrap; }
+    .library-tools { display: grid; grid-template-columns: minmax(240px, 1fr) minmax(180px, 240px) auto; gap: 8px; margin-bottom: 12px; }
+    .library-tools input, .library-tools select, .library-tools button { min-height: 40px; border: 1px solid var(--line); border-radius: 7px; background: #fff; color: var(--ink); }
+    .library-tools input, .library-tools select { width: 100%; padding: 8px 11px; }
+    .library-tools button { padding: 8px 13px; color: var(--blue); font-weight: 750; cursor: pointer; }
+    .library-tools button:hover { border-color: #98afd0; background: var(--blue-soft); }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; }
+    .card { display: flex; flex-direction: column; min-height: 280px; border: 1px solid var(--line); border-radius: 9px; padding: 15px; background: var(--paper); }
+    .card[hidden] { display: none; }
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+    .card h3 { margin: 0; font-size: 18px; line-height: 1.35; }
+    .school { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+    .mark { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; color: var(--muted); font-size: 12px; white-space: nowrap; }
+    .mark input { width: 17px; height: 17px; accent-color: var(--green); }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 15px 0; }
+    .tag { padding: 3px 8px; border-radius: 999px; background: var(--soft); color: #506078; font-size: 11px; font-weight: 700; }
+    .tag.high { color: var(--green); background: var(--green-soft); }
+    .tag.direct { color: var(--blue); background: var(--blue-soft); }
+    .resource-note { margin: 0; color: #35444f; }
+    .resource-caution { margin: 11px 0 0; padding: 9px 10px; border-left: 3px solid #d2a551; background: var(--amber-soft); color: #6e4c19; font-size: 12px; }
+    .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 18px; }
+    .links a { padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; color: var(--blue); text-decoration: none; font-size: 12px; font-weight: 750; }
+    .links a:hover { border-color: #98afd0; background: var(--blue-soft); }
+    .empty { padding: 30px; border: 1px dashed #c9d0da; border-radius: 12px; color: var(--muted); text-align: center; }
+    .prompt-table { width: 100%; border-collapse: separate; border-spacing: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+    .prompt-table th, .prompt-table td { padding: 13px 14px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    .prompt-table th { color: #fff; background: var(--navy); font-size: 12px; }
+    .prompt-table tr:last-child td { border-bottom: 0; }
+    .prompt-table a { color: var(--blue); font-weight: 750; text-decoration: none; }
+    @media (max-width: 700px) { .topbar-inner { grid-template-columns: 1fr; gap: 5px; } .updated { text-align: right; } .titleblock h1 { white-space: normal; } .library-tools { grid-template-columns: 1fr; } .cards { grid-template-columns: 1fr; } .section-head { align-items: start; flex-direction: column; } .prompt-table { display: block; overflow-x: auto; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="titleblock"><nav class="crumbs" aria-label="Breadcrumb"><a href="../">PhD Preparation</a><span>/</span><strong>SOP</strong></nav><h1>Statistics PhD SOP Library</h1></div>
+      <div class="updated">자료 확인: 2026-09-26</div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="section" aria-labelledby="examples-title">
+      <div class="section-head">
+        <div><h2 id="examples-title">SOP 자료</h2></div>
+        <div class="count"><strong id="visibleCount">0</strong>개 표시 · <strong id="readCount">0</strong>개 읽음</div>
+      </div>
+      <div class="library-tools" aria-label="SOP 자료 검색 및 필터">
+        <input id="resourceSearch" type="search" placeholder="이름·학교·주제 검색" aria-label="SOP 자료 검색">
+        <select id="fieldFilter" aria-label="분야 필터">
+          <option value="all">모든 분야</option>
+          <option value="statistics">Statistics · Biostatistics</option>
+          <option value="theory">ML Theory</option>
+          <option value="ml">Machine Learning</option>
+        </select>
+        <button id="resetFilters" type="button">초기화</button>
+      </div>
+      <div class="cards" id="cards"></div>
+      <p class="empty" id="emptyResults" hidden>조건에 맞는 SOP 자료가 없습니다.</p>
+    </section>
+
+    <section class="section" aria-labelledby="prompts-title">
+      <div class="section-head"><div><h2 id="prompts-title">학교별 공식 SOP 요구</h2></div></div>
+      <table class="prompt-table">
+        <thead><tr><th>학교</th><th>분량·핵심 요구</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://statistics.stanford.edu/admissions/statistics-phd-admissions/phd-admissions-requirements-and-procedures" target="_blank" rel="noopener">Stanford Statistics ↗</a></td><td>2페이지 이내 · 첫 문장에 프로그램 명시</td></tr>
+          <tr><td><a href="https://statistics.berkeley.edu/academics/phd/requirements" target="_blank" rel="noopener">Berkeley Statistics ↗</a></td><td>약 500–1,000단어</td></tr>
+          <tr><td><a href="https://stat.cornell.edu/phd-statistics/apply" target="_blank" rel="noopener">Cornell Statistics ↗</a></td><td>배경 · 박사 동기 · 연구 초점</td></tr>
+          <tr><td><a href="https://lsa.umich.edu/stats/phd-students/ProspectiveGraduateStudents/graduate-degree-application.html" target="_blank" rel="noopener">Michigan Statistics ↗</a></td><td>통계학 동기 · 준비 과정 · 진로 목표</td></tr>
+          <tr><td><a href="https://stat.wisc.edu/graduate-admissions/phd-program/" target="_blank" rel="noopener">Wisconsin Statistics ↗</a></td><td>상호 적합도</td></tr>
+          <tr><td><a href="https://www.cmu.edu/dietrich/statistics-datascience/academics/phd/application-process.html" target="_blank" rel="noopener">CMU Statistics ↗</a></td><td>2페이지 이내</td></tr>
+          <tr><td><a href="https://stat.uw.edu/academics/graduate/applying" target="_blank" rel="noopener">UW Statistics ↗</a></td><td>1–2페이지</td></tr>
+          <tr><td><a href="https://www.biostat.washington.edu/apply/instructions" target="_blank" rel="noopener">UW Biostatistics ↗</a></td><td>1–2페이지</td></tr>
+          <tr><td><a href="https://stat.utexas.edu/academics/phd-statistics/phd-statistics-admissions-process" target="_blank" rel="noopener">UT Austin Statistics ↗</a></td><td>지적 준비도 · 연구 잠재력</td></tr>
+          <tr><td><a href="https://stat.uchicago.edu/academics/phd-in-statistics/admissions-faqs/" target="_blank" rel="noopener">Chicago Statistics ↗</a></td><td>약 250–500단어</td></tr>
+          <tr><td><a href="https://statistics.ucdavis.edu/grad/admissions" target="_blank" rel="noopener">UC Davis Statistics ↗</a></td><td>공백 포함 4,000자</td></tr>
+          <tr><td><a href="https://biostatistics.ucdavis.edu/admissions" target="_blank" rel="noopener">UC Davis Biostatistics ↗</a></td><td>공백 포함 4,000자</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script>
+    const resources = [
+      {id:'cornell-stat',name:'Cornell Statistics 합격 SOP',school:'Cornell University',status:'Statistics PhD · 합격',year:'공개 사례',field:'statistics',priority:'high',tags:['Statistics','직접 합격 확인'],source:'직접 공개',statement:'https://docs.google.com/document/d/18SR7l4JpsECe-KTK70_iPVYNLYcb1jLibXB1G2PNVF4/edit?usp=sharing',profile:'https://www.youtube.com/watch?v=9KceRFaQ9Nc',profileLabel:'해설 영상',note:'통계학자로서의 정체성, 연구·교육 목표, 학과 적합도를 한 흐름으로 연결하는 방식을 본다.',caution:'개인 서사형 도입은 현재 연구 실적이 있는 지원자에게는 길게 쓰지 않는 편이 낫다.'},
+      {id:'hoffman-uw',name:'Katherine Hoffman',school:'University of Washington',status:'Biostatistics PhD · 5개교 합격 · UW 진학',year:'2023',field:'statistics',priority:'high',tags:['Biostatistics','주석 포함','5개교 합격'],source:'직접 공개',statement:'https://docs.google.com/document/d/1Ex3nUpPqc8CCWTnMKeyRUDnUF_C9GOriJBtY-47eASg/edit?usp=sharing',profile:'https://www.khstats.com/blog/phd-apps/',profileLabel:'지원 과정',note:'이미 석사와 연구경력이 있는 지원자가 경험을 박사 연구 동기로 바꾸는 방법을 보여준다.',caution:'응용·인과추론 중심이므로 연구 주제 자체보다 구조와 전환 논리를 참고한다.'},
+      {id:'peter-krafft',name:'Peter Krafft',school:'UC Berkeley',status:'EECS · Bayesian Methodology 지원서 · 합격 미확인',year:'공개 원문',field:'statistics',kind:'example',priority:'high',tags:['Bayesian Statistics','Methodology','공간통계','Monte Carlo'],source:'직접 공개',statement:'https://people.csail.mit.edu/pkrafft/cv/Application-Materials/Grad-School/Krafft-Statement-of-Purpose-Methodological.pdf',profile:'https://www.peterkrafft.net/',profileLabel:'프로필',note:'Bayesian model·Monte Carlo·응용 프로젝트를 방법론 연구자로서의 장기 목표로 연결한 2페이지 원문이다.',caution:'Berkeley CS 지원본이며 합격 결과는 문서 자체에서 확인되지 않는다. 다만 통계 방법론 서술은 현재 지원 방향과 매우 가깝다.'},
+      {id:'nolan-cole',name:'Nolan Cole',school:'Biostatistics PhD SOP 작성법',year:'2024 지침',field:'statistics',kind:'guide',priority:'high',tags:['Biostatistics','실제 지원 문단','Research-first'],source:'전공자 가이드',statement:'https://www.nolan-cole.com/home/blog/phd-apps-statement-of-purpose',statementLabel:'작성법·예시 문단',profile:'https://www.nolan-cole.com/',profileLabel:'프로필',note:'연구 문단을 개념–문제–행동–결과–faculty fit–전환의 여섯 단계로 해부하고 실제 오믹스·mediation analysis 문단을 보여준다.',caution:'전체 SOP 원문은 아니지만 통계 연구 경험 한 문단을 설계하는 데 가장 직접적인 자료다.'},
+      {id:'simon-couch',name:'Simon P. Couch',school:'Statistics/Biostatistics PhD 지원 회고',year:'2021',field:'statistics',kind:'guide',priority:'high',tags:['Statistics','Biostatistics','지원전략'],source:'합격자 회고',statement:'https://simonpcouch.com/blog/2021-03-15-apply-to-stats-grad-school/',statementLabel:'지원 가이드',profile:'https://simonpcouch.com/',profileLabel:'프로필',note:'Statistics와 Biostatistics의 평가 성향, 연구 경험·추천서·statement의 역할을 실제 지원자의 관점에서 정리한다.',caution:'2020 지원 주기 경험이므로 GRE와 현재 입학 요건은 이 사이트의 Top 70 최신 정보가 우선한다.'},
+      {id:'marina-meila',name:'Marina Meilă',school:'UW Statistics 교수 강의',year:'2016',field:'statistics',kind:'guide',priority:'high',tags:['Statistics','교수 관점','SOP 강의'],source:'대학 강의자료',statement:'https://sites.stat.washington.edu/mmp/math498/winter16/Resources/how-to-write-statement.pdf',statementLabel:'강의 슬라이드',profile:'https://sites.stat.washington.edu/mmp/',profileLabel:'교수 페이지',note:'통계학 교수의 관점에서 SOP가 학습력·독립적 사고·주도성·장기 연구 수행 가능성을 어떻게 입증해야 하는지 설명한다.',caution:'예시 SOP가 아니라 평가자가 찾는 증거를 정리한 자료다.'},
+      {id:'takumi-saegusa',name:'Takumi Saegusa',school:'UW Biostatistics 박사과정 소개',year:'2013',field:'statistics',kind:'guide',priority:'medium',tags:['Biostatistics','연구잠재력','지원 강의'],source:'대학 강의자료',statement:'https://www.csun.edu/~hcmth031/biostatgrad.pdf',statementLabel:'강의 슬라이드',profile:'https://sph.umich.edu/faculty-profiles/saegusa-takumi.html',profileLabel:'프로필',note:'Biostatistics 관심이 형성된 과정을 구체적으로 쓰고, 연구 잠재력을 말이 아니라 증거로 제시하라는 전공 특화 체크리스트가 있다.',caution:'오래된 자료이므로 프로그램·시험 정보가 아니라 SOP 평가 관점만 참고한다.'},
+      {id:'lee-richardson',name:'Lee Richardson',school:'Applying to Statistics PhD Programs',year:'ASA Amstat News',field:'statistics',kind:'guide',priority:'medium',tags:['Statistics','ASA','지원전략'],source:'ASA 기고',statement:'https://magazine.amstat.org/wp-content/uploads/2014an/November2014.pdf',statementLabel:'ASA 기사',profile:'https://magazine.amstat.org/blog/2014/11/01/stattrak/',profileLabel:'기사 소개',note:'Statistics PhD 지원서의 네 핵심 요소 중 SOP/CV가 어떤 역할을 하는지 지원 경험을 바탕으로 정리한다.',caution:'2014년 자료라 GRE 관련 내용은 낡았다. 영어 표현력과 연구 준비도 전달에 관한 부분만 활용한다.'},
+      {id:'deep-patel',name:'Deep Patel',school:'University of Wisconsin–Madison',year:'2022',field:'theory',priority:'high',tags:['ML Theory','CS-SOP'],source:'CS-SOP',statement:'https://drive.google.com/file/d/12GzBPOueLQWjLnZ7y_kRLndo_gdhsmZf/view?usp=sharing',profile:'https://dbp1994.github.io/',profileLabel:'프로필',note:'ML 이론 지원자가 수학적 준비와 연구 문제를 압축하는 방식을 비교하기 좋다.',caution:'Statistics 지원서에서는 ML 언어를 Bayesian inference와 uncertainty 질문으로 번역해야 한다.'},
+      {id:'honam-wong',name:'Honam Wong',school:'University of Pennsylvania',year:'2024',field:'theory',priority:'high',tags:['ML Theory','CS-SOP'],source:'CS-SOP',statement:'https://www.overleaf.com/read/tqwnttmqpmcc#42bcb5',profile:'https://matheart.github.io/',profileLabel:'프로필',note:'이론적 연구 관심을 좁게 정의하고 향후 질문과 교수 적합도를 연결하는 방식을 본다.',caution:'수학·CS 이론의 표현을 그대로 사용하기보다 통계적 목표와 posterior 관점으로 바꾼다.'},
+      {id:'narutatsu-ri',name:'Narutatsu Ri',school:'Princeton',year:'2024',field:'theory',priority:'high',tags:['ML Theory','NLP','CS-SOP'],source:'CS-SOP',statement:'https://drive.google.com/file/d/1k4pO0wfiqtp8LuwLOhrXZkXC1xBrq4G6/view?usp=sharing',profile:'https://narutatsuri.github.io/',profileLabel:'프로필',note:'여러 프로젝트를 하나의 연구 관심으로 정리하는 outline과 반복 수정의 결과를 살펴본다.',caution:'NLP 응용 세부보다 프로젝트 사이의 연구 질문 연결만 참고한다.'},
+      {id:'xingjian-bai',name:'Xingjian Bai',school:'MIT',year:'2023',field:'theory',priority:'high',tags:['ML Theory','CV','CS-SOP'],source:'CS-SOP',statement:'https://xingjianbai.com/files/Statement_of_Purposes__Xingjian_Bai.pdf',profile:'https://xingjianbai.com/',profileLabel:'프로필',note:'성과가 많은 지원자가 프로젝트별 기여를 짧고 기술적으로 설명하는 방식을 본다.',caution:'논문 수를 경쟁하려 하지 말고 본인의 의사결정과 아이디어 소유권을 선명하게 쓴다.'},
+      {id:'robert-george',name:'Robert Joseph George',school:'Caltech',year:'2023',field:'theory',priority:'high',tags:['ML Theory','AI for Science','CS-SOP'],source:'CS-SOP',statement:'https://drive.google.com/file/d/1PZtJL875vb2kbgXjwX4xWCp0W2PN9IKE/view?usp=sharing',profile:'https://www.robertj1.com/',profileLabel:'프로필',note:'이론과 과학 응용을 함께 제시하는 방식을 uncertainty quantification 서술에 활용할 수 있다.',caution:'AI for Science의 거대한 목표보다 해결 가능한 통계 연구 질문의 크기를 유지한다.'},
+      {id:'chanwoo-park',name:'Chanwoo Park',school:'MIT',year:'2021',field:'theory',priority:'medium',tags:['ML Theory','CS-SOP'],source:'CS-SOP',statement:'https://drive.google.com/file/d/1ny4ghbUol61v26b-bi6lfylMQwOclyWZ/view?usp=sharing',profile:'https://chanwoo-park-official.github.io/',profileLabel:'프로필',note:'이론·방법론 연구 경험을 독자가 따라갈 수 있게 단계화하는 방식을 비교한다.',caution:'과거 지원 주기의 문서이므로 현재 학교별 형식은 별도로 확인한다.'},
+      {id:'muhammad-ashiq',name:'Muhammad Ashiq',school:'University of Michigan',year:'2025',field:'ml',priority:'high',tags:['ML','최근 사례','CS-SOP'],source:'CS-SOP',statement:'https://drive.google.com/file/d/1p_hLjVO3YxJV0Gx95VcMraD0chNIAiQG/view?usp=sharing',profile:'http://ashiqwisc.github.io/',profileLabel:'프로필',note:'최근 Michigan 진학 사례로, 연구경험과 미래 방향을 어느 정도 기술적으로 쓰는지 비교한다.',caution:'Michigan Statistics의 별도 프롬프트에 맞춰 통계적 동기와 석사 이후 박사의 필요성을 추가해야 한다.'},
+      {id:'david-heineman',name:'David Heineman',school:'Stanford',year:'2025',field:'ml',priority:'medium',tags:['ML','최근 사례','CS-SOP'],source:'CS-SOP',statement:'https://davidheineman.com/sop.pdf',profile:'https://davidheineman.com/',profileLabel:'프로필',note:'유행을 따라가기보다 본인만의 연구 관점과 다음 질문을 제시하는 방식을 본다.',caution:'NLP와 foundation model 중심의 내용은 제외하고 연구 취향을 명시하는 방식만 참고한다.'},
+      {id:'harman-singh',name:'Harman Singh',school:'UC Berkeley',year:'2024',field:'ml',priority:'medium',tags:['ML','NLP','CS-SOP'],source:'CS-SOP',statement:'https://drive.google.com/file/d/1tB6fpiCaiSdIl_f0nYLOD9QYFtZNTRWO/view?usp=sharing',profile:'https://harmandotpy.github.io/',profileLabel:'프로필',note:'Berkeley 진학자의 research-heavy 전개와 faculty-fit 분량을 비교하는 자료다.',caution:'Berkeley Statistics는 CS와 평가 기준이 다르므로 수학·통계 준비도를 더 분명히 써야 한다.'},
+      {id:'zhuorui-ye',name:'Zhuorui Ye',school:'Princeton',year:'2024',field:'ml',priority:'medium',tags:['ML','CS-SOP'],source:'CS-SOP',statement:'https://drive.google.com/file/d/1IPsYHj0Cg7EcIIhN2oER9pS6F-6t6QJc/view?usp=sharing',profile:'https://cuizhuyefei.github.io/',profileLabel:'프로필',note:'각 연구 경험의 동기와 장기 연구 목표를 연결하는 방법이 명확하다.',caution:'성과 나열이 아니라 각 경험이 다음 연구 질문을 어떻게 만들었는지만 가져온다.'},
+      {id:'denny-loevlie',name:'Denny Loevlie',school:'University of Amsterdam',year:'2025',field:'ml',priority:'medium',tags:['ML','지원 패키지','CS-SOP'],source:'CS-SOP',statement:'https://drive.google.com/file/d/1cvlJrcXpqMsyBsSSYLXZBbIU_hMb1NUp/view?usp=sharing',profile:'https://loevlie.github.io/phd_apps/',profileLabel:'지원 자료',note:'SOP뿐 아니라 지원 자료 패키지를 공개해 CV와 SOP의 역할 분리를 비교하기 좋다.',caution:'유럽형 포지션 지원과 미국 학과 단위 입학의 차이를 감안한다.'}
+    ];
+
+    const cards = document.getElementById('cards');
+    const visibleCount = document.getElementById('visibleCount');
+    const readCount = document.getElementById('readCount');
+    const resourceSearch = document.getElementById('resourceSearch');
+    const fieldFilter = document.getElementById('fieldFilter');
+    const resetFilters = document.getElementById('resetFilters');
+    const emptyResults = document.getElementById('emptyResults');
+    const validIds = new Set(resources.map(resource => resource.id));
+    let savedReads = [];
+    try { savedReads = JSON.parse(localStorage.getItem('stats-sop-read') || '[]'); } catch { savedReads = []; }
+    const stored = new Set(Array.isArray(savedReads) ? savedReads.filter(id => validIds.has(id)) : []);
+
+    function escapeHTML(value) {
+      return String(value).replace(/[&<>\"]/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[character]));
+    }
+
+    function visibleResources() {
+      const query = resourceSearch.value.trim().toLocaleLowerCase('ko-KR');
+      return resources.filter(resource => {
+        if (fieldFilter.value !== 'all' && resource.field !== fieldFilter.value) return false;
+        if (!query) return true;
+        const haystack = [resource.name, resource.school, resource.status, resource.year, resource.source, resource.note, resource.caution, ...(resource.tags || [])].join(' ').toLocaleLowerCase('ko-KR');
+        return haystack.includes(query);
+      });
+    }
+
+    function render() {
+      const visible = visibleResources();
+      cards.innerHTML = visible.map(r => {
+        const isGuide = (r.kind || 'example') === 'guide';
+        const status = r.status || (isGuide ? '통계 특화 작성 자료' : `${r.tags[0]} · ${r.source === 'CS-SOP' ? '진학' : '지원서 공개'}`);
+        const tags = [...new Set([r.priority === 'high' ? '우선 읽기' : '확장 참고', r.source, ...(r.tags || [])])];
+        return `
+        <article class="card" data-id="${r.id}">
+          <div class="card-top"><div><h3>${escapeHTML(r.name)}</h3><p class="school">${escapeHTML(r.school)} · ${escapeHTML(status)}${r.year ? ` · ${escapeHTML(r.year)}` : ''}</p></div><label class="mark"><input type="checkbox" ${stored.has(r.id)?'checked':''} data-read="${r.id}"> 읽음</label></div>
+          <div class="tags">${tags.map((tag, index) => `<span class="tag ${index === 0 && r.priority === 'high'?'high':''} ${index === 1?'direct':''}">${escapeHTML(tag)}</span>`).join('')}</div>
+          <p class="resource-note">${escapeHTML(r.note)}</p>
+          <p class="resource-caution"><strong>적용 메모</strong> · ${escapeHTML(r.caution)}</p>
+          <div class="links"><a href="${escapeHTML(r.statement)}" target="_blank" rel="noopener">${escapeHTML(r.statementLabel || 'SOP 원문')} ↗</a>${r.profile ? `<a href="${escapeHTML(r.profile)}" target="_blank" rel="noopener">${escapeHTML(r.profileLabel || '프로필')} ↗</a>` : ''}</div>
+        </article>`;
+      }).join('');
+      visibleCount.textContent = visible.length;
+      readCount.textContent = stored.size;
+      emptyResults.hidden = visible.length > 0;
+      document.querySelectorAll('[data-read]').forEach(box => box.addEventListener('change', e => {
+        e.target.checked ? stored.add(e.target.dataset.read) : stored.delete(e.target.dataset.read);
+        localStorage.setItem('stats-sop-read', JSON.stringify([...stored]));
+        readCount.textContent = stored.size;
+      }));
+    }
+    resourceSearch.addEventListener('input', render);
+    fieldFilter.addEventListener('change', render);
+    resetFilters.addEventListener('click', () => {
+      resourceSearch.value = '';
+      fieldFilter.value = 'all';
+      render();
+      resourceSearch.focus();
+    });
+    render();
+  </script>
+</body>
+</html>
